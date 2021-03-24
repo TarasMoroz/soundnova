@@ -1,0 +1,1 @@
+<div class="alert alert-success" role="alert">Информация обновлена успешно!</div>

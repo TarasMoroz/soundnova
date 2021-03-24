@@ -1,0 +1,24 @@
+
+    DirectoryIndex index.php
+
+    RewriteEngine On
+
+    RewriteCond $1 !^(index\.php|assets/ckeditor/kcfinder|robots\.txt|assets|sitemap\.xml|google\.xml|favicon\.ico|googleed3e9cf7b38595aa\.html)
+
+    # Disable rewrite for valid directory/files
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+
+    #map all request urls to a specific controller method
+    RewriteRule ^(.*)$ ./index.php/$1 [L]
+
+    # Delete last slash
+    #RewriteCond %{HTTP_HOST} (.*)
+    #RewriteCond %{REQUEST_URI} /$ [NC]
+    #RewriteRule ^(.*)(/)$ $1 [L,R=301]
+
+    # Rewrite many slashes
+    #RewriteCond %{REQUEST_URI} ^(.*)//(.*)$
+    #RewriteRule . %1/%2 [R=301,L]
+
+    php_value date.timezone 'Europe/Moscow'

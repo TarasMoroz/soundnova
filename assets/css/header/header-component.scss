@@ -1,0 +1,231 @@
+@import "../variables/variables.scss";
+
+.mobile-header {
+    background-color: $maindarkgray;
+    display: grid;
+    grid-template-columns: 70px 1fr 65px;
+    padding: 8px 16px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    .mobile-header-menu , .mobile-header-user {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+        button {
+            background-color: transparent;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            img {
+                width: 25px;
+            }
+        }
+    }
+    .mobile-header-logo {
+        max-width: 45px;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+    .mobile-header-user {
+        button {
+            position: relative;
+            font-family: $mainfont;
+            &.mobile-bucket {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .shopping-products-amount {
+                    color: $lightbluecolor;
+                    position: absolute;
+                    font-size: 10px;
+                    font-weight: 500;
+                    top: calc(50% - 4px);
+                }
+            }
+        }
+    }
+}
+.desktop-header {
+    display: none;
+    .large-screen-logo {
+        display: none;
+    }
+}
+@media(min-width: $bp-laptop) {
+    .mobile-header {
+        display: none;
+    }
+    .desktop-header {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        .header-top-container {
+            background-color: $maindarkgray;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 68px;
+            padding: 0 30px;
+            .get-free-subscr {
+                font-weight: 300;
+                color: $lightbluecolor;
+                border: 1px solid $lightbluecolor;
+                border-radius: 50px;
+                line-height: 44px;
+                padding: 0 20px;
+                font-size: 14px;
+                &:hover {
+                    background-color: $lightbluecolor;
+                    color: white;
+                }
+            }
+            .header-top-text {
+                font-size: 14px;
+                text-transform: uppercase;
+                color: white;
+                font-weight: 300;
+            }
+            .desktop-header-user {
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+                flex: 0 0 209px;
+                button {
+                    position: relative;
+                    font-family: $mainfont;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    margin-left: 50px;
+                    padding: 0;
+                    &.desktop-bucket {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .shopping-products-amount {
+                            position: absolute;
+                            font-size: 14px;
+                            font-weight: 500;
+                            top: -11px;
+                            right: -16px;
+                            background: $rosegradient;
+                            color: white;
+                            line-height: 25px;
+                            width: 25px;
+                            border-radius: 50%;
+                            box-shadow: $roseshadow;
+                        }
+                    }
+                    img {
+                        width: 30px;
+                    }
+                }
+            }
+        }
+        .header-main-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 30px;
+            .desktop-logo {
+                max-width: 45px;
+                img {
+                    width: 100%;
+                }
+            }
+            .desktop-header-menu {
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    display: flex;
+                    align-items: center;
+                    li {
+                        padding: 0 22px;
+                        a {
+                            color: white;
+                            text-decoration: none;
+                            font-weight: 300;
+                            font-size: 14px;
+                            &:hover {
+                                color: $lightbluecolor;
+                            }
+                        }
+                    }
+                }
+            }
+            .header-search-block {
+                position: relative;
+                input {
+                    background: transparent;
+                    border: 1px solid white;
+                    border-radius: 50px;
+                    padding: 0 40px 0 25px;
+                    line-height: 38px;
+                    color: white;
+                    font-size: 14px;
+                    &::placeholder {
+                        color: #939393;
+                    }
+                }
+                a {
+                    display: flex;
+                    text-decoration: none;
+                    align-items: center;
+                    justify-content: center;
+                    outline: none;
+                    width: 36px;
+                    height: 36px;
+                    position: absolute;
+                    z-index: 2;
+                    top: 4px;
+                    right: 8px;
+                    svg {
+                        width: 16px;
+                        height: 16px;
+                        margin: 13px;
+                        stroke-width: 3;
+                        stroke: $lightbluecolor;
+                        fill: $lightbluecolor;
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:$bp-desktop) {
+    header {
+        &.scroll {
+            .desktop-header {
+                position: fixed;
+                background: $maindarkgray;
+                z-index: 1234;
+                .header-top-container {
+                    display: none;
+                }
+            }
+        }
+    }
+    .desktop-header {
+        .header-main-container {
+            .desktop-logo {
+                max-width: 204px;
+                .large-screen-logo {
+                    display: block;
+                }
+                .mid-screen-logo {
+                    display: none;
+                }
+            }
+        }
+    }
+}

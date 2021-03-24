@@ -1,0 +1,26 @@
+/*Colors*/
+
+$maindarkgray: #13161D;
+$secondarygray:#1C212B;
+$lightbluecolor:#1dd1e5;
+$lightgray:#f6f6f6;
+$lightwhite:#f7f7f7;
+$titlesgradient: linear-gradient(90deg, #ef4cc6 30%, #10a9bf 60%);
+$imagesoverlay: linear-gradient(120deg, rgba(12,87,98, 0.7), rgba(114,8,125, 0.7));
+$rosegradient:linear-gradient(to right, #e143a7, #d0009c);
+$roseshadow:inset 270px 0px 10px rgb(225 66 166 / 50%), 0px 0px 20px rgb(225 66 166 / 50%);
+$footergray:#282d3b;
+$mainyellow:#F9ED1D;
+$bluebuttongrad: linear-gradient(to right, #1ed6e9, #15b8cd);
+$mainrose:#ef4cc6;
+$roseshadow: inset 270px 0px 10px rgb(225 66 166 / 50%), 0px 0px 20px rgb(225 66 166 / 50%);
+$blueshadow:inset 270px 0px 10px rgb(36 230 250 / 50%), 0px 0px 20px rgb(36 230 250 / 50%);
+
+/*Fonts*/
+$mainfont: 'UniSans', sans-serif;
+
+/*breakpoints*/
+$bp-tablet: 675px;
+$bp-laptop: 1023px;
+$bp-desktop: 1090px;
+$bp-desktop-lg: 1310px;
