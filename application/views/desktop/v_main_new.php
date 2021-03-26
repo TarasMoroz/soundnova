@@ -305,110 +305,42 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 
-			<div class="full-width-container home-categories-container">
+			<div class="full-width-container home-subscription-container">
 				<div class="inner-content-container">
-					<h2 class="container-title secondary-title effects-category-title">
-						<span class="gradient-title">You can try<br>
-								free monthly subscription</span>
+					<h2 class="container-title secondary-title">
+						<span class="gradient-title">You can try</span><br>
+								<span class="gradient-title">free monthly subscription</span>
 					</h2>
-					<div class="home-categories-links">
-						<a href="#" style="background-image: url('../assets/img/categories/0-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Animals</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/1-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Audiences <br>&amp; Crowds</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/2-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Cartoon</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/3-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Cinematic</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/4-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">City</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/5-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Destruction</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/6-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Fantasy <br>&amp; Medieval</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/7-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Foley</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/8-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Futuristic</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/9-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Game</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/10-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Horror</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/11-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Human</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/12-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Impacts</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/13-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Industrial</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/14-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Interface</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/15-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Multimedia</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/16-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Nature</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/17-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Public Places</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/18-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Science Fiction</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/19-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Technology</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/20-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Transportation</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/21-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Transitions <br>&amp; Movements</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/22-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">UI, Buttons, <br>&amp; Menus</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/23-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Weapons <br>&amp; Warfare</span>
-							</a>
-							
+					<h3 class="secondary-subtitle">and get full access to the basic sound effects library</h3>
+					<div class="email-reminder-block">
+						<p class="email-reminder-subtitle">We’ll email you a reminder three days before your trial ends</p>
+							<div class="subscription-timeline">
+								<div class="line">
+									<div class="inner-line line1">
+										<div class="line-text">
+											Reminder 3 days <i class="mailsvg"></i>
+										</div>
+									</div>
+
+									<div class="inner-line line2"></div>
+
+									<div class="date-label date1"><?=date('F d', strtotime('+1 month'))?></div>
+									<div class="date-label date2"><?=date('F d', strtotime('+2 month'))?></div>
+
+									<div class="text-label text1">FREE 30 days</div>
+									<div class="text-label text2">First bill</div>
+								</div>
+						</div>
+						<p class="email-reminder-subtitle">Cancel anytime before <span><?=date('F d', strtotime('+1 month'))?></span> and you won’t be charged</p>
+						
+
+						<div class="subscription-form">
+							<input type="text" placeholder="Email address">
+							<button class="btn-blue-grad subscription-form-btn">Try 30 days FREE</button>
+						</div>
+
+						<p class="subscription-form-yellow-text">Ready to use? Enter your email to create or access your account.</p>
+
 					</div>
 				</div>
 			</div>

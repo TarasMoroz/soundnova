@@ -74,6 +74,7 @@ body {
 }
 a, button {
     cursor: pointer;
+    font-family: $mainfont;
 }
 h1, h2, h3, h4, h5 {
     margin: 0;
@@ -90,7 +91,7 @@ h1, h2, h3, h4, h5 {
         text-transform: uppercase;
         margin-bottom: 25px;
         font-weight: 900;
-        line-height: 1;
+        line-height: 1.2;
     }
     &.main-title {
         font-size: 24px;
@@ -105,6 +106,16 @@ h1, h2, h3, h4, h5 {
         background-clip: text;
         color: transparent;
     }
+}
+.secondary-subtitle {
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $lightwhite;
+    text-align: center;
+    max-width: 265px;
+    margin: auto;
+    font-weight: 500;
+    line-height: 1.2;
 }
 .bundle-play {
     display: flex;
@@ -373,7 +384,7 @@ h1, h2, h3, h4, h5 {
 @media(min-width:$bp-tablet) {
     .container-title {
         &.secondary-title {
-            font-size: 52px;
+            font-size: 46px;
             margin-bottom: 26px;
         }
         &.main-title {

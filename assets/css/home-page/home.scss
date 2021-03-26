@@ -220,6 +220,140 @@ body {
             }
         }
     }
+    &.home-subscription-container {
+        padding-top: 45px;
+        padding-bottom: 55px;
+        .email-reminder-block {
+            max-width: 700px;
+            margin: 50px auto 0 auto;
+            text-align: center;
+            .email-reminder-subtitle {
+                margin: 0;
+                color: $lightwhite;
+                font-weight: 300;
+                font-size: 10px;
+                span {
+                    font-weight: 500;
+                }
+            }
+            .subscription-timeline {
+                width: 100%;
+                margin: 50px auto 60px auto;
+                .line {
+                    width: 100%;
+                    position: relative;
+                    height: 20px;
+                    border-radius: 10px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    .inner-line {
+                        width: 50%;
+                        height: 20px;
+                        line-height: 20px;
+                        border-radius: 10px;
+                        position: relative;
+                        &.line1 {
+                            background: $bluebuttongrad;
+                        }
+                        &.line2 {
+                            background: linear-gradient(to right, #f4f5f5, #7d8c92);
+                        }
+                        .line-text {
+                            font-size: 12px;
+                            color: $lightwhite;
+                            height: 20px;
+                            line-height: 20px;
+                            position: absolute;
+                            z-index: 2;
+                            right: 37px;
+                            top: 0;
+                            display: flex;
+                            align-items: center;
+                            i {
+                                display: inline-block;
+                                width: 20px;
+                                height: 20px;
+                                margin-left: 5px;
+                                float: right;
+                                svg {
+                                    width: 20px;
+                                    height: 20px;
+                                    fill: $lightwhite;
+                                }
+                            }
+                        }
+                    }
+                    .date-label {
+                        height: 28px;
+                        line-height: 28px;
+                        border-radius: 14px;
+                        z-index: 2;
+                        padding: 0 12px;
+                        background: #fff;
+                        color: $darkbluecolor;
+                        font-size: 12px;
+                        box-shadow: 0px 0px 10px rgb(36 240 240 / 30%);
+                        position: absolute;
+                        &.date1 {
+                            left: 50%;
+                            transform: translateX(-50%);
+                            top: -4px;
+                        }
+                        &.date2 {
+                            right: 0px;
+                            top: -4px;
+                        }
+                    }
+                    .text-label {
+                        font-size: 14px;
+                        z-index: 2;
+                        position: absolute;
+                        &.text1 {
+                            color: $lightbluecolor;
+                            left: 0;
+                            top: -30px;
+                        }
+                        &.text2 {
+                            color: $lightwhite;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            top: -30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .subscription-form {
+        display: grid;
+        justify-items: center;
+        max-width: 240px;
+        margin: 30px auto 0 auto;
+        position: relative;
+        grid-gap: 10px;
+        input {
+            padding: 0 30px;
+            border: 0;
+            line-height: 50px;
+            background: #fff;
+            color: $maindarkgray;
+            font-size: 14px;
+            border-radius: 30px;
+            width: calc(100% - 60px);
+            outline: none;
+            box-shadow: 0 0 30px 5px rgb(239 76 198 / 20%);
+        }
+        button {
+            width: 100%;
+        }
+    }
+    .subscription-form-yellow-text {
+        font-size: 12px;
+        font-weight: 300;
+        color: $mainyellow;
+        margin: 25px auto 0 auto;
+        
+    }
 }
 .main-pack-slider-texts {
     display: grid;
@@ -321,7 +455,7 @@ body {
         &.home-categories-container {
             background-image: url(/assets/img/main2-min.jpg);
             background-size: cover;
-            background-position: center top;
+            background-position: center;
             background-repeat: no-repeat;
             padding-top: 123px;
             padding-bottom: 135px;
@@ -340,6 +474,60 @@ body {
                     }
                 }
             }
+        }
+        .subscription-form {
+            max-width: 470px;
+            input {
+                width: 200px;
+                padding: 0 230px 0 40px;
+                line-height: 60px;
+                top: 0;
+                left: 0;
+            }
+            button {
+                max-width: 230px;
+                line-height: 60px;
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                right: 0;
+                font-size: 16px;
+            }
+        }
+        .subscription-form-yellow-text {
+            font-size: 14px;
+            
+        }
+        &.home-subscription-container {
+            background-image: url(/assets/img/main3-min.jpg);
+            background-position: center -100px;
+            background-repeat: no-repeat;
+            .email-reminder-block {
+                margin: 70px auto 0 auto;
+                .email-reminder-subtitle {
+                    font-size: 16px;
+                }
+                .subscription-timeline {
+                    margin: 65px auto 80px auto;
+                    .line {
+                        .inner-line {
+                            .line-text {
+                                right: 62px;
+                            }
+                        }
+                    }
+                }
+            }
+            .secondary-subtitle {
+                font-size: 28px;
+                max-width: 500px;
+            }
+        }
+        .subscription-form {
+            margin: 25px auto 0 auto;      
+        }
+        .subscription-form-yellow-text {
+            margin-top: 20px;
         }
     }
 }
@@ -386,6 +574,16 @@ body {
                     margin-top: 35px;
                     margin-bottom: 15px;
                 }
+            }
+        }
+        &.home-categories-container {
+            padding-bottom: 210px;
+        }
+        &.home-subscription-container {
+            padding-top: 60px;
+            padding-bottom: 170px;
+            .secondary-subtitle {
+                max-width: unset;
             }
         }
     }
