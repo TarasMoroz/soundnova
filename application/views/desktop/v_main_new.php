@@ -72,13 +72,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<div class="swiper-slide"><a href="#"><img src="../assets/img/packs/packs-bundle-2.svg"/>Product name</a></div>
 											<div class="swiper-slide"><a href="#"><img src="../assets/img/packs/packs-bundle-1.svg"/>Product name</a></div>
 											<div class="swiper-slide"><a href="#"><img src="../assets/img/packs/packs-bundle-2.svg"/>Product name</a></div>
-											</div>
+										</div>
 											    <!-- Add Arrows -->
 												<div class="swiper-button-next"></div>
 												<div class="swiper-button-prev"></div>
-										</div>
 								</div>
 							</div>
+						</div>
 							<div class="main-pack-slider-texts">
 								<div class="main-pack-slider-texts-col">
 									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M13.3 4L6 11.3 2.7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
@@ -342,6 +342,193 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<p class="subscription-form-yellow-text">Ready to use? Enter your email to create or access your account.</p>
 
 					</div>
+				</div>
+			</div>
+
+
+			<div class="full-width-container home-best-seller-container">
+				<div class="inner-content-container">
+					<h2 class="container-title secondary-title">
+						<span class="gradient-title">Best sellers</span>
+					</h2>
+					<div class="best-seller">
+
+					<div class="prd best-seller-item">
+								<div class="prd-label label-best">Best Seller</div>
+								<div class="prd-label label-discount">-50%</div>
+								<a class="prd-hd" href="#">
+									<div class="inner" style="background-image: url('/assets/img/packs/bestsellerbg1.jpg');"></div>
+									<img src="/assets/img/packs/best1pack.svg" alt="default box">
+									<span class="prd-tit">Impacts Pack | 3600 elements</span>
+									<span class="prd-tit-blue">Impacts Sound Effects</span>
+								</a>
+
+								<div class="prd-sndcld">
+									<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+								</div>
+
+								<div class="prd-ft">
+									<div class="prd-ft-lt">
+										<div class="prd-price">from <b>$36</b><span class="price-crossed">$72</span></div>
+										<div class="prd-stars">
+											<div class="stars"></div>
+											<span class="prd-stars-cnt">146</span>
+										</div>
+										<div class="prd-seles">335 Seles</div>
+									</div>
+
+									<div class="prd-ft-rt">
+										<button class="btn-purp-grad prd-buy act-buy">ADD TO CART</button>
+										<a href="#" class="prd-more">More details about pack</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="prd best-seller-item">
+								<div class="prd-label label-best">Best Seller</div>
+								<a class="prd-hd" href="#">
+								<div class="inner" style="background-image: url('/assets/img/packs/bestsellerbg2.jpg');"></div>
+									<img src="/assets/img/packs/best2pack.svg" alt="default box">
+									<span class="prd-tit">Industrial Pack | 3000 elements</span>
+									<span class="prd-tit-blue">Industrial Sound Effects</span>
+								</a>
+
+								<div class="prd-sndcld">
+									<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+								</div>
+
+								<div class="prd-ft">
+									<div class="prd-ft-lt">
+										<div class="prd-price">from <b>$36</b></div>
+										<div class="prd-stars">
+											<div class="stars"></div>
+											<span class="prd-stars-cnt">146</span>
+										</div>
+										<div class="prd-seles">335 Seles</div>
+									</div>
+
+									<div class="prd-ft-rt">
+										<button class="btn-purp-grad prd-buy act-buy">ADD TO CART</button>
+										<a href="#" class="prd-more">More details about pack</a>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="prd best-seller-item">
+								<div class="prd-label label-best">Best Seller</div>
+								<a class="prd-hd" href="#">
+								<div class="inner mufasa" style="background-image: url('/assets/img/packs/bestsellerbg3.jpg');"></div>
+									<img src="/assets/img/packs/pack2bundle.svg" alt="default box">
+									<span class="prd-tit">Impact Pack | 3600 elements</span>
+									<span class="prd-tit-blue">Impact Sound Effects</span>
+								</a>
+
+								<div class="prd-sndcld">
+									<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+								</div>
+
+								<div class="prd-ft">
+									<div class="prd-ft-lt">
+										<div class="prd-price">from <b>$200</b></div>
+										<div class="prd-stars">
+											<div class="stars"></div>
+											<span class="prd-stars-cnt">87</span>
+										</div>
+										<div class="prd-seles">122Seles</div>
+									</div>
+
+									<div class="prd-ft-rt">
+										<button class="btn-purp-grad prd-buy act-buy">ADD TO CART</button>
+										<a href="#" class="prd-more">More details about pack</a>
+									</div>
+								</div>
+							</div>
+
+					</div>
+				</div>
+			</div>
+
+
+			
+			<div class="full-width-container home-new-products-container">
+				<div class="inner-content-container">
+					<h2 class="container-title secondary-title">
+						<span class="gradient-title">New products</span>
+					</h2>
+					<div class="new-products-slider-container">
+								<div class="new-products-slider">
+										<!-- Swiper -->
+										<div class="swiper-container new-products-wrapper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="new-product-inner">
+														<div class="new-product-title">Technology Pack</div>
+														<div class="new-product-image">
+														<img src="/assets/img/packs/new-product.svg">
+														</div>
+														<div class="new-product-actions">
+														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														<div class="buy-buttons-container">
+															<a href="#" class="btn-purp-grad btn-new-product">ADD TO CART <span> $59</span></a>
+															<a href="#" class="btn-blue-border btn-new-product">LEARN MORE</a>
+														</div>
+														</div>
+													</div>
+
+													<div class="new-product-inner desktop">
+														<div class="new-product-image">
+														<img src="/assets/img/packs/new-product.svg">
+														</div>
+														<div class="new-product-actions">
+														<div class="new-product-title">Technology Pack</div>
+														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														<div class="buy-buttons-container">
+															<a href="#" class="btn-purp-grad btn-new-product">ADD TO CART <span> $59</span></a>
+															<a href="#" class="btn-blue-border btn-new-product">LEARN MORE</a>
+														</div>
+														</div>
+													</div>
+													
+												</div>
+												<div class="swiper-slide">
+													<div class="new-product-inner">
+														<div class="new-product-title">Technology Pack</div>
+														<div class="new-product-image">
+														<img src="/assets/img/packs/new-product.svg">
+														</div>
+														<div class="new-product-actions">
+														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														<div class="buy-buttons-container">
+															<a href="#" class="btn-purp-grad btn-new-product">ADD TO CART <span> $59</span></a>
+															<a href="#" class="btn-blue-border btn-new-product">LEARN MORE</a>
+														</div>
+														</div>
+													</div>
+
+													<div class="new-product-inner desktop">
+														<div class="new-product-image">
+														<img src="/assets/img/packs/new-product.svg">
+														</div>
+														<div class="new-product-actions">
+														<div class="new-product-title">Technology Pack</div>
+														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														<div class="buy-buttons-container">
+															<a href="#" class="btn-purp-grad btn-new-product">ADD TO CART <span> $59</span></a>
+															<a href="#" class="btn-blue-border btn-new-product">LEARN MORE</a>
+														</div>
+														</div>
+													</div>
+													
+												</div>
+										</div>
+											    <!-- Add Arrows -->
+												<div class="swiper-button-next"></div>
+												<div class="swiper-button-prev"></div>
+												<!-- Add Pagination -->
+    											<div class="swiper-pagination"></div>
+								</div>
+							</div>
 				</div>
 			</div>
 
