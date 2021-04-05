@@ -149,10 +149,8 @@
 		</div>
 
 		<div id="popup-player"></div>
-		<script>var ytcode = 'Zo6Gu8RUExM';</script>
 	</div>
 </div>
-
 <script src="<?php echo base_url("assets/js/svg.js?1");?><?=strtotime('now')?>">"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/js/swiper.min.js");?>"></script>
 <!-- neko custom script -->

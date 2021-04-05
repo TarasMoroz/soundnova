@@ -138,9 +138,6 @@ $(document).ready(function() {
 		event.preventDefault();
 		prnt = $(this).parent('.qa');
 		prnt.toggleClass('qa-act');
-		if($(window).width() < 1270){
-			$('html').animate({ scrollTop: (prnt.offset().top - 60) },700);
-		  }
 	});
 
 	$(document).on('click', '.cat-ftr-cont a', function(event){
@@ -1376,10 +1373,13 @@ function initMedia(id, num, t){
 
 
 var ytcode = false;
-
+var player;
 function open_video_popup(){
 	$('.video-open').on('click', function(event){
 		event.preventDefault();
+		player = '';
+		$('#popup-player').remove();
+		$('#popup-video').append('<div id="popup-player"></div>');
 		video_open($(this));
 	});
 
@@ -1387,52 +1387,52 @@ function open_video_popup(){
 		event.preventDefault();
 		$('.video-open').removeClass('slide');
 		bd.css('overflow','auto');
-		$('#popup-video-wrapper').removeClass('act');	
+		$('#popup-video-wrapper').removeClass('act');
 		stopVideo();
 	});
 }
 
 function video_open(curr){
 
-	// curr.addClass('slide');
-	// setTimeout(function(){
+	ytcode = curr.attr('data-code');
 	
 	bd.css('overflow','hidden');
 	popTop = getPopTop();
     $('#popup-video-wrapper').addClass('act');
 
-    ytcode = curr.attr('data-code');
-
-    console.log(ytcode); // zPNQYHSvU
-
-	// }, 700);
-
 	if(typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined'){
 		$.getScript("https://www.youtube.com/iframe_api", function(){
 			console.log('YT API loaded...');
-			//playVideo();
 		});
 	} else {
-		playVideo();
+		player = new YT.Player('popup-player', {
+			height: '500px',
+			width: '100%',
+			videoId: ytcode,
+			playerVars: { 'autoplay': 0, 'controls': 0, 'color':'white','fs':0, 'iv_load_policy':3,'modestbranding':1, 'rel':0,'showinfo':0 },
+			events: {
+			  'onReady': onPlayerReady,
+			  'onStateChange': onPlayerStateChange
+			}
+		  });
 	}
 }
 
 
 // 3. This function creates an <iframe> (and YouTube player)
 //    after the API code downloads.
-var player;
 function onYouTubeIframeAPIReady() {
 	console.log('init code: '+ytcode);
 	player = new YT.Player('popup-player', {
-	  height: '500px',
-	  width: '100%',
-	  videoId: ytcode,
-	  playerVars: { 'autoplay': 0, 'controls': 0, 'color':'white','fs':0, 'iv_load_policy':3,'modestbranding':1, 'rel':0,'showinfo':0 },
-	  events: {
-	    'onReady': onPlayerReady,
-	    'onStateChange': onPlayerStateChange
-	  }
-	});
+		height: '500px',
+		width: '100%',
+		videoId: ytcode,
+		playerVars: { 'autoplay': 0, 'controls': 0, 'color':'white','fs':0, 'iv_load_policy':3,'modestbranding':1, 'rel':0,'showinfo':0 },
+		events: {
+		  'onReady': onPlayerReady,
+		  'onStateChange': onPlayerStateChange
+		}
+	  });
 }
 
 // 4. The API will call this function when the video player is ready.
@@ -1458,45 +1458,3 @@ function onPlayerStateChange(event) {
 function stopVideo() {
 	player.stopVideo();
 }
-
-
-
-//SALE COUNTER
-
-let countDownDate = new Date("Apr 5, 2021 15:37:25").getTime();
-
-// Update the count down every 1 second
-let timerUpdate = setInterval(function() {
-
-  // Get today's date and time
-  let currentDate = new Date().getTime();
-
-  // Find the distance between now and the count down date
-  let distance = countDownDate - currentDate;
-
-  // Time calculations for days, hours, minutes and seconds
-  let days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  let hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  let minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  let seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-
-  let daysContainer = document.getElementsByClassName('days');
-  let hoursContainer = document.getElementsByClassName('hours');
-  let minutesContainer = document.getElementsByClassName('minutes');
-  let secondsContainer = document.getElementsByClassName('seconds');
-	daysContainer[0].innerHTML = days;
-	hoursContainer[0].innerHTML = hours;
-	minutesContainer[0].innerHTML = minutes;
-	secondsContainer[0].innerHTML = seconds;
-
-	daysContainer[1].innerHTML = days;
-	hoursContainer[1].innerHTML = hours;
-	minutesContainer[1].innerHTML = minutes;
-	secondsContainer[1].innerHTML = seconds;
-
-  // If the count down is finished, write some text
-  if (distance < 0) {
-    clearInterval(timerUpdate);
-  }
-}, 1000);
