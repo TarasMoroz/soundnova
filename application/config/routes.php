@@ -68,6 +68,7 @@ $route['addcomment'] = "pages/addcomment/";
 $route['subscribe'] = "pages/subscribe/";
 $route['sitemap'] = "pages/sitemap/";
 $route['google'] = "pages/google/";
+$route['save'] = "pages/save/";
 
 $route['(/)?'] = $route['default_controller'];
 
