@@ -27,7 +27,7 @@ body {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                box-shadow: 0 0 10px 0 rgb(0 0 0 / 40%);
+                box-shadow: 0 0 10px 0 rgb(0 0 0 / 40%), inset -20px -20px 45px 0px rgb(0 0 0 / 30%);
                 .inner {
                     display: block;
                     transition: .2s;
@@ -53,6 +53,7 @@ body {
                     position: absolute;
                     text-align: center;
                     line-height: 14px;
+                    text-shadow: 0 0px 6px rgb(0 0 0);
                 }
                 &:hover {
                     transform: scale(1.05);
@@ -113,6 +114,7 @@ body {
             width: 100%;
             position: relative;
             z-index: 1;
+            height: 100%;
         }
         .bundle-shadow {
             position: absolute;
@@ -571,6 +573,13 @@ body {
                         position: absolute;
                         box-shadow: 0px 0px 60px 35px rgb(36 230 250 / 40%);
                     }
+                    button {
+                        position: absolute;
+                        top: 50%;
+                        z-index: 1;
+                        right: 95px;
+                        transform: translateY(-50%);
+                    }
                 }
                 .new-product-title {
                     text-align: center;
@@ -687,9 +696,6 @@ body {
                     left: 0;
                     outline: none;
                 }
-                .swiper-button-next, .swiper-button-prev {
-                    top:70%;
-                }
                 .review-item {
                     display: flex;
                     flex-flow: column;
@@ -745,6 +751,7 @@ body {
                             text-transform: uppercase;
                             font-weight: 500;
                             margin-bottom: 22px;
+                            text-align: center;
                         }
                         p {
                             margin: 0;

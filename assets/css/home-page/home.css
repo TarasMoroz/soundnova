@@ -29,7 +29,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4), inset -20px -20px 45px 0px rgba(0, 0, 0, 0.3);
 }
 .full-width-container.home-categories-container .home-categories-links a .inner {
   display: block;
@@ -56,6 +56,7 @@ body {
   position: absolute;
   text-align: center;
   line-height: 14px;
+  text-shadow: 0 0px 6px black;
 }
 .full-width-container.home-categories-container .home-categories-links a:hover {
   transform: scale(1.05);
@@ -113,6 +114,7 @@ body {
   width: 100%;
   position: relative;
   z-index: 1;
+  height: 100%;
 }
 .full-width-container .main-pack-block .bundle-shadow {
   position: absolute;
@@ -571,6 +573,13 @@ body {
   position: absolute;
   box-shadow: 0px 0px 60px 35px rgba(36, 230, 250, 0.4);
 }
+.full-width-container.home-new-products-container .new-products-slider-container .new-product-inner .new-product-image button {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  right: 95px;
+  transform: translateY(-50%);
+}
 .full-width-container.home-new-products-container .new-products-slider-container .new-product-inner .new-product-title {
   text-align: center;
   color: #f7f7f7;
@@ -682,9 +691,6 @@ body {
   left: 0;
   outline: none;
 }
-.full-width-container.testimonials-container .testimonials-block .testimonials-video-wrapper-mobile .swiper-button-next, .full-width-container.testimonials-container .testimonials-block .testimonials-video-wrapper-mobile .swiper-button-prev {
-  top: 70%;
-}
 .full-width-container.testimonials-container .testimonials-block .testimonials-video-wrapper-mobile .review-item {
   display: flex;
   flex-flow: column;
@@ -742,6 +748,7 @@ body {
   text-transform: uppercase;
   font-weight: 500;
   margin-bottom: 22px;
+  text-align: center;
 }
 .full-width-container.testimonials-container .testimonials-block .testimonials-video-wrapper-mobile .review-item .review-text p {
   margin: 0;

@@ -143,6 +143,8 @@ h1, h2, h3, h4, h5 {
   background: #F9ED1D;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+  flex: 0 0 20px;
 }
 .bundle-play .inner .playsvg {
   width: 7px;
@@ -183,9 +185,10 @@ h1, h2, h3, h4, h5 {
 }
 
 #up {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   transition: 0.1s;
-  font-size: 50px;
   background: transparent;
   color: #1dd1e5;
   border: 2px solid #1dd1e5;
@@ -204,11 +207,12 @@ h1, h2, h3, h4, h5 {
   transform: rotate(270deg);
 }
 #up i {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30px;
   height: 30px;
-  margin: 10px;
-  transform: rotate(270deg) translateY(-5px);
+  transform: rotate(270deg);
 }
 #up i svg {
   width: 30px;
@@ -416,7 +420,7 @@ h1, h2, h3, h4, h5 {
   }
   .container-title.main-title {
     font-size: 72px;
-    margin-bottom: 32px;
+    margin-bottom: 22px;
     letter-spacing: 4px;
     text-indent: 8px;
   }
@@ -429,6 +433,8 @@ h1, h2, h3, h4, h5 {
     box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.4), 0px 0px 100px #F9ED1D;
     width: 36px;
     height: 36px;
+    flex-shrink: 0;
+    flex: 0 0 36px;
   }
   .bundle-play .inner .playsvg {
     width: 13px;

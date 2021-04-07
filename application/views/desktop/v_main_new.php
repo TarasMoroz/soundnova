@@ -25,7 +25,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<h1 class="container-title main-title">
 						<span class="gradient-title">Sound effects library</span>
 					</h1>
-					<p class="main-subtitle"><span>Professional sound effects </span> for games, movies, trailers, cartoons, TV-shows and more</p>
+					<p class="main-subtitle"><span>Professional sound effects </span> for games, movies, trailers, cartoons, TV-shows & any your projects</p>
 					<p class="main-subtitle desktop">Professional sfx for games, movies, trailers, cartoons, tv-shows & any your projects</p>
 					<div class="summer-sale-block-mobile">
 							<div class="summer-sale-title"><img class="lzy_img" data-src="/assets/img/summer_sale.svg" /></div>
@@ -202,13 +202,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<span class="gradient-title">Sound effects category</span>
 					</h2>
 					<div class="home-categories-links">
+					<a href="#" style="background-image: url('../assets/img/categories/8-min.jpg');">
+							<span class="inner"></span>
+							<span class="txt">Ambience</span>
+							</a>
 						<a href="#" style="background-image: url('../assets/img/categories/0-min.jpg');">
 							<span class="inner"></span>
-							<span class="txt">Animals</span>
+							<span class="txt">Animals &amp;<br> Creatures</span>
 							</a>
 							<a href="#" style="background-image: url('../assets/img/categories/1-min.jpg');">
 							<span class="inner"></span>
-							<span class="txt">Audiences <br>&amp; Crowds</span>
+							<span class="txt">Audiences &amp;<br> Crowds</span>
 							</a>
 							<a href="#" style="background-image: url('../assets/img/categories/2-min.jpg');">
 							<span class="inner"></span>
@@ -228,19 +232,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</a>
 							<a href="#" style="background-image: url('../assets/img/categories/6-min.jpg');">
 							<span class="inner"></span>
-							<span class="txt">Fantasy <br>&amp; Medieval</span>
+							<span class="txt">Fantasy &amp;<br> Medieval</span>
 							</a>
 							<a href="#" style="background-image: url('../assets/img/categories/7-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Foley</span>
 							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/8-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Futuristic</span>
-							</a>
 							<a href="#" style="background-image: url('../assets/img/categories/9-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Game</span>
+							</a>
+							<a href="#" style="background-image: url('../assets/img/categories/15-min.jpg');">
+							<span class="inner"></span>
+							<span class="txt">Home <br>&amp; Office</span>
 							</a>
 							<a href="#" style="background-image: url('../assets/img/categories/10-min.jpg');">
 							<span class="inner"></span>
@@ -258,14 +262,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<span class="inner"></span>
 							<span class="txt">Industrial</span>
 							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/14-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Interface</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/15-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Multimedia</span>
-							</a>
 							<a href="#" style="background-image: url('../assets/img/categories/16-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Nature</span>
@@ -276,27 +272,31 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</a>
 							<a href="#" style="background-image: url('../assets/img/categories/18-min.jpg');">
 							<span class="inner"></span>
-							<span class="txt">Science Fiction</span>
+							<span class="txt">Science Fiction<br>(SCI FI)</span>
+							</a>
+							<a href="#" style="background-image: url('../assets/img/categories/sport-min.jpg');">
+							<span class="inner"></span>
+							<span class="txt">Sport</span>
 							</a>
 							<a href="#" style="background-image: url('../assets/img/categories/19-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Technology</span>
 							</a>
+							<a href="#" style="background-image: url('../assets/img/categories/21-min.jpg');">
+							<span class="inner"></span>
+							<span class="txt">Transitions &amp;<br> Movement</span>
+							</a>
 							<a href="#" style="background-image: url('../assets/img/categories/20-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Transportation</span>
 							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/21-min.jpg');">
-							<span class="inner"></span>
-							<span class="txt">Transitions <br>&amp; Movements</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/22-min.jpg');">
+							<a href="#" style="background-image: url('../assets/img/categories/14-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">UI, Buttons, <br>&amp; Menus</span>
 							</a>
 							<a href="#" style="background-image: url('../assets/img/categories/23-min.jpg');">
 							<span class="inner"></span>
-							<span class="txt">Weapons <br>&amp; Warfare</span>
+							<span class="txt">Weapons &amp;<br> Warfare</span>
 							</a>
 							
 					</div>
@@ -357,7 +357,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<div class="prd-label label-best">Best Seller</div>
 								<div class="prd-label label-discount">-50%</div>
 								<a class="prd-hd" href="#">
-									<div class="inner" style="background-image: url('/assets/img/packs/bestsellerbg1.jpg');"></div>
+									<div class="inner" style="background-image: url('/assets/img/packs/bestsellerbg1-min.jpg');"></div>
 									<img class="lzy_img" data-src="/assets/img/packs/best1pack.svg" alt="default box">
 									<span class="prd-tit">Impacts Pack | 3600 elements</span>
 									<span class="prd-tit-blue">Impacts Sound Effects</span>
@@ -387,7 +387,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<div class="prd best-seller-item">
 								<div class="prd-label label-best">Best Seller</div>
 								<a class="prd-hd" href="#">
-								<div class="inner" style="background-image: url('/assets/img/packs/bestsellerbg2.jpg');"></div>
+								<div class="inner" style="background-image: url('/assets/img/packs/bestsellerbg2-min.jpg');"></div>
 									<img class="lzy_img" data-src="/assets/img/packs/best2pack.svg" alt="default box">
 									<span class="prd-tit">Industrial Pack | 3000 elements</span>
 									<span class="prd-tit-blue">Industrial Sound Effects</span>
@@ -479,6 +479,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 													<div class="new-product-inner desktop">
 														<div class="new-product-image">
 														<img src="/assets/img/packs/new-product.svg">
+														<button class="bundle-play video-open" data-code="Zo6Gu8RUExM">
+															<div class="inner">
+																<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+															</div>
+														</button>
 														</div>
 														<div class="new-product-actions">
 														<div class="new-product-title">Technology Pack</div>
@@ -563,14 +568,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<span class="gradient-title">soundnova LIBRARY SOUND FX</span>
 					</h2>
 						<div class="testimonials-block">
-			
-							<!-- Swiper -->
-							<div class="swiper-container testimonials-video-wrapper-mobile">
+
+						<!-- Swiper -->
+						<div class="swiper-container testimonials-video-wrapper-mobile video-testimonials">
 											<div class="swiper-wrapper">
 												<div class="swiper-slide">
 													<div class="testimonial-inner">
-															<div class="review-item" >
-																<div class="review-vid" style="background-image: url('/assets/img/reviews/1.jpg');">
+
+															<div class="review-item">
+																<div class="review-vid" style="background-image: url('/assets/img/reviews/review1.jpg');">
 																	<button class="bundle-play video-open" data-code="Jo5HAENroHo">
 																		<div class="inner">
 																			<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
@@ -581,6 +587,56 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 																<div class="review-name">Anrew Nell | USA, NY</div>
 																<div class="review-sub">CEO Nintendo</div>
 															</div>
+
+													</div>
+													
+												</div>
+												<div class="swiper-slide">
+													<div class="testimonial-inner">
+
+																<div class="review-item" >
+																	<div class="review-vid" style="background-image: url('/assets/img/reviews/3.jpg');">
+																		<button class="bundle-play video-open" data-code="Jo5HAENroHo">
+																			<div class="inner">
+																				<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+																			</div>
+																		</button>
+																	</div>
+
+																	<div class="review-name">Stefan Stefanic | Poland</div>
+																	<div class="review-sub">Motion Designer</div>
+																</div>
+
+														</div>
+													
+												</div>
+												<div class="swiper-slide">
+													<div class="testimonial-inner">
+
+																<div class="review-item" >
+																	<div class="review-vid" style="background-image: url('/assets/img/reviews/2.jpg');">
+																		<button class="bundle-play video-open" data-code="Jo5HAENroHo">
+																			<div class="inner">
+																				<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+																			</div>
+																		</button>
+																	</div>
+
+																	<div class="review-name">Cristina Weiller | USA, CF</div>
+																	<div class="review-sub">Co-founder, Epic Games</div>
+																</div>
+
+														</div>
+										       </div>
+								</div>		
+								
+						</div>
+			
+							<!-- Swiper -->
+							<div class="swiper-container testimonials-video-wrapper-mobile">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="testimonial-inner">
 
 															<div class="review-item">
 																<div class="review-text">
@@ -596,18 +652,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 												</div>
 												<div class="swiper-slide">
 													<div class="testimonial-inner">
-																<div class="review-item" >
-																	<div class="review-vid" style="background-image: url('/assets/img/reviews/3.jpg');">
-																		<button class="bundle-play video-open" data-code="Jo5HAENroHo">
-																			<div class="inner">
-																				<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
-																			</div>
-																		</button>
-																	</div>
-
-																	<div class="review-name">Stefan Stefanic | Poland</div>
-																	<div class="review-sub">Motion Designer</div>
-																</div>
 
 																<div class="review-item">
 																	<div class="review-text">
@@ -623,18 +667,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 												</div>
 												<div class="swiper-slide">
 													<div class="testimonial-inner">
-																<div class="review-item" >
-																	<div class="review-vid" style="background-image: url('/assets/img/reviews/2.jpg');">
-																		<button class="bundle-play video-open" data-code="Jo5HAENroHo">
-																			<div class="inner">
-																				<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
-																			</div>
-																		</button>
-																	</div>
-
-																	<div class="review-name">Cristina Weiller | USA, CF</div>
-																	<div class="review-sub">Co-founder, Epic Games</div>
-																</div>
 
 																<div class="review-item">
 																	<div class="review-text">
