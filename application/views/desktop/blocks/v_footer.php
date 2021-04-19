@@ -151,10 +151,21 @@
 		<div id="popup-player"></div>
 	</div>
 </div>
+
+<?php    
+	$currentpage = $_SERVER['REQUEST_URI'];
+	
+?> 
+
 <script src="<?php echo base_url("assets/js/svg.js?1");?><?=strtotime('now')?>">"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/js/swiper.min.js");?>"></script>
 <!-- neko custom script -->
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
 <script src="<?php echo base_url("assets/js/ion.rangeSlider.min.js");?>"></script>
 <script src="<?php echo base_url("assets/js/custom.js?4");?><?=strtotime('now')?>"></script>
-<script src="<?php echo base_url("assets/js/home-page/home.js?5");?><?=strtotime('now')?>"></script>
+<script src="<?php echo base_url("assets/js/main.js?6");?><?=strtotime('now')?>"></script>
+<script src="<?php 
+	if ($currentpage == '/') {
+		echo base_url("assets/js/home-page/home.js?5");
+	}
+ ?><?=strtotime('now')?>"></script>

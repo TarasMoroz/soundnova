@@ -1,48 +1,3 @@
-let swiper1 = new Swiper('.main-pack-wrapper', {
-    slidesPerView: 5,
-    spaceBetween: 25,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-  });
-
-let swiper2 =  new Swiper('.new-products-wrapper', {
-    slidesPerView: 1,
-    spaceBetween: 35,
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-      },
-  });  
-
-
-    if (window.innerWidth > 800) {
-      let swiper3 =  new Swiper('.testimonials-video-wrapper-mobile', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-      }); 
-    } else {
-      let swiper4 =  new Swiper('.testimonials-video-wrapper-mobile', {
-        slidesPerView: 1,
-        spaceBetween: 35,
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-          },
-      }); 
-    }
-  
-
-
-    
 //SALE COUNTER
 
 let countDownDate = new Date("Apr 25, 2021 15:37:25").getTime();
@@ -82,7 +37,3 @@ let timerUpdate = setInterval(function() {
     clearInterval(timerUpdate);
   }
 }, 1000);
-
-
-
-

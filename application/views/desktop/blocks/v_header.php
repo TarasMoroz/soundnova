@@ -99,14 +99,14 @@
         </div>
 		</div>
 		<div class="header-main-container">
-				<a class="desktop-logo">
+				<a href="/" class="desktop-logo">
 					<img class="mid-screen-logo" src="/assets/img/icons/mobile-logo.svg"/>
 					<img class="large-screen-logo" src="/assets/img/icons/soundnova_logo.svg">
 				</a>
 				<div class="desktop-header-menu">
 					<ul>
 						<li>
-							<a href="#">
+							<a href="/catalog">
 								Products
 							</a>
 						</li>

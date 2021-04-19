@@ -52,7 +52,8 @@ class Catalog extends CI_Controller {
 
 		$data['meta_title'] = 'ALL SOUND EFFECTS PACKAGES AND BUNDLES';
 		$data['meta_description'] = 'ALL SOUND EFFECTS PACKAGES AND BUNDLES';
-		$data['h1'] = 'ALL SOUND EFFECTS PACKAGES AND BUNDLES';
+		$data['h1_top'] = 'ALL SOUND EFFECTS';
+		$data['h1_bot'] = 'PACKAGES AND BUNDLES';
 
 		// CURRENT TYPE
 		$currType = $this->db->query("SELECT * FROM type WHERE alias = '".htmlentities($type)."'")->row_array();

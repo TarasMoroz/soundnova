@@ -14,6 +14,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/swiper.min.css?33");?><?=strtotime('now')?>">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/styles.css?33");?><?=strtotime('now')?>">
+
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/catalog/catalog.css?33");?><?=strtotime('now')?>">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/header/header-component.css?33");?><?=strtotime('now')?>">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/home-page/home.css?33");?><?=strtotime('now')?>">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/footer/footer-component.css?33");?><?=strtotime('now')?>">
