@@ -22,13 +22,22 @@
 
 <? if($prod_list_slider === true): ?><div class="swiper-slide"><? endif; ?>
 
+
+
 	<? 
 		$im = ($prod['pv_des_img_box'] || $prod['pv_bund_img_box']) ? 
 				('/assets/media/product_variant-img_box/'.($prod['pv_des_img_box'] ? $prod['pv_des_img_box'] : $prod['pv_bund_img_box'])) : 
 				'/assets/img/best1pack.png'; 
 	?>
 
+
+
+
+
+
 	<div class="prd" <? if(isset($favorite_list)): ?>id="prd<?=$prod['id']?>"<? endif; ?>>
+
+	
 
 		<? if(isset($favorite_list)): ?>
 			<a href="#" data-id="<?=$prod['id']?>" class="prd-fav-remove">
@@ -40,15 +49,16 @@
 			<div class="prd-label label-best" style="color: <?=$prod['l_color']?>;"><?=$prod['l_name']?></div>
 		<? endif; ?>
 
-		<a class="prd-hd" href="/product/<?=$prod['alias']?>" style="background-image: url(<?=($prod['pv_des_img_bg_preview']||$prod['pv_bund_img_bg_preview']?('/assets/media/product_variant-img_bg_preview/'.($prod['pv_des_img_bg_preview']?$prod['pv_des_img_bg_preview']:$prod['pv_bund_img_bg_preview'])):'/assets/img/bestsellerbg.jpg')?>);">
-
+		<a class="prd-hd" href="/product/<?=$prod['alias']?>">
+		<div class="inner" style="background-image: url(<?=($prod['pv_des_img_bg_preview']||$prod['pv_bund_img_bg_preview']?('/assets/media/product_variant-img_bg_preview/'.($prod['pv_des_img_bg_preview']?$prod['pv_des_img_bg_preview']:$prod['pv_bund_img_bg_preview'])):'/assets/img/bestsellerbg.jpg')?>);"></div>
 			<img src="<?=$im?>" alt="default box">
 			<span class="prd-tit"><?=$prod['name']?> | <?=$prod['cnt_elements']?> elements</span>
+			<span class="prd-tit-blue">Impacts Sound Effects</span>
 			<!-- <span class="prd-tit-blue">Impacts Sound Effects</span> -->
 		</a>
 
 		<div class="prd-sndcld">
-			<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<?=$prod['soundcloud']?>&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+			<iframe class="lazy-frame" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<?=$prod['soundcloud']?>&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 		</div>
 
 		<div class="prd-ft">
@@ -66,6 +76,10 @@
 				<a href="#" class="prd-more">More details about <?=($prod['pv_des_price']?'pack':'bundle')?></a>
 			</div>
 		</div>
+
+
+	
+
 
 		<? $prdsObj = ['id'=>$prod['id'], 'c'=>1, 't'=>$prod['name'], 'im' => $im, 'a'=>$prod['alias'], 'p'=> price_grn(($prod['pv_des_price']?$prod['pv_des_price']:$prod['pv_bund_price']), 28.2)]; ?>
 		<script>prds["<?=$prod['id']?>"] = <?=json_encode($prdsObj)?>;</script>

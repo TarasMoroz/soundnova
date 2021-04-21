@@ -1181,7 +1181,7 @@ body {
 }
 @media (min-width: 1023px) {
   .full-width-container.home-first-container {
-    padding-top: 183px;
+    padding-top: 163px;
   }
   .full-width-container.home-first-container .main-subtitle {
     margin-bottom: 20px;
@@ -1192,6 +1192,7 @@ body {
   }
   .full-width-container.home-first-container .main-subtitle.desktop {
     display: block;
+    font-size: 18px;
   }
   .full-width-container.home-first-container .summer-sale-right-col {
     background-color: #13161D;
@@ -1305,6 +1306,7 @@ body {
   }
   .summer-sale-desktop .summer-sale-left-col .main-pack-block img {
     width: 680px;
+    min-height: 450px;
   }
   .summer-sale-desktop .summer-sale-left-col .main-pack-block .bundle-discount {
     width: 80px;

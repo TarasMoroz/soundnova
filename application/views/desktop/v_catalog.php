@@ -91,14 +91,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 			<div class="full-width-container catalog-second">
-			<h1 class="container-title main-title"><span class="gradient-title"><?=$h1_top?></span><br><span class="gradient-title"><?=$h1_bot?></span></h1>
+			<? if($h1_top): ?><h1 class="container-title secondary-title mobile"><span class="gradient-title"><?=$h1_top?></span><br><span class="gradient-title"><?=$h1_bot?></span></h1><? endif; ?>
+				<? if($h1_top): ?><h1 class="container-title secondary-title desktop"><span class="gradient-title"><?=$h1_top?> <?=$h1_bot?></span></h1><? endif; ?>
 
 <div id="catalog-wrapper">
 	<div id="ftrs">
 		<div class="ftrs-inner">
 			<div class="cat-ftr" data-ftr="1">
 				<div class="cat-ftr-title" data-ftr="1">
-					<span>Sound category</span> <span class="ftr-sel">All categories</span> <i class="darrsvg"></i>
+					<span class="first-title">Sound category</span> <span class="ftr-sel">All categories</span> <i class="darrsvg"></i>
 				</div>
 
 				<div class="cat-ftr-cont">
@@ -120,7 +121,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="ftrs-inner">
 			<div class="cat-ftr" data-ftr="2">
 				<div class="cat-ftr-title" data-ftr="2">
-					<span>Product type</span> <span class="ftr-sel">All types</span> <i class="darrsvg"></i>
+					<span class="first-title">Product type</span> <span class="ftr-sel">All types</span> <i class="darrsvg"></i>
 				</div>
 
 				<div class="cat-ftr-cont">
@@ -141,7 +142,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="ftrs-inner">
 			<div class="cat-ftr" data-ftr="3">
 				<div class="cat-ftr-title" data-ftr="3">
-					<span>Product sorting</span> <span class="ftr-sel">Default sorting</span> <i class="darrsvg"></i>
+					<span class="first-title">Product sorting</span> <span class="ftr-sel">Default sorting</span> <i class="darrsvg"></i>
 				</div>
 
 				<div class="cat-ftr-cont">
@@ -161,6 +162,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<div id="prods" class="prods">
 		<? if(!empty($products)): ?>
 			<? $this->load->view('desktop/v_product_list', ['prod_list'=>$products, 'prod_list_slider'=>false]); ?>
+			<i class="more-products"></i>
 		<? else: ?>
 			<p style="color:#fff;">There are no products by selected parameters!</p>
 		<? endif; ?>

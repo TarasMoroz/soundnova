@@ -1,6 +1,6 @@
 //SALE COUNTER
 
-let countDownDate = new Date("Apr 25, 2021 15:37:25").getTime();
+let countDownDate = new Date("May 25, 2021 15:37:25").getTime();
 
 // Update the count down every 1 second
 let timerUpdate = setInterval(function() {
