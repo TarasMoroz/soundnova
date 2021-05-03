@@ -13,7 +13,7 @@
             background-position: left top, right top;
             background-repeat: no-repeat, no-repeat;
             background-size: 550px 176px, 480px 177px;
-            box-shadow: 0px 10px 30px 10px rgb(16 170 190 / 10%);
+            box-shadow: 0px 10px 30px 10px rgba(16, 170, 190, 0.1);
             max-width: 1525px;
             margin: 10px auto 0 auto;
             .catalog-top-sales-inner {
@@ -41,7 +41,7 @@
                         .shadow {
                             width: 60%;
                             height: 20px;
-                            box-shadow: 0px 10px 50px 60px rgb(16 170 190 / 10%);
+                            box-shadow: 0px 10px 50px 60px rgba(16, 170, 190, 0.1);
                             position: absolute;
                             top: 50%;
                             left: 50%;
@@ -49,7 +49,7 @@
                             z-index: 0;
                         }
                         img {
-                            width:100%;
+                            width: 100%;
                             position: relative;
                             z-index: 0;
                         }
@@ -72,7 +72,7 @@
                             font-size: 14px;
                             font-weight: 500;
                             text-align: center;
-                            color:$lightbluecolor;
+                            color: $lightbluecolor;
                         }
                         .timer-counter {
                             max-width: 160px;
@@ -129,19 +129,20 @@
                     padding: 0px 0px;
                     width: 100%;
                     margin-bottom: 6px;
-                    box-shadow: 0px 0px 9px 2px rgb(36 230 250 / 10%);
-                    &:nth-child(2), &:nth-child(3) {
+                    box-shadow: 0px 0px 9px 2px rgba(36, 230, 250, 0.1);
+                    &:nth-child(2),
+                    &:nth-child(3) {
                         width: calc(50% - 5px);
                         .cat-ftr {
                             .cat-ftr-cont {
                                 top: 92px;
+                            }
                         }
                     }
-                }
                     .cat-ftr {
                         height: 36px;
                         width: 100%;
-                        transition: .3s;
+                        transition: 0.3s;
                         .cat-ftr-title {
                             height: 36px;
                             line-height: 36px;
@@ -165,7 +166,7 @@
                                 height: 36px;
                                 right: 0;
                                 top: 0;
-                                transition: .3s;
+                                transition: 0.3s;
                                 svg {
                                     width: 16px;
                                     height: 16px;
@@ -185,7 +186,7 @@
                             z-index: 4;
                             visibility: hidden;
                             opacity: 0;
-                            transition: .4s;
+                            transition: 0.4s;
                             a {
                                 display: flex;
                                 align-items: center;
@@ -204,11 +205,11 @@
                                         display: block;
                                         width: 10px;
                                         height: 10px;
-                                        transition: .4s;
+                                        transition: 0.4s;
                                         top: 2px;
                                         left: 2px;
                                         border-radius: 5px;
-                                        content: '';
+                                        content: "";
                                         position: absolute;
                                         background: #101218;
                                     }
@@ -218,14 +219,14 @@
                                     font-size: 12px;
                                     margin-left: 10px;
                                     color: #fff;
-                                    transition: .4s;
+                                    transition: 0.4s;
                                 }
                                 &.act {
-                                    .switch{
+                                    .switch {
                                         &:before {
                                             background: $lightbluecolor;
                                             left: 12px;
-                                            transition: .4s;
+                                            transition: 0.4s;
                                         }
                                     }
                                     .name {
@@ -238,30 +239,28 @@
                                     }
                                 }
                             }
-                            }
-                            &.act {
-                                .cat-ftr-cont {
-                                    visibility: visible;
-                                    opacity: 1;
-                                    transition: .4s;
-                                    left: 0;
-                                    display: grid;
-                                    grid-template-columns: 1fr;
-                                    a {
-                                        width: 100%;
-                                    }
+                        }
+                        &.act {
+                            .cat-ftr-cont {
+                                visibility: visible;
+                                opacity: 1;
+                                transition: 0.4s;
+                                left: 0;
+                                display: grid;
+                                grid-template-columns: 1fr;
+                                a {
+                                    width: 100%;
+                                }
                             }
                             .cat-ftr-title {
                                 i {
                                     transform: rotate(180deg);
-                                    transition: .3s;
+                                    transition: 0.3s;
                                 }
                             }
                         }
-                        }
+                    }
                 }
-                
-                
             }
             .prods {
                 max-width: 1140px;
@@ -275,7 +274,7 @@
                     position: relative;
                     background-color: #101218;
                     border-radius: 10px;
-                    box-shadow: 0px 0px 15px 2px rgb(36 230 250 / 10%);
+                    box-shadow: 0px 0px 15px 2px rgba(36, 230, 250, 0.1);
                     .prd-label {
                         position: absolute;
                         z-index: 2;
@@ -305,7 +304,7 @@
                     a.prd-hd {
                         display: flex;
                         flex-flow: column;
-                        box-shadow: inset 0px -30px 100px 30px rgb(16 18 24);
+                        box-shadow: inset 0px -30px 100px 30px rgb(16, 18, 24);
                         width: 100%;
                         position: relative;
                         text-decoration: none;
@@ -324,7 +323,7 @@
                             width: 100%;
                             border-radius: 10px 10px 0 0;
                             &:after {
-                                content: '';
+                                content: "";
                                 position: absolute;
                                 top: 0;
                                 right: 0;
@@ -336,7 +335,7 @@
                             &.mufasa {
                                 &:after {
                                     background: linear-gradient(120deg, rgba(12, 87, 98, 0.4), rgba(114, 8, 125, 0.4));
-                                } 
+                                }
                             }
                         }
                         img {
@@ -344,7 +343,6 @@
                             z-index: 1;
                             height: 156px;
                             max-width: 165px;
-                            
                         }
                         .prd-tit {
                             display: block;
@@ -383,7 +381,7 @@
                                 color: $lightwhite;
                                 margin-bottom: 15px;
                                 font-weight: 500;
-                                 b {
+                                b {
                                     font-size: 18px;
                                     font-weight: 500;
                                 }
@@ -391,7 +389,7 @@
                                     position: relative;
                                     margin-left: 5px;
                                     &:after {
-                                        content: '';
+                                        content: "";
                                         width: calc(100% + 6px);
                                         height: 2px;
                                         background: $lightwhite;
@@ -452,7 +450,7 @@
         }
     }
 }
-@media(min-width:$bp-tablet) {
+@media (min-width: $bp-tablet) {
     .full-width-container {
         &.catalog-first {
             padding-bottom: 85px;
@@ -486,14 +484,14 @@
             padding-bottom: 110px;
             #catalog-wrapper {
                 .prods {
-                    grid-template-columns: repeat(auto-fill,minmax(360px,1fr));
+                    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
                     grid-gap: 30px;
                 }
             }
         }
     }
 }
-@media(min-width:$bp-laptop) {
+@media (min-width: $bp-laptop) {
     #main-catalog {
         background-image: url(/assets/img/main-new.jpg);
         background-position: right top;
@@ -558,7 +556,7 @@
                             .shadow {
                                 width: 200px;
                                 height: 20px;
-                                box-shadow: 0px 10px 130px 80px rgb(16 170 190 / 10%);
+                                box-shadow: 0px 10px 130px 80px rgba(16, 170, 190, 0.1);
                                 position: absolute;
                                 top: 65px;
                                 left: 50%;
@@ -603,20 +601,20 @@
         }
     }
 }
-@media(min-width:$bp-desktop) {
-    .full-width-container{
+@media (min-width: $bp-desktop) {
+    .full-width-container {
         &.catalog-second {
             padding-bottom: 180px;
             #catalog-wrapper {
                 display: grid;
                 grid-template-columns: 360px 1fr;
                 grid-gap: 30px;
-                
+
                 #ftrs {
                     display: grid;
                     grid-template-columns: 1fr;
                     .ftrs-inner {
-                        margin:0;
+                        margin: 0;
                         width: 100% !important;
                         .cat-ftr {
                             height: auto;
@@ -657,12 +655,12 @@
                             .cat-ftr-cont {
                                 padding-bottom: 0;
                             }
-                        } 
+                        }
                         &:nth-child(2) {
-                            box-shadow: 0px 7px 10px 1px rgb(36 230 250 / 10%);
+                            box-shadow: 0px 7px 10px 1px rgba(36, 230, 250, 0.1);
                             margin-bottom: 30px;
                             border-radius: 0 0 10px 10px;
-                        }     
+                        }
                     }
                 }
                 .prods {
@@ -686,8 +684,8 @@
         }
     }
 }
-@media(min-width:$bp-desktop-lg) {
-    .full-width-container{
+@media (min-width: $bp-desktop-lg) {
+    .full-width-container {
         &.catalog-second {
             #catalog-wrapper {
                 .prods {
