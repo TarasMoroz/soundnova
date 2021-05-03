@@ -21,37 +21,39 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<section id="product" class="content <?=$prClass?>">
 
-			<? if($mobile): ?>
-				<? $this->load->view('desktop/v_mobile_product_top');  ?>
-				<? //$this->load->view('desktop/v_product_top');  ?>
-			<? else: ?>
+
 				<? if(isset($prodVariants['bundle'])) $this->load->view('desktop/v_product_top_bundle'); ?>
 				<? if(isset($prodVariants['design'])) $this->load->view('desktop/v_product_top'); ?>
-			<? endif; ?>
-			
-			<div id="product2">
-				<div class="inner1170">
-					<h2 class="grad"><?=$product['name']?> sound elements</h2>
 
-					<div id="product2-inner">
-						<div id="product2-left">
-							<?=$product['cont_description']?>
-						</div>
-						<div id="product2-right">
-							<div id="product2-video">
-								<? if($product['cont_v_id']): ?>
-								<div class="prod-vid" style="background-image: url('/assets/media/video_preview/<?=substr($product['cont_v_img_preview'], 0, -4).'_570.jpg'?>');">
-									<button class="prod-play video-open" data-code="<?=$product['cont_v_src']?>">
-										<div class="inner"><i class="playsvg"></i></div>
-									</button>
+				<div class="full-width-container product-arcane-container">
+					<div class="inner-content-container">
+						<h2 class="container-title secondary-title">
+							<span class="gradient-title mobile"><?=$product['name']?><br></span>
+							<span class="gradient-title mobile"> sound element</span>
+							<span class="gradient-title desktop"><?=$product['name']?> sound element</span>
+						</h2>
+						<div class="two-cols-block">
+							<div class="left-col">
+									<div class="descr"><?=$product['cont_description']?></div>
+							</div>
+							<div class="right-col">
+								<div class="product-video">
+									<? if($product['cont_v_id']): ?>
+									<div class="prod-vid" style="background-image: url('/assets/media/video_preview/<?=substr($product['cont_v_img_preview'], 0, -4).'_570.jpg'?>');">
+										<button class="bundle-play video-open" data-code="<?=$product['cont_v_src']?>">
+											<div class="inner">
+												<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+											</div>
+										</button>
+									</div>
+									<? endif; ?>
 								</div>
-								<? endif; ?>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-
+			
+			<!-- Product whats inside block -->
 			<? if($edition): ?>
 				<? $this->load->view('desktop/v_product_info_construction'); ?>
 				<? $this->load->view('desktop/v_product_info_designed'); ?>

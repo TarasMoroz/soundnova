@@ -71,6 +71,7 @@ body {
     margin: 0;
     font-family: $mainfont;
     background-color: $maindarkgray;
+    overflow-x: hidden;
 }
 a, button {
     cursor: pointer;
@@ -289,7 +290,28 @@ h1, h2, h3, h4, h5 {
         color: $lightwhite;
     }
 }
-
+.btn-purp-border {
+    outline: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all .3s;
+    background-color: transparent;
+    line-height: 50px;
+    text-align: center;
+    display: inline-block;
+    padding: 0 15px;
+    font-size: 12px;
+    border-radius: 30px;
+    border: 2px solid $mainrose;
+    color: $mainrose;
+    text-transform: uppercase;
+    font-weight: 500;
+    box-shadow: 0 0px 8px -2px $mainrose;
+    &:hover {
+        background-color: $mainrose;
+        color: $lightwhite;
+    }
+}
 //counter styles
 
 .timer-counter {

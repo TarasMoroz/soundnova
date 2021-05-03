@@ -164,15 +164,18 @@
 <script src="<?php echo base_url("assets/js/ion.rangeSlider.min.js");?>"></script>
 <script src="<?php echo base_url("assets/js/custom.js?4");?><?=strtotime('now')?>"></script>
 <script src="<?php echo base_url("assets/js/main.js?6");?><?=strtotime('now')?>"></script>
-
 <script src="<?php 
 	if ($currentpage == '/') {
 		echo base_url("assets/js/home-page/home.js?5");
 	}
  ?><?=strtotime('now')?>"></script>
-
  <script src="<?php
  if (strpos($currentpage,'catalog') == true) {
 	echo base_url("assets/js/catalog/catalog.js?5");
+ } 
+ ?><?=strtotime('now')?>"></script>
+  <script src="<?php
+ if (strpos($currentpage,'product') == true) {
+	echo base_url("assets/js/product/product.js?5");
  } 
  ?><?=strtotime('now')?>"></script>

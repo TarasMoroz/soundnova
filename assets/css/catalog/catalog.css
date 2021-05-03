@@ -1,6 +1,10 @@
 /*Colors*/
 /*Fonts*/
 /*breakpoints*/
+.content {
+  overflow-x: hidden;
+}
+
 .full-width-container.catalog-first {
   padding: 50px 16px 30px 16px;
 }
