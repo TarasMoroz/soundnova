@@ -11,7 +11,8 @@
     right: 0;
     z-index: 10;
 
-    .mobile-header-menu , .mobile-header-user {
+    .mobile-header-menu,
+    .mobile-header-user {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 20px;
@@ -58,7 +59,7 @@
         display: none;
     }
 }
-@media(min-width: $bp-laptop) {
+@media (min-width: $bp-laptop) {
     .mobile-header {
         display: none;
     }
@@ -166,6 +167,7 @@
             .header-search-block {
                 position: relative;
                 input {
+                    outline: none;
                     background: transparent;
                     border: 1px solid white;
                     border-radius: 50px;
@@ -173,8 +175,14 @@
                     line-height: 38px;
                     color: white;
                     font-size: 14px;
+                    transition: 0.3s;
                     &::placeholder {
                         color: #939393;
+                    }
+                    &:hover,
+                    &:focus {
+                        border-color: #1dd1e5;
+                        box-shadow: 0 0 15px 0px #1dd1e5;
                     }
                 }
                 a {
@@ -202,7 +210,7 @@
         }
     }
 }
-@media(min-width:$bp-desktop) {
+@media (min-width: $bp-desktop) {
     header {
         &.scroll {
             .desktop-header {
