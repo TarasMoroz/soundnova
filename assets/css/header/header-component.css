@@ -113,6 +113,7 @@
     line-height: 44px;
     padding: 0 20px;
     font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .desktop-header .header-top-container .get-free-subscr:hover {
     background-color: #1dd1e5;
@@ -121,8 +122,9 @@
   .desktop-header .header-top-container .header-top-text {
     font-size: 14px;
     text-transform: uppercase;
-    color: white;
+    color: #1dd1e5;
     font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .desktop-header .header-top-container .desktop-header-user {
     display: -webkit-box;
@@ -193,6 +195,9 @@
   }
   .desktop-header .header-main-container .desktop-logo img {
     width: 100%;
+  }
+  .desktop-header .header-main-container .desktop-header-menu {
+    letter-spacing: 1px;
   }
   .desktop-header .header-main-container .desktop-header-menu ul {
     list-style: none;
