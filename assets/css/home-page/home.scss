@@ -21,16 +21,16 @@ body {
                 background-size: cover;
                 background-position: center top;
                 background-repeat: no-repeat;
-                transition: .3s;
+                transition: 0.3s;
                 height: 65px;
                 border-radius: 5px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                box-shadow: 0 0 10px 0 rgb(0 0 0 / 40%), inset -20px -20px 45px 0px rgb(0 0 0 / 30%);
+                box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4), inset -20px -20px 45px 0px rgba(0, 0, 0, 0.3);
                 .inner {
                     display: block;
-                    transition: .2s;
+                    transition: 0.2s;
                     opacity: 0.3;
                     background: $imagesoverlay;
                     width: 100%;
@@ -49,17 +49,17 @@ body {
                     color: white;
                     display: block;
                     z-index: 3;
-                    transition: .3s;
+                    transition: 0.3s;
                     position: absolute;
                     text-align: center;
                     line-height: 14px;
-                    text-shadow: 0 0px 6px rgb(0 0 0);
+                    text-shadow: 0 0px 6px rgb(0, 0, 0);
                 }
                 &:hover {
                     transform: scale(1.05);
-                    transition: .3s;
+                    transition: 0.3s;
                     .inner {
-                        transition: .2s;
+                        transition: 0.2s;
                         opacity: 1;
                     }
                 }
@@ -103,7 +103,7 @@ body {
 
     .summer-sale-block-mobile {
         max-width: 650px;
-        margin:0 auto;
+        margin: 0 auto;
     }
     .main-pack-block {
         position: relative;
@@ -121,7 +121,7 @@ body {
             bottom: 18%;
             width: 80%;
             height: 10px;
-            box-shadow: 0px 10px 40px 5px rgb(36 230 250 / 30%);
+            box-shadow: 0px 10px 40px 5px rgba(36, 230, 250, 0.3);
         }
         .bundle-play {
             position: absolute;
@@ -134,7 +134,7 @@ body {
             z-index: 3;
             top: 16%;
             right: 3%;
-            box-shadow: 0px 0px 50px rgb(36 230 250 / 30%);
+            box-shadow: 0px 0px 50px rgba(36, 230, 250, 0.3);
             background: $bluebuttongrad;
             width: 45px;
             height: 45px;
@@ -148,7 +148,7 @@ body {
     }
     .main-pack-slider-container {
         background-color: $maindarkgray;
-        box-shadow: 0 0 20px 10px rgb(16 169 191 / 10%);
+        box-shadow: 0 0 20px 10px rgba(16, 169, 191, 0.1);
         border-radius: 8px;
         .main-pack-slider-heading {
             padding: 0 7px;
@@ -165,13 +165,14 @@ body {
             }
         }
         .main-pack-slider {
-            padding:7px;
+            padding: 7px;
             .main-pack-wrapper {
                 padding: 0 15px;
                 img {
                     width: 100%;
                 }
-                .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+                .swiper-button-next,
+                .swiper-container-rtl .swiper-button-prev {
                     background-image: url(/assets/img/icons/blue-arrow-right.svg);
                     right: 0;
                     left: auto;
@@ -185,7 +186,8 @@ body {
                     top: calc(50% - 6px);
                     background-size: 14px;
                 }
-                .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+                .swiper-button-prev,
+                .swiper-container-rtl .swiper-button-next {
                     background-image: url(/assets/img/icons/blue-arrow-left.svg);
                     right: auto;
                     left: 0;
@@ -216,7 +218,7 @@ body {
         a {
             width: 215px;
             max-width: 215px;
-            margin:auto;
+            margin: auto;
             s {
                 margin-left: 2px;
             }
@@ -294,7 +296,7 @@ body {
                         background: #fff;
                         color: $darkbluecolor;
                         font-size: 12px;
-                        box-shadow: 0px 0px 10px rgb(36 240 240 / 30%);
+                        box-shadow: 0px 0px 10px rgba(36, 240, 240, 0.3);
                         position: absolute;
                         &.date1 {
                             left: 50%;
@@ -343,7 +345,7 @@ body {
             border-radius: 30px;
             width: calc(100% - 60px);
             outline: none;
-            box-shadow: 0 0 30px 5px rgb(239 76 198 / 20%);
+            box-shadow: 0 0 30px 5px rgba(239, 76, 198, 0.2);
         }
         button {
             width: 100%;
@@ -369,7 +371,7 @@ body {
                 position: relative;
                 background-color: #101218;
                 border-radius: 10px;
-                box-shadow: 0px 0px 15px 2px rgb(36 230 250 / 10%);
+                box-shadow: 0px 0px 15px 2px rgba(36, 230, 250, 0.1);
                 .prd-label {
                     position: absolute;
                     z-index: 2;
@@ -399,7 +401,7 @@ body {
                 a.prd-hd {
                     display: flex;
                     flex-flow: column;
-                    box-shadow: inset 0px -30px 100px 30px rgb(16 18 24);
+                    box-shadow: inset 0px -30px 100px 30px rgb(16, 18, 24);
                     width: 100%;
                     position: relative;
                     text-decoration: none;
@@ -418,19 +420,19 @@ body {
                         width: 100%;
                         border-radius: 10px 10px 0 0;
                         &:after {
-                            content: '';
+                            content: "";
                             position: absolute;
                             top: 0;
                             right: 0;
                             left: 0;
-                            background: rgba(16,18,24,.65);
+                            background: rgba(16, 18, 24, 0.65);
                             bottom: 0;
                             border-radius: 10px 10px 0 0;
                         }
                         &.mufasa {
                             &:after {
                                 background: linear-gradient(120deg, rgba(12, 87, 98, 0.4), rgba(114, 8, 125, 0.4));
-                            } 
+                            }
                         }
                     }
                     img {
@@ -438,7 +440,6 @@ body {
                         z-index: 1;
                         height: 156px;
                         max-width: 165px;
-                        
                     }
                     .prd-tit {
                         display: block;
@@ -477,7 +478,7 @@ body {
                             color: $lightwhite;
                             margin-bottom: 15px;
                             font-weight: 500;
-                             b {
+                            b {
                                 font-size: 18px;
                                 font-weight: 500;
                             }
@@ -485,7 +486,7 @@ body {
                                 position: relative;
                                 margin-left: 5px;
                                 &:after {
-                                    content: '';
+                                    content: "";
                                     width: calc(100% + 6px);
                                     height: 2px;
                                     background: $lightwhite;
@@ -558,7 +559,7 @@ body {
                     align-items: center;
                     justify-content: center;
                     img {
-                        max-width:185px;
+                        max-width: 185px;
                         margin: auto;
                         z-index: 1;
                         margin-left: 35px;
@@ -566,12 +567,12 @@ body {
                         margin-bottom: 25px;
                     }
                     &:before {
-                        content: '';
+                        content: "";
                         width: 10px;
                         height: 10px;
                         left: 50%;
                         position: absolute;
-                        box-shadow: 0px 0px 60px 35px rgb(36 230 250 / 40%);
+                        box-shadow: 0px 0px 60px 35px rgba(36, 230, 250, 0.4);
                     }
                     button {
                         position: absolute;
@@ -609,10 +610,13 @@ body {
             .swiper-container {
                 padding: 0 30px 40px 30px;
             }
-            .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+            .swiper-container-horizontal > .swiper-pagination-bullets,
+            .swiper-pagination-custom,
+            .swiper-pagination-fraction {
                 bottom: 0;
             }
-            .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+            .swiper-button-next,
+            .swiper-container-rtl .swiper-button-prev {
                 background-image: url(/assets/img/icons/yellow-arrow-right.svg);
                 background-size: 16px;
                 right: 0;
@@ -625,7 +629,7 @@ body {
                 outline: none;
             }
             .swiper-pagination-bullet {
-                background: #51545A;
+                background: #51545a;
             }
             .swiper-pagination-bullet-active {
                 background-color: $mainyellow;
@@ -669,7 +673,7 @@ body {
                 margin-bottom: 40px;
                 position: relative;
                 span {
-                    text-shadow: 0 0px 65px rgb(239 76 198 / 25%);
+                    text-shadow: 0 0px 65px rgba(239, 76, 198, 0.25);
                 }
                 .desktop-title-last {
                     display: none;
@@ -684,7 +688,8 @@ body {
             margin: auto;
             .testimonials-video-wrapper-mobile {
                 padding: 0 30px;
-                .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+                .swiper-button-next,
+                .swiper-container-rtl .swiper-button-prev {
                     background-image: url(/assets/img/icons/yellow-arrow-right.svg);
                     background-size: 16px;
                     right: 0;
@@ -702,7 +707,7 @@ body {
                     .review-vid {
                         position: relative;
                         overflow: hidden;
-                        box-shadow: inset 0px 0px 100px 50px rgb(30 35 45 / 70%), 0px 0px 20px rgb(36 230 250 / 10%);
+                        box-shadow: inset 0px 0px 100px 50px rgba(30, 35, 45, 0.7), 0px 0px 20px rgba(36, 230, 250, 0.1);
                         margin-bottom: 15px;
                         width: 100%;
                         height: 200px;
@@ -735,7 +740,7 @@ body {
                         font-weight: 300;
                     }
                     .review-text {
-                        box-shadow: 0px 0px 20px rgb(36 230 250 / 10%);
+                        box-shadow: 0px 0px 20px rgba(36, 230, 250, 0.1);
                         overflow: hidden;
                         background: $darkgray;
                         color: $lightwhite;
@@ -746,7 +751,7 @@ body {
                         font-size: 14px;
                         margin-bottom: 15px;
                         margin-top: 60px;
-                         h3 {
+                        h3 {
                             font-size: 14px;
                             text-transform: uppercase;
                             font-weight: 500;
@@ -758,7 +763,7 @@ body {
                             font-size: 14px;
                             line-height: 24px;
                             a {
-                                color:$mainrose;
+                                color: $mainrose;
                                 text-decoration: none;
                             }
                         }
@@ -770,7 +775,7 @@ body {
             &.secondary-title {
                 margin-bottom: 40px;
                 span {
-                    text-shadow: 0 0px 65px rgb(239 76 198 / 25%);
+                    text-shadow: 0 0px 65px rgba(239, 76, 198, 0.25);
                 }
             }
         }
@@ -779,8 +784,8 @@ body {
         padding: 80px 16px;
         .qa {
             background: $darkgray;
-            box-shadow: 0 0 15px rgb(16 169 91 / 7%);
-           
+            box-shadow: 0 0 15px rgba(16, 169, 91, 0.07);
+
             margin-bottom: 5px;
             height: auto;
             .qa-hd {
@@ -806,7 +811,7 @@ body {
                 line-height: 21px;
                 color: $lightwhite;
                 border-top: 1px solid rgba(250, 255, 255, 0.07);
-                box-shadow: 0px -1px 4px -2px rgb(250 255 255 / 5%);
+                box-shadow: 0px -1px 4px -2px rgba(250, 255, 255, 0.05);
                 padding-top: 0px;
                 visibility: hidden;
                 opacity: 0;
@@ -824,7 +829,7 @@ body {
                 cursor: pointer;
                 border: 0;
                 background: transparent;
-                 span {
+                span {
                     font-weight: bold;
                     font-size: 24px;
                     line-height: 40px;
@@ -839,17 +844,17 @@ body {
             }
             &.qa-act {
                 .qa-hd {
-                    transition: .4s;
+                    transition: 0.4s;
                 }
                 .qa-desc {
                     visibility: visible;
                     opacity: 1;
                     height: auto;
                     padding: 20px;
-                    transition: opacity .2s ease;
+                    transition: opacity 0.2s ease;
                 }
                 .qa-pls-mns {
-                     span {
+                    span {
                         &:nth-child(1) {
                             display: none;
                         }
@@ -864,7 +869,7 @@ body {
             &.secondary-title {
                 margin-bottom: 45px;
                 span {
-                    text-shadow: 0 0px 65px rgb(239 76 198 / 25%);
+                    text-shadow: 0 0px 65px rgba(239, 76, 198, 0.25);
                     &.desktop {
                         display: none;
                     }
@@ -884,7 +889,7 @@ body {
         color: $lightwhite;
         font-size: 10px;
         svg {
-            stroke:$lightwhite;
+            stroke: $lightwhite;
             flex: 0 0 14px;
             margin-right: 3px;
         }
@@ -896,8 +901,8 @@ body {
 .summer-sale-desktop {
     display: none;
 }
-@media(min-width:$bp-tablet) {
-    .full-width-container{
+@media (min-width: $bp-tablet) {
+    .full-width-container {
         &.home-first-container {
             background-image: url(/assets/img/main-new.jpg);
             background-size: cover;
@@ -911,7 +916,7 @@ body {
                 line-height: 1.5;
                 margin-bottom: 45px;
                 span {
-                font-size: 20px;
+                    font-size: 20px;
                 }
             }
             .summer-sale-title {
@@ -963,10 +968,10 @@ body {
                     margin: 0 15px;
                 }
                 .btn-blue-grad {
-                    order: 0; 
+                    order: 0;
                 }
                 .btn-blue-border {
-                    order: 2; 
+                    order: 2;
                 }
             }
         }
@@ -978,7 +983,7 @@ body {
             padding-top: 123px;
             padding-bottom: 135px;
             .home-categories-links {
-                grid-template-columns: repeat(auto-fit,minmax(165px,1fr));
+                grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
                 grid-gap: 30px;
                 max-width: 1140px;
                 margin: auto;
@@ -1014,7 +1019,6 @@ body {
         }
         .subscription-form-yellow-text {
             font-size: 14px;
-            
         }
         &.home-subscription-container {
             background-image: url(/assets/img/main3-min.jpg);
@@ -1042,7 +1046,7 @@ body {
             }
         }
         .subscription-form {
-            margin: 25px auto 0 auto;      
+            margin: 25px auto 0 auto;
         }
         .subscription-form-yellow-text {
             margin-top: 20px;
@@ -1084,13 +1088,16 @@ body {
                 max-width: 1005px;
                 .new-products-wrapper {
                     padding: 0 30px;
-                    .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+                    .swiper-button-next,
+                    .swiper-container-rtl .swiper-button-prev {
                         right: 0;
                     }
-                    .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+                    .swiper-button-prev,
+                    .swiper-container-rtl .swiper-button-next {
                         left: 0;
                     }
-                    .swiper-button-next, .swiper-button-prev {
+                    .swiper-button-next,
+                    .swiper-button-prev {
                         background-size: 20px !important;
                     }
                 }
@@ -1140,7 +1147,7 @@ body {
                 &.secondary-title {
                     margin-bottom: 90px;
                     span {
-                        text-shadow: 0 0px 55px rgb(239 76 198 / 20%);
+                        text-shadow: 0 0px 55px rgba(239, 76, 198, 0.2);
                     }
                 }
             }
@@ -1151,8 +1158,9 @@ body {
             background-size: cover;
             background-position: center top;
             background-repeat: no-repeat;
-            .swiper-button-next, .swiper-button-prev {
-                background-size: 20px  !important;
+            .swiper-button-next,
+            .swiper-button-prev {
+                background-size: 20px !important;
             }
             .container-title {
                 &.secondary-title {
@@ -1197,7 +1205,7 @@ body {
         }
     }
 }
-@media(min-width:$bp-tablet-lg) {
+@media (min-width: $bp-tablet-lg) {
     .full-width-container {
         &.home-new-products-container {
             .new-products-slider-container {
@@ -1233,7 +1241,7 @@ body {
         }
     }
 }
-@media(min-width:$bp-laptop) {
+@media (min-width: $bp-laptop) {
     .full-width-container {
         &.home-first-container {
             padding-top: 163px;
@@ -1253,7 +1261,7 @@ body {
                 padding: 40px 30px;
                 border-radius: 8px;
                 margin-top: 100px;
-                box-shadow: 0 0 30px 10px rgb(16 169 191 / 7%);
+                box-shadow: 0 0 30px 10px rgba(16, 169, 191, 0.07);
 
                 .buy-buttons-container {
                     display: grid;
@@ -1322,7 +1330,7 @@ body {
                                 left: 50%;
                                 transform: translateX(-50%);
                                 position: absolute;
-                                box-shadow: 0 0 80px 110px rgb(36 230 250 / 30%);
+                                box-shadow: 0 0 80px 110px rgba(36, 230, 250, 0.3);
                             }
                         }
                     }
@@ -1334,7 +1342,7 @@ body {
                 max-width: 1230px;
             }
         }
-        &.home-faq-container  {
+        &.home-faq-container {
             .container-title {
                 &.secondary-title {
                     span {
@@ -1402,7 +1410,7 @@ body {
         }
     }
 }
-@media(min-width:$bp-desktop-lg) {
+@media (min-width: $bp-desktop-lg) {
     .summer-sale-desktop {
         .main-pack-slider-texts {
             display: flex;
@@ -1439,7 +1447,7 @@ body {
     .full-width-container {
         &.home-first-container {
             .main-pack-slider-texts {
-                box-shadow: 0px 0px 50px rgb(36 230 250 / 10%);
+                box-shadow: 0px 0px 50px rgba(36, 230, 250, 0.1);
                 .main-pack-slider-texts-col {
                     font-size: 14px;
                     margin: 0 auto;
@@ -1448,7 +1456,7 @@ body {
                     }
                     svg {
                         flex: 0 0 16px;
-                        stroke:$lightbluecolor;
+                        stroke: $lightbluecolor;
                     }
                     &:last-child {
                         max-width: 140px;
@@ -1459,7 +1467,8 @@ body {
         &.home-partners-container {
             .container-title {
                 &.secondary-title {
-                    .desktop-title , .desktop-title-last {
+                    .desktop-title,
+                    .desktop-title-last {
                         display: block;
                     }
                     .mobile-title {

@@ -47,7 +47,7 @@ footer {
                         color: $lightgray;
                         text-align: center;
                         display: block;
-                        transition: .2s;
+                        transition: 0.2s;
                         &:hover {
                             color: $lightbluecolor;
                         }
@@ -75,7 +75,7 @@ footer {
                 display: block;
                 outline: none;
                 text-decoration: none;
-                transition: .2s;
+                transition: 0.2s;
                 i {
                     display: block;
                     svg {
@@ -107,7 +107,7 @@ footer {
             font-size: 12px;
             text-align: center;
             padding: 0 16px;
-            color:$footergray;
+            color: $footergray;
             font-weight: 300;
             margin-bottom: 35px;
             span {
@@ -125,7 +125,7 @@ footer {
         outline: none;
     }
 }
-@media(min-width:$bp-tablet) {
+@media (min-width: $bp-tablet) {
     footer {
         .footer-container {
             .ft-cols {
@@ -136,7 +136,7 @@ footer {
         }
     }
 }
-@media(min-width:$bp-laptop) {
+@media (min-width: $bp-laptop) {
     footer {
         padding: 125px 0 90px 0;
         background-image: url(/assets/img/footer-back.jpg);
@@ -173,7 +173,7 @@ footer {
                 grid-gap: 20px;
                 a {
                     margin: 0;
-                    transition: .2s;
+                    transition: 0.2s;
                     i {
                         svg {
                             width: 20px;

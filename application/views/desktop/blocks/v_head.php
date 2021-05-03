@@ -12,15 +12,15 @@
 	<meta name="description" content="<?=(isset($meta_description) ? $meta_description : 'SOUND description')?>">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/swiper.min.css?33");?><?=strtotime('now')?>">
-	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/styles.css?33");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/swiper.min.css?");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/styles.min.css?");?><?=strtotime('now')?>">
 	
-	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/catalog/catalog.css?33");?><?=strtotime('now')?>">
-	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/header/header-component.css?33");?><?=strtotime('now')?>">
-	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/home-page/home.css?33");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/catalog/catalog.min.css?");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/header/header-component.min.css?");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/home-page/home.min.css?");?><?=strtotime('now')?>">
 	
-	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/footer/footer-component.css?33");?><?=strtotime('now')?>">
-	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/product/product.css?33");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/footer/footer-component.min.css?");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/product/product.min.css?");?><?=strtotime('now')?>">
 	<link rel="shortcut icon" href="<?=base_url("assets/img/icon.png")?>">
 	<link rel="canonical" href="<?=base_url(explode('?',$_SERVER['REQUEST_URI'])[0])?>"/>
 	<script type="text/javascript">
