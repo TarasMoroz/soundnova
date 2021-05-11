@@ -2,60 +2,61 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
-<div id="product6">
-	<div class="inner1170">
-		<h2 class="grad">Compatible software</h2>
 
-		<div id="product6-info">
-			<p>SoundNova sound FX come as WAV files, meaning you can import and work with them in any software that can handle this file type. Here are the most common audio and video editing software tools that work perfectly with our sound FX</p>
-		</div>
+<div class="full-width-container compatible-software-container">
+		<div class="inner-content-container">
+			<h2 class="container-title secondary-title">
+				<span class="gradient-title shadowed">Compatible software</span>
+			</h2>
+			<div class="software-container-descr">
+				SoundNova sound FX come as WAV files, meaning you can import and work with them in any software that can handle this file type. Here are the most common audio and video editing software tools that work perfectly with our sound FX
+			</div>
+			<div class="product-software-block">
+			<h3 class="product-software-block-title">Audio Software</h3>
 
-		<div class="product6-software">
-			<h3>Audio Software</h3>
-
-			<div class="product-softwaer-inner">
+			<div class="product-software-inner">
 				<div class="product-software-item">
-					<img src="/assets/img/soft/logic_pro.jpg"> <span>Logic Pro</span>
+					<img class="lzy_img" data-src="/assets/img/soft/logic-100x100.svg"> <span>Logic Pro</span>
 				</div>
 				<div class="product-software-item">
-					<img src="/assets/img/soft/nuendo.jpg"> <span>Nuendo</span>
+					<img class="lzy_img" data-src="/assets/img/soft/nuendo-100x100.svg"> <span>Nuendo</span>
 				</div>
 				<div class="product-software-item">
-					<img src="/assets/img/soft/pro_tools.jpg"> <span>Pro Tools</span>
+					<img class="lzy_img" data-src="/assets/img/soft/protools-100x100.svg"> <span>Pro Tools</span>
 				</div>
 				<div class="product-software-item">
-					<img src="/assets/img/soft/cubase.jpg"> <span>Cubase</span>
+					<img class="lzy_img" data-src="/assets/img/soft/cubase-100x100.svg"> <span>Cubase</span>
 				</div>
 				<div class="product-software-item">
-					<img src="/assets/img/soft/ableton_live.jpg"> <span>Ableton Live</span>
+					<img class="lzy_img" data-src="/assets/img/soft/ableton-100x100.svg"> <span>Ableton Live</span>
 				</div>
 				<div class="product-software-item">
-					<img src="/assets/img/soft/reaper.jpg"> <span>Reaper</span>
+					<img class="lzy_img" data-src="/assets/img/soft/reaper-100x100.svg"> <span>Reaper</span>
 				</div>
 				<div class="product-software-item">
-					<img src="/assets/img/soft/fl_studio.jpg"> <span>FL Studio</span>
+					<img class="lzy_img" data-src="/assets/img/soft/fl_studio.svg"> <span>FL Studio</span>
 				</div>
 			</div>
 		</div>
 
-		<div class="product6-software">
-			<h3>Video Editing Software</h3>
+		<div class="product-software-block">
+			<h3 class="product-software-block-title">Video Editing Software</h3>
 
-			<div class="product-softwaer-inner">
+			<div class="product-software-inner">
 				<div class="product-software-item">
-					<img src="/assets/img/soft/premiere.jpg"> <span>Premiere</span>
+					<img class="lzy_img" data-src="/assets/img/soft/premiere-100x100.svg"> <span>Premiere</span>
 				</div>
 				<div class="product-software-item">
-					<img src="/assets/img/soft/after_effects.jpg"> <span>After Effects</span>
+					<img class="lzy_img" data-src="/assets/img/soft/ae-100x100.svg"> <span>After Effects</span>
 				</div>
 				<div class="product-software-item">
-					<img src="/assets/img/soft/media_composer.jpg"> <span>Media Composer</span>
+					<img class="lzy_img" data-src="/assets/img/soft/media_composer-100x100.svg"> <span>Media Composer</span>
 				</div>
 				<div class="product-software-item">
-					<img src="/assets/img/soft/final_cut_pro_x.jpg"> <span>Final Cut Pro X</span>
+					<img class="lzy_img" data-src="/assets/img/soft/fcp-100x100.svg"> <span>Final Cut Pro X</span>
 				</div>
 				<div class="product-software-item">
-					<img src="/assets/img/soft/sony_vegas.jpg"> <span>Sony Vegas</span>
+					<img class="lzy_img" data-src="/assets/img/soft/vegas-100x100.svg"> <span>Sony Vegas</span>
 				</div>
 			</div>
 		</div>

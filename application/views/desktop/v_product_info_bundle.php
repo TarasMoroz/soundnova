@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="gradient-title shadowed"><?=$mainVariant['cont2_title']?></div>
 		</h2>
 		<div class="whats-inside">
-				<div class="whats-inside-cols">
+				<div class="whats-inside-cols bundle">
 					<div class="left-col">
 						<div class="bundle-shadow"></div>
 						<? 
@@ -105,8 +105,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 			<div class="whats-inside desktop">
-				<div class="whats-inside-cols image-right">
-				<div class="right-col">
+				<div class="whats-inside-cols bundle">
+					<div class="left-col">
+						<div class="bundle-shadow"></div>
+						<? 
+							// дефолтная картинка бандла или дизайн пака
+							$im = isset($prodVariants['bundle']) ? '/assets/img/packs/main-pack-min.svg' : '/assets/img/packs/product-default.svg';
+							if($mainVariant['cont2_img_box']) $im = '/assets/media/product_variant-cont2_img_box/'.substr($mainVariant['cont2_img_box'], 0, -4).'_570.svg'; 
+						?>
+						<img src="<?=$im?>" alt="bundle name">
+					</div>
+                    <div class="right-col">
 							<div class="product-right-info">
 								<div class="info-item">
 									<span class="info-item-title">Files</span>
@@ -190,17 +199,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 
 					</div>	
-					<div class="left-col">
-						<div class="bundle-shadow"></div>
-						<? 
-							// дефолтная картинка бандла или дизайн пака
-							$im = isset($prodVariants['bundle']) ? '/assets/img/packs/main-pack-min.svg' : '/assets/img/packs/product-default.svg';
-							if($mainVariant['cont2_img_box']) $im = '/assets/media/product_variant-cont2_img_box/'.substr($mainVariant['cont2_img_box'], 0, -4).'_570.svg'; 
-						?>
-						<img src="<?=$im?>" alt="bundle name">
-						</div>
-					
 				</div>
+ 
 				
 			</div>
 
@@ -215,8 +215,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="full-width-container right-background-container" style="background-image: url('/assets/media/product_variant-cont3_img_bg/<?=$mainVariant['cont3_img_bg']?>');">
 	<div class="inner-content-container">
-		<div class="two-cols-block <? if(isset($prodVariants['design']) && isset($prodVariants['construct'])): ?>product4-flipped<? endif; ?>">
-							<div class="right-col"></div>
+		<div class="two-cols-block bundle <? if(isset($prodVariants['design']) && isset($prodVariants['construct'])): ?>product4-flipped<? endif; ?>">
+
 							<div class="left-col">
 								<h2 class="container-title secondary-title">
 									<div class="gradient-title"><?=$mainVariant['cont3_title']?></div>
@@ -235,6 +235,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</a>
 								<? endif; ?>
 							</div>
+                            <div class="right-col"></div>
 						</div>
 	</div>
 </div>
