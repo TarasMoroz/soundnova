@@ -570,7 +570,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="testimonials-block">
 
 						<!-- Swiper -->
-						<div class="swiper-container testimonials-video-wrapper-mobile video-testimonials">
+						<div class="swiper-container video-testimonials">
 											<div class="swiper-wrapper">
 												<div class="swiper-slide">
 													<div class="testimonial-inner">
@@ -626,10 +626,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 																	<div class="review-sub">Co-founder, Epic Games</div>
 																</div>
 
-														</div>
-										       </div>
+													</div>
+												</div>
 								</div>		
-								
+								 <!-- Add Arrows -->
+								 <div class="swiper-button-next"></div>
+								<div class="swiper-button-prev"></div>
 						</div>
 			
 							<!-- Swiper -->
@@ -683,7 +685,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								
 								 <!-- Add Arrows -->
 								 <div class="swiper-button-next"></div>
-												<div class="swiper-button-prev"></div>
+								<div class="swiper-button-prev"></div>
 								
 						</div>
 				</div>

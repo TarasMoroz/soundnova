@@ -36,17 +36,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<? endif; ?>
 
 						<? 
-							$im = '/assets/img/product-top-box.png';
-							if($mainVariant['img_box']) $im = '/assets/media/product_variant-img_box/'.substr($mainVariant['img_box'], 0, -4).'_570.jpg'; 
+							$im = '/assets/img/packs/product-default.svg';
+							if($mainVariant['img_box']) $im = '/assets/media/product_variant-img_box/'.substr($mainVariant['img_box'], 0, -4).'_570.svg'; 
 							
 							// дефолтный бокс бандла
 							if(!$mainVariant['img_box'] && isset($prodVariants['bundle'])){
-								$im = '/assets/img/default_bundle.png';
+								$im = '/assets/img/packs/main-pack-min.svg';
 							}
 
 							// дефолтный бокс десигн
 							if(!$mainVariant['img_box'] && isset($prodVariants['design'])){
-								$im = '/assets/img/default_design.png';
+								$im = '/assets/img/packs/product-default.svg';
 							}
 						?>
 
@@ -127,7 +127,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								<? if($product['cnt_reviews']): ?>
 								<div class="prod-reviews">
 									<div class="stars"></div>
-									<div class="reviews-count"><?=$product['cnt_reviews']?> customer <a href="#">reviews</a></div>
+									<div class="reviews-count"><?=$product['cnt_reviews']?> customer <a href="#reviews-container">reviews</a></div>
 								</div>
 								<? endif; ?>
 					</div>
@@ -180,17 +180,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<? endif; ?>
 
 						<? 
-							$im = '/assets/img/product-top-box.png';
-							if($mainVariant['img_box']) $im = '/assets/media/product_variant-img_box/'.substr($mainVariant['img_box'], 0, -4).'_570.jpg'; 
+							$im = '/assets/img/packs/product-default.svg';
+							if($mainVariant['img_box']) $im = '/assets/media/product_variant-img_box/'.substr($mainVariant['img_box'], 0, -4).'_570.svg'; 
 							
 							// дефолтный бокс бандла
 							if(!$mainVariant['img_box'] && isset($prodVariants['bundle'])){
-								$im = '/assets/img/default_bundle.png';
+								$im = '/assets/img/packs/main-pack-min.svg';
 							}
 
 							// дефолтный бокс десигн
 							if(!$mainVariant['img_box'] && isset($prodVariants['design'])){
-								$im = '/assets/img/default_design.png';
+								$im = '/assets/img/packs/product-default.svg';
 							}
 						?>
 
@@ -251,7 +251,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									<? if($product['cnt_reviews']): ?>
 									<div class="prod-reviews">
 										<div class="stars"></div>
-										<div class="reviews-count"><?=$product['cnt_reviews']?> customer <a href="#">reviews</a></div>
+										<div class="reviews-count"><?=$product['cnt_reviews']?> customer <a href="#reviews-container">reviews</a></div>
 									</div>
 									<? endif; ?>
 					</div>

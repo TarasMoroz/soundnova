@@ -29,6 +29,14 @@ let swiper2 =  new Swiper('.new-products-wrapper', {
             prevEl: '.swiper-button-prev',
           },
       }); 
+      let videotTestimonials3 =  new Swiper('.video-testimonials', {
+        slidesPerView: 3,
+        spaceBetween: 30,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+      }); 
     } else {
       let swiper4 =  new Swiper('.testimonials-video-wrapper-mobile', {
         slidesPerView: 1,
@@ -38,6 +46,14 @@ let swiper2 =  new Swiper('.new-products-wrapper', {
             prevEl: '.swiper-button-prev',
           },
       }); 
+      let videotTestimonials4 =  new Swiper('.video-testimonials', {
+        slidesPerView: 1,
+        spaceBetween: 35,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+      });
     }
   
 

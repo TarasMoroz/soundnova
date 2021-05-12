@@ -132,8 +132,8 @@ body {
         .bundle-discount {
             position: absolute;
             z-index: 3;
-            top: 16%;
-            right: 3%;
+            top: 13%;
+            right: -3%;
             box-shadow: 0px 0px 50px rgba(36, 230, 250, 0.3);
             background: $bluebuttongrad;
             width: 45px;
@@ -150,6 +150,7 @@ body {
         background-color: $maindarkgray;
         box-shadow: 0 0 20px 10px rgba(16, 169, 191, 0.1);
         border-radius: 8px;
+        margin-top: 25px;
         .main-pack-slider-heading {
             padding: 0 7px;
             color: $lightwhite;
@@ -686,7 +687,7 @@ body {
         .testimonials-block {
             max-width: 1170px;
             margin: auto;
-            .testimonials-video-wrapper-mobile {
+            .testimonials-video-wrapper-mobile, .video-testimonials {
                 padding: 0 30px;
                 .swiper-button-next,
                 .swiper-container-rtl .swiper-button-prev {
@@ -933,8 +934,8 @@ body {
                         height: 95px;
                         line-height: 95px;
                         font-size: 24px;
-                        top: 10%;
-                        right: 0;
+                        top: 6%;
+                        right: -6%;
                     }
                 }
             }
@@ -1253,7 +1254,7 @@ body {
                 }
                 &.desktop {
                     display: block;
-                    font-size: 18px;
+                    font-size: 17.3px;
                 }
             }
             .summer-sale-right-col {
@@ -1384,11 +1385,11 @@ body {
         }
         .summer-sale-left-col {
             max-width: 600px;
-            margin-right: 30px;
+            margin-right: 80px;
             .main-pack-block {
                 margin: 0;
                 img {
-                    width: 680px;
+                    width: 100%;
                     min-height: 450px;
                 }
                 .bundle-discount {
@@ -1396,16 +1397,13 @@ body {
                     height: 80px;
                     line-height: 80px;
                     font-size: 24px;
-                    right: -20px;
+                    right: -6%;
                     top: 12%;
                 }
                 .bundle-play {
                     top: 14%;
                     left: 35%;
                 }
-            }
-            .main-pack-slider-container {
-                margin-top: -15px;
             }
         }
     }
@@ -1432,9 +1430,6 @@ body {
         .summer-sale-left-col {
             max-width: 655px;
             margin-right: 70px;
-            .main-pack-slider-container {
-                margin: -15px 30px 0 30px;
-            }
             .main-pack-block {
                 .bundle-discount {
                     width: 100px;

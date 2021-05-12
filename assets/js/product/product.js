@@ -66,3 +66,70 @@ let swiperProduct = new Swiper('.main-pack-wrapper', {
         prevEl: '.swiper-button-prev',
       },
   });
+let swiperSounds = new Swiper('.sounds-pack-wrapper', {
+  slidesPerView: 1,
+  spaceBetween: 35,
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+});
+let swiperWhooneds = new Swiper('.whoneeds-pack-wrapper', {
+  slidesPerView: 1,
+  spaceBetween: 45,
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+});
+let swiperHowuse = new Swiper('.how-use-pack-wrapper', {
+  slidesPerView: 1,
+  spaceBetween: 45,
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+});
+let swiperproductBundle = new Swiper('.bundle-sale-wrapper', {
+  slidesPerView: 1,
+  spaceBetween: 45,
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+});
+
+if (window.innerWidth > 800) {
+  let swiperoverViews =  new Swiper('.overviews-wrapper', {
+    slidesPerView: 3,
+    spaceBetween: 45,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+  }); 
+} else {
+  let swiperoverViewsMob =  new Swiper('.overviews-wrapper', {
+    slidesPerView: 1,
+    spaceBetween: 45,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+  }); 
+}
