@@ -102,6 +102,11 @@ h5 {
           box-shadow: inset 0px 100px 40px -50px #14161d, inset 0px -100px 40px -50px #14161d;
 }
 
+.header-container {
+  z-index: 1000;
+  position: relative;
+}
+
 .container-title {
   text-align: center;
 }
@@ -580,167 +585,6 @@ h5 {
 
 #popup-video-wrapper #popup-video iframe {
   height: 200px;
-}
-
-.sound-wave-bars {
-  height: 30px;
-  left: 50%;
-  bottom: 0;
-  position: absolute;
-  width: 40px;
-  z-index: 10;
-}
-
-.sound-wave-bars .bar {
-  background: #e20074;
-  bottom: 1px;
-  height: 3px;
-  position: absolute;
-  width: 3px;
-  -webkit-animation: sound 0ms -800ms linear infinite alternate;
-          animation: sound 0ms -800ms linear infinite alternate;
-}
-
-@-webkit-keyframes sound {
-  0% {
-    opacity: 0.35;
-    height: 3px;
-  }
-  100% {
-    opacity: 1;
-    height: 28px;
-  }
-}
-
-@keyframes sound {
-  0% {
-    opacity: 0.35;
-    height: 3px;
-  }
-  100% {
-    opacity: 1;
-    height: 28px;
-  }
-}
-
-.sound-wave-bars .bar:nth-child(1) {
-  left: 1px;
-  -webkit-animation-duration: 474ms;
-          animation-duration: 474ms;
-}
-
-.sound-wave-bars .bar:nth-child(2) {
-  left: 5px;
-  -webkit-animation-duration: 433ms;
-          animation-duration: 433ms;
-}
-
-.sound-wave-bars .bar:nth-child(3) {
-  left: 9px;
-  -webkit-animation-duration: 407ms;
-          animation-duration: 407ms;
-}
-
-.sound-wave-bars .bar:nth-child(4) {
-  left: 13px;
-  -webkit-animation-duration: 458ms;
-          animation-duration: 458ms;
-}
-
-.sound-wave-bars .bar:nth-child(5) {
-  left: 17px;
-  -webkit-animation-duration: 400ms;
-          animation-duration: 400ms;
-}
-
-.sound-wave-bars .bar:nth-child(6) {
-  left: 21px;
-  -webkit-animation-duration: 427ms;
-          animation-duration: 427ms;
-}
-
-.sound-wave-bars .bar:nth-child(7) {
-  left: 25px;
-  -webkit-animation-duration: 441ms;
-          animation-duration: 441ms;
-}
-
-.sound-wave-bars .bar:nth-child(8) {
-  left: 29px;
-  -webkit-animation-duration: 419ms;
-          animation-duration: 419ms;
-}
-
-.sound-wave-bars .bar:nth-child(9) {
-  left: 33px;
-  -webkit-animation-duration: 487ms;
-          animation-duration: 487ms;
-}
-
-.sound-wave-bars .bar:nth-child(10) {
-  left: 37px;
-  -webkit-animation-duration: 442ms;
-          animation-duration: 442ms;
-}
-
-.sound-wave-bars .bar:nth-child(11) {
-  left: 41px;
-  -webkit-animation-duration: 474ms;
-          animation-duration: 474ms;
-}
-
-.sound-wave-bars .bar:nth-child(12) {
-  left: 45px;
-  -webkit-animation-duration: 433ms;
-          animation-duration: 433ms;
-}
-
-.sound-wave-bars .bar:nth-child(13) {
-  left: 49px;
-  -webkit-animation-duration: 407ms;
-          animation-duration: 407ms;
-}
-
-.sound-wave-bars .bar:nth-child(14) {
-  left: 53px;
-  -webkit-animation-duration: 458ms;
-          animation-duration: 458ms;
-}
-
-.sound-wave-bars .bar:nth-child(15) {
-  left: 57px;
-  -webkit-animation-duration: 400ms;
-          animation-duration: 400ms;
-}
-
-.sound-wave-bars .bar:nth-child(16) {
-  left: 61px;
-  -webkit-animation-duration: 427ms;
-          animation-duration: 427ms;
-}
-
-.sound-wave-bars .bar:nth-child(17) {
-  left: 65px;
-  -webkit-animation-duration: 441ms;
-          animation-duration: 441ms;
-}
-
-.sound-wave-bars .bar:nth-child(18) {
-  left: 69px;
-  -webkit-animation-duration: 419ms;
-          animation-duration: 419ms;
-}
-
-.sound-wave-bars .bar:nth-child(19) {
-  left: 73px;
-  -webkit-animation-duration: 487ms;
-          animation-duration: 487ms;
-}
-
-.sound-wave-bars .bar:nth-child(20) {
-  left: 77px;
-  -webkit-animation-duration: 442ms;
-          animation-duration: 442ms;
 }
 
 @media (min-width: 675px) {

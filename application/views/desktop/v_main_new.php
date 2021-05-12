@@ -21,6 +21,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			<!--sound  effects category-->
 			<div class="full-width-container home-first-container">
+
+			<? $this->load->view('desktop/animation_wave_3d_dots_bg'); ?>
+
 				<div class="inner-content-container">
 				<h1 class="container-title main-title">
 						<span class="gradient-title">Sound effects library</span>

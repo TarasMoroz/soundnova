@@ -253,6 +253,7 @@
     border-color: #1dd1e5;
     -webkit-box-shadow: 0 0 15px 0px #1dd1e5;
             box-shadow: 0 0 15px 0px #1dd1e5;
+    background: rgba(29, 209, 229, 0.1);
   }
   .desktop-header .header-main-container .header-search-block a {
     display: -webkit-box;
