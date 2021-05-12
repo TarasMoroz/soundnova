@@ -88,6 +88,7 @@ h5 {
 
 .full-width-container {
     padding: 0 16px;
+    box-shadow: inset 0px 100px 40px -50px #14161d, inset 0px -100px 40px -50px #14161d;
 }
 
 .container-title {
@@ -112,7 +113,7 @@ h5 {
         background-clip: text;
         color: transparent;
         &.shadowed {
-            text-shadow: 0 0px 85px rgb(239, 76, 198, .35);
+            text-shadow: 0 0px 85px rgba(239, 76, 198, 0.35);
         }
     }
 }
