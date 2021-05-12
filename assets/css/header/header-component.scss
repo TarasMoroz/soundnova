@@ -84,6 +84,7 @@
                 line-height: 44px;
                 padding: 0 20px;
                 font-size: 14px;
+                font-family: Arial, Helvetica, sans-serif;
                 &:hover {
                     background-color: $lightbluecolor;
                     color: white;
@@ -92,8 +93,9 @@
             .header-top-text {
                 font-size: 14px;
                 text-transform: uppercase;
-                color: white;
+                color: #1dd1e5;
                 font-weight: 300;
+                font-family: Arial, Helvetica, sans-serif;
             }
             .desktop-header-user {
                 display: flex;
@@ -144,6 +146,7 @@
                 }
             }
             .desktop-header-menu {
+                letter-spacing: 1px;
                 ul {
                     list-style: none;
                     padding: 0;
@@ -183,6 +186,7 @@
                     &:focus {
                         border-color: #1dd1e5;
                         box-shadow: 0 0 15px 0px #1dd1e5;
+                        background: rgba(29, 209, 229, 0.1);
                     }
                 }
                 a {

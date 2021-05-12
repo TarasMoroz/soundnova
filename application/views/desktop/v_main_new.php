@@ -21,6 +21,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			<!--sound  effects category-->
 			<div class="full-width-container home-first-container">
+
+			<? $this->load->view('desktop/animation_wave_3d_dots_bg'); ?>
+
 				<div class="inner-content-container">
 				<h1 class="container-title main-title">
 						<span class="gradient-title">Sound effects library</span>
@@ -202,103 +205,270 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<span class="gradient-title">Sound effects category</span>
 					</h2>
 					<div class="home-categories-links">
-					<a href="#" style="background-image: url('../assets/img/categories/8-min.jpg');">
+						<a href="#" style="background-image: url('../assets/img/categories/8-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Ambience</span>
-							</a>
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
 						<a href="#" style="background-image: url('../assets/img/categories/0-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Animals &amp;<br> Creatures</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/1-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/1-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Audiences &amp;<br> Crowds</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/2-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/2-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Cartoon</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/3-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/3-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Cinematic</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/4-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/4-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">City</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/5-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/5-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Destruction</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/6-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/6-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Fantasy &amp;<br> Medieval</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/7-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/7-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Foley</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/9-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/9-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Game</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/15-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/15-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Home <br>&amp; Office</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/10-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/10-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Horror</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/11-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/11-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Human</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/12-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/12-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Impacts</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/13-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/13-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Industrial</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/16-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/16-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Nature</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/17-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/17-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Public Places</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/18-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/18-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Science Fiction<br>(SCI FI)</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/sport-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/sport-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Sport</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/19-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/19-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Technology</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/21-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/21-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Transitions &amp;<br> Movement</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/20-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/20-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Transportation</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/14-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/14-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">UI, Buttons, <br>&amp; Menus</span>
-							</a>
-							<a href="#" style="background-image: url('../assets/img/categories/23-min.jpg');">
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+						<a href="#" style="background-image: url('../assets/img/categories/23-min.jpg');">
 							<span class="inner"></span>
 							<span class="txt">Weapons &amp;<br> Warfare</span>
-							</a>
-							
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>

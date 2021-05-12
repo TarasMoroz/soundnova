@@ -88,6 +88,11 @@ h5 {
 
 .full-width-container {
     padding: 0 16px;
+    box-shadow: inset 0px 100px 40px -50px #14161d, inset 0px -100px 40px -50px #14161d;
+}
+.header-container {
+    z-index: 1000;
+    position: relative;
 }
 
 .container-title {
@@ -112,7 +117,7 @@ h5 {
         background-clip: text;
         color: transparent;
         &.shadowed {
-            text-shadow: 0 0px 85px rgb(239, 76, 198, .35);
+            text-shadow: 0 0px 85px rgba(239, 76, 198, 0.35);
         }
     }
 }
@@ -142,7 +147,7 @@ h5 {
     .inner {
         display: flex;
         box-shadow: 0px 0px 100px $mainyellow;
-        transition: 0.3s;
+        transition: 0.4s;
         width: 20px;
         height: 20px;
         border-radius: 23px;
@@ -168,28 +173,41 @@ h5 {
         transition: 0.3s;
         display: block;
         content: "";
-        width: 65px;
-        height: 65px;
+        width: 120px !important;
+        height: 120px !important;
         border-radius: 50%;
         border: 1px solid rgba(255, 255, 255, 0.1);
+        transform: scale(0);
+        animation: btn-play-pulse 4s linear infinite;
+        animation-delay: 1.5s;
     }
     &:after {
         position: absolute;
         transition: 0.3s;
         display: block;
         content: "";
-        width: 100px;
-        height: 100px;
+        width: 120px !important;
+        height: 120px !important;
         border-radius: 50%;
         border: 1px solid rgba(255, 255, 255, 0.1);
+        transform: scale(0);
+        animation: btn-play-pulse 4s linear infinite;
     }
     &:hover {
-        &:before,
-        &:after {
-            transform: scale(1.2);
-        }
         .inner {
             box-shadow: 0px 0px 50px 3px $mainyellow;
+        }
+    }
+    @keyframes btn-play-pulse {
+        0% {
+            transform: scale(0);
+        }
+        70% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            transform: scale(1.8);
         }
     }
 }
@@ -467,7 +485,7 @@ h5 {
         width: 65px;
         height: 65px;
         .inner {
-            box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.4), 0px 0px 100px $mainyellow;
+            box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.4), 0px 0px 75px $mainyellow;
             width: 36px;
             height: 36px;
             flex-shrink: 0;
@@ -492,7 +510,7 @@ h5 {
         }
         &:hover {
             .inner {
-                box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.4), 0px 0px 75px 5px $mainyellow;
+                box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.4), 0px 0px 75px 10px $mainyellow;
             }
         }
     }
