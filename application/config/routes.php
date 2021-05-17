@@ -81,6 +81,11 @@ $route['catalog/(:any)'] = "catalog/show_category/$1";
 $route['catalog/(:any)/type/(:any)'] = "catalog/show_category/$1/$2";
 $route['product/(:any)'] = "product/show_product/$1";
 
+
+$route['cart'] = "cart/index";
+$route['checkout'] = "cart/checkout";
+$route['contact'] = "pages/show_page_contact";
+
 // $route['(ua|ru)/cart'] = "cart/index";
 // $route['(ua|ru)/checkout'] = "cart/checkout";
 // $route['(ua|ru)/order/(:num)'] = "cart/order/$2";

@@ -33,27 +33,27 @@ class Cart extends CI_Controller {
 		$lang =  $_SESSION['lang'];
 		$data['lang'] = $lang;
 		$data['s'] = $this->settings->get(1);
-		// список доступных категорий каталога
-		$cats = $this->db->query("SELECT * FROM catalog ORDER BY sort ASC")->result_array();
-		$data['cats'] = [];
-		foreach($cats as $cat) { $data['cats'][$cat['id']] = $cat; }
+		// // список доступных категорий каталога
+		// $cats = $this->db->query("SELECT * FROM catalog ORDER BY sort ASC")->result_array();
+		// $data['cats'] = [];
+		// foreach($cats as $cat) { $data['cats'][$cat['id']] = $cat; }
 
-		$data['meta_title'] = ($lang == 'ru') ? 'Корзина' : 'Кошик';
-		$data['meta_description'] = ($lang == 'ru') ? 'Корзина' : 'Кошик';
+		// $data['meta_title'] = ($lang == 'ru') ? 'Корзина' : 'Кошик';
+		// $data['meta_description'] = ($lang == 'ru') ? 'Корзина' : 'Кошик';
 
-		// боковой блок, передаем настройки, категории, массив параметров
-		$data['v_aside'] = v_aside($data['s'], $data['cats'], ['fix' => false, 'foldup_categories' => false]);
+		// // боковой блок, передаем настройки, категории, массив параметров
+		// $data['v_aside'] = v_aside($data['s'], $data['cats'], ['fix' => false, 'foldup_categories' => false]);
 
 
-		$cart = [];
-		if(isset($_COOKIE['cart'])){
-			$cart = json_decode($_COOKIE['cart'], true);
+		// $cart = [];
+		// if(isset($_COOKIE['cart'])){
+		// 	$cart = json_decode($_COOKIE['cart'], true);
 
-			$data['goods'] = [];
-			if(!empty($cart['goods'])) $data['goods'] = $cart['goods'];
+		// 	$data['goods'] = [];
+		// 	if(!empty($cart['goods'])) $data['goods'] = $cart['goods'];
 
-			$data['cart'] = $cart;
-		}
+		// 	$data['cart'] = $cart;
+		// }
 
 
  		$this->load->view($this->viewfolder.'/v_cart', $data);
@@ -69,36 +69,38 @@ class Cart extends CI_Controller {
 		$lang =  $_SESSION['lang'];
 		$data['lang'] = $lang;
 		$data['s'] = $this->settings->get(1);
-		// список доступных категорий каталога
-		$cats = $this->db->query("SELECT * FROM catalog ORDER BY sort ASC")->result_array();
-		$data['cats'] = [];
-		foreach($cats as $cat) { $data['cats'][$cat['id']] = $cat; }
+		// // список доступных категорий каталога
+		// $cats = $this->db->query("SELECT * FROM catalog ORDER BY sort ASC")->result_array();
+		// $data['cats'] = [];
+		// foreach($cats as $cat) { $data['cats'][$cat['id']] = $cat; }
 
-		$data['meta_title'] = ($lang == 'ru') ? 'Оформление заказа' : 'Оформлення замовлення';
-		$data['meta_description'] = ($lang == 'ru') ? 'Оформление заказа' : 'Оформлення замовлення';
+		// $data['meta_title'] = ($lang == 'ru') ? 'Оформление заказа' : 'Оформлення замовлення';
+		// $data['meta_description'] = ($lang == 'ru') ? 'Оформление заказа' : 'Оформлення замовлення';
 
-		// боковой блок, передаем настройки, категории, массив параметров
-		$data['v_aside'] = v_aside($data['s'], $data['cats'], ['fix' => false, 'foldup_categories' => false]);
+		// // боковой блок, передаем настройки, категории, массив параметров
+		// $data['v_aside'] = v_aside($data['s'], $data['cats'], ['fix' => false, 'foldup_categories' => false]);
 
 
-		$cart = [];
-		if(isset($_COOKIE['cart'])){
-			$cart = json_decode($_COOKIE['cart'], true);
+		// $cart = [];
+		// if(isset($_COOKIE['cart'])){
+		// 	$cart = json_decode($_COOKIE['cart'], true);
 
-			$data['goods'] = [];
-			if(!empty($cart['goods'])) $data['goods'] = $cart['goods'];
+		// 	$data['goods'] = [];
+		// 	if(!empty($cart['goods'])) $data['goods'] = $cart['goods'];
 
-			$data['cart'] = $cart;
+		// 	$data['cart'] = $cart;
 
-			if(!empty($cart['goods'])){ // if product cart not empty
+		// 	if(!empty($cart['goods'])){ // if product cart not empty
 
-				$this->load->view($this->viewfolder.'/v_checkout', $data);
-			}
-			else {
-				header("HTTP/1.0 404 Not Found");
-				echo '404';
-			}
-		}
+		// 		$this->load->view($this->viewfolder.'/v_checkout', $data);
+		// 	}
+		// 	else {
+		// 		header("HTTP/1.0 404 Not Found");
+		// 		echo '404';
+		// 	}
+		// }
+
+		$this->load->view($this->viewfolder.'/v_checkout', $data);
 	}
 
 	// REST PAGES

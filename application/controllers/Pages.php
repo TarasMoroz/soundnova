@@ -152,6 +152,15 @@ class Pages extends CI_Controller {
 		}
 	}
 
+	public function show_page_contact(){
+		
+		// брать из базы данные и формировать...
+		$lang =  $_SESSION['lang'];
+		$data = [];
+
+		echo $this->load->view($this->viewfolder.'/v_page_contact', $data, true);
+	}
+
 	public function favorite() {
 		$data = array();
 		error_reporting(1);
