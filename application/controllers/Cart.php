@@ -17,8 +17,8 @@ class Cart extends CI_Controller {
 		$this->load->model('Settings_model', 'settings');
 
 		// новая почта и ликпей...
-		$this->load->library('NP');
-		$this->load->library('LP');
+		// $this->load->library('NP');
+		// $this->load->library('LP');
 
 		//if($this->agent->is_mobile()) $this->viewfolder =  'mobile';
  	}
