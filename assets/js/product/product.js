@@ -133,3 +133,26 @@ if (window.innerWidth > 800) {
       },
   }); 
 }
+
+// Tooltip Modal
+	$('.prod-edition-info-link').on('click', function(event){
+		event.preventDefault();
+    bd.css('overflow-y','hidden');
+      $('#popup-tooltip-wrapper').addClass('act');
+	});
+
+	$('#popup-tooltip-close').on('click', function(event){
+		event.preventDefault();
+		bd.css('overflow-y','auto');
+		$('#popup-tooltip-wrapper').removeClass('act');
+	});
+
+
+let tooltipModalBody = document.getElementById('popup-tooltip-wrapper');
+
+window.onclick = function(event) {
+  if (event.target == tooltipModalBody) {
+		bd.css('overflow-y','auto');
+		jQuery('#popup-tooltip-wrapper').removeClass('act');
+  }
+}

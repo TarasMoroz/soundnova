@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<? 
 							$im = '/assets/img/packs/product-default.svg';
-							if($mainVariant['img_box']) $im = '/assets/media/product_variant-img_box/'.substr($mainVariant['img_box'], 0, -4).'_570.svg'; 
+							if($mainVariant['img_box']) $im = '/assets/media/product_variant-img_box/'.substr($mainVariant['img_box'], 0, -4).'.svg'; 
 							
 							// дефолтный бокс бандла
 							if(!$mainVariant['img_box'] && isset($prodVariants['bundle'])){
@@ -47,6 +47,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							// дефолтный бокс десигн
 							if(!$mainVariant['img_box'] && isset($prodVariants['design'])){
 								$im = '/assets/img/packs/product-default.svg';
+							}
+							// дефолтный бокс конструкт
+							if(!$mainVariant['img_box'] && isset($prodVariants['construct'])){
+								$im = '/assets/img/packs/construction-default-min.svg';
 							}
 						?>
 
@@ -100,7 +104,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</select>
 
 					<? if(isset($prodVariants['design_construct'])): ?>
-					<a href="#" class="prod-edition-info-link">
+					<a class="prod-edition-info-link">
 						Ready to use DESIGNED + CONSTRUCTION KIT sound 
 						<span class="quest-symb">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="10" height="10" viewBox="0 0 438.533 438.533" style="enable-background:new 0 0 438.533 438.533;" xml:space="preserve">
@@ -181,7 +185,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 						<? 
 							$im = '/assets/img/packs/product-default.svg';
-							if($mainVariant['img_box']) $im = '/assets/media/product_variant-img_box/'.substr($mainVariant['img_box'], 0, -4).'_570.svg'; 
+							if($mainVariant['img_box']) $im = '/assets/media/product_variant-img_box/'.substr($mainVariant['img_box'], 0, -4).'.svg'; 
 							
 							// дефолтный бокс бандла
 							if(!$mainVariant['img_box'] && isset($prodVariants['bundle'])){
@@ -192,6 +196,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							if(!$mainVariant['img_box'] && isset($prodVariants['design'])){
 								$im = '/assets/img/packs/product-default.svg';
 							}
+							// дефолтный бокс конструкт
+							if(!$mainVariant['img_box'] && isset($prodVariants['construct'])){
+								$im = '/assets/img/packs/construction-default-min.svg';
+							}							
 						?>
 
 						<div class="bundle-shadow"></div>
@@ -270,7 +278,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<? endif; ?>
 					</div>
 					<? if(isset($prodVariants['design_construct'])): ?>
-					<a href="#" class="prod-edition-info-link">
+					<a class="prod-edition-info-link">
 						Ready to use DESIGNED + CONSTRUCTION KIT sound 
 						<span class="quest-symb">
 							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="14" height="14" viewBox="0 0 438.533 438.533" style="enable-background:new 0 0 438.533 438.533;" xml:space="preserve">

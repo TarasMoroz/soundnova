@@ -14,7 +14,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<? 
 							// дефолтная картинка бандла или дизайн пака
 							$im = isset($prodVariants['bundle']) ? '/assets/img/packs/main-pack-min.svg' : '/assets/img/packs/product-default.svg';
-							if($mainVariant['cont2_img_box']) $im = '/assets/media/product_variant-cont2_img_box/'.substr($mainVariant['cont2_img_box'], 0, -4).'_570.svg'; 
+							if($mainVariant['cont2_img_box']) $im = '/assets/media/product_variant-cont2_img_box/'.substr($mainVariant['cont2_img_box'], 0, -4).'.svg'; 
 						?>
 						<img src="<?=$im?>" alt="bundle name">
 					</div>
@@ -195,7 +195,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<? 
 							// дефолтная картинка бандла или дизайн пака
 							$im = isset($prodVariants['bundle']) ? '/assets/img/packs/main-pack-min.svg' : '/assets/img/packs/product-default.svg';
-							if($mainVariant['cont2_img_box']) $im = '/assets/media/product_variant-cont2_img_box/'.substr($mainVariant['cont2_img_box'], 0, -4).'_570.svg'; 
+							if($mainVariant['cont2_img_box']) $im = '/assets/media/product_variant-cont2_img_box/'.substr($mainVariant['cont2_img_box'], 0, -4).'.svg'; 
 						?>
 						<img src="<?=$im?>" alt="bundle name">
 						</div>
@@ -215,7 +215,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="full-width-container right-background-container" style="background-image: url('/assets/media/product_variant-cont3_img_bg/<?=$mainVariant['cont3_img_bg']?>');">
 	<div class="inner-content-container">
-		<div class="two-cols-block <? if(isset($prodVariants['design']) && isset($prodVariants['construct'])): ?>product4-flipped<? endif; ?>">
+		<div class="two-cols-block flipped">
 							<div class="right-col"></div>
 							<div class="left-col">
 								<h2 class="container-title secondary-title">
@@ -223,7 +223,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</h2>
 								<div class="descr"><?=$mainVariant['cont3_desc']?></div>
 								<? if(isset($prodVariants['design']) && isset($prodVariants['construct'])): ?>
-									<a href="#" class="desc-what-is">
+									<a class="prod-edition-info-link">
 										<span class="quest-symb">
 											<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="10" height="10" viewBox="0 0 438.533 438.533" style="enable-background:new 0 0 438.533 438.533;" xml:space="preserve">
 												<g fill="#1dd1e5">
