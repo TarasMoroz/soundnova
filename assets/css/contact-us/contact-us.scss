@@ -1,0 +1,262 @@
+@import "../variables/variables.scss";
+
+.full-width-container {
+    &.contact-us-container {
+        padding-top: 69px;
+        padding-bottom: 104px;
+        background-image: url('/assets/img/contact-mobile-back-min.jpg');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        .main-subtitle {
+            font-size: 16px;
+            line-height: 30px;
+            color: white;
+            font-weight: 500;
+            margin-bottom: 30px;
+            a {
+                color: $lightbluecolor;
+            }
+            span {
+                font-size: 12px;
+                text-transform: unset;
+                display: block;
+            }
+        }
+        .contact-us-columns {
+            .contact-us-info {
+                display: grid;
+                grid-gap: 30px;
+                padding: 45px 30px;
+                background-color: rgba(16,18,24,0.2);
+                border-radius: 8px;
+                box-shadow: 0px 0px 20px rgb(36, 230, 250, .1);
+                .title {
+                    text-align: center;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: white;
+                    font-weight: 500;
+                }
+                .info-item {
+                    display: flex;
+                    align-items: baseline;
+                    .info-image {
+                        flex: 0 0 35px;
+                        margin-right: 15px;
+                        position: relative;
+                        top: 2px;
+                        &.clock {
+                            top: 8px;
+                        }
+                    }
+                    .info-content {
+                        color: white;
+                        .info-title {
+                            font-size: 18px;
+                            font-weight: 500;
+                            margin-bottom: 14px;
+                        }
+                        .info-descr {
+                            font-size: 18px;
+                            font-weight: 300;
+                            a {
+                                color: white;
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .contact-us-form {
+                text-align: center;
+                .title {
+                    font-size: 22px;
+                    text-transform: uppercase;
+                    text-align: center;
+                    margin: 50px 0 30px 0;
+                    background-image: $titlesgradient;
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                    font-weight: 900;
+                    display: inline-block;
+                }
+                .add-review-row {
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin-bottom: 16px;
+                    .add-review-label {
+                        font-size: 16px;
+                        color: #fff;
+                        width: 100px;
+                        text-align: left;
+                        display: none;
+                    }
+                    input {
+                        line-height: 45px;
+                        background: #101218;
+                        outline: 0;
+                        box-shadow: 0px 0px 10px rgb(36, 230, 250, .1);
+                        border: 0;
+                        border-radius: 5px;
+                        width: calc(100% - 20px);
+                        padding: 0 10px;
+                        font-size: 14px;
+                        color: #fff;
+                        font-family: $mainfont;
+                        &::placeholder {
+                            color:#434e67;
+                        }
+                    }
+                    textarea {
+                        width: calc(100% - 20px);
+                        padding: 10px;
+                        font-size: 14px;
+                        min-height: 90px;
+                        color: #fff;
+                        resize: none;
+                        background: #101218;
+                        outline: 0;
+                        box-shadow: 0px 0px 10px rgb(36 230 250 / 10%);
+                        border: 0;
+                        font-family: $mainfont;
+                        &::placeholder {
+                            color:#434e67;
+                        }
+                    }
+                    .btn-purp-grad {
+                        max-width: 270px;
+                        width: 100%;
+                        margin: 10px auto 0 auto;
+                        font-size: 16px;
+                        line-height: 60px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $bp-tablet) {
+    .full-width-container {
+        &.contact-us-container {
+            .contact-us-columns {
+                .contact-us-form {
+                    .add-review-row {
+                        align-items: flex-start;
+                        .add-review-label {
+                            display: block;
+                            font-weight: 500;
+                            max-width: 95px;
+                            width: 100%;
+                            padding-top: 10px;
+                            sup {
+                                color: $mainrose;
+                            }
+                        }
+                        input, textarea {
+                            &::placeholder {
+                               color: transparent;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $bp-tablet-lg) {
+    .full-width-container {
+        &.contact-us-container {
+            padding: 204px 16px;
+            .container-title {
+                &.main-title {
+                    margin-bottom: 28px;
+                }
+            }
+            .main-subtitle {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 36px;
+                span {
+                    font-size: 20px;
+                }
+                br {
+                    display: none;
+                }
+            }
+            .contact-us-columns {
+                .contact-us-form {
+                    max-width: 730px;
+                    margin: 0 auto;
+                    text-align: left;
+                    .title {
+                        font-size: 36px;
+                    }
+                    form {
+                        display: flex;
+                        flex-wrap: wrap;
+                    }
+                    .add-review-row {
+                        flex: 0 0 100%;
+                        &.half-row {
+                            flex: 0 0 50%;
+                            &:nth-child(1) {
+                                flex: 0 0 calc(50% - 35px);
+                                margin-right: 35px;
+                            } 
+                            &:nth-child(2) {
+                                flex: 0 0 calc(50% - 35px);
+                                margin-left: 35px;
+                            } 
+                        }
+                        .btn-purp-grad {
+                            margin: 10px auto 0 95px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $bp-laptop) {
+    .full-width-container {
+        &.contact-us-container {
+            background-image: url('/assets/img/contact-back.jpg');
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            .contact-us-columns {
+                background-color: rgba(16,18,24,.2);
+                border-radius: 8px;
+                box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .1);
+                display: flex;
+                .contact-us-info {
+                    box-shadow: none;
+                    background-color: transparent;
+                    padding: 60px 30px;
+                }
+                .contact-us-form {
+                    padding: 0 30px;
+                    border-left: 1px solid #183039;
+                    form {
+                        .add-review-row {
+                            margin-bottom: 20px;
+                            .add-review-label {
+                                font-size: 18px;
+                            }
+                            textarea {
+                                min-height: 150px;
+                                box-shadow: 0px 0px 10px -4px rgb(36, 230, 250, .1);
+                            }
+                            input {
+                                box-shadow: 0px 0px 10px -4px rgb(36, 230, 250, .1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

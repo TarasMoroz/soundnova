@@ -1,10 +1,6 @@
 /*Colors*/
 /*Fonts*/
 /*breakpoints*/
-.content {
-  overflow-x: hidden;
-}
-
 .full-width-container.catalog-first {
   padding: 50px 16px 30px 16px;
 }
@@ -121,6 +117,7 @@
   display: flex;
   max-width: 1140px;
   margin: 0 auto 10px auto;
+  border-radius: 10px;
 }
 .full-width-container.catalog-second #catalog-wrapper #ftrs .ftrs-inner {
   background: #13161d;
@@ -570,10 +567,15 @@
   .full-width-container.catalog-second #catalog-wrapper #ftrs {
     display: grid;
     grid-template-columns: 1fr;
+    position: sticky;
+    top: 0;
+    margin-bottom: 0;
+    box-shadow: 0px 0px 9px 2px rgba(36, 230, 250, 0.1);
   }
   .full-width-container.catalog-second #catalog-wrapper #ftrs .ftrs-inner {
     margin: 0;
     width: 100% !important;
+    box-shadow: unset;
   }
   .full-width-container.catalog-second #catalog-wrapper #ftrs .ftrs-inner .cat-ftr {
     height: auto;
@@ -615,10 +617,8 @@
   .full-width-container.catalog-second #catalog-wrapper #ftrs .ftrs-inner:nth-child(1) .cat-ftr-cont {
     padding-bottom: 0;
   }
-  .full-width-container.catalog-second #catalog-wrapper #ftrs .ftrs-inner:nth-child(2) {
-    box-shadow: 0px 7px 10px 1px rgba(36, 230, 250, 0.1);
-    margin-bottom: 30px;
-    border-radius: 0 0 10px 10px;
+  .full-width-container.catalog-second #catalog-wrapper #ftrs .ftrs-inner:nth-child(2) .cat-ftr-cont {
+    padding-bottom: 0;
   }
   .full-width-container.catalog-second #catalog-wrapper .prods {
     grid-template-columns: 1fr 1fr;
