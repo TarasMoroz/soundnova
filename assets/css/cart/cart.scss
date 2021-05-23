@@ -1,0 +1,332 @@
+@import "../variables/variables.scss";
+
+.full-width-container {
+    &.cart-container {
+        padding-top: 69px;
+        padding-bottom: 104px;
+        background-image: url(/assets/img/cart-back-mobile.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        .container-title {
+            &.main-title {
+                margin-bottom: 18px;
+            }
+        }
+        .cart-content-block {
+            display: grid;
+            grid-gap: 15px;
+            .cart-items-block {
+                display: grid;
+                grid-gap: 6px;
+                .cart-item {
+                    background-color: rgba(16,18,24,.2);
+                    border-radius: 8px;
+                    box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                    padding: 12px;
+                    display: flex;
+                    align-items: center;
+                    img {
+                        max-width: 70px;
+                        width: 100%;
+                        margin-right: 15px;
+                        max-height: 56px;
+                    }
+                    .product-name {
+                        line-height: 13px;
+                        max-width: 120px;
+                        a {
+                            font-size: 10px;
+                            font-weight: 500;
+                            color: $lightbluecolor;
+                        }
+                    }
+                    .product-actions-price {
+                        flex: 1;
+                        display: flex;
+                        justify-content: flex-end;
+                        color: white;
+                        font-weight: 500;
+                        font-size: 14px;
+                        align-items: center;
+                        i {
+                            margin-left: 15px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                        }
+                        .old-price {
+                            position: relative;
+                            margin-left: 3px;
+                            &:after {
+                                content: "";
+                                width: 120%;
+                                height: 2px;
+                                background: white;
+                                position: absolute;
+                                transform: rotate(-15deg);
+                                left: -1px;
+                                bottom: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+            .promo-code-block {
+                background-color: rgba(16,18,24,.2);
+                border-radius: 8px;
+                box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                padding: 20px 20px 24px 20px;
+                display: grid;
+                justify-items: center;
+                .container-title {
+                    &.secondary-title {
+                        font-size: 18px;
+                        margin-bottom: 16px;
+                    }
+                }
+                .coupon-form {
+                    display: grid;
+                    justify-items: center;
+                    max-width: 260px;
+                    margin: 0 auto;
+                    position: relative;
+                    grid-gap: 10px;
+                    width: 100%;
+                    input {
+                        padding: 0 30px;
+                        border: 0;
+                        line-height: 50px;
+                        background: #fff;
+                        color: $maindarkgray;
+                        font-size: 14px;
+                        border-radius: 30px;
+                        width: calc(100% - 60px);
+                        outline: none;
+                        box-shadow: 0 0 30px 5px rgba(239, 76, 198, 0.2);
+                    }
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+            .cart-totals-block {
+                background-color: rgba(16,18,24,.2);
+                border-radius: 8px;
+                box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                padding: 22px 20px 28px 20px;
+                display: grid;
+                justify-items: center;
+                .container-title {
+                    &.secondary-title {
+                        font-size: 18px;
+                        margin-bottom: 16px;
+                    }
+                }
+                .totals-lines {
+                    width: 100%;
+                    color: white;
+                    font-weight: 300;
+                    font-size: 14px;
+                    display: grid;
+                    grid-gap: 18px;
+                    max-width: 260px;
+                    margin: 0 auto 24px auto;
+                    .total-line {
+                        display: flex;
+                        justify-content: space-between;
+                        .coupon-code {
+                            font-weight: 500;
+                        }
+                        .subtotal-price {
+                            padding-right: 29px;
+                        }
+                        &.total {
+                            font-weight: 500;
+                            .total-price {
+                                font-weight: 900;
+                                padding-right: 29px;
+                            }
+                        }
+                        .coupon-actions {
+                            display: flex;
+                            align-items: center;
+                            i {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                margin-left: 15px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+                .total-submit {
+                    width: 100%;
+                    max-width: 260px;
+                    margin: 0 auto;
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+            .benefits-container {
+                padding: 50px 25px;
+                display: grid;
+                grid-gap: 35px;
+                max-width: 320px;
+                margin: 0 auto;
+                .benefit-item {
+                    display: flex;
+                    align-items: center;
+                    img {
+                        margin-right: 35px;
+                    }
+                    .benefit-text {
+                        color: white;
+                        .title {
+                            font-size: 18px;
+                            font-weight: 500;
+                            margin-bottom: 9px;
+                        }
+                        .descr {
+                            font-size: 14px;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $bp-tablet) {
+    .full-width-container {
+        &.cart-container {
+            .cart-content-block {
+                .cart-items-block {
+                    grid-gap: 16px;
+                    .cart-item {
+                        padding: 30px;
+                        img {
+                            max-width: 170px;
+                            max-height: 120px;
+                            height: 100%;
+                            margin-right: 30px;
+                        }
+                        .product-name {
+                            a {
+                                font-size: 18px;
+                                line-height: 30px;
+                            }
+                            max-width: 410px;
+                        }
+                        .product-actions-price {
+                            font-size: 30px;
+                            .old-price {
+                                font-size: 24px;
+                            }
+                            svg {
+                                width: 17px;
+                                height: 17px;
+                                margin-top: 4px;
+                            }
+                        }
+                    }
+                }
+                .promo-code-block , .cart-totals-block {
+                    padding: 36px;
+                    .container-title {
+                        &.secondary-title {
+                            font-size: 38px;
+                            margin-bottom: 26px;
+                        }
+                    }
+                    button {
+                        line-height: 60px;
+                        font-size: 16px;
+                    }
+                }
+                .promo-code-block {
+                    .coupon-form {
+                        grid-gap: 15px;
+                    }
+                }
+                .cart-totals-block {
+                    .totals-lines {
+                        font-size: 16px;
+                        margin-bottom: 28px;
+                        .total-line {
+                            .subtotal-price {
+                                padding-right: 31px;
+                            }
+                        }
+                        .coupon-actions {
+                            svg {
+                                width: 16px;
+                                height: 16px;
+                            }
+                        }
+                    }
+                }
+                .benefits-container {
+                    padding: 36px;
+                    .benefit-item {
+                        .benefit-text {
+                            .title {
+                                font-size: 19px;
+                            }
+                            .descr {
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $bp-laptop) {
+    .full-width-container {
+        &.cart-container {
+            padding: 204px 16px;
+            background-image: url(/assets/img/cart-back.jpg);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            .container-title {
+                &.main-title {
+                    margin-bottom: 60px;
+                }
+            }
+            .cart-content-block {
+                display: flex;
+                flex-wrap: wrap;
+                grid-gap: 0;
+                .container-title {
+                    .gradient-title {
+                        display: block;
+                    }
+                }
+                .cart-items-block {
+                    flex: 0 0 100%;
+                    margin-bottom: 40px;
+                    order: 0;
+                }
+                .promo-code-block {
+                    flex: 1;
+                    order: 1;
+                }
+                .cart-totals-block {
+                    flex: 1;
+                    order: 3;
+                }
+                .benefits-container {
+                    flex: 1;
+                    order:2;
+                    padding: 36px 56px;
+                }
+            }
+        }
+    }
+}

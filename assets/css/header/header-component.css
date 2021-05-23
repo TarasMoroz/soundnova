@@ -18,16 +18,19 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
-.mobile-header .mobile-header-menu button,
-.mobile-header .mobile-header-user button {
+.mobile-header .mobile-header-menu a,
+.mobile-header .mobile-header-user a {
   background-color: transparent;
   outline: none;
   border: none;
   cursor: pointer;
   padding: 0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
 }
-.mobile-header .mobile-header-menu button img,
-.mobile-header .mobile-header-user button img {
+.mobile-header .mobile-header-menu a img,
+.mobile-header .mobile-header-user a img {
   width: 25px;
 }
 .mobile-header .mobile-header-logo {
@@ -37,21 +40,22 @@
 .mobile-header .mobile-header-logo img {
   width: 100%;
 }
-.mobile-header .mobile-header-user button {
+.mobile-header .mobile-header-user a {
   position: relative;
   font-family: "UniSans", sans-serif;
 }
-.mobile-header .mobile-header-user button.mobile-bucket {
+.mobile-header .mobile-header-user a.mobile-bucket {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.mobile-header .mobile-header-user button.mobile-bucket .shopping-products-amount {
+.mobile-header .mobile-header-user a.mobile-bucket .shopping-products-amount {
   color: #1dd1e5;
   position: absolute;
   font-size: 10px;
   font-weight: 500;
   top: calc(50% - 4px);
+  text-align: center;
 }
 
 .desktop-header {
@@ -108,7 +112,7 @@
     justify-content: flex-end;
     flex: 0 0 209px;
   }
-  .desktop-header .header-top-container .desktop-header-user button {
+  .desktop-header .header-top-container .desktop-header-user a {
     position: relative;
     font-family: "UniSans", sans-serif;
     background-color: transparent;
@@ -117,12 +121,12 @@
     margin-left: 50px;
     padding: 0;
   }
-  .desktop-header .header-top-container .desktop-header-user button.desktop-bucket {
+  .desktop-header .header-top-container .desktop-header-user a.desktop-bucket {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  .desktop-header .header-top-container .desktop-header-user button.desktop-bucket .shopping-products-amount {
+  .desktop-header .header-top-container .desktop-header-user a.desktop-bucket .shopping-products-amount {
     position: absolute;
     font-size: 14px;
     font-weight: 500;
@@ -134,8 +138,9 @@
     width: 25px;
     border-radius: 50%;
     box-shadow: inset 270px 0px 10px rgba(225, 66, 166, 0.5), 0px 0px 20px rgba(225, 66, 166, 0.5);
+    text-align: center;
   }
-  .desktop-header .header-top-container .desktop-header-user button img {
+  .desktop-header .header-top-container .desktop-header-user a img {
     width: 30px;
   }
   .desktop-header .header-main-container {
