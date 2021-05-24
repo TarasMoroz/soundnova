@@ -134,3 +134,22 @@ function onPlayerStateChange(event) {
 function stopVideo() {
 	player.stopVideo();
 }
+
+
+//mobile menu and search
+
+$('.open-burger-icon').click(function() {
+	$('.mobile-menu-content').fadeIn('fast');
+	$(this).hide();
+	$('.mobile-burger .close-icon').show();
+	$('body').css('overflow-y', 'hidden');
+})
+$('.mobile-burger .close-icon').click(function() {
+	$('.mobile-menu-content').fadeOut('fast');
+	$('.open-burger-icon').show();
+	$(this).hide();
+	$('body').css('overflow-y', 'auto');
+})
+$('.mobile-search').click(function() {
+	$('.mobile-search-content').toggle();
+})

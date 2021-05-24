@@ -17,6 +17,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
+  position: relative;
 }
 .mobile-header .mobile-header-menu a,
 .mobile-header .mobile-header-user a {
@@ -32,6 +33,173 @@
 .mobile-header .mobile-header-menu a img,
 .mobile-header .mobile-header-user a img {
   width: 25px;
+}
+.mobile-header .mobile-header-menu a .close-icon,
+.mobile-header .mobile-header-user a .close-icon {
+  transform: rotate(45deg);
+}
+.mobile-header .mobile-header-menu .mobile-menu-content,
+.mobile-header .mobile-header-user .mobile-menu-content {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  background-color: #13161d;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 70px 16px 40px 16px;
+  overflow-y: auto;
+  height: 100%;
+}
+.mobile-header .mobile-header-menu .mobile-menu-content ul,
+.mobile-header .mobile-header-user .mobile-menu-content ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: grid;
+  grid-gap: 40px;
+  list-style: none;
+  justify-items: center;
+}
+.mobile-header .mobile-header-menu .mobile-menu-content ul li a,
+.mobile-header .mobile-header-user .mobile-menu-content ul li a {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 300;
+}
+.mobile-header .mobile-header-menu .mobile-menu-content .get-free-subscr,
+.mobile-header .mobile-header-user .mobile-menu-content .get-free-subscr {
+  font-weight: 300;
+  color: #1dd1e5;
+  border: 1px solid #1dd1e5;
+  border-radius: 50px;
+  line-height: 44px;
+  padding: 0 20px;
+  font-size: 14px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  box-shadow: 0 0px 15px -7px #1dd1e5;
+  transition: all 0.2s;
+}
+.mobile-header .mobile-header-menu .mobile-menu-content .get-free-subscr:hover,
+.mobile-header .mobile-header-user .mobile-menu-content .get-free-subscr:hover {
+  background-color: #1dd1e5;
+  color: white;
+}
+.mobile-header .mobile-header-menu .mobile-menu-content .ft-soc-mob,
+.mobile-header .mobile-header-user .mobile-menu-content .ft-soc-mob {
+  display: grid;
+  align-content: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+  margin: 0 auto 45px auto;
+  max-width: 270px;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-header .mobile-header-menu .mobile-menu-content .ft-soc-mob a,
+.mobile-header .mobile-header-user .mobile-menu-content .ft-soc-mob a {
+  display: block;
+  outline: none;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.mobile-header .mobile-header-menu .mobile-menu-content .ft-soc-mob a i,
+.mobile-header .mobile-header-user .mobile-menu-content .ft-soc-mob a i {
+  display: block;
+}
+.mobile-header .mobile-header-menu .mobile-menu-content .ft-soc-mob a i svg,
+.mobile-header .mobile-header-user .mobile-menu-content .ft-soc-mob a i svg {
+  fill: #1dd1e5;
+  width: 36px;
+  height: 30px;
+}
+.mobile-header .mobile-header-menu .mobile-menu-content .ft-soc-mob a:nth-child(2) i svg,
+.mobile-header .mobile-header-user .mobile-menu-content .ft-soc-mob a:nth-child(2) i svg {
+  height: 28px;
+}
+.mobile-header .mobile-header-menu .mobile-menu-content .ft-soc-mob a:nth-child(3) i svg,
+.mobile-header .mobile-header-user .mobile-menu-content .ft-soc-mob a:nth-child(3) i svg {
+  height: 28px;
+}
+.mobile-header .mobile-header-menu .mobile-menu-content .ft-soc-mob a:hover,
+.mobile-header .mobile-header-user .mobile-menu-content .ft-soc-mob a:hover {
+  transform: scale(1.1);
+}
+.mobile-header .mobile-header-menu .mobile-search-content,
+.mobile-header .mobile-header-user .mobile-search-content {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  right: 0;
+  background-color: #13161d;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 7px 16px;
+  z-index: 1;
+  border-top: 2px solid #1C1F2A;
+  box-shadow: 0 5px 8px -5px #1dd1e578;
+}
+.mobile-header .mobile-header-menu .mobile-search-content .header-search-block,
+.mobile-header .mobile-header-user .mobile-search-content .header-search-block {
+  position: relative;
+  width: 100%;
+}
+.mobile-header .mobile-header-menu .mobile-search-content .header-search-block input,
+.mobile-header .mobile-header-user .mobile-search-content .header-search-block input {
+  outline: none;
+  background: #1B1F29;
+  border: none;
+  border-radius: 4px;
+  padding: 0 40px 0 25px;
+  line-height: 40px;
+  color: white;
+  font-size: 14px;
+  transition: 0.3s;
+  width: calc(100% - 65px);
+}
+.mobile-header .mobile-header-menu .mobile-search-content .header-search-block input::-moz-placeholder, .mobile-header .mobile-header-user .mobile-search-content .header-search-block input::-moz-placeholder {
+  color: #939393;
+}
+.mobile-header .mobile-header-menu .mobile-search-content .header-search-block input:-ms-input-placeholder, .mobile-header .mobile-header-user .mobile-search-content .header-search-block input:-ms-input-placeholder {
+  color: #939393;
+}
+.mobile-header .mobile-header-menu .mobile-search-content .header-search-block input::placeholder,
+.mobile-header .mobile-header-user .mobile-search-content .header-search-block input::placeholder {
+  color: #939393;
+}
+.mobile-header .mobile-header-menu .mobile-search-content .header-search-block input:hover, .mobile-header .mobile-header-menu .mobile-search-content .header-search-block input:focus,
+.mobile-header .mobile-header-user .mobile-search-content .header-search-block input:hover,
+.mobile-header .mobile-header-user .mobile-search-content .header-search-block input:focus {
+  border-color: #1dd1e5;
+  box-shadow: 0 0 15px 0px #1dd1e5;
+  background: rgba(29, 209, 229, 0.1);
+}
+.mobile-header .mobile-header-menu .mobile-search-content .header-search-block a,
+.mobile-header .mobile-header-user .mobile-search-content .header-search-block a {
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  z-index: 2;
+  top: 4px;
+  right: 8px;
+}
+.mobile-header .mobile-header-menu .mobile-search-content .header-search-block a svg,
+.mobile-header .mobile-header-user .mobile-search-content .header-search-block a svg {
+  width: 16px;
+  height: 16px;
+  margin: 13px;
+  stroke-width: 3;
+  stroke: #1dd1e5;
+  fill: #1dd1e5;
 }
 .mobile-header .mobile-header-logo {
   max-width: 45px;
