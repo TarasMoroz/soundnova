@@ -180,3 +180,9 @@
 	echo base_url("assets/js/product/product.js?5");
  } 
  ?><?=strtotime('now')?>"></script>
+
+<script src="<?php
+ if (strpos($currentpage,'checkout') == true) {
+	echo base_url("assets/js/checkout/checkout.js?5");
+ } 
+ ?><?=strtotime('now')?>"></script>

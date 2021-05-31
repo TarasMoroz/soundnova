@@ -141,7 +141,7 @@
   padding: 7px 16px;
   z-index: 1;
   border-top: 2px solid #1C1F2A;
-  box-shadow: 0 5px 8px -5px #1dd1e578;
+  box-shadow: 0 5px 8px -7px #1dd1e578;
 }
 .mobile-header .mobile-header-menu .mobile-search-content .header-search-block,
 .mobile-header .mobile-header-user .mobile-search-content .header-search-block {

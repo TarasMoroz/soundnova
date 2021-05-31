@@ -23,6 +23,7 @@
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/product/product.min.css?");?><?=strtotime('now')?>">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/contact-us/contact-us.min.css?");?><?=strtotime('now')?>">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/cart/cart.min.css?");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/checkout/checkout.min.css?");?><?=strtotime('now')?>">
 	<link rel="shortcut icon" href="<?=base_url("assets/img/icon.png")?>">
 	<link rel="canonical" href="<?=base_url(explode('?',$_SERVER['REQUEST_URI'])[0])?>"/>
 	<script type="text/javascript">
