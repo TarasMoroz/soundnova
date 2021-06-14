@@ -74,7 +74,7 @@
     <div class="mobile-header">
           <div class="mobile-header-menu">
               <a class="mobile-burger"><img class="open-burger-icon" src="/assets/img/icons/menu.svg"/><img class="close-icon" src="/assets/img/icons/add.svg" style="display:none"/></a>
-              <a class="mobile-search"><img src="/assets/img/icons/search.svg"/></a>
+              <a class="mobile-search"><img class="open-search-icon" src="/assets/img/icons/search.svg"/><img class="close-search-icon" src="/assets/img/icons/search-blue.svg" style="display:none"/></a>
 			  <div class="mobile-menu-content" style="display:none">
 			  <ul>
 						<li>
@@ -88,7 +88,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="/sound-design-studio">
 								Sound design studio
 							</a>
 						</li>
@@ -164,7 +164,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="/sound-design-studio">
 								Sound design studio
 							</a>
 						</li>

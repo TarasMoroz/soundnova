@@ -186,3 +186,9 @@
 	echo base_url("assets/js/checkout/checkout.js?5");
  } 
  ?><?=strtotime('now')?>"></script>
+
+<script src="<?php
+ if (strpos($currentpage,'sound-design-studio') == true) {
+	echo base_url("assets/js/sound-design-studio/sound-design-studio.js?5");
+ } 
+ ?><?=strtotime('now')?>"></script>

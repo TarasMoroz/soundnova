@@ -138,11 +138,16 @@ function stopVideo() {
 
 //mobile menu and search
 
+
 $('.open-burger-icon').click(function() {
 	$('.mobile-menu-content').fadeIn('fast');
 	$(this).hide();
 	$('.mobile-burger .close-icon').show();
 	$('body').css('overflow-y', 'hidden');
+
+	$('.mobile-search-content').fadeOut('fast');
+	$('.open-search-icon').show();
+	$('.close-search-icon').hide();
 })
 $('.mobile-burger .close-icon').click(function() {
 	$('.mobile-menu-content').fadeOut('fast');
@@ -150,6 +155,17 @@ $('.mobile-burger .close-icon').click(function() {
 	$(this).hide();
 	$('body').css('overflow-y', 'auto');
 })
-$('.mobile-search').click(function() {
-	$('.mobile-search-content').toggle();
+$('.open-search-icon').click(function() {
+	$('.mobile-search-content').fadeIn('fast');
+	$(this).hide();
+	$('.close-search-icon').show();
+
+	$('.mobile-menu-content').fadeOut('fast');
+	$('.mobile-burger .close-icon').hide();
+	$('.open-burger-icon').show();
+})
+$('.close-search-icon').click(function() {
+	$('.mobile-search-content').fadeOut('fast');
+	$('.open-search-icon').show();
+	$(this).hide();
 })
