@@ -156,7 +156,7 @@ class Pages extends CI_Controller {
 		
 		// брать из базы данные и формировать...
 		$lang =  $_SESSION['lang'];
-		$data = [];
+		$data['lang'] = $lang;
 
 		echo $this->load->view($this->viewfolder.'/v_page_contact', $data, true);
 	}
@@ -165,7 +165,7 @@ class Pages extends CI_Controller {
 		
 		// брать из базы данные и формировать...
 		$lang =  $_SESSION['lang'];
-		$data = [];
+		$data['lang'] = $lang;
 
 		echo $this->load->view($this->viewfolder.'/v_sound_design_studio', $data, true);
 	}
