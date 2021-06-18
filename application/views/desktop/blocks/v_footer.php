@@ -197,3 +197,5 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	echo base_url("assets/js/sound-design-studio/sound-design-studio.js?5");
  } 
  ?><?=strtotime('now')?>"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.4.1/shuffle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

@@ -128,6 +128,7 @@
                     background-size: cover;
                     background-position: center top;
                     background-repeat: no-repeat;
+                    box-shadow: inset 0px 0px 100px 50px rgb(30, 35, 45, .7), 0px 0px 20px rgb(36, 230, 250, .1);
                     .bundle-play {
                         position: absolute;
                         top: 50%;
@@ -204,7 +205,7 @@
                     background-position: center top;
                     background-repeat: no-repeat;
                     margin-bottom: 20px;
-                    box-shadow: 0px 0 20px -10px rgb(36, 230, 250, .2);
+                    box-shadow: inset 0px 0px 100px 50px rgb(30, 35, 45, .7), 0px 0px 20px rgb(36, 230, 250, .1);
                     .bundle-play {
                         position: absolute;
                         top: 50%;
@@ -693,6 +694,109 @@
             }
         }
     }
+    &.our-works-container {
+        padding: 30px 16px 96px 16px;
+        .container-title {
+            &.secondary-title {
+                margin-bottom: 34px;
+            }
+        }
+        .our-works-tabs-header {
+            .filter-group {
+                position: relative;
+                .filters-dropdown {
+                    visibility: visible;
+                    opacity: 1;
+                    transition: .4s;
+                    left: 0;
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    position: absolute;
+                    width: calc(100% - 32px);
+                    border-radius: 10px;
+                    top: 46px;
+                    height: auto;
+                    padding: 20px 16px;
+                    background: #13161d;
+                    z-index: 4;
+                    box-shadow: 0px 0px 20px rgb(36, 230, 250, .2);
+                    .btn {
+                        background-color: transparent;
+                        border: none;
+                        color: white;
+                        text-align: left;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        margin-bottom: 15px;
+                        padding: 0;
+                        font-weight: 500;
+                        &.active {
+                            color: $lightbluecolor;
+                        }
+                    }
+                }
+                .choosen-filter {
+                    color: $lightbluecolor;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    padding: 0 16px;
+                    line-height: 35px;
+                    background-color: #101218;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 20px rgb(36 230 250 / 10%);
+                    width: calc(100% - 39px);
+                    margin: 0 auto 7.5px auto;
+                    cursor: pointer;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    svg {
+                        stroke: $lightbluecolor;
+                        width: 16px;
+                        height: 16px;
+                    }
+                    &.act {
+                        svg {
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+        }
+        .our-works-tabs-content {
+            .video-item {
+                padding: 7.5px;
+                width: 100%;
+                margin: 0;
+                .prod-vid {
+                    position: relative;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 180px;
+                    border-radius: 10px;
+                    background-size: cover;
+                    background-position: center center;
+                    background-repeat: no-repeat;
+                    box-shadow: inset 0px 0px 100px 50px rgb(30, 35, 45, .7), 0px 0px 20px rgb(36, 230, 250, .1);
+                    .bundle-play {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(-50%);
+                    }
+                }
+                .title-overlay {
+                    font-size: 12px;
+                    color: #fff;
+                    font-weight: 500;
+                    text-align: left;
+                    text-transform: uppercase;
+                    margin: 10px 0 24px 0;
+                }
+            }
+        }
+    }
 }
 @media (min-width: $bp-tablet) {
     .full-width-container {
@@ -902,6 +1006,46 @@
                 }
             }
         }
+        &.our-works-container {
+            padding: 80px 16px 76px 16px;
+            .container-title {
+                &.secondary-title {
+                    margin-bottom: 45px;
+                }
+            }
+            .our-works-tabs-header {
+                .filter-group {
+                    position: relative;
+                    .filters-dropdown {
+                        display: flex !important;
+                        align-items: center;
+                        position: unset;
+                        justify-content: center;
+                        padding: 0 16px;
+                        height: 55px;
+                        width: calc(100% - 52px);
+                        margin: 0 auto 24px auto;
+                        .btn {
+                            margin: 0 15px;
+                            font-size: 14px;
+                        }
+                    }
+                    .choosen-filter {
+                        display: none;
+                    }
+                }
+            }
+            .our-works-tabs-content {
+                .video-item {
+                    margin: 10px;
+                    width: calc(50% - 20px);
+                    padding: 0;
+                    .title-overlay {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
     }
 }
 @media  (min-width: $bp-tablet-lg){
@@ -1072,6 +1216,22 @@
                             }
                         }
                     }
+                }
+            }
+        }
+        &.our-works-container {
+            .our-works-tabs-header {
+                .filter-group {
+                    .filters-dropdown {
+                        .btn {
+                            margin: 0 30px;
+                        }
+                    }
+                }
+            }
+            .our-works-tabs-content {
+                .video-item {
+                    width: calc(33.33% - 20px);
                 }
             }
         }

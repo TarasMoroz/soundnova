@@ -206,140 +206,140 @@ because we know that trust needs to be earned</p>
 			<div class="full-width-container our-works-container">
 				<div class="inner-content-container">
 						<h2 class="container-title secondary-title">
-							<div class="gradient-title shadowed">Our works</div>
+							<span class="gradient-title shadowed">Our works</span>
 						</h2>
 						<div class="our-works-tabs-container">
 							<div class="our-works-tabs-header">
-							<ul id="our-works-tabs">   
-								<li><a class="our-works-tab"></a></li>
-							</ul>
+
+								<div class="filter-group filter-group--compound js-colors">
+								<div class="choosen-filter">
+									<div class="text">ALL</div>
+									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+								</div>
+								<div class="filters-dropdown" style="display:none">
+									<button class="btn" data-value="sound-design"><span class="visuallyhidden">sound design</span></button>
+									<button class="btn" data-value="movies"><span class="visuallyhidden">Movies</span></button>
+									<button class="btn" data-value="cartoons"><span class="visuallyhidden">Cartoons</span></button>
+									<button class="btn" data-value="motion-graphics"><span class="visuallyhidden">Motion Graphics</span></button>
+									<button class="btn" data-value="games"><span class="visuallyhidden">Games</span></button>
+									<button class="btn" data-value="apps"><span class="visuallyhidden">Apps</span></button>
+									</div>
+								</div>
+
 							</div>
 							<div class="our-works-tabs-content">
-								<div class="our-works-tab-container" style="display:none">
-											<div class="our-works-slider">
-												<!-- Swiper -->
-												<div class="swiper-container our-works-wrapper">
-													<div class="swiper-wrapper">
-														<div class="swiper-slide">
-															<div class="links-column">
-																<div class="link">
-																	<div class="product-video">
-																		<div class="prod-vid" style="background-image: url('/assets/img/games-img.jpg');">
-																			<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
-																				<div class="inner">
-																					<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
-																				</div>
-																			</button>
-																		</div>
-																	</div>
-																</div>
-																<div class="link">
-																	<div class="product-video">
-																		<div class="prod-vid" style="background-image: url('/assets/img/movies-img.jpg');">
-																			<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
-																				<div class="inner">
-																					<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
-																				</div>
-																			</button>
-																		</div>
-																	</div>
-																</div>
-																<div class="link">
-																	<div class="product-video">
-																		<div class="prod-vid" style="background-image: url('/assets/img/movies-img.jpg');">
-																			<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
-																				<div class="inner">
-																					<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
-																				</div>
-																			</button>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="swiper-slide">
-														<div class="links-column">
-																<div class="link">
-																	<div class="product-video">
-																		<div class="prod-vid" style="background-image: url('/assets/img/motion-graphics-img.jpg');">
-																			<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
-																				<div class="inner">
-																					<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
-																				</div>
-																			</button>
-																		</div>
-																	</div>
-																</div>
-																<div class="link">
-																	<div class="product-video">
-																		<div class="prod-vid" style="background-image: url('/assets/img/apps-img.jpg');">
-																			<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
-																				<div class="inner">
-																					<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
-																				</div>
-																			</button>
-																		</div>
-																	</div>
-																</div>
-																<div class="link">
-																	<div class="product-video">
-																		<div class="prod-vid" style="background-image: url('/assets/img/movies-img.jpg');">
-																			<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
-																				<div class="inner">
-																					<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
-																				</div>
-																			</button>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-														<div class="swiper-slide">
-														<div class="links-column">
-																<div class="link">
-																	<div class="product-video">
-																		<div class="prod-vid" style="background-image: url('/assets/img/cartoons-img.jpg');">
-																			<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
-																				<div class="inner">
-																					<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
-																				</div>
-																			</button>
-																		</div>
-																	</div>
-																</div>
-																<div class="link">
-																	<div class="product-video">
-																		<div class="prod-vid" style="background-image: url('/assets/img/commercials-img.jpg');">
-																			<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
-																				<div class="inner">
-																					<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
-																				</div>
-																			</button>
-																		</div>
-																	</div>
-																</div>
-																<div class="link">
-																	<div class="product-video">
-																		<div class="prod-vid" style="background-image: url('/assets/img/movies-img.jpg');">
-																			<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
-																				<div class="inner">
-																					<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
-																				</div>
-																			</button>
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-															<!-- Add Arrows -->
-															<div class="swiper-button-next"></div>
-															<div class="swiper-button-prev"></div>
-															<!-- Add Pagination -->
-															<div class="swiper-pagination"></div>
-											</div>
-										</div>	
-      							</div>
+
+							<div class="row my-shuffle-container js-shuffle">
+								<figure class="video-item" data-category="games">
+									<div class="product-video">
+										<div class="prod-vid" style="background-image: url('/assets/img/games-img.jpg');">
+											<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
+												<div class="inner">
+													<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+												</div>
+											</button>
+										</div>
+									</div>
+									<div class="title-overlay">Project title</div>
+								</figure>
+								<figure class="video-item" data-category="cartoons">
+									<div class="product-video">
+										<div class="prod-vid" style="background-image: url('/assets/img/motion-graphics-img.jpg');">
+											<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
+												<div class="inner">
+													<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+												</div>
+											</button>
+										</div>
+									</div>
+									<div class="title-overlay">Project title</div>
+								</figure>
+								<figure class="video-item" data-category="games">
+									<div class="product-video">
+										<div class="prod-vid" style="background-image: url('/assets/img/cartoons-img.jpg');">
+											<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
+												<div class="inner">
+													<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+												</div>
+											</button>
+										</div>
+									</div>
+									<div class="title-overlay">Project title</div>
+								</figure>
+								<figure class="video-item" data-category="movies">
+									<div class="product-video">
+										<div class="prod-vid" style="background-image: url('/assets/img/movies-img.jpg');">
+											<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
+												<div class="inner">
+													<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+												</div>
+											</button>
+										</div>
+									</div>
+									<div class="title-overlay">Project title</div>
+								</figure>
+								<figure class="video-item" data-category="movies">
+									<div class="product-video">
+										<div class="prod-vid" style="background-image: url('/assets/img/apps-img.jpg');">
+											<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
+												<div class="inner">
+													<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+												</div>
+											</button>
+										</div>
+									</div>
+									<div class="title-overlay">Project title</div>
+								</figure>
+								<figure class="video-item" data-category="motion-graphics">
+									<div class="product-video">
+										<div class="prod-vid" style="background-image: url('/assets/img/commercials-img.jpg');">
+											<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
+												<div class="inner">
+													<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+												</div>
+											</button>
+										</div>
+									</div>
+									<div class="title-overlay">Project title</div>
+								</figure>
+								<figure class="video-item" data-category="sound-design">
+									<div class="product-video">
+										<div class="prod-vid" style="background-image: url('/assets/img/movies-two.jpg');">
+											<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
+												<div class="inner">
+													<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+												</div>
+											</button>
+										</div>
+									</div>
+									<div class="title-overlay">Project title</div>
+								</figure>
+								<figure class="video-item" data-category="movies">
+									<div class="product-video">
+										<div class="prod-vid" style="background-image: url('/assets/img/movies-three.jpg');">
+											<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
+												<div class="inner">
+													<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+												</div>
+											</button>
+										</div>
+									</div>
+									<div class="title-overlay">Project title</div>
+								</figure>
+								<figure class="video-item" data-category="apps">
+									<div class="product-video">
+										<div class="prod-vid" style="background-image: url('/assets/img/sound-design-two.jpg');">
+											<button class="bundle-play video-open" data-code="kPkKeGBSbCc">
+												<div class="inner">
+													<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+												</div>
+											</button>
+										</div>
+									</div>
+									<div class="title-overlay">Project title</div>
+								</figure>
+							</div>
+
   							</div>
 						</div>
 				</div>
