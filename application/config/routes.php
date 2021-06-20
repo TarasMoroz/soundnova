@@ -87,6 +87,7 @@ $route['checkout'] = "cart/checkout";
 $route['contact'] = "pages/show_page_contact";
 $route['sound-design-studio'] = "pages/show_page_soundstudio";
 $route['login'] = "pages/show_page_login";
+$route['signup'] = "pages/show_page_signup";
 
 // $route['(ua|ru)/cart'] = "cart/index";
 // $route['(ua|ru)/checkout'] = "cart/checkout";

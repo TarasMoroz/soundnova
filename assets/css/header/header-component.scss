@@ -43,7 +43,7 @@
             display: flex;
             flex-flow: column;
             align-items: center;
-            padding: 70px 16px 40px 16px;
+            padding: 40px 16px;
             overflow-y: auto;
             height: 100%;
                 ul {
@@ -51,7 +51,7 @@
                     padding: 0;
                     text-align: center;
                     display: grid;
-                    grid-gap: 40px;
+                    grid-gap: 25px;
                     list-style: none;
                     justify-items: center;
                     li {
@@ -71,7 +71,7 @@
                     line-height: 44px;
                     padding: 0 20px;
                     font-size: 14px;
-                    margin-top: 60px;
+                    margin-top: 40px;
                     margin-bottom: 40px;
                     box-shadow: 0 0px 15px -7px #1dd1e5;
                     transition: all .2s;

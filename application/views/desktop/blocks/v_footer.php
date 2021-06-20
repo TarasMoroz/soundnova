@@ -199,3 +199,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  ?><?=strtotime('now')?>"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.4.1/shuffle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="<?php
+ if (strpos($currentpage,'login') == true) {
+	echo base_url("assets/js/login/login.js?5");
+ } 
+ ?><?=strtotime('now')?>"></script>

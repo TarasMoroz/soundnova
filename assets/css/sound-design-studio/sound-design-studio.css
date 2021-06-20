@@ -801,7 +801,7 @@
     padding: 164px 16px 235px 16px;
     background-image: url(/assets/img/studio-desktop-back.jpg);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center center;
     background-size: cover;
   }
   .full-width-container.sound-design-top-container .container-title.main-title {
