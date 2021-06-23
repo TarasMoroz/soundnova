@@ -205,3 +205,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	echo base_url("assets/js/login/login.js?5");
  } 
  ?><?=strtotime('now')?>"></script>
+ <script src="<?php
+ if (strpos($currentpage,'success') == true) {
+	echo base_url("assets/js/success/success.js?5");
+ } 
+ ?><?=strtotime('now')?>"></script>

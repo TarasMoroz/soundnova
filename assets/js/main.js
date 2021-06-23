@@ -1,3 +1,10 @@
+//timerDate setting
+
+let countDownDate = new Date("May 25, 2022 15:37:25").getTime();
+
+
+
+
 //load images and iframes deffered
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -5,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function() {
         entries.forEach((entry) => {
             if (entry.isIntersecting) {
                 const lazyImage = entry.target
-                console.log("lazy loading ", lazyImage)
                 lazyImage.src = lazyImage.dataset.src
                 lazyImage.classList.remove("lzy_img");
                 imgObserver.unobserve(lazyImage);
@@ -82,7 +88,6 @@ function video_open(curr){
 
 	if(typeof(YT) == 'undefined' || typeof(YT.Player) == 'undefined'){
 		$.getScript("https://www.youtube.com/iframe_api", function(){
-			console.log('YT API loaded...');
 		});
 	} else {
 		player = new YT.Player('popup-player', {

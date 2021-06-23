@@ -26,6 +26,7 @@
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/checkout/checkout.min.css?");?><?=strtotime('now')?>">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/sound-design-studio/sound-design-studio.min.css?");?><?=strtotime('now')?>">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/login/login.min.css?");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/success/success.min.css?");?><?=strtotime('now')?>">
 	<link rel="shortcut icon" href="<?=base_url("assets/img/icon.png")?>">
 	<link rel="canonical" href="<?=base_url(explode('?',$_SERVER['REQUEST_URI'])[0])?>"/>
 	<script type="text/javascript">

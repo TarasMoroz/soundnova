@@ -2,7 +2,7 @@
 /*Fonts*/
 /*breakpoints*/
 .mobile-header {
-  background-color: #13161d;
+  background-color: rgba(19, 22, 29, 0.7);
   display: grid;
   grid-template-columns: 70px 1fr 65px;
   padding: 8px 16px;
