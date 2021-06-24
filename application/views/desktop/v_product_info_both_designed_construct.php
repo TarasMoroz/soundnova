@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<? 
 							// дефолтная картинка бандла или дизайн пака
 							$im = isset($prodVariants['bundle']) ? '/assets/img/packs/main-pack-min.svg' : '/assets/media/product_variant-img_box/construction-default-min.svg';
-							if($mainVariant['cont2_img_box']) $im = '/assets/media/product_variant-img_box/1610317181_570.svg'; 
+							if($mainVariant['cont2_img_box']) $im = '/assets/media/product_variant-cont2_img_box/'.substr($mainVariant['cont2_img_box'], 0, -4).'.svg'; 
 						?>
 						<img src="<?=$im?>" alt="bundle name">
 						</div>
@@ -112,7 +112,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<? 
 							// дефолтная картинка бандла или дизайн пака
 							$im = isset($prodVariants['bundle']) ? '/assets/img/packs/main-pack-min.svg' : '/assets/media/product_variant-img_box/construction-default-min.svg';
-							if($mainVariant['cont2_img_box']) $im = '/assets/media/product_variant-img_box/1610317181_570.svg'; 
+							if($mainVariant['cont2_img_box']) $im = '/assets/media/product_variant-cont2_img_box/'.substr($mainVariant['cont2_img_box'], 0, -4).'.svg'; 
 						?>
 						<img src="<?=$im?>" alt="bundle name">
 						</div>

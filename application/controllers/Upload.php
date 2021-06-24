@@ -97,13 +97,18 @@ class Upload extends CI_Controller {
 
 		$ts = strtotime('now');
 
+		$fileExt = pathinfo($_FILES["userfile"]["name"], PATHINFO_EXTENSION);
+
+		// не ресайзим если вектор.
+		if($fileExt == 'svg') $sizes = [];
+
 		$config['upload_path']          = './assets/'.$folder.'/';
-	    $config['allowed_types']        = 'gif|jpg|jpeg|png|GIF|JPG|JPEG|PNG';
+	    $config['allowed_types']        = 'gif|jpg|jpeg|png|svg|GIF|JPG|JPEG|PNG|SVG';
 	    $config['max_size']             = 10000;
 	    $config['max_width']            = 5000;
 	    $config['max_height']           = 5000;
 	    $config['overwrite']            = true;
-	    $config['file_name']            = $ts.'.jpg';
+	    $config['file_name']            = $ts.'.'.$fileExt;
 
 	    if(!is_dir('./assets/'.$folder)){
 			mkdir('./assets/'.$folder); // creates folder
@@ -117,7 +122,8 @@ class Upload extends CI_Controller {
 
 	    	// удаляем все прошлые ресайзы
 			foreach (glob("./assets/".$folder."/".$prevArr[0]."_*") as $file) {
-				if(substr($file, -4) === ".jpg"){
+				$fExt = substr($file, -4);
+				if(in_array($fExt, ['.jpg','.png','.gif','jpeg','.svg'])){
 					//$file = str_replace("\\", "/", substr($file,1));
 					//echo "----- ". $file . "<br>";
 					unlink($file);
@@ -160,7 +166,7 @@ class Upload extends CI_Controller {
 						        $configResize['maintain_ratio'] = TRUE;
 						        $configResize['width']    = (int) $size;
 						        // $configResize['height']   = 300;
-						        $configResize['new_image']   = $ts.'_'.$size.'.jpg';
+						        $configResize['new_image']   = $ts.'_'.$size.'.'.$fileExt;
 
 						        $this->load->library('image_lib');
 						        $this->image_lib->initialize($configResize);

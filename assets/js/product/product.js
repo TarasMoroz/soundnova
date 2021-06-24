@@ -1,7 +1,6 @@
 
 //SALE COUNTER
 
-let countDownDate = new Date("May 25, 2021 15:37:25").getTime();
 
 // Update the count down every 1 second
 let timerUpdate = setInterval(function() {
@@ -132,4 +131,27 @@ if (window.innerWidth > 800) {
         el: '.swiper-pagination',
       },
   }); 
+}
+
+// Tooltip Modal
+	$('.prod-edition-info-link').on('click', function(event){
+		event.preventDefault();
+    bd.css('overflow-y','hidden');
+      $('#popup-tooltip-wrapper').addClass('act');
+	});
+
+	$('#popup-tooltip-close').on('click', function(event){
+		event.preventDefault();
+		bd.css('overflow-y','auto');
+		$('#popup-tooltip-wrapper').removeClass('act');
+	});
+
+
+let tooltipModalBody = document.getElementById('popup-tooltip-wrapper');
+
+window.onclick = function(event) {
+  if (event.target == tooltipModalBody) {
+		bd.css('overflow-y','auto');
+		jQuery('#popup-tooltip-wrapper').removeClass('act');
+  }
 }

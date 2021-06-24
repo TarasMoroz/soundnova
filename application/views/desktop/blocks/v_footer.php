@@ -152,6 +152,12 @@
 	</div>
 </div>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KT898Z4"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
 <?php    
 	$currentpage = $_SERVER['REQUEST_URI'];
 	
@@ -177,5 +183,30 @@
   <script src="<?php
  if (strpos($currentpage,'product') == true) {
 	echo base_url("assets/js/product/product.js?5");
+ } 
+ ?><?=strtotime('now')?>"></script>
+
+<script src="<?php
+ if (strpos($currentpage,'checkout') == true) {
+	echo base_url("assets/js/checkout/checkout.js?5");
+ } 
+ ?><?=strtotime('now')?>"></script>
+
+<script src="<?php
+ if (strpos($currentpage,'sound-design-studio') == true) {
+	echo base_url("assets/js/sound-design-studio/sound-design-studio.js?5");
+ } 
+ ?><?=strtotime('now')?>"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.4.1/shuffle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="<?php
+ if (strpos($currentpage,'login') == true) {
+	echo base_url("assets/js/login/login.js?5");
+ } 
+ ?><?=strtotime('now')?>"></script>
+ <script src="<?php
+ if (strpos($currentpage,'success') == true) {
+	echo base_url("assets/js/success/success.js?5");
  } 
  ?><?=strtotime('now')?>"></script>

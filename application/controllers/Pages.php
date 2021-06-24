@@ -152,6 +152,49 @@ class Pages extends CI_Controller {
 		}
 	}
 
+	public function show_page_contact(){
+		
+		// брать из базы данные и формировать...
+		$lang =  $_SESSION['lang'];
+		$data['lang'] = $lang;
+
+		echo $this->load->view($this->viewfolder.'/v_page_contact', $data, true);
+	}
+
+	public function show_page_soundstudio(){
+		
+		// брать из базы данные и формировать...
+		$lang =  $_SESSION['lang'];
+		$data['lang'] = $lang;
+
+		echo $this->load->view($this->viewfolder.'/v_sound_design_studio', $data, true);
+	}
+
+	public function show_page_login(){
+		
+		// брать из базы данные и формировать...
+		$lang =  $_SESSION['lang'];
+		$data = [];
+
+		echo $this->load->view($this->viewfolder.'/v_login', $data, true);
+	}
+
+	public function show_page_signup(){
+		
+		// брать из базы данные и формировать...
+		$lang =  $_SESSION['lang'];
+		$data = [];
+
+		echo $this->load->view($this->viewfolder.'/v_signup', $data, true);
+	}
+	public function show_page_success(){
+		
+		// брать из базы данные и формировать...
+		$lang =  $_SESSION['lang'];
+		$data = [];
+
+		echo $this->load->view($this->viewfolder.'/v_success_page', $data, true);
+	}
 	public function favorite() {
 		$data = array();
 		error_reporting(1);

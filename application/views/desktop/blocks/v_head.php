@@ -21,6 +21,12 @@
 	
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/footer/footer-component.min.css?");?><?=strtotime('now')?>">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/product/product.min.css?");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/contact-us/contact-us.min.css?");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/cart/cart.min.css?");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/checkout/checkout.min.css?");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/sound-design-studio/sound-design-studio.min.css?");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/login/login.min.css?");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/success/success.min.css?");?><?=strtotime('now')?>">
 	<link rel="shortcut icon" href="<?=base_url("assets/img/icon.png")?>">
 	<link rel="canonical" href="<?=base_url(explode('?',$_SERVER['REQUEST_URI'])[0])?>"/>
 	<script type="text/javascript">
@@ -29,5 +35,13 @@
 	</script>
 
 	<meta name="robots" content="noindex, nofollow"> 
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-KT898Z4');</script>
+	<!-- End Google Tag Manager -->
 
 </head>
