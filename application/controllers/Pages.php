@@ -195,6 +195,14 @@ class Pages extends CI_Controller {
 
 		echo $this->load->view($this->viewfolder.'/v_success_page', $data, true);
 	}
+	public function show_page_subscription(){
+		
+		// брать из базы данные и формировать...
+		$lang =  $_SESSION['lang'];
+		$data = [];
+
+		echo $this->load->view($this->viewfolder.'/v_subscription', $data, true);
+	}
 	public function favorite() {
 		$data = array();
 		error_reporting(1);

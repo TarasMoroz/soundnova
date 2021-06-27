@@ -83,7 +83,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="/subscription">
 								Subscription
 							</a>
 						</li>
@@ -159,7 +159,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="/subscription">
 								Subscription
 							</a>
 						</li>
