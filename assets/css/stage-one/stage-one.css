@@ -34,57 +34,63 @@
 .full-width-container.stage-one-top-container .stage-one-list .stage-one-item img {
   margin-right: 10px;
 }
-.full-width-container.stage-one-top-container .thank-you-top-descr {
-  text-align: center;
+.full-width-container.stage-one-top-container.join .container-title.main-title {
+  margin-bottom: 24px;
 }
-.full-width-container.stage-one-top-container .thank-you-top-descr .transaction-number {
-  font-size: 12px;
+.full-width-container.stage-one-top-container.join .sbscr-timeline-title {
+  font-size: 14px;
+  color: white;
   text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 27px;
+}
+.full-width-container.stage-one-top-container.join .sbscr-timeline-title span {
+  font-size: 18px;
   color: #f9ed1d;
-  font-weight: 500;
-  margin-bottom: 20px;
 }
-.full-width-container.stage-one-top-container .thank-you-top-descr .purchase-available {
-  color: white;
-  text-transform: uppercase;
-  font-size: 10px;
-  font-weight: 500;
-  margin-bottom: 15px;
+.full-width-container.stage-one-top-container.join .subscription-plan-timeline .line {
+  width: 100%;
+  position: relative;
+  height: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 0px 8px -1px #1dd1e5;
 }
-.full-width-container.stage-one-top-container .thank-you-top-descr .purchase-available a {
-  color: #1dd1e5;
-}
-.full-width-container.stage-one-top-container .thank-you-top-descr .purchase-available-descr {
-  color: white;
-  font-size: 10px;
-  font-weight: 500;
-  margin-bottom: 20px;
-}
-.full-width-container.stage-one-top-container .thank-you-top-descr .purchase-available-descr span {
-  text-decoration: underline;
-}
-.full-width-container.stage-one-top-container .thank-you-top-descr .watch-instruction {
-  outline: none;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.3s;
-  box-shadow: 0 0px 8px -2px #1dd1e5;
-  line-height: 50px;
-  text-align: center;
-  display: inline-block;
-  padding: 0 30px;
-  font-size: 12px;
-  border-radius: 30px;
-  color: #1dd1e5;
-  text-transform: uppercase;
-  font-weight: 500;
-  border: 2px solid #1dd1e5;
-  background: transparent;
-}
-.full-width-container.stage-one-top-container .thank-you-top-descr .watch-instruction:hover {
+.full-width-container.stage-one-top-container.join .subscription-plan-timeline .line .inner-line {
   background: linear-gradient(to right, #1ed6e9, #15b8cd);
+  width: 40%;
+  height: 10px;
+  line-height: 10px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.full-width-container.stage-one-top-container.join .subscription-plan-timeline .line .date-label {
+  background-color: white;
+  font-size: 12px;
+  font-weight: 500;
+  color: #15b8cd;
+  line-height: 25px;
+  height: 25px;
+  border-radius: 5px;
+  z-index: 1;
+  margin-top: -7px;
+  min-width: 50px;
+  text-align: center;
+}
+.full-width-container.stage-one-top-container.join .subscription-plan-timeline .line .date-label.date1 {
+  box-shadow: 0 0px 8px -1px #1dd1e5;
   color: white;
-  box-shadow: inset 270px 0px 10px rgba(36, 230, 250, 0.5), 0px 0px 20px rgba(36, 230, 250, 0.5);
+  background: linear-gradient(to right, #1ed6e9, #15b8cd);
+}
+.full-width-container.stage-one-top-container.join .subscription-plan-timeline .line .date-label.date2 {
+  box-shadow: 0 0px 8px -1px #1dd1e5;
+  color: white;
+  background: linear-gradient(to right, #1ed6e9, #15b8cd);
 }
 .full-width-container.choose-plan-container-s-one {
   padding: 0 16px 60px 16px;
@@ -240,6 +246,21 @@
 .full-width-container.choose-plan-container-s-one .sbscr-plans-columns .sbscr-plan-col .btn-purp-grad {
   margin-bottom: 15px;
 }
+.full-width-container.choose-plan-container-s-one.join .sbscr-plans-columns {
+  margin-top: 0;
+}
+.full-width-container.choose-plan-container-s-one.join .sbscr-plans-columns .sbscr-plan-col .free-trial-text {
+  display: none;
+}
+.full-width-container.choose-plan-container-s-one.join .sbscr-plans-columns .sbscr-plan-col .per-month .then {
+  display: none;
+}
+.full-width-container.choose-plan-container-s-one.join .sbscr-plans-columns .sbscr-plan-col .btn-blue-grad {
+  display: none;
+}
+.full-width-container.choose-plan-container-s-one.join .sbscr-plans-columns .sbscr-plan-col .btn-purp-grad {
+  margin-bottom: 0;
+}
 
 @media (min-width: 675px) {
   .full-width-container.stage-one-top-container {
@@ -263,11 +284,43 @@
     height: 24px;
     margin-right: 20px;
   }
+  .full-width-container.stage-one-top-container.join {
+    padding-bottom: 76px;
+  }
+  .full-width-container.stage-one-top-container.join .container-title.main-title {
+    margin-bottom: 50px;
+  }
+  .full-width-container.stage-one-top-container.join .sbscr-timeline-title {
+    font-size: 28px;
+    margin-bottom: 57px;
+  }
+  .full-width-container.stage-one-top-container.join .sbscr-timeline-title span {
+    font-size: 36px;
+  }
+  .full-width-container.stage-one-top-container.join .subscription-plan-timeline {
+    max-width: 660px;
+    margin: 0 auto;
+  }
+  .full-width-container.stage-one-top-container.join .subscription-plan-timeline .line {
+    height: 20px;
+  }
+  .full-width-container.stage-one-top-container.join .subscription-plan-timeline .line .inner-line {
+    width: 40%;
+    height: 20px;
+    line-height: 20px;
+  }
+  .full-width-container.stage-one-top-container.join .subscription-plan-timeline .line .date-label {
+    font-size: 16px;
+    line-height: 36px;
+    height: 36px;
+    margin-top: -7px;
+    min-width: 70px;
+  }
   .full-width-container.choose-plan-container-s-one {
     padding: 0 16px 140px 16px;
-    background-image: url(/assets/img/choose-plan-back.jpg);
+    background-image: url(/assets/img/only-wave-back.jpg);
     background-repeat: no-repeat;
-    background-position: center right;
+    background-position: center;
     background-size: cover;
   }
   .full-width-container.choose-plan-container-s-one .container-title.secondary-title {
