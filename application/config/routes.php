@@ -90,6 +90,7 @@ $route['login'] = "pages/show_page_login";
 $route['signup'] = "pages/show_page_signup";
 $route['success'] = "pages/show_page_success";
 $route['subscription'] = "pages/show_page_subscription";
+$route['stage-one'] = "pages/show_page_stageone";
 
 // $route['(ua|ru)/cart'] = "cart/index";
 // $route['(ua|ru)/checkout'] = "cart/checkout";
