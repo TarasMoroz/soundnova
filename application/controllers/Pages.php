@@ -227,6 +227,14 @@ class Pages extends CI_Controller {
 
 		echo $this->load->view($this->viewfolder.'/v_subscriptPageTryFree', $data, true);
 	}
+	public function show_page_stagetwo(){
+		
+		// брать из базы данные и формировать...
+		$lang =  $_SESSION['lang'];
+		$data = [];
+
+		echo $this->load->view($this->viewfolder.'/v_subscriptStage2', $data, true);
+	}
 	public function favorite() {
 		$data = array();
 		error_reporting(1);

@@ -104,7 +104,7 @@
             background-repeat: no-repeat;
             background-position: center top;
             background-size: cover;
-            padding: 85px 16px 50px 16px;
+            padding: 85px 16px 35px 16px;
             .try-free-title {
                 color: $lightbluecolor;
                 text-align: center;
@@ -303,7 +303,7 @@
                             text-align: center;
                             color: $lightbluecolor;
                             font-weight: bold;
-                            font-size: 45px;
+                            font-size: 36px;
                             letter-spacing: 2px;
                             text-shadow: 0 0 30px rgba(29, 209, 229,.6);
                             margin-bottom: 16px;
@@ -414,6 +414,7 @@
                 } 
             }
             &.trial {
+                padding-bottom: 50px;
                 .try-free-title {
                     font-size: 46px;
                     margin-bottom: 90px;
@@ -540,6 +541,17 @@
                     }
                     .btn-purp-grad {
                         margin-bottom: 16px;
+                    }
+                }
+            }
+            &.trial {
+                .sbscr-plans-columns {
+                    .sbscr-plan-col {
+                        .trial-block {
+                            .title {
+                                font-size: 45px;
+                            }
+                        }
                     }
                 }
             }
