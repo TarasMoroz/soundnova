@@ -99,6 +99,21 @@
                 }
             }
         }
+        &.trial {
+            background-image: url(/assets/img/try-free-back.jpg);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            padding: 85px 16px 50px 16px;
+            .try-free-title {
+                color: $lightbluecolor;
+                text-align: center;
+                margin-bottom: 28px;
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
     }
     &.choose-plan-container-s-one {
         padding: 0 16px 60px 16px;
@@ -278,6 +293,64 @@
                 }
             }
         }
+        &.trial {
+            .sbscr-plans-columns {
+                margin-top: 0;
+                .sbscr-plan-col {
+                    .trial-block {
+                        display: block;
+                        .title {
+                            text-align: center;
+                            color: $lightbluecolor;
+                            font-weight: bold;
+                            font-size: 45px;
+                            letter-spacing: 2px;
+                            text-shadow: 0 0 30px rgba(29, 209, 229,.6);
+                            margin-bottom: 16px;
+                        }
+                        .trial-or-line {
+                            text-align: center;
+                            margin-bottom: 30px;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            &:before {
+                                content: "";
+                                flex: 1;
+                                height: 1px;
+                                background-color: #42454d;
+                                margin-right: 7px;
+                                box-shadow: 0 0 15px 1px #000;
+                            }
+                            &:after {
+                                content: "";
+                                flex: 1;
+                                height: 1px;
+                                background-color: #42454d;
+                                margin-left: 7px;
+                                box-shadow: 0 0 15px 1px #000;
+                            }
+                        }
+                        .features-list {
+                            &.try-free {
+                                min-height: unset;
+                            }
+                        }
+                    }
+                    .free-trial-text {
+                        display: none;
+                    }
+                    .per-month {
+                        .then {
+                            display: none;
+                        }
+                    }
+                    .btn-purp-grad {
+                        display: none;
+                    }
+                }
+            }
+        }
     }
 }
 @media (min-width: $bp-tablet) {
@@ -339,6 +412,12 @@
                         }          
                     }
                 } 
+            }
+            &.trial {
+                .try-free-title {
+                    font-size: 46px;
+                    margin-bottom: 90px;
+                }
             }
         }
         &.choose-plan-container-s-one {
@@ -482,6 +561,13 @@
                 }
             }
         }
+        &.trial {
+            padding-top: 164px;
+            padding-bottom: 70px;
+            .try-free-title {
+                font-size: 60px;
+            }
+        }
     }
     &.choose-plan-container-s-one {
         .sbscr-plans-columns {
@@ -500,6 +586,18 @@
 
 @media (min-width: $bp-desktop-lg) {
     .full-width-container {
+        &.stage-one-top-container {
+            .inner-content-container {
+                max-width: 1400px;
+            }
+            .container-title {
+                &.main-title {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
     &.choose-plan-container-s-one {
         .container-title {
             &.secondary-title {

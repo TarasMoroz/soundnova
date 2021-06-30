@@ -92,7 +92,7 @@ $route['success'] = "pages/show_page_success";
 $route['subscription'] = "pages/show_page_subscription";
 $route['stage-one'] = "pages/show_page_stageone";
 $route['join-now'] = "pages/show_page_stageone_join";
-
+$route['try-free'] = "pages/show_page_stageone_free";
 
 // $route['(ua|ru)/cart'] = "cart/index";
 // $route['(ua|ru)/checkout'] = "cart/checkout";
