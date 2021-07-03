@@ -30,6 +30,7 @@
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/subscription/subscription.min.css?");?><?=strtotime('now')?>">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/stage-one/stage-one.min.css?");?><?=strtotime('now')?>">
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/stage-two/stage-two.min.css?");?><?=strtotime('now')?>">
+	<link type="text/css" rel="stylesheet" href="<?php echo base_url("assets/css/stage-three/stage-three.min.css?");?><?=strtotime('now')?>">
 	<link rel="shortcut icon" href="<?=base_url("assets/img/icon.png")?>">
 	<link rel="canonical" href="<?=base_url(explode('?',$_SERVER['REQUEST_URI'])[0])?>"/>
 	<script type="text/javascript">
