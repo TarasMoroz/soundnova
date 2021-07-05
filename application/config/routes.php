@@ -52,8 +52,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['default_controller'] = 'pages';
 
-$route['upload/save_sermon'] = "upload/save_sermon";
-
 $route['admin'] = "admin/index";
 
 $route['get_orders'] = "pages/get_orders";
@@ -65,49 +63,45 @@ $route['calc'] = "pages/calc/";
 $route['photoswipe'] = "pages/photoswipe/";
 $route['callback'] = "pages/callback/";
 $route['addcomment'] = "pages/addcomment/";
-$route['subscribe'] = "pages/subscribe/";
+
 $route['sitemap'] = "pages/sitemap/";
-$route['google'] = "pages/google/";
-$route['save'] = "pages/save/";
+
+$route['save'] = "download/save/";
 
 $route['(/)?'] = $route['default_controller'];
 
-// $route['(ua|ru)/favorite'] = "pages/favorite";
-// $route['(ua|ru)/compare'] = "pages/compare";
+// pages
+$route['contact'] = "pages/show_page_contact";
+$route['sound-design-studio'] = "pages/show_page_design_studio";
 
+// categories, catalog
 $route['catalog'] = "catalog/index";
 $route['catalog/type/(:any)'] = "catalog/index/$1";
 $route['catalog/(:any)'] = "catalog/show_category/$1";
 $route['catalog/(:any)/type/(:any)'] = "catalog/show_category/$1/$2";
+
+// product page
 $route['product/(:any)'] = "product/show_product/$1";
 
-
+// cart, checkout
 $route['cart'] = "cart/index";
 $route['checkout'] = "cart/checkout";
-$route['contact'] = "pages/show_page_contact";
-$route['sound-design-studio'] = "pages/show_page_soundstudio";
-$route['login'] = "pages/show_page_login";
-$route['signup'] = "pages/show_page_signup";
-$route['success'] = "pages/show_page_success";
-$route['subscription'] = "pages/show_page_subscription";
-$route['stage-one'] = "pages/show_page_stageone";
-$route['join-now'] = "pages/show_page_stageone_join";
-$route['try-free'] = "pages/show_page_stageone_free";
-$route['stage-two'] = "pages/show_page_stagetwo";
-$route['stage-three'] = "pages/show_page_stagethree";
-// $route['(ua|ru)/cart'] = "cart/index";
-// $route['(ua|ru)/checkout'] = "cart/checkout";
-// $route['(ua|ru)/order/(:num)'] = "cart/order/$2";
-// $route['(ua|ru)/blog'] = "blog/index";
-// $route['(ua|ru)/blog/(:any)'] = "blog/post/$2";
-// $route['(ua|ru)/sales'] = "sales/index";
-// $route['(ua|ru)/sale/(:num)'] = "sales/sale/$2";
+$route['success'] = "cart/purchase_success";
 
-$route['(:any)'] = "pages/show_page/$1";
+// subscription
+$route['subscription'] = "subscription/index";
+$route['join-now'] = "subscription/show_page_stageone_join";
+$route['try-free'] = "subscription/show_page_stageone_free";
+$route['stage-one'] = "subscription/show_page_stageone";
+$route['stage-two'] = "subscription/show_page_stagetwo";
+$route['stage-three'] = "subscription/show_page_stagethree";
 
-// $route['(ua|ru)/(:any)/(:any)'] = "pages/show_page/$2/$3";
-// $route['(ua|ru)/events'] = "events/index/$1";
-// $route['(ua|ru)/events/(:any)'] = "events/show_event/$2";
+// user
+$route['login'] = "user/login";
+$route['signup'] = "user/signup";
+$route['account'] = "user/account";
+
+// $route['(:any)'] = "pages/show_page/$1";
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

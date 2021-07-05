@@ -63,9 +63,6 @@ class Catalog extends CI_Controller {
 		// category, type
 		$data = $this->productsList(false, $currType, $data);
 
-		// боковой блок, передаем настройки, категории, массив параметров
-		// $data['v_aside'] = v_aside($data['s'], $data['cats'], ['fix' => false, 'foldup_categories' => false, 'filtersData' => $data]);
-		// $data['viewed'] = viewedProducts();
 
  		$this->load->view($this->viewfolder.'/v_catalog', $data);
  	}

@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
+
 <? $this->load->view('desktop/blocks/v_head'); ?>
 
 <body id="home">
@@ -10,151 +11,308 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<? $this->load->view('desktop/blocks/v_header'); ?>
 
 	<main>
-	
-		<? //$this->load->view('desktop/blocks/v_aside', ['fix' => true]); ?>
-
-		<?//=$v_aside?>
 		
 		<!-- main indexed content -->
-		<section id="main" class="content">
+		<section id="main" class="main-content">
 
-			<div id="main1">
-				<div class="inner1170">
-					<h1 class="grad main">Sound effects library</h1>
+			<!--sound  effects category-->
+			<div class="full-width-container home-first-container">
 
-					<p class="main_sub_h1">Professional sound effects for games, movies, trailers, cartoons, tv-shows & any your projects</p>
-					<!-- <div class="main_sub2_h1">FOR GAMES, MOVIES, CARTOONS, TV-SHOWS AND MORE</div> -->
+			<? $this->load->view('desktop/animation_wave_3d_dots_bg'); ?>
 
-					<div class="main-bundle">
-						<div class="bundle-left">
-							<div class="bundle-sale">
-								<div class="bundle-sale-adv">
-									<ul>
-										<li><i class="checksvg"></i> 100% royalty free</li>
-										<li><i class="checksvg"></i> professionaly mastered</li>
-										<li><i class="checksvg"></i> 30 days moneyback <br>GUARANTEE</li>
-									</ul>
-								</div>
-
-								<div class="bundle-discount">-70%</div>
-
+				<div class="inner-content-container">
+				<h1 class="container-title main-title">
+						<span class="gradient-title">Sound effects library</span>
+					</h1>
+					<p class="main-subtitle"><span>Professional sound effects </span> for games, movies, trailers, cartoons, TV-shows & any your projects</p>
+					<p class="main-subtitle desktop">Professional sfx for games, movies, trailers, cartoons, tv-shows & any your projects</p>
+					<div class="summer-sale-block-mobile">
+							<div class="summer-sale-title"><img class="lzy_img" data-src="/assets/img/summer_sale.svg" /></div>
+							<p class="summer-sale-subtitle">get everything we’ve ever created</p>
+							<div class="timer-counter">
+										<div class="timer-counter-item">
+											<span class="count-number days">00</span>
+											<span class="count-text">days</span>
+										</div>
+										<div class="timer-counter-item">
+											<span class="count-number hours">00</span>
+											<span class="count-text">hours</span>
+										</div>
+										<div class="timer-counter-item">
+											<span class="count-number minutes">00</span>
+											<span class="count-text">mins</span>
+										</div>
+										<div class="timer-counter-item">
+											<span class="count-number seconds">00</span>
+											<span class="count-text">sec</span>
+										</div>
+							</div>
+							<div class="main-pack-block">
+								<div class="bundle-discount">-30%</div>
 								<div class="bundle-shadow"></div>
-								<img src="/assets/img/topbundle.png" alt="bundle name">
-
-								<button class="bundle-play">
+								<img class="lzy_img" data-src="../assets/img/packs/main-pack-min.svg"/>
+								<button class="bundle-play video-open" data-code="Zo6Gu8RUExM">
 									<div class="inner">
-										<i class="playsvg"></i>
+										<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
 									</div>
 								</button>
-							</div>	
+							</div>
+							<div class="main-pack-slider-container">
+								<div class="main-pack-slider-heading">
+								ultimate bundle included 12 packages <span> you save $550</span>
+								</div>
+								<div class="main-pack-slider">
+										<!-- Swiper -->
+										<div class="swiper-container main-pack-wrapper">
+											<div class="swiper-wrapper">
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-1.svg"/>Product name</a></div>
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-2.svg"/>Product name</a></div>
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-1.svg"/>Product name</a></div>
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-2.svg"/>Product name</a></div>
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-1.svg"/>Product name</a></div>
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-2.svg"/>Product name</a></div>
+										</div>
+											    <!-- Add Arrows -->
+												<div class="swiper-button-next"></div>
+												<div class="swiper-button-prev"></div>
+								</div>
+							</div>
 						</div>
+							<div class="main-pack-slider-texts">
+								<div class="main-pack-slider-texts-col">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M13.3 4L6 11.3 2.7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+									<span>100% royalty <br> FREE</span>
+								</div>
+								<div class="main-pack-slider-texts-col">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M13.3 4L6 11.3 2.7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+									<span>Professionally mastered</span>
+								</div>
+								<div class="main-pack-slider-texts-col">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M13.3 4L6 11.3 2.7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+									<span>30 days moneyback<br> GUARANTEE</span>
+								</div>
+							</div>
 
-						<div class="bundle-right">
-							<div class="bundle-form">
-								<div class="bundle-right-text">BLACK FRIDAY</div>
-								<p class="bundle-right-subtext">get everything we've ever created</p>
-								<button class="btn-purp-grad btn-main-sale">BUY OUT $299 <s>$1000</s></button>
-								<button class="btn-blue-grad btn-main-sale">TRY 30 DAYS FREE</button>
-								<button class="btn-blue btn-main-sale">ABOUT BUNDLE</button>
-								<div class="timer">
-									<p class="timer-text">SALE WILL END IN</p>
-									<div class="timer-counter">
+							<div class="buy-buttons-container">
+							<a href="#" class="btn-purp-grad btn-main-sale">BUY OUT $299 <s>$1000</s></a>
+							<a href="#" class="btn-blue-grad btn-main-sale">TRY 30 DAYS FREE</a>
+							<a href="#" class="btn-blue-border btn-main-sale">ABOUT BUNDLE</a>
+							</div>
+					</div>
+				</div>
+				<div class="summer-sale-desktop">
+					<div class="summer-sale-left-col">
+					<div class="main-pack-block">
+
+					<div class="main-pack-slider-texts">
+								<div class="main-pack-slider-texts-col">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M13.3 4L6 11.3 2.7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+									<span>100% royalty <br> FREE</span>
+								</div>
+								<div class="main-pack-slider-texts-col">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M13.3 4L6 11.3 2.7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+									<span>Professionally mastered</span>
+								</div>
+								<div class="main-pack-slider-texts-col">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M13.3 4L6 11.3 2.7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+									<span>30 days moneyback<br> GUARANTEE</span>
+								</div>
+					</div>
+
+								<div class="bundle-discount">-30%</div>
+								<div class="bundle-shadow"></div>
+								<img class="lzy_img" data-src="../assets/img/packs/main-pack-min.svg"/>
+								<button class="bundle-play video-open" data-code="Zo6Gu8RUExM">
+									<div class="inner">
+										<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+									</div>
+								</button>
+					</div>
+					<div class="main-pack-slider-container">
+								<div class="main-pack-slider-heading">
+								ultimate bundle included 12 packages <span> you save $550</span>
+								</div>
+								<div class="main-pack-slider">
+										<!-- Swiper -->
+										<div class="swiper-container main-pack-wrapper">
+											<div class="swiper-wrapper">
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-1.svg"/>Product name</a></div>
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-2.svg"/>Product name</a></div>
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-1.svg"/>Product name</a></div>
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-2.svg"/>Product name</a></div>
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-1.svg"/>Product name</a></div>
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-2.svg"/>Product name</a></div>
+											</div>
+											    <!-- Add Arrows -->
+												<div class="swiper-button-next"></div>
+												<div class="swiper-button-prev"></div>
+										</div>
+								</div>
+							</div>
+							<div class="main-pack-slider-texts tablet">
+								<div class="main-pack-slider-texts-col">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M13.3 4L6 11.3 2.7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+									<span>100% royalty <br> FREE</span>
+								</div>
+								<div class="main-pack-slider-texts-col">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M13.3 4L6 11.3 2.7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+									<span>Professionally mastered</span>
+								</div>
+								<div class="main-pack-slider-texts-col">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M13.3 4L6 11.3 2.7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+									<span>30 days moneyback<br> GUARANTEE</span>
+								</div>
+					</div>
+					</div>
+					<div class="summer-sale-right-col">
+					<div class="summer-sale-title"><img class="lzy_img" data-src="/assets/img/summer_sale.svg" alt="summer-sale"/></div>
+							<p class="summer-sale-subtitle">get everything we’ve ever created</p>
+					<div class="buy-buttons-container">
+							<a href="#" class="btn-purp-grad btn-main-sale">BUY OUT $299 <s>$1000</s></a>
+							<a href="#" class="btn-blue-grad btn-main-sale">TRY 30 DAYS FREE</a>
+							<a href="#" class="btn-blue-border btn-main-sale">ABOUT BUNDLE</a>
+							</div>
+							<div class="timer-title">sale will end in</div>
+							<div class="timer-counter">
 										<div class="timer-counter-item">
-											<b>02</b>
-											<span>days</span>
+											<span class="count-number days">00</span>
+											<span class="count-text">days</span>
 										</div>
 										<div class="timer-counter-item">
-											<b>23</b>
-											<span>hours</span>
+											<span class="count-number hours">00</span>
+											<span class="count-text">hours</span>
 										</div>
 										<div class="timer-counter-item">
-											<b>45</b>
-											<span>mins</span>
+											<span class="count-number minutes">00</span>
+											<span class="count-text">mins</span>
 										</div>
 										<div class="timer-counter-item">
-											<b>20</b>
-											<span>sec</span>
+											<span class="count-number seconds">00</span>
+											<span class="count-text">sec</span>
+										</div>
+							</div>
+					</div>
+					
+				</div>
+			</div>
+			<div class="full-width-container home-categories-container">
+				<div class="inner-content-container">
+					<h2 class="container-title secondary-title effects-category-title">
+						<span class="gradient-title">Sound effects category</span>
+					</h2>
+					<div class="home-categories-links">
+
+						<?php foreach($list_categories as $key => $item): ?>
+
+						<a href="/catalog/<?php echo $item['alias']; ?>" style="background-image: url('/assets/media/category/<?php echo '165_'.$item['img']; ?>');">
+							<span class="inner"></span>
+							<span class="txt"><?php echo $item['name']; ?></span>
+							<div class='sound-wave-bars'>
+								<?php 
+									for ($i=0; $i < 20; $i++) { 
+										echo "<div class='bar'></div>";
+									}
+								?>
+							</div>
+						</a>
+
+						<?php endforeach; ?>
+					</div>
+				</div>
+			</div>
+
+
+
+			<div class="full-width-container home-subscription-container">
+				<div class="inner-content-container">
+					<h2 class="container-title secondary-title">
+						<span class="gradient-title">You can try</span><br>
+								<span class="gradient-title">free monthly subscription</span>
+					</h2>
+					<h3 class="secondary-subtitle">and get full access to the basic sound effects library</h3>
+					<div class="email-reminder-block">
+						<p class="email-reminder-subtitle">We’ll email you a reminder three days before your trial ends</p>
+							<div class="subscription-timeline">
+								<div class="line">
+									<div class="inner-line line1">
+										<div class="line-text">
+											Reminder 3 days <i class="mailsvg"></i>
 										</div>
 									</div>
+
+									<div class="inner-line line2"></div>
+
+									<div class="date-label date1"><?=date('F d', strtotime('+1 month'))?></div>
+									<div class="date-label date2"><?=date('F d', strtotime('+2 month'))?></div>
+
+									<div class="text-label text1">FREE 30 days</div>
+									<div class="text-label text2">First bill</div>
 								</div>
-							</div>
 						</div>
-					</div>
-				</div>
-			</div>
+						<p class="email-reminder-subtitle">Cancel anytime before <span><?=date('F d', strtotime('+1 month'))?></span> and you won’t be charged</p>
+						
 
-			<div id="main2">
-				<div class="inner1170">
-					<h2 class="grad main">Sound effects category</h2>
-
-					<div class="sound-cats">
-						<? $cats = [
-							'Animals', 'Audiences <br>& Crowds', 'Cartoon', 'Cinematic', 'City', 'Destruction',	
-							'Fantasy <br>& Medieval', 'Foley', 'Futuristic', 'Game', 'Horror', 'Human',	
-							'Impacts', 'Industrial', 'Interface', 'Multimedia', 'Nature', 'Public Places', 
-							'Science Fiction', 'Technology', 'Transportation', 'Transitions <br>& Movements', 'UI, Buttons, <br>& Menus', 'Weapons <br>& Warfare' 
-						]; ?>
-						<? for ($i=0; $i <= 23; $i++): ?>
-							<a href="#" style="background-image: url('/assets/img/cats/<?=$i?>.jpg');">
-								<span class="inner"></span>
-								<span class="txt"><?=$cats[$i]?></span>
-							</a>
-						<? endfor; ?>
-					</div>
-				</div>
-			</div>
-
-			<div id="main3">
-				<div class="inner1170">
-					<h2 class="grad main">You can try <br>free monthly subscription</h2>
-					<p class="main_sub_h1">and get full access to the basic sound effects library</p>
-					<p class="main_sub2_h1">We’ll email you a reminder three days before your trial ends</p>
-
-					<div class="subscription-timeline">
-						<div class="line">
-							<div class="inner-line line1">
-								<div class="line-text">
-									Reminder 3 days <i class="mailsvg"></i>
-								</div>
-							</div>
-
-							<div class="inner-line line2"></div>
-
-							<div class="date-label date1"><?=date('F d', strtotime('+1 month'))?></div>
-							<div class="date-label date2"><?=date('F d', strtotime('+2 month'))?></div>
-
-							<div class="text-label text1">Free 30 days</div>
-							<div class="text-label text2">First bill</div>
+						<div class="subscription-form">
+							<input type="text" placeholder="Email address">
+							<button class="btn-blue-grad subscription-form-btn">Try 30 days FREE</button>
 						</div>
+
+						<p class="subscription-form-yellow-text">Ready to use? Enter your email to create or access your account.</p>
+
 					</div>
-
-					<p class="main_sub2_h1">Cancel anytime before <b><?=date('F d', strtotime('+1 month'))?></b> and you won’t be charged</p>
-
-					<div class="subscription-form">
-						<input type="text" placeholder="Email address">
-						<button class="btn-blue-grad subscription-form-btn">Try 30 days FREE</button>
-					</div>
-
-					<p class="main_sub_text_yellow">Ready to use? Enter your email to create or access your account.</p>
 				</div>
 			</div>
 
-			<div id="main4">
-				<div class="inner1170">
-					<h2 class="grad main">Best sellers</h2>
 
+			<div class="full-width-container home-best-seller-container">
+				<div class="inner-content-container">
+					<h2 class="container-title secondary-title">
+						<span class="gradient-title">Best sellers</span>
+					</h2>
 					<div class="best-seller">
-						<? for ($i=1; $i <= 3; $i++): ?>
-							<div class="prd best-seller-item">
+
+					<div class="prd best-seller-item">
 								<div class="prd-label label-best">Best Seller</div>
-								<a class="prd-hd" href="#" style="background-image: url('/assets/img/bestsellerbg.jpg');">
-									<img src="/assets/img/best<?=$i?>pack.png" alt="default box">
+								<div class="prd-label label-discount">-50%</div>
+								<a class="prd-hd" href="#">
+									<div class="inner" style="background-image: url('/assets/img/packs/bestsellerbg1-min.jpg');"></div>
+									<img class="lzy_img" data-src="/assets/img/packs/best1pack.svg" alt="default box">
 									<span class="prd-tit">Impacts Pack | 3600 elements</span>
-									<!-- <span class="prd-tit-blue">Impacts Sound Effects</span> -->
+									<span class="prd-tit-blue">Impacts Sound Effects</span>
 								</a>
 
 								<div class="prd-sndcld">
-									<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+									<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+								</div>
+
+								<div class="prd-ft">
+									<div class="prd-ft-lt">
+										<div class="prd-price">from <b>$36</b><span class="price-crossed">$72</span></div>
+										<div class="prd-stars">
+											<div class="stars"></div>
+											<span class="prd-stars-cnt">146</span>
+										</div>
+										<div class="prd-seles">335 Seles</div>
+									</div>
+
+									<div class="prd-ft-rt">
+										<button class="btn-purp-grad prd-buy act-buy">ADD TO CART</button>
+										<a href="#" class="prd-more">More details about pack</a>
+									</div>
+								</div>
+							</div>
+
+							<div class="prd best-seller-item">
+								<div class="prd-label label-best">Best Seller</div>
+								<a class="prd-hd" href="#">
+								<div class="inner" style="background-image: url('/assets/img/packs/bestsellerbg2-min.jpg');"></div>
+									<img class="lzy_img" data-src="/assets/img/packs/best2pack.svg" alt="default box">
+									<span class="prd-tit">Industrial Pack | 3000 elements</span>
+									<span class="prd-tit-blue">Industrial Sound Effects</span>
+								</a>
+
+								<div class="prd-sndcld">
+									<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 								</div>
 
 								<div class="prd-ft">
@@ -173,151 +331,268 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</div>
 								</div>
 							</div>
-						<? endfor; ?>
-					</div>
-				</div>
-			</div>
 
-			<div id="main5">
-				<div class="inner1170">
-					<h2 class="grad main">New products</h2>
 
-					<div class="new-products">
-						<div class="new-products-slider">
+							<div class="prd best-seller-item">
+								<div class="prd-label label-best">Best Seller</div>
+								<a class="prd-hd" href="#">
+								<div class="inner mufasa" style="background-image: url('/assets/img/packs/bestsellerbg3.jpg');"></div>
+									<img class="lzy_img" data-src="/assets/img/packs/pack2bundle.svg" alt="default box">
+									<span class="prd-tit">Impact Pack | 3600 elements</span>
+									<span class="prd-tit-blue">Impact Sound Effects</span>
+								</a>
 
-							<? for ($i=1; $i <= 4; $i++): ?>
-							<div class="new-product-item" data-slide="<?=$i?>">
-								<div class="new-product-left">
-									
-									<img src="/assets/img/topbundle.png" alt="bundle name">
-
-									<button class="bundle-play">
-										<div class="inner">
-											<i class="playsvg"></i>
-										</div>
-									</button>
+								<div class="prd-sndcld">
+									<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 								</div>
 
-								<div class="new-product-right">
-									<div class="new-product-title">TECHNOLOGY PACK</div>
-									<div class="new-product-adv">
-										<ul>
-											<li><i class="checksvg"></i> 100% royalty free</li>
-											<li><i class="checksvg"></i> professionaly mastered</li>
-											<li><i class="checksvg"></i> 30 days moneyback GUARANTEE</li>
-										</ul>
+								<div class="prd-ft">
+									<div class="prd-ft-lt">
+										<div class="prd-price">from <b>$200</b></div>
+										<div class="prd-stars">
+											<div class="stars"></div>
+											<span class="prd-stars-cnt">87</span>
+										</div>
+										<div class="prd-seles">122Seles</div>
 									</div>
-									<button class="btn-purp-grad btn-main-sale">ADD TO CART $59</button>
-									<button class="btn-blue btn-main-sale">LEARN MORE</button>
+
+									<div class="prd-ft-rt">
+										<button class="btn-purp-grad prd-buy act-buy">ADD TO CART</button>
+										<a href="#" class="prd-more">More details about pack</a>
+									</div>
 								</div>
 							</div>
-							<? endfor; ?>
-						</div>
 
-						<div class="new-products-nav">
-							<? for ($i=1; $i <= 4; $i++): ?>
-								<button data-slide="<?=$i?>" <? if($i == 1): ?>class="act"<? endif;?>></button>
-							<? endfor; ?>
-						</div>
 					</div>
 				</div>
 			</div>
 
-			<div id="main6">
-				<div class="inner1170">
-					<h2 class="grad main">THESE COMPANIES TRUST <br>IN MUFASSA LIBRARY SOUND EFFECTS</h2>
 
-					<div class="clients">
-						<? for ($i=1; $i <= 4; $i++): ?>
-						<img src="/assets/img/clients/<?=$i?>.png" alt="client">
-						<? endfor; ?>
-					</div>
+			
+			<div class="full-width-container home-new-products-container">
+				<div class="inner-content-container">
+					<h2 class="container-title secondary-title">
+						<span class="gradient-title">New products</span>
+					</h2>
+					<div class="new-products-slider-container">
+								<div class="new-products-slider">
+										<!-- Swiper -->
+										<div class="swiper-container new-products-wrapper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<div class="new-product-inner">
+														<div class="new-product-title">Technology Pack</div>
+														<div class="new-product-image">
+														<img  src="/assets/img/packs/new-product.svg">
+														</div>
+														<div class="new-product-actions">
+														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														<div class="buy-buttons-container">
+															<a href="#" class="btn-purp-grad btn-new-product">ADD TO CART <span> $59</span></a>
+															<a href="#" class="btn-blue-border btn-new-product">LEARN MORE</a>
+														</div>
+														</div>
+													</div>
 
-					<a href="#" class="more-clients">More clients</a>
-				</div>
-			</div>
+													<div class="new-product-inner desktop">
+														<div class="new-product-image">
+														<img src="/assets/img/packs/new-product.svg">
+														<button class="bundle-play video-open" data-code="Zo6Gu8RUExM">
+															<div class="inner">
+																<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+															</div>
+														</button>
+														</div>
+														<div class="new-product-actions">
+														<div class="new-product-title">Technology Pack</div>
+														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														<div class="buy-buttons-container">
+															<a href="#" class="btn-purp-grad btn-new-product">ADD TO CART <span> $59</span></a>
+															<a href="#" class="btn-blue-border btn-new-product">LEARN MORE</a>
+														</div>
+														</div>
+													</div>
+													
+												</div>
+												<div class="swiper-slide">
+													<div class="new-product-inner">
+														<div class="new-product-title">Technology Pack</div>
+														<div class="new-product-image">
+														<img src="/assets/img/packs/new-product.svg">
+														</div>
+														<div class="new-product-actions">
+														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														<div class="buy-buttons-container">
+															<a href="#" class="btn-purp-grad btn-new-product">ADD TO CART <span> $59</span></a>
+															<a href="#" class="btn-blue-border btn-new-product">LEARN MORE</a>
+														</div>
+														</div>
+													</div>
 
-			<div id="main7">
-				<div class="inner1170">
-					<h2 class="grad main">WHAT OUR CLIENTS SAY ABOUT <br>MUFASSA LIBRARY SOUND FX</h2>
-
-					<div class="reviews">
-
-						<div class="reviews-video">
-							<? for ($i=1; $i <= 3; $i++): ?>
-							<div class="review-item" data-slide="<?=$i?>">
-								<div class="review-vid" style="background-image: url('/assets/img/reviews/<?=$i?>.jpg');">
-									<button class="review-play">
-										<div class="inner">
-											<i class="playsvg"></i>
+													<div class="new-product-inner desktop">
+														<div class="new-product-image">
+														<img src="/assets/img/packs/new-product.svg">
+														</div>
+														<div class="new-product-actions">
+														<div class="new-product-title">Technology Pack</div>
+														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														<div class="buy-buttons-container">
+															<a href="#" class="btn-purp-grad btn-new-product">ADD TO CART <span> $59</span></a>
+															<a href="#" class="btn-blue-border btn-new-product">LEARN MORE</a>
+														</div>
+														</div>
+													</div>
+													
+												</div>
 										</div>
-									</button>
+											    <!-- Add Arrows -->
+												<div class="swiper-button-next"></div>
+												<div class="swiper-button-prev"></div>
+												<!-- Add Pagination -->
+    											<div class="swiper-pagination"></div>
 								</div>
-
-								<div class="review-name">Joshua</div>
-								<div class="review-sub">CEO Nintendo</div>
 							</div>
-							<? endfor; ?>
-						</div>
-					</div>
+				</div>
+			</div>
+			</div>
 
-					<div class="reviews">
-						<div class="reviews-text">
-							<? for ($i=1; $i <= 3; $i++): ?>
-							<div class="review-item" data-slide="<?=$i?>">
-								<div class="review-text">
-									<h3>rover, VW, ford, honda, bmw, audi</h3>
-									<p>Lorem ipsum <a href="#">dolor sit amet</a>, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-								</div>
 
-								<div class="review-name">Joshua</div>
-								<div class="review-sub">Sound Designer</div>
+			<div class="full-width-container home-partners-container">
+				<div class="inner-content-container">
+					<h2 class="container-title secondary-title">
+						<span class="gradient-title desktop-title">THESE COMPANIES TRUST</span><br>
+						<span class="gradient-title mobile-title">IN soundnova LIBRARY </span><br>
+						<span class="gradient-title mobile-title">SOUND EFFECTS</span>
+						<span class="gradient-title desktop-title-last">IN soundnova LIBRARY SOUND EFFECTS</span>
+					</h2>
+						<div class="home-partners-block">
+							<div class="clients">
+									<img class="lzy_img" data-src="/assets/img/clients/partner1.svg" alt="client">
+									<img class="lzy_img" data-src="/assets/img/clients/partner2.svg" alt="client">
+									<img class="lzy_img" data-src="/assets/img/clients/partner4.svg" alt="client">
+									<img class="lzy_img" data-src="/assets/img/clients/partner3.svg" alt="client">
+									
 							</div>
-							<? endfor; ?>
-
-							<div class="arrow next-arrow"><i>
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="#f9eb0e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-							</i></div>
-
-							<div class="arrow prev-arrow"><i>
-								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M6 9l6 6 6-6" stroke="#f9eb0e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-							</i></div>
-							
+							<a href="#" class="more-clients">More clients</a>								
 						</div>
-					</div>
-
-					<a href="#" class="more-reviews">See all reviews</a>
 				</div>
 			</div>
 
-			<div id="main8">
-				<div class="inner1170">
-					<h2 class="grad main">Frequently Asked Questions</h2>
 
+			<div class="full-width-container testimonials-container">
+				<div class="inner-content-container">
+					<h2 class="container-title secondary-title">
+						<span class="gradient-title">WHAT OUR CLIENTS SAY ABOUT</span><br>
+						<span class="gradient-title">soundnova LIBRARY SOUND FX</span>
+					</h2>
+						<div class="testimonials-block">
+
+						<?php if(count($video_reviews) > 0): ?>
+
+						<!-- Swiper, video reviews -->
+						<div class="swiper-container video-testimonials">
+							<div class="swiper-wrapper">
+
+								<?php foreach ($video_reviews as $key => $item): ?>
+
+								<div class="swiper-slide">
+									<div class="testimonial-inner">
+										<div class="review-item">
+											<div class="review-vid" style="background-image: url('/assets/media/video_preview/360_<?php echo $item['v_img_preview']; ?>');">
+												<button class="bundle-play video-open" data-code="<?php echo $item['v_src']; ?>">
+													<div class="inner">
+														<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
+													</div>
+												</button>
+											</div>
+
+											<div class="review-name"> <?php echo $item['person_name']; ?> </div>
+											<div class="review-sub"> <?php echo $item['person_position']; ?> </div>
+										</div>
+									</div>
+								</div>
+
+								<?php endforeach; ?>
+							</div>		
+							
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<?php endif; ?>
+			
+						
+
+						<?php if(count($text_reviews) > 0): ?>
+						<!-- Swiper, text reviews -->
+						<div class="swiper-container testimonials-video-wrapper-mobile">
+							<div class="swiper-wrapper">
+								<?php foreach ($text_reviews as $key => $item): ?>
+
+								<div class="swiper-slide">
+									<div class="testimonial-inner">
+
+											<div class="review-item">
+												<div class="review-text">
+													<h3> <?php echo $item['title']; ?> </h3>
+													
+													<p><?php echo $item['description']; ?></p>
+												</div>
+
+												<div class="review-name"> <?php echo $item['person_name']; ?> </div>
+												<div class="review-sub"> <?php echo $item['person_position']; ?> </div>
+											</div>
+									</div>
+								</div>
+
+								<?php endforeach; ?>
+							</div>		
+							
+							<!-- Add Arrows -->
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+						<?php endif; ?>
+				</div>
+			</div>
+			</div>
+
+
+			<div class="full-width-container home-faq-container">
+				<div class="inner-content-container">
+					<h2 class="container-title secondary-title">
+						<span class="gradient-title">Frequently Asked</span><br>
+						<span class="gradient-title">Questions</span>
+						<span class="gradient-title desktop">Frequently Asked Questions</span>
+					</h2>
+					<div class="faq-block">
 					<div id="faq">
-						<? for ($i=1; $i <= 6; $i++): ?>
-						<div id="qa1" class="qa">
+							
+						<?php foreach ($faq_items as $key => $item): ?>
+
+						<div id="qa<?php echo $key; ?>" class="qa">
 							<div class="qa-hd">
-								<p class="qa-name">What is Mufassa Sound?</p>
+								<p class="qa-name"> <?php echo $item['name']; ?> </p>
 								<button class="qa-pls-mns">
 									<span>+</span>
 									<span>-</span>
 								</button>
 							</div>
-							<p class="qa-desc">Ready to use? Enter your email to create or access your account. Ready to use? Enter your email to create or access your account. Ready to use? Enter your email to create or access your account. Ready to use? Enter your email to create or access your account.</p>
+							<div class="qa-desc"> <?php echo $item['desc']; ?> </div>
 						</div>
-						<? endfor; ?>
-					</div>
 
+						<?php endforeach; ?>
+					</div>
+					
 					<div class="subscription-form">
-						<input type="text" placeholder="Email address">
-						<button class="btn-blue-grad subscription-form-btn">Try 30 days FREE</button>
-					</div>
+							<input type="text" placeholder="Email address">
+							<button class="btn-blue-grad subscription-form-btn">Try 30 days FREE</button>
+						</div>
 
-					<p class="main_sub_text_yellow">Ready to use? Enter your email to create or access your account.</p>
+						<p class="subscription-form-yellow-text">Ready to use? Enter your email to create or access your account.</p>
 				</div>
 			</div>
-		</section>
+		</div>
 
 		<!-- rest less important content -->
 

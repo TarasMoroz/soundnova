@@ -1,72 +1,3 @@
-
-
-<!-- <footer>
-	<div class="inner1170">
-	<div id="ft-cols">
-		<div class="ft-col">
-			<img class="ft-logo" src="/assets/img/logo-foot.png" alt="logo"/>
-			<span id="ft-soc">
-				<a href="#"><i class="fbsvg"></i></a>
-				<a href="#"><i class="instsvg"></i></a>
-				<a href="#"><i class="twsvg"></i></a>
-				<a href="#"><i class="ytsvg"></i></a>
-				<a href="#"><i class="sndcldsvg"></i></a>
-			</span>
-		</div>
-		
-		<div class="ft-col">
-			<span class="ft-col-head">SHOP</span>
-			<a href="#">Bundles</a>
-			<a href="#">Sound Packs</a>
-			<a href="#">Best Sellers</a>
-			<a href="#">3D Sounds</a>
-			<a href="#">Free sound effects</a>
-		</div>
-		
-		<div class="ft-col">
-			<span class="ft-col-head">COMPANY</span>
-			<a href="#">About us</a>
-			<a href="#">Reviews</a>
-			<a href="#">Return and Refunds</a>
-			<a href="#">Support</a>
-			<a href="#">Contact</a>	
-		</div>
-
-		<div class="ft-col">
-			<span class="ft-col-head">LEGAL</span>
-			<a href="#">License</a>
-			<a href="#">Terms of Use</a>
-			<a href="#">Privacy Policy</a>
-			<img class="ft-ssl" src="/assets/img/ft-ssl.png" alt="ssl"/>
-		</div>
-
-		<div class="ft-col" id="ft-pays">
-			<img src="/assets/img/pay/1.png" alt="VISA">
-			<img src="/assets/img/pay/2.png" alt="MASTER CARD">
-			<img src="/assets/img/pay/3.png" alt="PAY PAL">
-			<img src="/assets/img/pay/4.png" alt="AMERICAN EXPRESS">
-			<img src="/assets/img/pay/5.png" alt="DISCOVER NETWORK">
-		</div>
-	</div>
-
-	<div id="ft-soc-mob">
-		<a href="#"><i class="fbsvg"></i></a>
-		<a href="#"><i class="instsvg"></i></a>
-		<a href="#"><i class="twsvg"></i></a>
-		<a href="#"><i class="ytsvg"></i></a>
-		<a href="#"><i class="sndcldsvg"></i></a>
-	</div>
-
-	<div id="ft-copy">&copy; <?=date('Y')?> Soundnova.net Law protection - All rights reserved</div>
-
-	<a href="https://tato.digital" target="_blank" class="tato">
-		<img src="/assets/img/tato.png" alt="tato digital studio">
-	</a>
-
-	</div>
-</footer> -->
-
-
 <footer>
 	<div class="footer-container">
 			<div class="ft-cols">
@@ -158,61 +89,77 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
 
-<?php    
+<?php
+
 	$currentpage = $_SERVER['REQUEST_URI'];
-	
+
+	// version param, for auto refresh cached styles
+	$env_param = (ENVIRONMENT == 'development') ? '?'.strtotime('now') : '?1';
+		
+	$js_dir = 'assets/js/';
+
+	$particular_js = [
+		'pages' => [
+			'index' => ['home-page/home.js'],
+			'show_page_contact' => [],
+			'show_page_design_studio' => [],
+		],
+		'catalog' => ['catalog/catalog.js'],
+		'product' => ['product/product.js'],
+		'cart' => [
+			'index' => [],
+			'checkout' => ['checkout/checkout.js'],
+			'purchase_success' => ['success/success.js']
+		],
+		'user' => [
+			'login' => ['login/login.js'],
+			'signup' => [],
+			'account' => [], // user account styles goes here
+		],
+		'subscription' => [
+			'index' => ['subscription/subscription.js'],
+			'show_page_stageone_join' => [],
+			'show_page_stageone_free' => [],
+			'show_page_stageone' => [],
+			'show_page_stagetwo' => [],
+			'show_page_stagethree' => []
+		]
+	];
+
+
 ?> 
 
-<script src="<?php echo base_url("assets/js/svg.js?1");?><?=strtotime('now')?>">"></script>
-<script type="text/javascript" src="<?php echo base_url("assets/js/swiper.min.js");?>"></script>
-<!-- neko custom script -->
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
-<script src="<?php echo base_url("assets/js/ion.rangeSlider.min.js");?>"></script>
-<script src="<?php echo base_url("assets/js/custom.js?4");?><?=strtotime('now')?>"></script>
-<script src="<?php echo base_url("assets/js/main.js?6");?><?=strtotime('now')?>"></script>
-<script src="<?php 
-	if ($currentpage == '/') {
-		echo base_url("assets/js/home-page/home.js?5");
-	}
- ?><?=strtotime('now')?>"></script>
- <script src="<?php
- if (strpos($currentpage,'catalog') == true) {
-	echo base_url("assets/js/catalog/catalog.js?5");
- } 
- ?><?=strtotime('now')?>"></script>
-  <script src="<?php
- if (strpos($currentpage,'product') == true) {
-	echo base_url("assets/js/product/product.js?5");
- } 
- ?><?=strtotime('now')?>"></script>
 
-<script src="<?php
- if (strpos($currentpage,'checkout') == true) {
-	echo base_url("assets/js/checkout/checkout.js?5");
- } 
- ?><?=strtotime('now')?>"></script>
+<script src="<?php echo base_url($js_dir.'svg.js'.$env_param);?>"></script>
+<script src="<?php echo base_url($js_dir.'swiper.min.js');?>"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="<?php echo base_url($js_dir.'custom.js'.$env_param);?>"></script>
+<script src="<?php echo base_url($js_dir.'main.js'.$env_param);?>"></script>
 
-<script src="<?php
- if (strpos($currentpage,'sound-design-studio') == true) {
-	echo base_url("assets/js/sound-design-studio/sound-design-studio.js?5");
- } 
- ?><?=strtotime('now')?>"></script>
-
+<?php if($controller == 'pages' && $action == 'show_page_design_studio'): ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.4.1/shuffle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<?php endif; ?>
 
-<script src="<?php
- if (strpos($currentpage,'login') == true) {
-	echo base_url("assets/js/login/login.js?5");
- } 
- ?><?=strtotime('now')?>"></script>
- <script src="<?php
- if (strpos($currentpage,'success') == true) {
-	echo base_url("assets/js/success/success.js?5");
- } 
- ?><?=strtotime('now')?>"></script>
+<?php foreach($particular_js as $js_controller => $js_actions): if($js_controller == $controller): ?>
+	<?php 
 
-<script src="<?php
- if (strpos($currentpage,'subscription') == true) {
-	echo base_url("assets/js/subscription/subscription.js?5");
- } 
- ?><?=strtotime('now')?>"></script>
+		// если на весь контроллер один набор js
+		$js_set = $js_actions;
+
+		// если не указаны индексы массива (ассоциативный), значит в контроллере наборы css на каждый экшн
+		if(!isset($js_actions[0])){
+			foreach($js_actions as $js_action_name => $js_action_set){
+				if($js_action_name == $action){
+					$js_set = $js_action_set;
+					break;
+				}
+			}
+		}
+
+	?>
+	
+<?php foreach($js_set as $js_file_path): ?>
+<script src="<?php echo base_url($js_dir.$js_file_path.$env_param);?>"></script>
+<?php endforeach; ?>
+
+<?php break; endif; endforeach; ?>
