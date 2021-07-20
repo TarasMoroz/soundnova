@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									full access to the base sound library
 								</div>
                         	</div>
-							<a href="#" class="btn-purp-grad">BUY STANDARD NOW</a>
+							<a href="/stage-two" class="btn-purp-grad">BUY STANDARD NOW</a>
 							<div class="or-line">Or</div>
 							<div class="under-or-title">Trial > Standard</div>
 							<div class="features-list trial">
@@ -83,7 +83,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									every month we give any pack to choose from the entire range
 								</div>
                         	</div>
-							<a href="#" class="btn-purp-grad">BUY PREMIUM NOW</a>
+							<a href="/stage-two" class="btn-purp-grad">BUY PREMIUM NOW</a>
 							<div class="or-line">Or</div>
 							<div class="under-or-title">Trial > Premium</div>
 							<div class="features-list trial">

@@ -82,7 +82,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									30 DAYS Free access to the base library
 								</div>
                         	</div>
-							<a href="#" class="btn-blue-grad">TRY TRIAL  >  STANDARD</a>
+							<a href="/stage-two" class="btn-blue-grad">TRY TRIAL  >  STANDARD</a>
 						</div>
 						<div class="sbscr-plan-col premium">
 						<div class="trial-block">
@@ -116,7 +116,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									every month we give any pack to choose from the entire range
 								</div>
                         	</div>
-							<a href="#" class="btn-purp-grad">BUY PREMIUM NOW</a>
+							<a href="/stage-two" class="btn-purp-grad">BUY PREMIUM NOW</a>
 							<div class="or-line">Or</div>
 							<div class="under-or-title">Trial > Premium</div>
 							<div class="features-list trial">
@@ -125,7 +125,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									30 DAYS Free access to the base library
 								</div>
                         	</div>
-							<a href="#" class="btn-blue-grad">TRY TRIAL  >  PREMIUM</a>
+							<a href="/stage-two" class="btn-blue-grad">TRY TRIAL  >  PREMIUM</a>
 						</div>
 					</div>
 				</div>
