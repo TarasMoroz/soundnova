@@ -22,6 +22,7 @@
         }
     }
     &.meet-team-container {
+        background-color: #13161D;
         .secondary-subtitle {
             font-size: 12px;
             text-transform: unset;
@@ -100,4 +101,146 @@
             }
         }
     }
+    &.team-quote-container {
+        padding-top: 69px;
+        padding-bottom: 65px;
+        background-image: url(/assets/img/only-wave-back.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .transparent-title {
+            color: rgba(56, 65, 86, .2);
+        }
+    }
+    &.team-partners-container {
+        padding: 50px 16px;
+        .home-partners-block {
+            display: grid;
+            justify-items: center;
+            .clients {
+                display: flex;
+                width: 100%;
+                align-items: center;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                max-width: 1170px;
+                margin: auto;
+                img {
+                    max-width: 140px;
+                    margin-bottom: 40px;
+                    flex: 0 0 50%;
+                }
+            }
+            .more-clients {
+                font-size: 16px;
+                text-transform: uppercase;
+                color: $mainyellow;
+                font-weight: 500;
+                margin-top: 5px;
+            }
+        }
+        .container-title {
+            &.secondary-title {
+                margin-bottom: 40px;
+                position: relative;
+                span {
+                    text-shadow: 0 0px 65px rgba(239, 76, 198, 0.25);
+                }
+                .desktop-title-last {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (min-width: $bp-tablet) {
+.full-width-container {
+    &.team-partners-container {
+        padding: 130px 16px;
+        background-image: url(/assets/img/main6-min.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+        .container-title {
+            &.secondary-title {
+                margin-bottom: 90px;
+                span {
+                    text-shadow: 0 0px 55px rgba(239, 76, 198, 0.2);
+                }
+            }
+        }
+    }
+    &.about-us-top {
+        background-image: url(/assets/img/about-us-top-back.jpg);
+        .main-subtitle {
+            font-size: 20px;
+            line-height: 32px;
+        }
+        .about-us-top-content {
+            p {
+                font-size: 16px;
+                line-height: 30px;
+            }
+        }
+    }
+    &.meet-team-container {
+        .secondary-subtitle {
+            font-size: 20px;
+            line-height: 30px;
+            max-width: unset;
+        }
+        .team-slider-container {
+            display: none;
+        }
+        .team-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 64px 32px;
+        }
+    }
+}
+}
+@media (min-width: $bp-laptop) {
+.full-width-container {
+    &.about-us-top {
+        padding: 270px 16px 135px 16px;
+        .container-title {
+            &.main-title {
+                font-size: 100px;
+                margin-bottom: 30px;
+            }
+        }
+        .about-us-top-content {
+            padding-top: 300px;
+            max-width: 950px;
+            margin: 0 auto;
+        }
+    }
+    &.meet-team-container {
+        padding-top: 30px;
+        .secondary-subtitle {
+            margin-bottom: 60px;
+        }
+    }
+}
+}
+@media (min-width: $bp-desktop-lg) {
+.full-width-container {
+    &.team-partners-container {
+        .container-title {
+            &.secondary-title {
+                .desktop-title,
+                .desktop-title-last {
+                    display: block;
+                }
+                .mobile-title {
+                    display: none;
+                }
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+}
 }

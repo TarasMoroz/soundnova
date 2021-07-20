@@ -216,3 +216,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	echo base_url("assets/js/subscription/subscription.js?5");
  } 
  ?><?=strtotime('now')?>"></script>
+
+<script src="<?php
+ if (strpos($currentpage,'about') == true) {
+	echo base_url("assets/js/about/about.js?5");
+ } 
+ ?><?=strtotime('now')?>"></script>
