@@ -102,7 +102,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		'pages' => [
 			'index' => ['home-page/home.js'],
 			'show_page_contact' => [],
-			'show_page_design_studio' => [],
+			'show_page_design_studio' => ['sound-design-studio/sound-design-studio.js'],
 			'show_page_aboutus' => ['about/about.js'],
 		],
 		'catalog' => ['catalog/catalog.js'],
