@@ -844,6 +844,7 @@ class Admin extends CI_Controller {
 
 		$return['data'] = [
 			'id_video'=>0,
+			'title'=>'',
 			'person_name'=>'',
 			'person_position'=>'',
 			'description'=>'',

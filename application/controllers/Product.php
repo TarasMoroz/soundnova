@@ -94,27 +94,6 @@ class Product extends CI_Controller {
 			// TODO: collect all viewed bundles
 			// TODO: collect all bundles inside pack
 
-			// $data['analogs'] = [];
-
-			// $sWhereAnalog = "";
-			// if(!empty($aFilters)){
-			// 	$likeParts = [];
-			// 	foreach($aFilters as $falias) { $likeParts[] = 'filters LIKE \'%"'.$falias.'"%\''; }
-			// 	$sWhereAnalog .= ' AND ('.implode(' AND ', $likeParts).')';
-
-			// 	$data['analogs'] = $this->db->query("SELECT id, name_ru, name_ua, alias, stock, price, price_old, IF(price_old > price, CEIL((price_old-price)/(price_old/100)), 0) discount_percent, TRUNCATE(ABS(price - ".$product['price']."),2) delta_price
-			// 		FROM product
-			// 		WHERE stock > 0 AND id != ".$product['id']." AND alias_catalog = '".$product['alias_catalog']."' ".$sWhereAnalog."
-			// 		ORDER BY delta_price ASC, sort_category ASC
-			// 		LIMIT 0, 9")->result_array();
-			// }
-
-			// $data['analogs'] = $this->db->query("SELECT id, name_ru, name_ua, alias, stock, price, price_old, IF(price_old > price, CEIL((price_old-price)/(price_old/100)), 0) discount_percent, TRUNCATE(ABS(price - ".$product['price']."),2) delta_price
-			// 		FROM product
-			// 		WHERE stock > 0 AND id != ".$product['id']." AND alias_catalog = '".$product['alias_catalog']."'
-			// 		ORDER BY delta_price ASC, sort_category ASC
-			// 		LIMIT 0, 9")->result_array();
-
 			// отзывы... 30 последних
 			$data['product_reviews'] = $this->db->query("SELECT * FROM product_review WHERE id_product = ".$product['id']." ORDER BY ts DESC LIMIT 0, 30")->result_array();
 

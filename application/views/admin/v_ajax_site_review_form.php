@@ -16,6 +16,10 @@
       </div>
       <? endif; ?>
 
+      <div class="form-group">
+        <label for="title">Название отзыва</label>
+        <input type="text" class="form-control" id="title" placeholder="title" value="<?=$data['title']?>">
+      </div>
 
       <div class="form-group">
         <label for="person_name">Автор отзыва</label>

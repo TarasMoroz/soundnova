@@ -37,8 +37,6 @@
 
 	<div class="prd" <? if(isset($favorite_list)): ?>id="prd<?=$prod['id']?>"<? endif; ?>>
 
-	
-
 		<? if(isset($favorite_list)): ?>
 			<a href="#" data-id="<?=$prod['id']?>" class="prd-fav-remove">
 				<i class="closesvg"></i>
@@ -64,24 +62,44 @@
 		<div class="prd-ft">
 			<div class="prd-ft-lt">
 				<div class="prd-price">from <b>$<?=($prod['pv_des_price']?$prod['pv_des_price']:$prod['pv_bund_price'])?></b></div>
+
+				<?php if($prod['cnt_reviews']): ?>
 				<div class="prd-stars">
 					<div class="stars"></div>
 					<span class="prd-stars-cnt"><?=$prod['cnt_reviews']?></span>
 				</div>
+				<?php else: ?>
+				<div class="prd-stars">
+					<span class="prd-stars-cnt">No reviews</span>
+				</div>
+				<?php endif; ?>
+
 				<div class="prd-seles"><?=$prod['cnt_sales_public']?> Sales</div>
 			</div>
 
 			<div class="prd-ft-rt">
-				<button class="btn-purp-grad prd-buy act-buy">ADD TO CART</button>
-				<a href="#" class="prd-more">More details about <?=($prod['pv_des_price']?'pack':'bundle')?></a>
+				<button class="btn-purp-grad prd-buy act-buy" 
+					data-p='{"id": "<?php echo $prod['id']; ?>", "v": "<?php echo ($prod['pv_des_price']?'des':'bund'); ?>" }'>
+					ADD TO CART
+				</button>
+				<a href="/product/<?=$prod['alias']?>" class="prd-more">More details about <?=($prod['pv_des_price']?'pack':'bundle')?></a>
 			</div>
 		</div>
 
+		<?php 
 
-	
+			$prdsObj = [
+				'id' => $prod['id'], 
+				'v' => ($prod['pv_des_price']?'des':'bund'),
+				'c'=> 1, 
+				't'=> $prod['name'], 
+				'im' => $im, 
+				'a'=> $prod['alias'], 
+				'p'=> ($prod['pv_des_price']?$prod['pv_des_price']:$prod['pv_bund_price'])
+			]; 
 
+		?>
 
-		<? $prdsObj = ['id'=>$prod['id'], 'c'=>1, 't'=>$prod['name'], 'im' => $im, 'a'=>$prod['alias'], 'p'=> price_grn(($prod['pv_des_price']?$prod['pv_des_price']:$prod['pv_bund_price']), 28.2)]; ?>
 		<script>prds["<?=$prod['id']?>"] = <?=json_encode($prdsObj)?>;</script>
 	</div>
 

@@ -91,8 +91,23 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 			<div class="full-width-container catalog-second">
-			<? if($h1_top): ?><h1 class="container-title secondary-title mobile"><span class="gradient-title"><?=$h1_top?></span><br><span class="gradient-title"><?=$h1_bot?></span></h1><? endif; ?>
-				<? if($h1_top): ?><h1 class="container-title secondary-title desktop"><span class="gradient-title"><?=$h1_top?> <?=$h1_bot?></span></h1><? endif; ?>
+
+			<? if($device == 'mobile'): ?>
+			<? if($h1_top): ?>
+				<h1 class="container-title secondary-title mobile">
+					<span class="gradient-title"><?=$h1_top?></span>
+					<br><span class="gradient-title"><?=$h1_bot?></span>
+				</h1>
+			<? endif; ?>
+			<? endif; ?>
+			
+			<? if($device == 'desktop'): ?>
+			<? if($h1_top): ?>
+				<h1 class="container-title secondary-title desktop">
+					<span class="gradient-title"><?=$h1_top?> <?=$h1_bot?></span>
+				</h1>
+			<? endif; ?>
+			<? endif; ?>
 
 <div id="catalog-wrapper">
 	<div id="ftrs">

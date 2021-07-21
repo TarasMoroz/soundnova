@@ -17,8 +17,8 @@
         <tr>
           <th>ID</th>
           <th>#</th>
-          <th>Имя автора</th>
-          <th>Должность</th>
+          <th>Название/Автор</th>
+          <th>Текстовый/Видео</th>
           <th>Сортировка</th>
           <th></th>
         </tr>
@@ -30,8 +30,10 @@
           <td>
             <a href="#" class="ajax-action" data-action="show_site_review_form" data-id="<?=$review['id']?>"><i class="nav-icon fas fa-edit"></i></a>
           </td>
-          <td><?=$review['person_name']?></td>
-          <td><?=$review['person_position']?></td>
+          <td>
+            <? if($review['title']): ?><?=$review['title']?> <br><? endif; ?><b><?=$review['person_name']?></b> (<?=$review['person_position']?>)
+          </td>
+          <td><? if($review['id_video'] > 0): ?><i class="fas fa-video"></i><? endif; ?> <?=($review['id_video'] > 0 ? 'Видео отзыв' : 'Текстовый')?></td>
           <td>
             <?=$review['sort']?>
           </td>
