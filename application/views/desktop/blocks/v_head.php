@@ -37,6 +37,7 @@
 				'show_page_contact' => ['contact-us/contact-us.min.css'],
 				'show_page_design_studio' => ['sound-design-studio/sound-design-studio.min.css'],
 				'show_page_aboutus' => ['about-us/about-us.min.css'],
+				'show_page_reviews' => ['reviews/reviews.min.css'],
 			],
 			'catalog' => ['catalog/catalog.min.css'],
 			'product' => ['product/product.min.css'],
