@@ -251,6 +251,14 @@ class Pages extends CI_Controller {
 
 		echo $this->load->view($this->viewfolder.'/v_about-us', $data, true);
 	}
+	public function show_page_reviews(){
+		
+		// брать из базы данные и формировать...
+		$lang =  $_SESSION['lang'];
+		$data = [];
+
+		echo $this->load->view($this->viewfolder.'/v_reviews', $data, true);
+	}
 	public function favorite() {
 		$data = array();
 		error_reporting(1);

@@ -96,6 +96,7 @@ $route['try-free'] = "pages/show_page_stageone_free";
 $route['stage-two'] = "pages/show_page_stagetwo";
 $route['stage-three'] = "pages/show_page_stagethree";
 $route['about'] = "pages/show_page_aboutus";
+$route['reviews'] = "pages/show_page_reviews";
 // $route['(ua|ru)/cart'] = "cart/index";
 // $route['(ua|ru)/checkout'] = "cart/checkout";
 // $route['(ua|ru)/order/(:num)'] = "cart/order/$2";
