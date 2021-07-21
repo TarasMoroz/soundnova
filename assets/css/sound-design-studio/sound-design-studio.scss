@@ -1,6 +1,22 @@
 @import "../variables/variables.scss";
 
 .full-width-container {
+    .main-subtitle {
+        margin: 0 0 20px 0;
+        font-size: 12px;
+        font-weight: 500;
+        color: $lightwhite;
+        text-align: center;
+        line-height: 20px;
+        span {
+            display: block;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        &.desktop {
+            display: none;
+        }
+    }
     &.sound-design-top-container {
         padding: 85px 16px 60px 16px;
         background-image: url(/assets/img/studio-mobile-back.jpg);
