@@ -144,8 +144,13 @@ if ( ! function_exists('get_common_page_data'))
 		$cats = $CI->db->query("SELECT id, alias, name, sort, img FROM category WHERE publish = 1 ORDER BY sort ASC")->result_array();
 		$data['list_categories'] = $cats;
 		
+		// controller, action
 		$data['controller'] = $CI->router->fetch_class();
         $data['action'] = $CI->router->fetch_method();
+
+        // device
+        $data['device'] = 'desktop';
+        if($CI->agent->is_mobile()) $data['device'] =  'mobile';
 
 		return $data; // возвращаем готовые, скомпонованные данные по списку продуктов
 	}

@@ -3,17 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Catalog extends CI_Controller {
 
-	private $languages = array('uk'=>'УКР', 'ru'=>'РУС');
+	private $languages = array('en'=>'ENG');
 	private $device = 'desktop';
 	private $viewfolder = 'desktop';
 
 	public function __construct()
  	{
- 		// header('Access-Control-Allow-Origin: *');
-	  //   header('Access-Control-Allow-Methods: GET'); 
-	  //   header('Access-Control-Max-Age: 1000');
-	  //   header('Access-Control-Allow-Headers: Content-Type, Authorization, X-Requested-With');
- 		
+
  		parent::__construct();
 		$this->load->helper('url');
 		$this->load->model('Settings_model', 'settings');
@@ -24,13 +20,8 @@ class Catalog extends CI_Controller {
 	// MAIN PAGE
 	public function index($type = false)
  	{
-		$data = array();
-		error_reporting(1);
-
-		// Должно быть в каждом методе !!!
-		// $lang =  $_SESSION['lang'];
-		// $data['lang'] = $lang;
-		// $data['s'] = $this->settings->get(1);
+		// catsTree, lang, settings ...
+		$data = get_common_page_data(); // view_helper
 		$data['device'] = $this->device;
 
 		// CATEGORIES
@@ -70,11 +61,8 @@ class Catalog extends CI_Controller {
 	// REST PAGES
 	public function show_category($page, $type = false)
 	{
-		$data = array();
-		error_reporting(1);
-
-		//$data['s'] = $this->settings->get(1);
-
+		// catsTree, lang, settings ...
+		$data = get_common_page_data(); // view_helper
 		$data['device'] = $this->device;
 
 		// CATEGORIES
@@ -111,7 +99,9 @@ class Catalog extends CI_Controller {
 
 		$data['meta_title'] = ($data['category']['meta_title']) ? $data['category']['meta_title'] : $data['category']['name'].' sound effects bundles';
 		$data['meta_description'] = ($data['category']['meta_description']) ? $data['category']['meta_description'] : '';
-		$data['h1'] = $data['meta_title'];
+		
+		$data['h1_top'] = $data['category']['name'];
+		$data['h1_bot'] = 'sound effects bundles';
 
 		// category, type
 		$data = $this->productsList($currCategory, $currType, $data);
@@ -205,8 +195,10 @@ class Catalog extends CI_Controller {
 		if($sort != 'pop') $query['sort'] = $sort;
 		if(isset($_GET['srch'])) $query['srch'] = htmlentities($_GET['srch']);
 
+		// echo print_r($type);
+
 		$pagination = [
-			'base' => '/catalog/'.($category ? $category['alias'].'/' : '').($type ? 'filter/'.$filter.'/' : ''),
+			'base' => '/catalog/'.($category ? $category['alias'].'/' : '').($type ? 'filter/'.$type['alias'].'/' : ''),
 			'query' => $query,
 			'pages' => ceil($cntProds/$inpage), // сколько страниц пагинации
 			'curr' => $page, // текущий номер страницы

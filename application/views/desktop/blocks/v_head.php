@@ -50,7 +50,7 @@
 				'account' => [ ], // user account styles goes here
 			],
 			'subscription' => [
-				'index' => ['subscription/subscription.min.css'],
+				'index' => ['home-page/home.min.css', 'product/product.min.css', 'subscription/subscription.min.css'],
 				'show_page_stageone_join' => ['stage-one/stage-one.min.css'],
 				'show_page_stageone_free' => ['stage-one/stage-one.min.css'],
 				'show_page_stageone' => ['stage-one/stage-one.min.css'],

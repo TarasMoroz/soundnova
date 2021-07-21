@@ -85,6 +85,9 @@ $route['product/(:any)'] = "product/show_product/$1";
 
 // cart, checkout
 $route['cart'] = "cart/index";
+$route['cart/ajax_add_item'] = "cart/ajax_add_item";
+$route['cart/ajax_remove_item'] = "cart/ajax_remove_item";
+
 $route['checkout'] = "cart/checkout";
 $route['success'] = "cart/purchase_success";
 
