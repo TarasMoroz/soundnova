@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                                 every month we give any pack to choose from the entire range
                             </div>
                         </div>
-                        <a href="#" class="btn-purp-grad">JOIN NOW</a>
+                        <a href="/join-now" class="btn-purp-grad">JOIN NOW</a>
                     </div>
                     <div class="subscription-first-col video">
                     <div class="under-video-descr">
