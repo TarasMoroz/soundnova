@@ -103,6 +103,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			'index' => ['home-page/home.js'],
 			'show_page_contact' => [],
 			'show_page_design_studio' => [],
+			'show_page_aboutus' => ['about/about.js'],
 		],
 		'catalog' => ['catalog/catalog.js'],
 		'product' => ['product/product.js'],

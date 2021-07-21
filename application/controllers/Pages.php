@@ -68,6 +68,14 @@ class Pages extends CI_Controller {
 		$this->load->view($this->viewfolder.'/v_page_contact', $data);
 	}
 
+	// ABOUT US
+	public function show_page_aboutus(){
+
+		$data = get_common_page_data();
+
+		echo $this->load->view($this->viewfolder.'/v_about-us', $data, true);
+	}
+
 	// REST PAGES
 	public function show_page($alias)
 	{
