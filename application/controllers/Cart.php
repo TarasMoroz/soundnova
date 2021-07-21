@@ -20,6 +20,11 @@ class Cart extends CI_Controller {
  	{
 		$data = get_common_page_data();
 
+		if($this->cartHash){
+			$data['cart'] = $this->db->query("SELECT * FROM cart WHERE hash = '".$this->cartHash."'")->row_array();
+			$data['cart']['cartItems'] = $this->get_cart_items($data['cart']['id']);
+		}
+
  		$this->load->view($this->viewfolder.'/v_cart', $data);
  	}
 
@@ -56,6 +61,9 @@ class Cart extends CI_Controller {
 			// here we can check if user has allowance add to cart this item... or does exist current ids
 
 			$this->db->simple_query("INSERT IGNORE INTO cart_item (id_cart,id_product,id_variant) VALUES (".$userCart['id'].",".$id_product.",".$id_variant.")");
+
+			// refreshing dt_update 
+			$this->db->simple_query("UPDATE cart SET dt_update = NOW() WHERE id = ".$userCart['id']);
 		}
 
 		$userCart['cartItems'] = $this->get_cart_items($userCart['id']);
@@ -65,7 +73,7 @@ class Cart extends CI_Controller {
 
 	public function ajax_remove_item(){
 
-		
+
 
 
 		die(json_encode(['result'=>true]));	
