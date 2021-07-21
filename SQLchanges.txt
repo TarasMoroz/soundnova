@@ -1,0 +1,39 @@
+
+ALTER TABLE `category` ADD `publish` TINYINT( 1 ) NOT NULL COMMENT '1,0' AFTER `seo_text`;
+UPDATE `category` SET `publish`= 1;
+ALTER TABLE `site_review` ADD `title` VARCHAR( 256 ) NOT NULL AFTER `id_video`;
+
+
+CREATE TABLE IF NOT EXISTS `cart` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_user` int(11) NOT NULL,
+  `json_cart` varchar(6000) NOT NULL,
+  `fp` varchar(256) NOT NULL COMMENT 'fingerprint',
+  `hash` varchar(512) NOT NULL COMMENT 'unique cart hash',
+  `ip` varchar(32) NOT NULL,
+  `ua` varchar(256) NOT NULL COMMENT 'user agent',
+  `referer` varchar(256) NOT NULL,
+  `dt_create` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `dt_update` timestamp NULL DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+ALTER TABLE `cart` ADD `id_coupon` INT( 11 ) NOT NULL AFTER `id_user`;
+
+CREATE TABLE IF NOT EXISTS `cart_item` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_product` int(11) NOT NULL,
+  `id_variant` int(11) NOT NULL,
+  `dt_create` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `dt_update` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+
+ALTER TABLE `cart_item` ADD `id_cart` INT( 11 ) NOT NULL AFTER `id`;
+
+ALTER TABLE `cart_item` ADD UNIQUE (
+`id_cart` ,
+`id_product` ,
+`id_variant`
+);
