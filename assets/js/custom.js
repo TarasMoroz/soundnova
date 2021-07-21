@@ -258,13 +258,13 @@ $(document).ready(function() {
     }
   });
 
-  // добавить в корзину
-  $(document).on("click", '.prd-buy', function(e){
-  	e.preventDefault();
-  	id = $(this).attr('data-id');
-    addCart(id);
-    inform((lang == 'ru' ? 'Товар: "'+prds[id].t+'" добавлен в корзину' : 'Товар: "'+prds[id].t+'" додано до кошику') ,'grn');
-  });
+  // // добавить в корзину
+  // $(document).on("click", '.prd-buy', function(e){
+  // 	e.preventDefault();
+  // 	id = $(this).attr('data-id');
+  //   addCart(id);
+  //   inform((lang == 'ru' ? 'Товар: "'+prds[id].t+'" добавлен в корзину' : 'Товар: "'+prds[id].t+'" додано до кошику') ,'grn');
+  // });
 
   $(document).on('click', '#add-comment', function(event){
     event.preventDefault();
@@ -656,20 +656,31 @@ function cart_add_item(){
 	$(document).on('click', '.act-buy', function(event){
       event.preventDefault();
 
-      var obj = $(this), p = JSON.parse(o.attr('data-p'));
+      var obj = $(this), p = JSON.parse(obj.attr('data-p'));
 
-      if(cartHash){
-			$.post('/cart/ajax_add_item', p, function(r){
-	        if(r.result){
-	          $.cookie('cart', null, {path: "/", expires: 90});
-	          initCart();
-	          saveCart();
-	          location.href = '/'+lang+'/order/'+r.order+'/';
-	        }
-	      }, 'json');
-		} else {
-			cart_init();	
-		}
+      $.post('/cart/ajax_add_item', p, function(r){
+      		console.log(r);
+
+	        // if(r.result){
+	        //   $.cookie('cart', null, {path: "/", expires: 90});
+	        //   initCart();
+	        //   saveCart();
+	        //   location.href = '/'+lang+'/order/'+r.order+'/';
+	        // }
+	   }, 'json');
+
+  //     if(cartHash){
+		// 	$.post('/cart/ajax_add_item', p, function(r){
+	 //        if(r.result){
+	 //          $.cookie('cart', null, {path: "/", expires: 90});
+	 //          initCart();
+	 //          saveCart();
+	 //          location.href = '/'+lang+'/order/'+r.order+'/';
+	 //        }
+	 //      }, 'json');
+		// } else {
+		// 	cart_init();	
+		// }
       });
 }
 

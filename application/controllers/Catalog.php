@@ -153,6 +153,12 @@ class Catalog extends CI_Controller {
 					l.name l_name,
 					l.color l_color,
 
+					CASE 
+						WHEN pv_bund.id IS NOT NULL THEN pv_bund.id
+						WHEN pv_des.id IS NOT NULL THEN pv_des.id
+						ELSE 0 
+					END pv_id,
+
 					pv_des.price pv_des_price, 
 					pv_des.price_old pv_des_price_old, 
 					pv_des.img_box pv_des_img_box,

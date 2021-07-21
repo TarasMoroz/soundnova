@@ -73,7 +73,7 @@ if ( ! function_exists('viewedProducts'))
 
     	$CI = &get_instance();
 
-		if($_COOKIE['viewed']){
+		if(isset($_COOKIE['viewed'])){
 			
 			$viewedIds = json_decode($_COOKIE['viewed']);
 			$pviewed = $CI->db->query("SELECT p.id, p.name_ru, p.name_ua, p.alias, p.stock, p.price, p.price_old, IF(p.price_old > p.price, CEIL((p.price_old-p.price)/(p.price_old/100)), 0) discount_percent, count(c.id) cnt_comments, TRUNCATE(AVG(c.value), 1) avg_rate FROM product p LEFT JOIN comment c ON c.id_product = p.id  WHERE p.id IN (".implode(',',$viewedIds).") GROUP BY p.id")->result_array();

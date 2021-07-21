@@ -79,7 +79,7 @@
 
 			<div class="prd-ft-rt">
 				<button class="btn-purp-grad prd-buy act-buy" 
-					data-p='{"id": "<?php echo $prod['id']; ?>", "v": "<?php echo ($prod['pv_des_price']?'des':'bund'); ?>" }'>
+					data-p='{"id_product": "<?php echo $prod['id']; ?>", "id_variant": "<?php echo $prod['pv_id']; ?>" }'>
 					ADD TO CART
 				</button>
 				<a href="/product/<?=$prod['alias']?>" class="prd-more">More details about <?=($prod['pv_des_price']?'pack':'bundle')?></a>
