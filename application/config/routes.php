@@ -74,6 +74,7 @@ $route['(/)?'] = $route['default_controller'];
 $route['contact'] = "pages/show_page_contact";
 $route['sound-design-studio'] = "pages/show_page_design_studio";
 $route['about'] = "pages/show_page_aboutus";
+$route['reviews'] = "pages/show_page_reviews";
 
 // categories, catalog
 $route['catalog'] = "catalog/index";

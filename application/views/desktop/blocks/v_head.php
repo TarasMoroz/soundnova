@@ -69,7 +69,7 @@
 
 	<!-- particular -->
 
-	<?php foreach($particular_css as $css_controller => $css_actions): if($css_controller == $controller): ?>
+	<?php echo $controller;  foreach($particular_css as $css_controller => $css_actions): if($css_controller == $controller): ?>
 		<?php 
 
 			// если на весь контроллер один набор css

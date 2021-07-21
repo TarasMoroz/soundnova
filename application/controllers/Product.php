@@ -35,13 +35,8 @@ class Product extends CI_Controller {
 
 	public function show_product($alias = false)
 	{
-		$data = array();
-		error_reporting(1);
-
-		// Должно быть в каждом методе !!!
-		// $lang =  $_SESSION['lang'];
-		// $data['lang'] = $lang;
-		// $data['s'] = $this->settings->get(1);
+		
+		$data = get_common_page_data();
 
 		// CATEGORIES
 		$cats = $this->db->query("SELECT * FROM category ORDER BY sort ASC")->result_array();
