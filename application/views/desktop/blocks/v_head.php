@@ -38,6 +38,7 @@
 				'show_page_design_studio' => ['sound-design-studio/sound-design-studio.min.css'],
 				'show_page_aboutus' => ['about-us/about-us.min.css'],
 				'show_page_reviews' => ['reviews/reviews.min.css'],
+				'show_page_404' => ['error-page/error-page.min.css'],
 			],
 			'catalog' => ['catalog/catalog.min.css'],
 			'product' => ['product/product.min.css'],

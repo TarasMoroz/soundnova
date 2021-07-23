@@ -84,6 +84,14 @@ class Pages extends CI_Controller {
 		echo $this->load->view($this->viewfolder.'/v_reviews', $data, true);
 	}
 
+		// 404 page
+		public function show_page_404(){
+
+			$data = get_common_page_data();
+			
+			echo $this->load->view($this->viewfolder.'/v_404-page', $data, true);
+		}
+
 	// REST PAGES
 	public function show_page($alias)
 	{

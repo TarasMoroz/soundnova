@@ -105,6 +105,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			'show_page_design_studio' => ['sound-design-studio/sound-design-studio.js'],
 			'show_page_aboutus' => ['about/about.js'],
 			'show_page_reviews' => [],
+			'show_page_404' => [],
 		],
 		'catalog' => ['catalog/catalog.js'],
 		'product' => ['product/product.js'],
