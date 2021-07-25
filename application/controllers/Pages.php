@@ -91,6 +91,13 @@ class Pages extends CI_Controller {
 			
 			echo $this->load->view($this->viewfolder.'/v_404-page', $data, true);
 		}
+		// support page
+		public function show_page_support(){
+
+			$data = get_common_page_data();
+			
+			echo $this->load->view($this->viewfolder.'/v_support', $data, true);
+		}
 
 	// REST PAGES
 	public function show_page($alias)

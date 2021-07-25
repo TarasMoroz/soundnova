@@ -76,6 +76,7 @@ $route['sound-design-studio'] = "pages/show_page_design_studio";
 $route['about'] = "pages/show_page_aboutus";
 $route['reviews'] = "pages/show_page_reviews";
 $route['error'] = "pages/show_page_404";
+$route['support'] = "pages/show_page_support";
 
 // categories, catalog
 $route['catalog'] = "catalog/index";

@@ -40,6 +40,13 @@
                     font-weight: 500;
                 }
             }
+            .button-container {
+                max-width: 265px;
+                margin: 20px auto 0 auto;
+                a {
+                    width: 100%;
+                }
+            }
         }
     }
 }
@@ -50,6 +57,12 @@
                 &.main-title {
                     font-size: 100px;
                     margin: 0;
+                }
+            }
+            .button-container {
+                a {
+                    line-height: 60px;
+                    font-size: 16px;
                 }
             }
         }

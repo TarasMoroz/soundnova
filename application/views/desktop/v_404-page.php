@@ -20,7 +20,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="error-form-container">
                     <img width="190" class="lzy_img" data-src="/assets/img/astronaut.svg"/>
                     <div class="top-text">Sorry! The page you were looking for could not be found.</div>
-                    <div class="descr">You may have typed the address incorrectly or<br> Go To <a href="/">Main Page</a>. Try search our site.</div>
+                    <div class="descr">You may have typed the address incorrectly. Try search sound effects or:</div>
+                    <div class="button-container">
+                        <a href="/" class="btn-blue-grad">Go To Main Page</a>
+                    </div>
                 </div>
 			</div>
 		</div>

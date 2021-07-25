@@ -40,11 +40,22 @@
   color: #1dd1e5;
   font-weight: 500;
 }
+.full-width-container.error-container .error-form-container .button-container {
+  max-width: 265px;
+  margin: 20px auto 0 auto;
+}
+.full-width-container.error-container .error-form-container .button-container a {
+  width: 100%;
+}
 
 @media (min-width: 675px) {
   .full-width-container.error-container .container-title.main-title {
     font-size: 100px;
     margin: 0;
+  }
+  .full-width-container.error-container .button-container a {
+    line-height: 60px;
+    font-size: 16px;
   }
 }
 @media (min-width: 675px) {
