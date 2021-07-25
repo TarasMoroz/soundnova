@@ -77,6 +77,7 @@ $route['about'] = "pages/show_page_aboutus";
 $route['reviews'] = "pages/show_page_reviews";
 $route['error'] = "pages/show_page_404";
 $route['support'] = "pages/show_page_support";
+$route['support/category'] = "pages/show_page_support_category";
 
 // categories, catalog
 $route['catalog'] = "catalog/index";
