@@ -107,6 +107,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			'show_page_reviews' => [],
 			'show_page_404' => [],
 			'show_page_support' => ['support/support.js'],
+			'show_page_support_category' => [],
+			'show_page_support_article' => [],
 		],
 		'catalog' => ['catalog/catalog.js'],
 		'product' => ['product/product.js'],

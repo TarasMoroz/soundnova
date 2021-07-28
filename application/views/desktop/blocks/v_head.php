@@ -41,6 +41,7 @@
 				'show_page_404' => ['error-page/error-page.min.css'],
 				'show_page_support' => ['support/support.min.css'],
 				'show_page_support_category' => ['support/support.min.css'],
+				'show_page_support_article' => ['support-article/support-article.min.css'],
 			],
 			'catalog' => ['catalog/catalog.min.css'],
 			'product' => ['product/product.min.css'],
