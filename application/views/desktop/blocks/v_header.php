@@ -98,7 +98,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="/support">
 								Support
 							</a>
 						</li>
@@ -174,7 +174,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="/support">
 								Support
 							</a>
 						</li>
