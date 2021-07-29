@@ -53,7 +53,7 @@
 			'user' => [
 				'login' => ['login/login.min.css'],
 				'signup' => ['login/login.min.css'],
-				'account' => [ ], // user account styles goes here
+				'account' => ['account/account.min.css'],
 			],
 			'subscription' => [
 				'index' => ['home-page/home.min.css', 'product/product.min.css', 'subscription/subscription.min.css'],

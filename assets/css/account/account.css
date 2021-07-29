@@ -1,0 +1,198 @@
+/*Colors*/
+/*Fonts*/
+/*breakpoints*/
+.full-width-container.account-container {
+  padding-top: 69px;
+  padding-bottom: 62px;
+  background-image: url(/assets/img/cart-back.jpg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: cover;
+}
+.full-width-container.account-container .container-title.main-title {
+  margin-bottom: 20px;
+}
+.full-width-container.account-container .dashboard-container .top-tabs-block {
+  background-color: rgba(16, 18, 24, 0.8);
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.1);
+  padding: 10px;
+}
+.full-width-container.account-container .dashboard-container .top-tabs-block .desktop {
+  display: none;
+}
+.full-width-container.account-container .dashboard-container .top-tabs-block .mobile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.full-width-container.account-container .dashboard-container .top-tabs-block .mobile .dropdown {
+  flex: 1;
+  margin-right: 12px;
+  position: relative;
+  max-width: 250px;
+}
+.full-width-container.account-container .dashboard-container .top-tabs-block .mobile .dropdown .choosen-value {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  line-height: 40px;
+  color: white;
+  font-weight: 500;
+  background-color: #1dd1e5;
+  border-radius: 5px;
+  cursor: pointer;
+  background-image: url(/assets/img/icons/chevron-down-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 92% 15px;
+}
+.full-width-container.account-container .dashboard-container .top-tabs-block .mobile .dropdown .choosen-value svg {
+  margin-right: 6px;
+}
+.full-width-container.account-container .dashboard-container .top-tabs-block .mobile .dropdown ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 0;
+  display: none;
+  position: absolute;
+  background-color: rgba(16, 18, 24, 0.95);
+  border-radius: 0 0 8px 8px;
+  box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.1);
+  left: 0;
+  right: 0;
+}
+.full-width-container.account-container .dashboard-container .top-tabs-block .mobile .dropdown ul li a {
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  line-height: 40px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+}
+.full-width-container.account-container .dashboard-container .top-tabs-block .mobile .dropdown ul li a svg {
+  margin-right: 6px;
+}
+.full-width-container.account-container .dashboard-container .top-tabs-block .mobile .logout {
+  border: none;
+  border-radius: 5px;
+  padding: 0 20px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #1B1F29;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+.full-width-container.account-container .dashboard-container .top-tabs-block .mobile .logout svg {
+  margin-right: 6px;
+}
+.full-width-container.account-container .dashboard-container .dashboard-grid {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 12px;
+}
+.full-width-container.account-container .dashboard-container .dashboard-grid .dashboard-item {
+  background-color: rgba(16, 18, 24, 0.8);
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.1);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-flow: column;
+  justify-content: center;
+  padding: 16px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.full-width-container.account-container .dashboard-container .dashboard-grid .dashboard-item svg {
+  margin-bottom: 8px;
+}
+
+@media (min-width: 675px) {
+  .full-width-container.account-container .dashboard-container .dashboard-grid {
+    grid-gap: 30px;
+    margin-top: 30px;
+  }
+  .full-width-container.account-container .dashboard-container .dashboard-grid .dashboard-item {
+    height: 118px;
+  }
+  .full-width-container.account-container .dashboard-container .dashboard-grid .dashboard-item svg {
+    margin-bottom: 12px;
+  }
+}
+@media (min-width: 1023px) {
+  .full-width-container.account-container {
+    padding: 165px 16px 120px 16px;
+  }
+  .full-width-container.account-container .container-title.main-title {
+    margin-bottom: 35px;
+  }
+  .full-width-container.account-container .dashboard-container .top-tabs-block {
+    padding: 10px 25px 10px 13px;
+  }
+  .full-width-container.account-container .dashboard-container .top-tabs-block .mobile {
+    display: none;
+  }
+  .full-width-container.account-container .dashboard-container .top-tabs-block .desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .full-width-container.account-container .dashboard-container .top-tabs-block .desktop ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  .full-width-container.account-container .dashboard-container .top-tabs-block .desktop ul li {
+    line-height: 36px;
+    padding: 0 12px;
+    border-right: 1px solid #404146;
+    flex: 1;
+  }
+  .full-width-container.account-container .dashboard-container .top-tabs-block .desktop ul li a {
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    text-decoration: none;
+    line-height: 36px;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+    white-space: nowrap;
+    padding: 0 4px;
+  }
+  .full-width-container.account-container .dashboard-container .top-tabs-block .desktop ul li a svg {
+    margin-right: 6px;
+  }
+  .full-width-container.account-container .dashboard-container .top-tabs-block .desktop ul li a.current {
+    background: linear-gradient(to right, #1ed6e9, #15b8cd);
+    border-radius: 5px;
+  }
+  .full-width-container.account-container .dashboard-container .top-tabs-block .desktop .logout {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin-left: 12px;
+    color: white;
+    font-weight: 500;
+  }
+  .full-width-container.account-container .dashboard-container .top-tabs-block .desktop .logout svg {
+    margin-right: 6px;
+  }
+  .full-width-container.account-container .dashboard-container .dashboard-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-top: 30px;
+  }
+}/*# sourceMappingURL=account.css.map */
