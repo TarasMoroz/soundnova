@@ -87,8 +87,11 @@ $route['product/(:any)'] = "product/show_product/$1";
 
 // cart, checkout
 $route['cart'] = "cart/index";
+$route['cart/ajax_get_cart'] = "cart/ajax_get_cart";
 $route['cart/ajax_add_item'] = "cart/ajax_add_item";
 $route['cart/ajax_remove_item'] = "cart/ajax_remove_item";
+$route['cart/ajax_apply_coupon'] = "cart/ajax_apply_coupon";
+$route['cart/ajax_remove_coupon'] = "cart/ajax_remove_coupon";
 
 $route['checkout'] = "cart/checkout";
 $route['success'] = "cart/purchase_success";

@@ -221,6 +221,29 @@ to get the desired effect
             </a>
           </li>
 
+          <li class="nav-header">Продажи</li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link ajax-action" data-action="show_orders">
+              <i class="nav-icon fas fa-shopping-cart"></i>
+              <p>Заказы</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link ajax-action" data-action="show_coupons">
+              <i class="nav-icon fas fa-percent"></i>
+              <p>Купоны</p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link ajax-action" data-action="show_clients">
+              <i class="nav-icon fas fa-users"></i>
+              <p>Клиенты</p>
+            </a>
+          </li>
+
           <li class="nav-header">Модули</li>
 
           <li class="nav-item">
@@ -280,27 +303,6 @@ to get the desired effect
           </li>
 
           <li class="nav-header">Другое</li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link ajax-action" data-action="show_orders">
-              <i class="nav-icon fas fa-shopping-cart"></i>
-              <p>Заказы</p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link ajax-action" data-action="show_emails">
-              <i class="nav-icon far fa-envelope"></i>
-              <p>Email подписки</p>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link ajax-action" data-action="show_clients">
-              <i class="nav-icon fas fa-users"></i>
-              <p>Клиенты</p>
-            </a>
-          </li>
 
           <li class="nav-item">
             <a href="#" class="nav-link ajax-action" data-action="show_settings">

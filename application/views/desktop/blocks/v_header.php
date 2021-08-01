@@ -129,7 +129,7 @@
             <a href="#" class="mobile-user"><img src="/assets/img/icons/user.svg"/></a>
             <a href="/cart" class="mobile-bucket">
                 <img src="/assets/img/icons/shopping-bag.svg"/>
-                <span class="shopping-products-amount">2</span>
+                <span class="shopping-products-amount" style="display: none;">0</span>
             </a>
         </div>
     </div>
@@ -141,7 +141,7 @@
 				<div class="desktop-header-user">
 				<a href="/cart" class="desktop-bucket">
 					<img src="/assets/img/icons/shopping-bag.svg"/>
-					<span class="shopping-products-amount">2</span>
+					<span class="shopping-products-amount" style="display: none;">0</span>
 				</a>
 				<a href="#" class="desktop-user"><img src="/assets/img/icons/user.svg"/></a>
         </div>

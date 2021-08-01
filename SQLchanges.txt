@@ -37,3 +37,19 @@ ALTER TABLE `cart_item` ADD UNIQUE (
 `id_product` ,
 `id_variant`
 );
+
+
+-- --------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS `cart_coupon` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(64) NOT NULL COMMENT 'coupon code',
+  `value` int(8) NOT NULL,
+  `is_percent` tinyint(1) NOT NULL COMMENT '1,0 - percent or direct',
+  `publish` tinyint(1) NOT NULL COMMENT '1,0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+ALTER TABLE `cart_coupon` ADD `dt_create` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;
+
+ALTER TABLE `cart_coupon` ADD `cnt_applies` INT( 8 ) NOT NULL COMMENT 'how many times used' AFTER `is_percent`;
