@@ -84,6 +84,34 @@ class Pages extends CI_Controller {
 		echo $this->load->view($this->viewfolder.'/v_reviews', $data, true);
 	}
 
+		// 404 page
+		public function show_page_404(){
+
+			$data = get_common_page_data();
+			
+			echo $this->load->view($this->viewfolder.'/v_404-page', $data, true);
+		}
+		// support page
+		public function show_page_support(){
+
+			$data = get_common_page_data();
+			
+			echo $this->load->view($this->viewfolder.'/v_support', $data, true);
+		}
+		// support category
+		public function show_page_support_category(){
+
+			$data = get_common_page_data();
+			
+			echo $this->load->view($this->viewfolder.'/v_support-category', $data, true);
+		}
+		// support article
+		public function show_page_support_article(){
+
+			$data = get_common_page_data();
+			
+			echo $this->load->view($this->viewfolder.'/v_support-article', $data, true);
+		}
 	// REST PAGES
 	public function show_page($alias)
 	{

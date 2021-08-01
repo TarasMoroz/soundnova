@@ -105,6 +105,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			'show_page_design_studio' => ['sound-design-studio/sound-design-studio.js'],
 			'show_page_aboutus' => ['about/about.js'],
 			'show_page_reviews' => [],
+			'show_page_404' => [],
+			'show_page_support' => ['support/support.js'],
+			'show_page_support_category' => [],
+			'show_page_support_article' => [],
 		],
 		'catalog' => ['catalog/catalog.js'],
 		'product' => ['product/product.js'],
@@ -116,7 +120,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		'user' => [
 			'login' => ['login/login.js'],
 			'signup' => [],
-			'account' => [], // user account styles goes here
+			'account' => ['account/account.js'], // user account styles goes here
 		],
 		'subscription' => [
 			'index' => ['subscription/subscription.js'],

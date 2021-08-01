@@ -38,6 +38,10 @@
 				'show_page_design_studio' => ['sound-design-studio/sound-design-studio.min.css'],
 				'show_page_aboutus' => ['about-us/about-us.min.css'],
 				'show_page_reviews' => ['reviews/reviews.min.css'],
+				'show_page_404' => ['error-page/error-page.min.css'],
+				'show_page_support' => ['support/support.min.css'],
+				'show_page_support_category' => ['support/support.min.css'],
+				'show_page_support_article' => ['support-article/support-article.min.css'],
 			],
 			'catalog' => ['catalog/catalog.min.css'],
 			'product' => ['product/product.min.css'],
@@ -49,7 +53,8 @@
 			'user' => [
 				'login' => ['login/login.min.css'],
 				'signup' => ['login/login.min.css'],
-				'account' => [ ], // user account styles goes here
+				'account' => ['account/account.min.css'],
+				'orders' => ['account/account.min.css'],
 			],
 			'subscription' => [
 				'index' => ['home-page/home.min.css', 'product/product.min.css', 'subscription/subscription.min.css'],

@@ -75,6 +75,10 @@ $route['contact'] = "pages/show_page_contact";
 $route['sound-design-studio'] = "pages/show_page_design_studio";
 $route['about'] = "pages/show_page_aboutus";
 $route['reviews'] = "pages/show_page_reviews";
+$route['error'] = "pages/show_page_404";
+$route['support'] = "pages/show_page_support";
+$route['support/category'] = "pages/show_page_support_category";
+$route['support/article'] = "pages/show_page_support_article";
 
 // categories, catalog
 $route['catalog'] = "catalog/index";
@@ -107,7 +111,8 @@ $route['stage-three'] = "subscription/show_page_stagethree";
 // user
 $route['login'] = "user/login";
 $route['signup'] = "user/signup";
-$route['account'] = "user/account";
+$route['dashboard'] = "user/account";
+$route['orders'] = "user/orders";
 
 // $route['(:any)'] = "pages/show_page/$1";
 
