@@ -109,6 +109,7 @@ $route['stage-three'] = "subscription/show_page_stagethree";
 $route['login'] = "user/login";
 $route['signup'] = "user/signup";
 $route['dashboard'] = "user/account";
+$route['orders'] = "user/orders";
 
 // $route['(:any)'] = "pages/show_page/$1";
 

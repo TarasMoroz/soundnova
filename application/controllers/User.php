@@ -44,5 +44,10 @@ class User extends CI_Controller {
 
 		$this->load->view($this->viewfolder.'/v_account_dashboard', $data);
 	}
-	
+	public function orders(){
+
+		$data = get_common_page_data();
+
+		$this->load->view($this->viewfolder.'/v_account_orders', $data);
+	}
 }
