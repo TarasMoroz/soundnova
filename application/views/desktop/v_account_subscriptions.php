@@ -12,18 +12,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<main>
 
-    <div class="full-width-container account-container">
+    <div class="full-width-container account-container only-wave">
 			<div class="inner-content-container">
 				<h1 class="container-title main-title">
-							<span class="gradient-title">ORDERS</span>
+							<span class="gradient-title">Subscriptions</span>
 				</h1>
 				<div class="dashboard-container">
 					<div class="top-tabs-block">
 						<div class="mobile">
 							<div class="dropdown">
 								<div class="choosen-value">
-									<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
-									Orders
+									<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="undo" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-undo fa-w-16 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M212.333 224.333H12c-6.627 0-12-5.373-12-12V12C0 5.373 5.373 0 12 0h48c6.627 0 12 5.373 12 12v78.112C117.773 39.279 184.26 7.47 258.175 8.007c136.906.994 246.448 111.623 246.157 248.532C504.041 393.258 393.12 504 256.333 504c-64.089 0-122.496-24.313-166.51-64.215-5.099-4.622-5.334-12.554-.467-17.42l33.967-33.967c4.474-4.474 11.662-4.717 16.401-.525C170.76 415.336 211.58 432 256.333 432c97.268 0 176-78.716 176-176 0-97.267-78.716-176-176-176-58.496 0-110.28 28.476-142.274 72.333h98.274c6.627 0 12 5.373 12 12v48c0 6.627-5.373 12-12 12z" class=""></path></svg>
+									Subscriptions
 								</div>
 								<ul>
 									<li>
@@ -84,14 +84,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</a>
 									</li>
 									<li>
-										<a href="/orders" class="current">
+										<a href="/orders">
 											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
 											Orders
 										</a>
 									</li>
 									<li>
-										<a href="/subscriptions">
-											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="undo" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-undo fa-w-16 fa-3x" fill="#1dd1e5" width="14"><path fill="#1dd1e5" d="M212.333 224.333H12c-6.627 0-12-5.373-12-12V12C0 5.373 5.373 0 12 0h48c6.627 0 12 5.373 12 12v78.112C117.773 39.279 184.26 7.47 258.175 8.007c136.906.994 246.448 111.623 246.157 248.532C504.041 393.258 393.12 504 256.333 504c-64.089 0-122.496-24.313-166.51-64.215-5.099-4.622-5.334-12.554-.467-17.42l33.967-33.967c4.474-4.474 11.662-4.717 16.401-.525C170.76 415.336 211.58 432 256.333 432c97.268 0 176-78.716 176-176 0-97.267-78.716-176-176-176-58.496 0-110.28 28.476-142.274 72.333h98.274c6.627 0 12 5.373 12 12v48c0 6.627-5.373 12-12 12z" class=""></path></svg>
+										<a href="/subscriptions" class="current">
+											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="undo" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-undo fa-w-16 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M212.333 224.333H12c-6.627 0-12-5.373-12-12V12C0 5.373 5.373 0 12 0h48c6.627 0 12 5.373 12 12v78.112C117.773 39.279 184.26 7.47 258.175 8.007c136.906.994 246.448 111.623 246.157 248.532C504.041 393.258 393.12 504 256.333 504c-64.089 0-122.496-24.313-166.51-64.215-5.099-4.622-5.334-12.554-.467-17.42l33.967-33.967c4.474-4.474 11.662-4.717 16.401-.525C170.76 415.336 211.58 432 256.333 432c97.268 0 176-78.716 176-176 0-97.267-78.716-176-176-176-58.496 0-110.28 28.476-142.274 72.333h98.274c6.627 0 12 5.373 12 12v48c0 6.627-5.373 12-12 12z" class=""></path></svg>
 											Subscriptions
 										</a>
 									</li>
@@ -127,49 +127,213 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 
-					<div class="orders-container">
-						<div class="checkout-total-container">
-							<div class="cart-item">
-								<img class="lzy_img" data-src="/assets/img/packs/product-default.svg" width="70" height="56"/>
-								<div class="product-name">
-									<a href="#">Product name link</a>
+					<div class="no-subscriptions-container">
+							<div class="no-subscriptions-text">
+								You have no active subscriptions
+							</div>
+							<h2 class="container-title secondary-title">
+								<div class="gradient-title">
+									choose your<br>
+									subscription plan
 								</div>
-								<div class="product-actions-price">
-									<div class="price">$360</div>
+							</h2>
+							<div class="main-subtitle">SWITCH PLANS OR CANCEL ANYTIME</div>
+							<div class="sbscr-timeline-title">
+								DISCOUNTS FOR A LONG SUBSCRIPTION: <span>11%</span>
+							</div>
+							<div class="subscription-plan-timeline">
+											<div class="line">
+												<div class="inner-line"></div>
+
+												<div class="date-label date1">1 month</div>
+												<div class="date-label date2">3 month</div>
+												<div class="date-label date3">6 month</div>
+												<div class="date-label date4">1 year</div>
+											</div>
+							</div>
+							<div class="sbscr-plans-columns">
+								<div class="sbscr-plan-col">
+									<div class="plan-title">STANDARD</div>
+									<div class="free-trial-text">30 days free trial</div>
+									<div class="per-month"><span class="then">then </span> <span class="digit">$9</span> /month</div>
+									<div class="billed-block">$26.50 billed quarterly</div>
+									<div class="features-list">
+										<div class="feature-line">
+											<img class="lzy_img" data-src="/assets/img/icons/discount-voucher.svg"/>
+											exclusive discounts up to 60%
+										</div>
+										<div class="feature-line">
+											<img class="lzy_img" data-src="/assets/img/icons/unlock.svg"/>
+											full access to the base sound library
+										</div>
+									</div>
+									<a href="/stage-two" class="btn-purp-grad">BUY STANDARD NOW</a>
+									<div class="or-line">Or</div>
+									<div class="under-or-title">Trial > Standard</div>
+									<div class="features-list trial">
+										<div class="feature-line">
+											<img class="lzy_img" data-src="/assets/img/icons/folder-yeloow.svg"/>
+											30 DAYS Free access to the base library
+										</div>
+									</div>
+									<a href="/stage-two" class="btn-blue-grad">TRY TRIAL  >  STANDARD</a>
+								</div>
+								<div class="sbscr-plan-col premium">
+									<img class="best-img lzy_img" data-src="/assets/img/best-choice.svg"/>
+									<div class="plan-title">PREMIUM</div>
+									<div class="free-trial-text">30 days free trial</div>
+									<div class="per-month"><span class="then">then </span> <span class="digit">$15.50</span> /month</div>
+									<div class="billed-block">$46.50 billed quarterly</div>
+									<div class="features-list">
+										<div class="feature-line">
+											<img class="lzy_img" data-src="/assets/img/icons/discount-voucher.svg"/>
+											exclusive discounts up to 60%
+										</div>
+										<div class="feature-line">
+											<img class="lzy_img" data-src="/assets/img/icons/unlock.svg"/>
+											full access to the base sound library
+										</div>
+										<div class="feature-line">
+											<img class="lzy_img" data-src="/assets/img/icons/gift-box.svg"/>
+											every month we give any pack to choose from the entire range
+										</div>
+									</div>
+									<a href="/stage-two" class="btn-purp-grad">BUY PREMIUM NOW</a>
+									<div class="or-line">Or</div>
+									<div class="under-or-title">Trial > Premium</div>
+									<div class="features-list trial">
+										<div class="feature-line">
+											<img class="lzy_img" data-src="/assets/img/icons/folder-yeloow.svg"/>
+											30 DAYS Free access to the base library
+										</div>
+									</div>
+									<a href="/stage-two" class="btn-blue-grad">TRY TRIAL  >  PREMIUM</a>
 								</div>
 							</div>
-							<div class="cart-item">
-								<img class="lzy_img" data-src="/assets/img/packs/construction-default-min.svg" width="70" height="56"/>
-								<div class="product-name">
-									<a href="#">Product name link</a>
+					</div>
+					<div class="has-subscription-container">
+						<div class="has-subscr-item">
+							<h2 class="container-title secondary-title">
+								<div class="gradient-title shadowed">
+									special offers on this month<br>
+									in the premium subscription
 								</div>
-								<div class="product-actions-price">
-									<div class="price">$20</div>
+							</h2>
+							<div class="yellow-subtitle">offers valid from 1-st to 31-th March</div>
+							<div class="sounds-pack-slider">
+								<!-- Swiper -->
+								<div class="swiper-container sounds-pack-wrapper">
+											<div class="swiper-wrapper best-seller">
+												<div class="swiper-slide">
+													<div class="prd best-seller-item">
+														<div class="prd-label label-best">Best Seller</div>
+														<div class="prd-label label-discount">-50%</div>
+														<a class="prd-hd" href="#">
+															<div class="inner" style="background-image: url('/assets/img/packs/bestsellerbg1-min.jpg');"></div>
+															<img class="lzy_img" data-src="/assets/img/packs/best1pack.svg" alt="default box">
+															<span class="prd-tit">Impacts Pack | 3600 elements</span>
+															<span class="prd-tit-blue">Impacts Sound Effects</span>
+														</a>
+
+														<div class="prd-sndcld">
+															<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														</div>
+
+														<div class="prd-ft">
+															<div class="prd-ft-lt">
+																<div class="prd-price">from <b>$36</b><span class="price-crossed">$72</span></div>
+																<div class="prd-stars">
+																	<div class="stars"></div>
+																	<span class="prd-stars-cnt">146</span>
+																</div>
+																<div class="prd-seles">335 Seles</div>
+															</div>
+
+															<div class="prd-ft-rt">
+																<button class="btn-purp-grad prd-buy act-buy">ADD TO CART</button>
+																<a href="#" class="prd-more">More details about pack</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="prd best-seller-item">
+														<div class="prd-label label-best">Best Seller</div>
+														<a class="prd-hd" href="#">
+														<div class="inner" style="background-image: url('/assets/img/packs/bestsellerbg2-min.jpg');"></div>
+															<img class="lzy_img" data-src="/assets/img/packs/best2pack.svg" alt="default box">
+															<span class="prd-tit">Industrial Pack | 3000 elements</span>
+															<span class="prd-tit-blue">Industrial Sound Effects</span>
+														</a>
+
+														<div class="prd-sndcld">
+															<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														</div>
+
+														<div class="prd-ft">
+															<div class="prd-ft-lt">
+																<div class="prd-price">from <b>$36</b></div>
+																<div class="prd-stars">
+																	<div class="stars"></div>
+																	<span class="prd-stars-cnt">146</span>
+																</div>
+																<div class="prd-seles">335 Seles</div>
+															</div>
+
+															<div class="prd-ft-rt">
+																<button class="btn-purp-grad prd-buy act-buy">ADD TO CART</button>
+																<a href="#" class="prd-more">More details about pack</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="swiper-slide">
+													<div class="prd best-seller-item">
+														<div class="prd-label label-best">Best Seller</div>
+														<a class="prd-hd" href="#">
+														<div class="inner mufasa" style="background-image: url('/assets/img/packs/bestsellerbg3.jpg');"></div>
+															<img class="lzy_img" data-src="/assets/img/packs/pack2bundle.svg" alt="default box">
+															<span class="prd-tit">Impact Pack | 3600 elements</span>
+															<span class="prd-tit-blue">Impact Sound Effects</span>
+														</a>
+
+														<div class="prd-sndcld">
+															<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														</div>
+
+														<div class="prd-ft">
+															<div class="prd-ft-lt">
+																<div class="prd-price">from <b>$200</b></div>
+																<div class="prd-stars">
+																	<div class="stars"></div>
+																	<span class="prd-stars-cnt">87</span>
+																</div>
+																<div class="prd-seles">122Seles</div>
+															</div>
+
+															<div class="prd-ft-rt">
+																<button class="btn-purp-grad prd-buy act-buy">ADD TO CART</button>
+																<a href="#" class="prd-more">More details about pack</a>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+													<!-- Add Arrows -->
+													<div class="swiper-button-next"></div>
+													<div class="swiper-button-prev"></div>
+													<!-- Add Pagination -->
+													<div class="swiper-pagination"></div>
 								</div>
-							</div>
-							<div class="cart-chekcout-lines">
-								<div class="cart-checkout-line">
-									<div class="text">Order number</div>
-									<div class="number">355345</div>
-								</div>
-								<div class="cart-checkout-line">
-									<div class="text">Date</div>
-									<div class="number">03/30/20</div>
-								</div>
-							</div>
-							<div class="cart-total-line">
-									<div class="total-text">total</div>
-									<div class="total-price">$180</div>
-							</div>
-							<div class="actions-line">
-								<div class="text">Actions</div>
-								<div class="action"><a class="btn-purp-grad">
-								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-file fa-w-12 fa-3x" width="12" fill="#fff"><path fill="#fff" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z" class=""></path></svg>	
-								View Invoice</a></div>
-							</div>
+							</div>	
+						</div>
+						<div class="has-subscr-item">
+							
+						</div>
+						<div class="has-subscr-item">
+							
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</div>

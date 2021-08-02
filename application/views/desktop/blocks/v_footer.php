@@ -120,7 +120,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		'user' => [
 			'login' => ['login/login.js'],
 			'signup' => [],
-			'account' => ['account/account.js'], // user account styles goes here
+			'account' => ['account/account.js'],
+			'orders' => ['account/account.js'],
+			'subscriptions' => ['account/account.js'],
 		],
 		'subscription' => [
 			'index' => ['subscription/subscription.js'],

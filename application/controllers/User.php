@@ -50,4 +50,10 @@ class User extends CI_Controller {
 
 		$this->load->view($this->viewfolder.'/v_account_orders', $data);
 	}
+	public function subscriptions(){
+
+		$data = get_common_page_data();
+
+		$this->load->view($this->viewfolder.'/v_account_subscriptions', $data);
+	}
 }
