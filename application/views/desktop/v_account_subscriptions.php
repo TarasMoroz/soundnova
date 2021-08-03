@@ -325,13 +325,87 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 													<!-- Add Pagination -->
 													<div class="swiper-pagination"></div>
 								</div>
-							</div>	
+							</div>		
 						</div>
-						<div class="has-subscr-item">
-							
-						</div>
-						<div class="has-subscr-item">
-							
+						<div class="has-subscr-item premium">
+								<h2 class="container-title secondary-title">
+									<div class="gradient-title shadowed">
+										Available on premium subscription<br>
+										<span class="underlined">from 1.03 to 1.04</span>
+									</div>
+								</h2>
+								<div class="sounds-pack-slider">
+									<!-- Swiper -->
+									<div class="swiper-container premium-packs-wrapper">
+												<div class="swiper-wrapper">
+													<div class="swiper-slide">
+															<div class="product-block">
+																<img width="100%" class="lzy_img" data-src="/assets/img/basic-libary.png"/>
+																<div class="product-title">BASIC LIBRARY | 360 elements</div>
+																<a href="#" class="btn-purp-grad">Download</a>
+															</div>
+													</div>
+													<div class="swiper-slide">
+														<div class="product-block">
+																<img width="100%" class="lzy_img" data-src="/assets/img/one-any-pack.png"/>
+																<div class="product-title">
+																	ONE ANY FREE PACK
+																	<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 0 24 24" width="12px" fill="#f9ed1d"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+																</div>
+																<a href="#" class="btn-purp-grad">Choose pack in shop</a>
+														</div>
+													</div>
+												</div>
+														<!-- Add Arrows -->
+														<div class="swiper-button-next"></div>
+														<div class="swiper-button-prev"></div>
+														<!-- Add Pagination -->
+														<div class="swiper-pagination"></div>
+								</div>
+							</div>
+					</div>
+					<div class="has-subscr-item no-padding">
+						<h2 class="container-title secondary-title">
+							<div class="gradient-title">
+								Received packs<br>
+								by premium subscription
+							</div>
+						</h2>
+						<div class="cart-items">
+							<div class="cart-item">
+								<img class="lzy_img" data-src="/assets/img/packs/product-default.svg" width="70" height="56"/>
+								<div class="product-name">
+									<a href="#">Product name link</a>
+								</div>
+								<div class="item-info">
+									<div class="label">Downloads remaining:</div>
+									<div class="text">3 downloads</div>									
+								</div>
+								<div class="item-info">
+									<div class="label">Expires:</div>
+									<div class="text">Never</div>								
+								</div>
+								<div class="product-actions">
+									<a href="#" class="btn-purp-grad">Download</a>
+								</div>
+							</div>
+							<div class="cart-item">
+								<img class="lzy_img" data-src="/assets/img/packs/construction-default-min.svg" width="70" height="56"/>
+								<div class="product-name">
+									<a href="#">Product name link</a>
+								</div>
+								<div class="item-info">
+									<div class="label">Downloads remaining:</div>
+									<div class="text">2 downloads</div>									
+								</div>
+								<div class="item-info">
+									<div class="label">Expires:</div>
+									<div class="text">Never</div>								
+								</div>
+								<div class="product-actions">
+									<a href="#" class="btn-purp-grad">Download</a>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

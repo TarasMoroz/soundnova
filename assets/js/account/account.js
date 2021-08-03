@@ -6,7 +6,7 @@ $('.choosen-value').on('click',function() {
 if (window.innerWidth >= 768) {
     let accountSubscrSlider = new Swiper('.sounds-pack-wrapper', {
         slidesPerView: 2,
-        spaceBetween: 35,
+        spaceBetween: 40,
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
@@ -28,3 +28,23 @@ if (window.innerWidth >= 768) {
           },
     });
   }
+
+  if (window.innerWidth >= 768) {
+    let accountproductSlider = new Swiper('.premium-packs-wrapper', {
+        slidesPerView: 2,
+        spaceBetween: 40,
+    });
+  } else {
+    let accountproductSlider = new Swiper('.premium-packs-wrapper', {
+        slidesPerView: 1,
+        spaceBetween: 45,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+          },
+    });
+  }
+
