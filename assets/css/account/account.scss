@@ -433,6 +433,127 @@
                     margin-bottom: 20px;
                     padding: 0 16px;
                 }
+                .plan-details-line {
+                    display: flex;
+                    align-items: center;
+                    color: white;
+                    justify-content: space-between;
+                    max-width: 295px;
+                    margin: 0 auto 16px auto;
+                    font-size: 14px;
+                    font-weight: 500;
+                    span {
+                        font-weight: 900;
+                    }
+                }
+                .plan-details-actions {
+                    display: grid;
+                    grid-gap: 17px;
+                    max-width: 245px;
+                    margin: 0 auto 25px auto;
+                    a {
+                        font-size: 12px;
+                        text-transform: unset;
+                        border-radius: 5px;
+                        line-height: 40px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        svg {
+                            margin-right: 3px;
+                        }
+                        &.btn-gray {
+                            background-color: #1B1F29;
+                            color: white;
+                            text-decoration: none;
+                            font-weight: 500;
+                            padding: 0 15px;
+                        }
+                        .desktop {
+                            display: none;
+                        }
+                    }
+                }
+                .change-plan-container {
+                    background-color: rgba(16,18,24,.3);
+                    border-radius: 8px;
+                    box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .1);
+                    .title {
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        color: $mainyellow;
+                        text-align: center;
+                        line-height: 50px;
+                    }
+                    .item {
+                        padding: 20px;
+                        border-top: 2px solid #1D1F25;
+                        position: relative;
+                        .plan-name {
+                            font-size: 18px;
+                            color: $lightbluecolor;
+                            text-align: center;
+                            font-weight: bold;
+                            margin-bottom: 15px;
+                            .plan-price {
+                                display: none;
+                            }
+                        }
+                        .features-list {
+                            display: grid;
+                            grid-gap: 10px;
+                            font-size: 12px;
+                            color: #fff;
+                            font-weight: 300;
+                            margin-bottom: 20px;
+                            .feature-line {
+                                display: flex;
+                                align-items: center;
+                                img {
+                                    width: 18px;
+                                    margin-right: 9px;
+                                }
+                            }
+                        }
+                        .plan-actions {
+                            a {
+                                font-size: 18px;
+                                font-weight: bold;
+                                border-radius: 5px;
+                                width: 115px;
+                                margin: 0 auto;
+                                line-height: 40px;
+                                align-items: baseline;
+                                img {
+                                    display: none;
+                                    position: absolute;
+                                    right: 10px;
+                                    top: 10px;
+                                }
+                                .desktop {
+                                    display: none;
+                                }
+                                .mobile {
+                                    span {
+                                        font-size: 10px;
+                                    }
+                                }
+                                &.current {
+                                    background: none;
+                                    box-shadow: none;
+                                    pointer-events: none;
+                                    img {
+                                        display: block;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .recommendations-container {
+                        display: none;
+                    }
+                }
                 &.premium {
                     .product-block {
                         padding: 18px 30px 20px 30px;
@@ -463,6 +584,10 @@
                             margin: 0 auto;
                         }
                     }
+                }
+                
+                &.has-padding {
+                    padding: 30px 12px 18px 12px;
                 }
             }
             .best-seller {
@@ -1010,6 +1135,124 @@
                             }
                         }
                     }
+                    .plan-details-line {
+                        max-width: 360px;
+                        font-size: 18px;
+                        margin-bottom: 20px;
+                    }
+                    .plan-details-actions {
+                        display: flex;
+                        align-items: center;
+                        grid-gap: 0;
+                        max-width: 810px;
+                        a {
+                            font-size: 14px;
+                            svg {
+                                width: 14px;
+                            }
+                            &.btn-blue-grad {
+                                margin: 0 20px;
+                                flex: 1;
+                            }
+                        }
+                    }
+                    .change-plan-container {
+                        max-width: 810px;
+                        margin: 0 auto;
+                        padding-bottom: 38px;
+                        .title {
+                            font-size: 16px;
+                            color: $lightbluecolor;
+                        }
+                        .item {
+                            display: flex;
+                            align-items: center;
+                            padding: 30px 32px;
+                            justify-content: space-between;
+                            .plan-name {
+                                margin-bottom: 0;
+                                margin-right: 100px;
+                                .plan-price {
+                                    display: flex;
+                                    align-items: baseline;
+                                    color: white;
+                                    font-size: 16px;
+                                    margin-top: 8px;
+                                }
+                            }
+                            .features-list {
+                                font-weight: 400;
+                                margin-bottom: 0;
+                                flex: 1;
+                                .feature-line {
+                                    img {
+                                        width: 20px;
+                                    }
+                                }
+                            }
+                            .plan-actions {
+                                a {
+                                    font-size: 14px;
+                                    font-weight: 500;
+                                    width: 163px;
+                                    text-transform: unset;
+                                    .mobile {
+                                        display: none;
+                                    }
+                                    .desktop {
+                                        display: block;
+                                    }
+                                    &.current {
+                                        background: #1B1F29;
+                                        img {
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .recommendations-container {
+                            display: block;
+                            padding: 20px 20px 20px 20px;
+                            border: 2px solid #4C4F57;
+                            max-width: 450px;
+                            margin: 0 auto;
+                            border-radius: 5px;
+                            .title {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                color: #4C4F57;
+                                margin-bottom: 15px;
+                                font-size: 12px;
+                                text-transform: uppercase;
+                                font-weight: 500;
+                                line-height: unset;
+                                svg {
+                                    margin-right: 6px;
+                                    width: 18px;
+                                    height: 16px;
+                                }
+                            }
+                            .descr {
+                                display: flex;
+                                align-items: center;
+                                font-size: 12px;
+                                color: #4c4f57;
+                                font-weight: 400;
+                                justify-content: center;
+                                margin-bottom: 12px;
+                                svg {
+                                    margin-right: 6px;
+                                    width: 13px;
+                                    height: 13px;
+                                }
+                            }
+                        }
+                    }
+                    &.has-padding {
+                        padding: 50px 16px 55px 16px;
+                    }
                     &.no-padding {
                         padding: 50px 0;
                     }
@@ -1141,6 +1384,15 @@
                             &.secondary-title {
                                 br {
                                     display: none;
+                                }
+                            }
+                        }
+                    }
+                    .plan-details-actions {
+                        a {
+                            &.btn-blue-grad {
+                                .desktop {
+                                    display: inline-block;
                                 }
                             }
                         }

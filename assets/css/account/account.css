@@ -425,6 +425,123 @@
   margin-bottom: 20px;
   padding: 0 16px;
 }
+.full-width-container.account-container .has-subscription-container .has-subscr-item .plan-details-line {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-between;
+  max-width: 295px;
+  margin: 0 auto 16px auto;
+  font-size: 14px;
+  font-weight: 500;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .plan-details-line span {
+  font-weight: 900;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .plan-details-actions {
+  display: grid;
+  grid-gap: 17px;
+  max-width: 245px;
+  margin: 0 auto 25px auto;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .plan-details-actions a {
+  font-size: 12px;
+  text-transform: unset;
+  border-radius: 5px;
+  line-height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .plan-details-actions a svg {
+  margin-right: 3px;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .plan-details-actions a.btn-gray {
+  background-color: #1B1F29;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0 15px;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .plan-details-actions a .desktop {
+  display: none;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container {
+  background-color: rgba(16, 18, 24, 0.3);
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.1);
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #f9ed1d;
+  text-align: center;
+  line-height: 50px;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item {
+  padding: 20px;
+  border-top: 2px solid #1D1F25;
+  position: relative;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .plan-name {
+  font-size: 18px;
+  color: #1dd1e5;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .plan-name .plan-price {
+  display: none;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .features-list {
+  display: grid;
+  grid-gap: 10px;
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .features-list .feature-line {
+  display: flex;
+  align-items: center;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .features-list .feature-line img {
+  width: 18px;
+  margin-right: 9px;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .plan-actions a {
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
+  width: 115px;
+  margin: 0 auto;
+  line-height: 40px;
+  align-items: baseline;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .plan-actions a img {
+  display: none;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .plan-actions a .desktop {
+  display: none;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .plan-actions a .mobile span {
+  font-size: 10px;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .plan-actions a.current {
+  background: none;
+  box-shadow: none;
+  pointer-events: none;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .plan-actions a.current img {
+  display: block;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .recommendations-container {
+  display: none;
+}
 .full-width-container.account-container .has-subscription-container .has-subscr-item.premium .product-block {
   padding: 18px 30px 20px 30px;
   background-image: url(/assets/img/premium-product-back.jpg);
@@ -453,6 +570,9 @@
 .full-width-container.account-container .has-subscription-container .has-subscr-item.premium .sounds-pack-slider .btn-purp-grad {
   max-width: 178px;
   margin: 0 auto;
+}
+.full-width-container.account-container .has-subscription-container .has-subscr-item.has-padding {
+  padding: 30px 12px 18px 12px;
 }
 .full-width-container.account-container .has-subscription-container .best-seller .prd {
   position: relative;
@@ -974,6 +1094,120 @@
   .full-width-container.account-container .has-subscription-container .has-subscr-item.premium .sounds-pack-slider .swiper-container {
     padding-bottom: 3px;
   }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .plan-details-line {
+    max-width: 360px;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .plan-details-actions {
+    display: flex;
+    align-items: center;
+    grid-gap: 0;
+    max-width: 810px;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .plan-details-actions a {
+    font-size: 14px;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .plan-details-actions a svg {
+    width: 14px;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .plan-details-actions a.btn-blue-grad {
+    margin: 0 20px;
+    flex: 1;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container {
+    max-width: 810px;
+    margin: 0 auto;
+    padding-bottom: 38px;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .title {
+    font-size: 16px;
+    color: #1dd1e5;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item {
+    display: flex;
+    align-items: center;
+    padding: 30px 32px;
+    justify-content: space-between;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .plan-name {
+    margin-bottom: 0;
+    margin-right: 100px;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .plan-name .plan-price {
+    display: flex;
+    align-items: baseline;
+    color: white;
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .features-list {
+    font-weight: 400;
+    margin-bottom: 0;
+    flex: 1;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .features-list .feature-line img {
+    width: 20px;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .plan-actions a {
+    font-size: 14px;
+    font-weight: 500;
+    width: 163px;
+    text-transform: unset;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .plan-actions a .mobile {
+    display: none;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .plan-actions a .desktop {
+    display: block;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .plan-actions a.current {
+    background: #1B1F29;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .item .plan-actions a.current img {
+    display: none;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .recommendations-container {
+    display: block;
+    padding: 20px 20px 20px 20px;
+    border: 2px solid #4C4F57;
+    max-width: 450px;
+    margin: 0 auto;
+    border-radius: 5px;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .recommendations-container .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4C4F57;
+    margin-bottom: 15px;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: unset;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .recommendations-container .title svg {
+    margin-right: 6px;
+    width: 18px;
+    height: 16px;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .recommendations-container .descr {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #4c4f57;
+    font-weight: 400;
+    justify-content: center;
+    margin-bottom: 12px;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .change-plan-container .recommendations-container .descr svg {
+    margin-right: 6px;
+    width: 13px;
+    height: 13px;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item.has-padding {
+    padding: 50px 16px 55px 16px;
+  }
   .full-width-container.account-container .has-subscription-container .has-subscr-item.no-padding {
     padding: 50px 0;
   }
@@ -1090,6 +1324,9 @@
   }
   .full-width-container.account-container .has-subscription-container .has-subscr-item.no-padding .container-title.secondary-title br {
     display: none;
+  }
+  .full-width-container.account-container .has-subscription-container .has-subscr-item .plan-details-actions a.btn-blue-grad .desktop {
+    display: inline-block;
   }
   .full-width-container.account-container .has-subscription-container .cart-items .cart-item img {
     width: 100%;

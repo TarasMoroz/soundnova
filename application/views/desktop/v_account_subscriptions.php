@@ -408,6 +408,110 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							</div>
 						</div>
 					</div>
+					<div class="has-subscr-item has-padding">
+						<h2 class="container-title secondary-title">
+							<div class="gradient-title">
+								Subscription details
+							</div>
+						</h2>
+						<div class="plan-details-line">
+							<div class="plan">
+								Your plan: <span>PREMIUM</span>										
+							</div>
+							<div class="expires">
+								Your plan: <span>15.11.2020</span>	
+							</div>
+						</div>
+						<div class="yellow-subtitle">Subscription renew automatically</div>
+						<div class="plan-details-actions">
+							<a href="#" class="btn-purp-grad">
+								<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="12px" viewBox="0 0 24 24" width="12px" fill="#FFFFFF"><g><rect fill="none" height="24" width="24"/><path d="M12,20c-4.41,0-8-3.59-8-8s3.59-8,8-8s8,3.59,8,8S16.41,20,12,20 M12,22c5.52,0,10-4.48,10-10c0-5.52-4.48-10-10-10 C6.48,2,2,6.48,2,12C2,17.52,6.48,22,12,22L12,22z M11,12l0,4h2l0-4h3l-4-4l-4,4H11z"/></g></svg>
+								Change plan
+							</a>
+							<a href="#" class="btn-blue-grad">
+								<svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="12px" viewBox="0 0 24 24" width="12px" fill="#FFFFFF"><g><rect fill="none" height="24" width="24"/><rect fill="none" height="24" width="24"/><rect fill="none" height="24" width="24"/></g><g><g/><path d="M12,5V1L7,6l5,5V7c3.31,0,6,2.69,6,6s-2.69,6-6,6s-6-2.69-6-6H4c0,4.42,3.58,8,8,8s8-3.58,8-8S16.42,5,12,5z"/></g></svg>
+								Renew your subscription
+								<span class="desktop"> for 3-12 months with a discount of up to 30%</span>
+							</a>
+							<a href="#" class="btn-gray">
+								<svg xmlns="http://www.w3.org/2000/svg" height="12px" viewBox="0 0 24 24" width="12px" fill="#F21E73"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+								Cancel subscription
+							</a>
+						</div>
+						<div class="change-plan-container">
+							<div class="title">Change streaming plan</div>
+							<div class="item">
+								<div class="plan-name">PREMIUM
+									<div class="plan-price">
+										$15.50<span>/mo</span>							
+									</div>
+								</div>
+								<div class="features-list">
+									<div class="feature-line">
+										<img class="lzy_img" data-src="/assets/img/icons/discount-voucher.svg"/>
+										exclusive discounts up to 60%
+									</div>
+									<div class="feature-line">
+										<img class="lzy_img" data-src="/assets/img/icons/unlock.svg"/>
+										full access to the base sound library
+									</div>
+									<div class="feature-line">
+										<img class="lzy_img" data-src="/assets/img/icons/gift-box.svg"/>
+										every month we give any pack to choose from the entire range
+									</div>
+                        		</div>
+								<div class="plan-actions">
+									<a href="#" class="btn-purp-grad current">
+										<img width="78" class="lzy_img" data-src="/assets/img/current-badge.png"/>
+										<span class="mobile">$15.50<span>/mo</span></span>
+										<span class="desktop">Your current plan</span>
+									</a>
+								</div>
+							</div>
+							<div class="item">
+								<div class="plan-name">STANDARD
+									<div class="plan-price">
+										$9.00<span>/mo</span>							
+									</div>
+								</div>
+								<div class="features-list">
+									<div class="feature-line">
+										<img class="lzy_img" data-src="/assets/img/icons/discount-voucher.svg"/>
+										exclusive discounts up to 60%
+									</div>
+									<div class="feature-line">
+										<img class="lzy_img" data-src="/assets/img/icons/unlock.svg"/>
+										full access to the base sound library
+									</div>
+                        		</div>
+								<div class="plan-actions">
+									<a href="#" class="btn-purp-grad">
+										<img width="78" class="lzy_img" data-src="/assets/img/current-badge.png"/>
+										<span class="mobile">$9.00<span>/mo</span></span>
+										<span class="desktop">Select this plan</span>	
+									</a>
+								</div>
+							</div>
+							<div class="recommendations-container">
+								<div class="title">
+									<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#4c4f57"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+									what happens after you change your plan?
+								</div>
+								<div class="descr">
+									<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#4c4f57"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+									The existing plan is canceled, and you get the applicable refund for it.								
+								</div>
+								<div class="descr">
+									<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#4c4f57"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+									The new plan is effective immediately, and you receive a charge for the new plan.								
+								</div>
+								<div class="descr">
+									<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#4c4f57"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4L9 16.2z"/></svg>
+									Your monthly billing date changes to the date you change your plan.								
+								</div>
+							</div>										
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
