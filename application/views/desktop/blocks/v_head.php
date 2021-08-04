@@ -56,6 +56,7 @@
 				'account' => ['account/account.min.css'],
 				'orders' => ['account/account.min.css'],
 				'subscriptions' => ['account/account.min.css'],
+				'downloads' => ['account/account.min.css'],
 			],
 			'subscription' => [
 				'index' => ['home-page/home.min.css', 'product/product.min.css', 'subscription/subscription.min.css'],

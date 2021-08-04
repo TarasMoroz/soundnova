@@ -818,6 +818,56 @@
 .full-width-container.account-container .has-subscription-container .cart-items .cart-item:not(:last-child) {
   border-bottom: 2px solid #1E2026;
 }
+.full-width-container.account-container .downloads-container {
+  margin-top: 12px;
+}
+.full-width-container.account-container .downloads-container .cart-items {
+  display: grid;
+  grid-gap: 16px;
+}
+.full-width-container.account-container .downloads-container .cart-items .cart-item {
+  background-color: rgba(16, 18, 24, 0.3);
+  border-radius: 8px;
+  box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
+}
+.full-width-container.account-container .downloads-container .cart-items .cart-item .left-block {
+  padding: 12px;
+  border-bottom: 2px solid #2A3239;
+  display: flex;
+  align-items: center;
+}
+.full-width-container.account-container .downloads-container .cart-items .cart-item .left-block img {
+  margin-right: 45px;
+}
+.full-width-container.account-container .downloads-container .cart-items .cart-item .left-block .product-name a {
+  color: #1dd1e5;
+  font-size: 10px;
+  line-height: 14px;
+  font-weight: 500;
+}
+.full-width-container.account-container .downloads-container .cart-items .cart-item .left-block .product-name .by-premium-subscription {
+  display: none;
+}
+.full-width-container.account-container .downloads-container .cart-items .cart-item .item-info {
+  padding: 16px;
+  border-bottom: 1px solid #2a3239;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-weight: 500;
+}
+.full-width-container.account-container .downloads-container .cart-items .cart-item .product-actions {
+  padding: 20px;
+}
+.full-width-container.account-container .downloads-container .cart-items .cart-item .product-actions a {
+  max-width: 200px;
+  margin: 0 auto;
+  border-radius: 5px;
+  text-transform: unset;
+  font-size: 14px;
+  line-height: 40px;
+}
 .full-width-container.account-container.only-wave {
   background-image: none;
 }
@@ -1340,5 +1390,65 @@
   }
   .full-width-container.account-container .has-subscription-container .cart-items .cart-item .item-info .text {
     font-size: 22px;
+  }
+  .full-width-container.account-container .downloads-container .cart-items .cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 32px;
+    align-items: center;
+  }
+  .full-width-container.account-container .downloads-container .cart-items .cart-item .left-block {
+    padding: 0;
+    border: none;
+    flex: 0 0 40%;
+  }
+  .full-width-container.account-container .downloads-container .cart-items .cart-item .left-block img {
+    margin-right: 40px;
+    max-width: 110px;
+    width: 100%;
+    max-height: 130px;
+    height: 100%;
+  }
+  .full-width-container.account-container .downloads-container .cart-items .cart-item .left-block .product-name a {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  .full-width-container.account-container .downloads-container .cart-items .cart-item .left-block .product-name .by-premium-subscription {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 500;
+  }
+  .full-width-container.account-container .downloads-container .cart-items .cart-item .left-block .product-name .by-premium-subscription svg {
+    margin-right: 3px;
+  }
+  .full-width-container.account-container .downloads-container .cart-items .cart-item .item-info {
+    padding: 0;
+    border-bottom: none;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .full-width-container.account-container .downloads-container .cart-items .cart-item .item-info .label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #1dd1e5;
+  }
+  .full-width-container.account-container .downloads-container .cart-items .cart-item .item-info .text {
+    font-size: 22px;
+    color: white;
+  }
+  .full-width-container.account-container .downloads-container .cart-items .cart-item .product-actions {
+    padding: 0;
+  }
+  .full-width-container.account-container .downloads-container .cart-items .cart-item .product-actions a {
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 60px;
+    width: 200px;
   }
 }/*# sourceMappingURL=account.css.map */

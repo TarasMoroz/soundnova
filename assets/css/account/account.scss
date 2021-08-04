@@ -841,6 +841,58 @@
                 }
             }
         }
+        .downloads-container {
+            margin-top: 12px;
+            .cart-items {
+                display: grid;
+                grid-gap: 16px;
+                .cart-item {
+                    background-color: rgba(16,18,24,.3);
+                    border-radius: 8px;
+                    box-shadow: 0px 0px 20px -5px rgb(36 230 250 / 20%);
+                    .left-block {
+                        padding: 12px;
+                        border-bottom: 2px solid #2A3239;
+                        display: flex;
+                        align-items: center;
+                        img {
+                            margin-right: 45px;
+                        }
+                        .product-name {
+                            a {
+                                color: $lightbluecolor;
+                                font-size: 10px;
+                                line-height: 14px;
+                                font-weight: 500;
+                            }
+                            .by-premium-subscription {
+                                display: none;
+                            }
+                        }
+                    }
+                    .item-info {
+                        padding: 16px;
+                        border-bottom: 1px solid #2a3239;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        color: white;
+                        font-weight: 500;
+                    }
+                    .product-actions {
+                        padding: 20px;
+                        a {
+                            max-width: 200px;
+                            margin: 0 auto;
+                            border-radius: 5px;
+                            text-transform: unset;
+                            font-size: 14px;
+                            line-height: 40px;
+                        }
+                    }
+                }
+            }
+        }
         &.only-wave {
             background-image: none;
         }
@@ -1415,6 +1467,72 @@
                             }
                             .text {
                                 font-size: 22px;
+                            }
+                        }
+                    }
+                }
+            }
+            .downloads-container {
+                .cart-items {
+                    .cart-item {
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 30px 32px;
+                        align-items: center;
+                        .left-block {
+                            padding: 0;
+                            border: none;
+                            flex: 0 0 40%;
+                            img {
+                                margin-right: 40px;
+                                max-width: 110px;
+                                width: 100%;
+                                max-height: 130px;
+                                height: 100%;
+                            }
+                            .product-name {
+                                a {
+                                    font-size: 18px;
+                                    line-height: 30px;
+                                }
+                                .by-premium-subscription {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 12px;
+                                    font-size: 12px;
+                                    text-transform: uppercase;
+                                    color: white;
+                                    font-weight: 500;
+                                    svg {
+                                        margin-right: 3px;
+                                    }
+                                }
+                            }
+                        }
+                        .item-info {
+                            padding: 0;
+                            border-bottom: none;
+                            flex-flow: column;
+                            align-items: flex-start;
+                            justify-content: center;
+                            .label {
+                                font-size: 16px;
+                                margin-bottom: 10px;
+                                color: $lightbluecolor;
+                            }
+                            .text {
+                                font-size: 22px;
+                                color: white;
+                            }
+                        }
+                        .product-actions {
+                            padding: 0;
+                            a {
+                                border-radius: 30px;
+                                text-transform: uppercase;
+                                font-size: 16px;
+                                line-height: 60px;
+                                width: 200px;
                             }
                         }
                     }

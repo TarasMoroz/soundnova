@@ -123,6 +123,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			'account' => ['account/account.js'],
 			'orders' => ['account/account.js'],
 			'subscriptions' => ['account/account.js'],
+			'downloads' => ['account/account.js'],
 		],
 		'subscription' => [
 			'index' => ['subscription/subscription.js'],

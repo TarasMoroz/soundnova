@@ -15,15 +15,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="full-width-container account-container">
 			<div class="inner-content-container">
 				<h1 class="container-title main-title">
-							<span class="gradient-title">ORDERS</span>
+							<span class="gradient-title">DOWNLOADS</span>
 				</h1>
 				<div class="dashboard-container">
 					<div class="top-tabs-block">
 						<div class="mobile">
 							<div class="dropdown">
 								<div class="choosen-value">
-									<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
-									Orders
+									<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cloud-download-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-cloud-download-alt fa-w-20 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4zm-132.9 88.7L299.3 420.7c-6.2 6.2-16.4 6.2-22.6 0L171.3 315.3c-10.1-10.1-2.9-27.3 11.3-27.3H248V176c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v112h65.4c14.2 0 21.4 17.2 11.3 27.3z" class=""></path></svg>
+									Downloads
 								</div>
 								<ul>
 									<li>
@@ -84,8 +84,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</a>
 									</li>
 									<li>
-										<a href="/orders" class="current">
-											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
+										<a href="/orders">
+											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x" fill="#1dd1e5" width="14"><path fill="#1dd1e5" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
 											Orders
 										</a>
 									</li>
@@ -96,8 +96,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										</a>
 									</li>
 									<li>
-										<a href="/downloads">
-											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cloud-download-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-cloud-download-alt fa-w-20 fa-3x" fill="#1dd1e5" width="14"><path fill="#1dd1e5" d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4zm-132.9 88.7L299.3 420.7c-6.2 6.2-16.4 6.2-22.6 0L171.3 315.3c-10.1-10.1-2.9-27.3 11.3-27.3H248V176c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v112h65.4c14.2 0 21.4 17.2 11.3 27.3z" class=""></path></svg>
+										<a href="/downloads" class="current">
+											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cloud-download-alt" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="svg-inline--fa fa-cloud-download-alt fa-w-20 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M537.6 226.6c4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4zm-132.9 88.7L299.3 420.7c-6.2 6.2-16.4 6.2-22.6 0L171.3 315.3c-10.1-10.1-2.9-27.3 11.3-27.3H248V176c0-8.8 7.2-16 16-16h48c8.8 0 16 7.2 16 16v112h65.4c14.2 0 21.4 17.2 11.3 27.3z" class=""></path></svg>
 											Downloads
 										</a>
 									</li>
@@ -127,45 +127,49 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 
-					<div class="orders-container">
-						<div class="checkout-total-container">
+					<div class="downloads-container">
+						<div class="cart-items">
 							<div class="cart-item">
-								<img class="lzy_img" data-src="/assets/img/packs/product-default.svg" width="70" height="56"/>
-								<div class="product-name">
-									<a href="#">Product name link</a>
+								<div class="left-block">
+									<img class="lzy_img" data-src="/assets/img/packs/product-default.svg" width="70" height="56"/>
+									<div class="product-name">
+										<a href="#">Product name link</a>
+									</div>
 								</div>
-								<div class="product-actions-price">
-									<div class="price">$360</div>
+								<div class="item-info">
+									<div class="label">Downloads remaining:</div>
+									<div class="text">3 downloads</div>									
+								</div>
+								<div class="item-info">
+									<div class="label">Expires:</div>
+									<div class="text">Never</div>								
+								</div>
+								<div class="product-actions">
+									<a href="#" class="btn-purp-grad">Download</a>
 								</div>
 							</div>
 							<div class="cart-item">
-								<img class="lzy_img" data-src="/assets/img/packs/construction-default-min.svg" width="70" height="56"/>
-								<div class="product-name">
-									<a href="#">Product name link</a>
+								<div class="left-block">
+									<img class="lzy_img" data-src="/assets/img/packs/construction-default-min.svg" width="70" height="56"/>
+									<div class="product-name">
+										<div class="by-premium-subscription">
+											<svg xmlns="http://www.w3.org/2000/svg" height="15px" viewBox="0 0 24 24" width="15px" fill="#F9EC11"><path d="M0 0h24v24H0z" fill="none"/><path d="M0 0h24v24H0z" fill="none"/><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/></svg>
+											Received by premium subscription
+										</div>
+										<a href="#">Product name link</a>
+									</div>
 								</div>
-								<div class="product-actions-price">
-									<div class="price">$20</div>
+								<div class="item-info">
+									<div class="label">Downloads remaining:</div>
+									<div class="text">2 downloads</div>									
 								</div>
-							</div>
-							<div class="cart-chekcout-lines">
-								<div class="cart-checkout-line">
-									<div class="text">Order number</div>
-									<div class="number">355345</div>
+								<div class="item-info">
+									<div class="label">Expires:</div>
+									<div class="text">Never</div>								
 								</div>
-								<div class="cart-checkout-line">
-									<div class="text">Date</div>
-									<div class="number">03/30/20</div>
+								<div class="product-actions">
+									<a href="#" class="btn-purp-grad">Download</a>
 								</div>
-							</div>
-							<div class="cart-total-line">
-									<div class="total-text">total</div>
-									<div class="total-price">$180</div>
-							</div>
-							<div class="actions-line">
-								<div class="text">Actions</div>
-								<div class="action"><a class="btn-purp-grad">
-								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-file fa-w-12 fa-3x" width="12" fill="#fff"><path fill="#fff" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z" class=""></path></svg>	
-								View Invoice</a></div>
 							</div>
 						</div>
 					</div>
