@@ -972,6 +972,46 @@
                                 }
                             }
                         }
+                        &.discount {
+                            .text, .value {
+                                font-size: 16px;
+                                font-weight: 900;
+                            }
+                        }
+                        &.actions {
+                            justify-content: center;
+                            padding-bottom: 30px;
+                            padding-top:20px;
+                            border: none;
+                            .text{
+                                display: none;
+                            }
+                            .product-actions {
+                                max-width: 200px;
+                                width: 100%;
+                                .btn-purp-grad {
+                                    width: 100%;
+                                    text-transform: unset;
+                                    font-size: 14px;
+                                    line-height: 36px;
+                                    border-radius: 5px;
+                                    svg {
+                                        margin-right: 6px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .timer-line {
+                        display: grid;
+                        grid-gap: 10px;
+                        text-align: center;
+                        color: $mainyellow;
+                        padding: 15px 15px 0 15px;
+                        .timer-title {
+                            font-size: 14px;
+                            font-weight: 500;
+                        }
                     }
                 }
             }
@@ -1635,6 +1675,34 @@
                                 .text {
                                     font-size: 22px;
                                 }
+                            }
+                            &.discount {
+                                .text, .value {
+                                    font-size: 24px;
+                                }
+                            }
+                            &.actions {
+                                justify-content: space-between;
+                                border-top: 2px solid #2a3239;
+                                padding: 15px 32px 30px 32px;
+                                .text{
+                                    display:block;
+                                    font-size: 24px;
+                                    text-transform: uppercase;
+                                    font-weight: 900;
+                                }
+                            }
+                        }
+                        .timer-line {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            padding: 30px 32px;
+                            .timer-title {
+                                font-size: 18px;
+                            }
+                            .timer-counter {
+                                margin-right: 0;
                             }
                         }
                     }

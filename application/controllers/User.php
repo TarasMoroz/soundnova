@@ -74,4 +74,10 @@ class User extends CI_Controller {
 
 		$this->load->view($this->viewfolder.'/v_account_details', $data);
 	}
+	public function coupons(){
+
+		$data = get_common_page_data();
+
+		$this->load->view($this->viewfolder.'/v_account_coupons', $data);
+	}
 }

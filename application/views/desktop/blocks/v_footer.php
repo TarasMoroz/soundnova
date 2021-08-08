@@ -126,6 +126,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			'downloads' => ['account/account.js'],
 			'payments' => ['account/account.js'],
 			'details' => ['account/account.js'],
+			'coupons' => ['account/account.js'],
 		],
 		'subscription' => [
 			'index' => ['subscription/subscription.js'],

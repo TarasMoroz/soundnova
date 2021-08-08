@@ -114,6 +114,7 @@ $route['subscriptions'] = "user/subscriptions";
 $route['downloads'] = "user/downloads";
 $route['payments'] = "user/payments";
 $route['details'] = "user/details";
+$route['coupons'] = "user/coupons";
 // $route['(:any)'] = "pages/show_page/$1";
 
 $route['404_override'] = '';

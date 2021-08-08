@@ -945,6 +945,44 @@
   right: 3px;
   left: unset;
 }
+.full-width-container.account-container .payment-methods-container .payment-types-container .card-item .card-info-line.discount .text, .full-width-container.account-container .payment-methods-container .payment-types-container .card-item .card-info-line.discount .value {
+  font-size: 16px;
+  font-weight: 900;
+}
+.full-width-container.account-container .payment-methods-container .payment-types-container .card-item .card-info-line.actions {
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  border: none;
+}
+.full-width-container.account-container .payment-methods-container .payment-types-container .card-item .card-info-line.actions .text {
+  display: none;
+}
+.full-width-container.account-container .payment-methods-container .payment-types-container .card-item .card-info-line.actions .product-actions {
+  max-width: 200px;
+  width: 100%;
+}
+.full-width-container.account-container .payment-methods-container .payment-types-container .card-item .card-info-line.actions .product-actions .btn-purp-grad {
+  width: 100%;
+  text-transform: unset;
+  font-size: 14px;
+  line-height: 36px;
+  border-radius: 5px;
+}
+.full-width-container.account-container .payment-methods-container .payment-types-container .card-item .card-info-line.actions .product-actions .btn-purp-grad svg {
+  margin-right: 6px;
+}
+.full-width-container.account-container .payment-methods-container .payment-types-container .card-item .timer-line {
+  display: grid;
+  grid-gap: 10px;
+  text-align: center;
+  color: #f9ed1d;
+  padding: 15px 15px 0 15px;
+}
+.full-width-container.account-container .payment-methods-container .payment-types-container .card-item .timer-line .timer-title {
+  font-size: 14px;
+  font-weight: 500;
+}
 .full-width-container.account-container .payment-methods-container .payment-options-container {
   background-color: rgba(16, 18, 24, 0.8);
   border-radius: 8px;
@@ -1580,6 +1618,32 @@
   }
   .full-width-container.account-container .payment-methods-container .payment-types-container .card-item .card-info-line.default .text {
     font-size: 22px;
+  }
+  .full-width-container.account-container .payment-methods-container .payment-types-container .card-item .card-info-line.discount .text, .full-width-container.account-container .payment-methods-container .payment-types-container .card-item .card-info-line.discount .value {
+    font-size: 24px;
+  }
+  .full-width-container.account-container .payment-methods-container .payment-types-container .card-item .card-info-line.actions {
+    justify-content: space-between;
+    border-top: 2px solid #2a3239;
+    padding: 15px 32px 30px 32px;
+  }
+  .full-width-container.account-container .payment-methods-container .payment-types-container .card-item .card-info-line.actions .text {
+    display: block;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+  .full-width-container.account-container .payment-methods-container .payment-types-container .card-item .timer-line {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 32px;
+  }
+  .full-width-container.account-container .payment-methods-container .payment-types-container .card-item .timer-line .timer-title {
+    font-size: 18px;
+  }
+  .full-width-container.account-container .payment-methods-container .payment-types-container .card-item .timer-line .timer-counter {
+    margin-right: 0;
   }
   .full-width-container.account-container .payment-methods-container .payment-options-container {
     padding: 35px 16px 40px 16px;
