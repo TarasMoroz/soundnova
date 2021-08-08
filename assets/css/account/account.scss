@@ -893,6 +893,280 @@
                 }
             }
         }
+        .payment-methods-container {
+            margin-top: 12px;
+            display: grid;
+            grid-gap: 17px;
+            .payment-types-container {
+                display: grid;
+                grid-gap: 17px;
+                .card-item {
+                    background-color: rgba(16,18,24,.8);
+                    border-radius: 8px;
+                    box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                    .card-info-line {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        color: white;
+                        padding: 15px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        border-bottom: 1px solid #2a3239;
+                        .value{
+                            &.method {
+                                display: flex;
+                                align-items: center;
+                                .card-type {
+                                    display: flex;
+                                    align-items: center;
+                                    svg {
+                                        margin: 0 5px;
+                                    }
+                                }
+                                .delete-card {
+                                    background: transparent;
+                                    padding: 0;
+                                    border: none;
+                                    display: flex;
+                                    align-items: center;
+                                    margin-left: 8px;
+                                }
+                            }
+                        }
+                        &.default {
+                            padding-bottom: 22px;
+                            .text {
+                                font-size: 16px;
+                                font-weight: 900;
+                            }
+                            .switcher {
+                                .checkbox {
+                                    width: 30px;
+                                    background-color: #282d3b;
+                                    border-radius: 10px;
+                                    height: 16px;
+                                    border: none;
+                                    display: flex;
+                                    align-items: center;
+                                    position: relative;
+                                    cursor: pointer;
+                                    &:after {
+                                        content: "";
+                                        width: 13px;
+                                        height: 13px;
+                                        display: block;
+                                        border-radius: 50%;
+                                        position: absolute;
+                                        transition: all .5s;
+                                        background-color: #15141c;
+                                        left: 3px;
+                                    }
+                                    &.active {
+                                        &:after {
+                                            background-color: $lightbluecolor;
+                                            right: 3px;
+                                            left: unset;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .payment-options-container {
+                background-color: rgba(16,18,24,.8);
+                border-radius: 8px;
+                box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                padding: 24px;
+                .payment-tabs {
+                    display: flex;
+                    align-items: center;
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    justify-content: center;
+                    .payment-tab {
+                        color: $lightbluecolor;
+                        font-size: 12px;
+                        font-weight: 500;
+                        display: flex;
+                        align-items: center;
+                        margin: 0 10px;
+                        svg {
+                            fill: $lightbluecolor;
+                            margin-left: 6px;
+                        }
+                        &.inactive {
+                            color: white;
+                            svg {
+                                fill: white;
+                            }
+                            .checkbox {
+                                background-color: transparent;
+                            }
+                        }
+                        .checkbox {
+                            width: 8px;
+                            height: 8px;
+                            border: 2px solid #282D3B;
+                            border-radius: 50%;
+                            margin-right: 6px;
+                            background-color: $lightbluecolor;
+                        }
+                    }
+                }
+                .payment-tab-container {
+                    margin: 16px auto 0 auto;
+                    max-width: 370px;
+                    .payment-fields {
+                        background: white;
+                        border-radius: 50px;
+                        line-height: 52px;
+                        position: relative;
+                        height: 52px;
+                        margin-bottom: 12px;
+                        box-shadow: 0 0 30px 5px rgb(239, 76, 198, .2);
+                        input {
+                            border: none;
+                            appearance: none;
+                            -webkit-appearance: none;
+                            -moz-appearance: textfield;
+                            outline: none;
+                            font-size: 12px;
+                            padding: 0;
+                            margin: 0;
+                            position: absolute;
+                            &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+                                -webkit-appearance: none;
+                                margin: 0;
+                            }
+                            &::placeholder {
+                                color: black;
+                            }
+                            &.card-number {
+                                top: 18px;
+                                left: 20px;
+                                width: calc(100% - 140px);
+                            }
+                            &.cvc {
+                                right: 24px;
+                                width: 24px;
+                                top: 18px;
+                            }
+                            &.date {
+                                right: 62px;
+                                width: 45px;
+                                top: 18px;
+                            }
+                        }
+                    }
+                    .btn-purp-grad {
+                        width: 100%;
+                        line-height: 52px;
+                    }
+                    .paypal {
+                        input {
+                            background: #fff;
+                            border-radius: 50px;
+                            line-height: 52px;
+                            position: relative;
+                            height: 52px;
+                            margin-bottom: 12px;
+                            box-shadow: 0 0 30px 5px rgb(239, 76, 198, .2);
+                            width: 100%;
+                            box-sizing: border-box;
+                            font-size: 12px;
+                            padding: 0 20px;
+                            outline: none;
+                            color: black;
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+        .account-details-container {
+            margin-top: 15px;
+            .container-title {
+                &.secondary-title {
+                    margin-bottom: 20px;
+                }
+            }
+            form {
+                display: grid;
+                grid-gap: 12px;
+                .field-group {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    label {
+                        flex: 0 0 110px;
+                        color: white;
+                        font-size: 14px;
+                        font-weight: 500;
+                        span {
+                            color: $mainrose;
+                        }
+                    }
+                    input {
+                        line-height: 42px;
+                        background: #101218;
+                        outline: 0;
+                        box-shadow: 0px 0px 10px rgb(36, 230, 250, .05);
+                        border: 0;
+                        border-radius: 5px;
+                        padding: 0 10px;
+                        font-size: 14px;
+                        color: #fff;
+                        flex: 1;
+                    }
+                    svg {
+                        position: absolute;
+                        right: 12px;
+                    }
+                    .tip {
+                        position: absolute;
+                        bottom: -20px;
+                        color: yellow;
+                        left: 130px;
+                        font-size: 12px;
+                        display: none;
+                    }
+                }
+                .password-change-block {
+                    padding: 20px 15px 18px 15px;
+                    background-color: rgba(16,18,24,.4);
+                    border-radius: 8px;
+                    box-shadow: 0px 0px 20px rgb(36, 230, 250, .05);
+                    margin: 13px 0;
+                    .title {
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        color: $mainyellow;
+                        text-align: center;
+                        margin-bottom: 20px;
+                    }
+                    .field-group {
+                        margin-bottom: 12px;
+                        label {
+                            flex: 0 0 130px;
+                            font-size: 12px;
+                        }
+                        input {
+                            width: 100%;
+                        }
+                    }
+                }
+                .btn-purp-grad {
+                    max-width: 230px;
+                    margin: 0 auto;
+                    width: 100%;
+                }
+            }
+        }
         &.only-wave {
             background-image: none;
         }
@@ -901,7 +1175,7 @@
 @media (min-width: $bp-tablet) {
     .full-width-container {
         &.account-container {
-            background-size: 100%;
+            background-size: cover;
             .dashboard-container {
                 .dashboard-grid {
                     grid-gap: 30px;
@@ -1349,8 +1623,181 @@
                     }
                 }
             }
+            .payment-methods-container {
+                margin-top: 20px;
+                .payment-types-container {
+                    .card-item {
+                        .card-info-line {
+                            padding: 30px 32px;
+                            font-size: 16px;
+                            &.default {
+                                padding-bottom: 42px;
+                                .text {
+                                    font-size: 22px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .payment-options-container {
+                    padding: 35px 16px 40px 16px;
+                    .container-title {
+                        &.secondary-title {
+                            font-size: 38px;
+                            margin-bottom: 24px;
+                        }
+                    }
+                    .payment-tabs {
+                        .payment-tab {
+                            font-size: 16px;
+                            margin: 0 25px;
+                            .checkbox {
+                                width: 30px;
+                                background-color: #282D3B;
+                                border-radius: 10px;
+                                height: 16px;
+                                border: none;
+                                margin-right: 12px;
+                                display: flex;
+                                align-items: center;
+                                position: relative;
+                                &:after {
+                                    content: '';
+                                    width: 13px;
+                                    height: 13px;
+                                    display: block;
+                                    background-color: $lightbluecolor;
+                                    border-radius: 50%;
+                                    right: 3px;
+                                    position: absolute;
+                                    transition: all .5s;
+                                }
+                            }
+                            &.inactive {
+                                .checkbox {
+                                    background-color: #282D3B;
+                                    &:after {
+                                        background-color: #15141C;
+                                        right: unset;
+                                        left: 3px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .payment-tab-container {
+                        max-width: 455px;
+                        margin: 34px auto 0 auto;
+                        .payment-fields {
+                            display: flex;
+                            flex-wrap: wrap;
+                            height: unset;
+                            line-height: unset;
+                            background: transparent;
+                            box-shadow: none;
+                            margin-bottom: 32px;
+                            input {
+                                position: unset;
+                                border-radius: 50px;
+                                background-color: white;
+                                padding: 0 30px;
+                                box-sizing: border-box;
+                                font-size: 14px;
+                                line-height: 60px;
+                                box-shadow: 0 0 30px 5px rgb(239, 76, 198, .2);
+                                &.card-number {
+                                    width: unset;
+                                    flex: 0 0 100%;
+                                    margin-bottom: 30px;
+                                }
+                                &.date {
+                                    width: 100%;
+                                    flex: 0 0 calc(50% - 15px);
+                                    margin-right: 15px;
+                                }
+                                &.cvc {
+                                    width: 100%;
+                                    flex: 0 0 calc(50% - 15px);
+                                    margin-left: 15px;
+                                }
+                            }
+                        }
+                        .btn-purp-grad {
+                            line-height: 60px;
+                            font-size: 16px;
+                            max-width: 295px;
+                            margin: 0 auto;
+                        }
+                        .paypal {
+                            input {
+                                border-radius: 50px;
+                                background-color: white;
+                                padding: 0 30px;
+                                box-sizing: border-box;
+                                font-size: 14px;
+                                line-height: 60px;
+                                height: 60px;
+                                box-shadow: 0 0 30px 5px rgb(239, 76, 198, .2);
+                                margin-bottom: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+            .account-details-container {
+                background-color: rgba(16,18,24,.2);
+                border-radius: 8px;
+                box-shadow: 0px 0px 20px rgb(36, 230, 250, .1);
+                padding: 35px 16px 40px 16px;
+                margin: 30px auto 0 auto;
+                max-width: 940px;
+                .container-title {
+                    &.secondary-title {
+                        margin-bottom: 24px;
+                        font-size: 38px;
+                    }
+                }
+                form {
+                    grid-gap: 20px;
+                    max-width: 715px;
+                    margin: 0 auto;
+                    .field-group {
+                        max-width: 580px;
+                        margin: 0 auto;
+                        width: 100%;
+                        label {
+                            flex: 0 0 130px;
+                        }
+                        svg {
+                            display: none;
+                        }
+                        .tip {
+                            display: block;
+                        }
+                        &.with-tip {
+                            margin-bottom: 25px;
+                        }
+                    }
+                    .password-change-block {
+                        padding: 25px 15px 18px 15px;
+                        .title {
+                            max-width: 580px;
+                            margin: 0 auto 20px auto;
+                            text-align: left;
+                        }
+                        .field-group {
+                            margin-bottom: 16px;
+                        }
+                    }
+                    .btn-purp-grad {
+                        font-size: 16px;
+                        line-height: 60px;
+                    }
+                }
+            }
             &.only-wave {
                 background-image: url(/assets/img/cart-back.jpg);
+                background-size: 100%;
             }
         }
     }

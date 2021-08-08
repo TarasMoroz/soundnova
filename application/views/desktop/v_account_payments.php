@@ -15,15 +15,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="full-width-container account-container">
 			<div class="inner-content-container">
 				<h1 class="container-title main-title">
-							<span class="gradient-title">ORDERS</span>
+							<span class="gradient-title">Payment methods</span>
 				</h1>
 				<div class="dashboard-container">
 					<div class="top-tabs-block">
 						<div class="mobile">
 							<div class="dropdown">
 								<div class="choosen-value">
-									<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
-									Orders
+									<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="credit-card" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-credit-card fa-w-18 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V256H0v176zm192-68c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-40zm-128 0c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM576 80v48H0V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48z" class=""></path></svg>
+									Payment methods
 								</div>
 								<ul>
 									<li>
@@ -84,8 +84,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</a>
 									</li>
 									<li>
-										<a href="/orders" class="current">
-											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
+										<a href="/orders">
+											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x" fill="#1dd1e5" width="14"><path fill="#1dd1e5" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
 											Orders
 										</a>
 									</li>
@@ -102,8 +102,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										</a>
 									</li>
 									<li>
-										<a href="/payments">
-											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="credit-card" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-credit-card fa-w-18 fa-3x" fill="#1dd1e5" width="14"><path fill="#1dd1e5" d="M0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V256H0v176zm192-68c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-40zm-128 0c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM576 80v48H0V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48z" class=""></path></svg>
+										<a href="/payments" class="current">
+											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="credit-card" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-credit-card fa-w-18 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M0 432c0 26.5 21.5 48 48 48h480c26.5 0 48-21.5 48-48V256H0v176zm192-68c0-6.6 5.4-12 12-12h136c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-40zm-128 0c0-6.6 5.4-12 12-12h72c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM576 80v48H0V80c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48z" class=""></path></svg>
 											Payment methods
 										</a>
 									</li>
@@ -127,45 +127,117 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 
-					<div class="orders-container">
-						<div class="checkout-total-container">
-							<div class="cart-item">
-								<img class="lzy_img" data-src="/assets/img/packs/product-default.svg" width="70" height="56"/>
-								<div class="product-name">
-									<a href="#">Product name link</a>
+					<div class="payment-methods-container">
+						<div class="payment-types-container">
+							<div class="card-item">
+								<div class="card-info-line">
+									<div class="text">
+										Method
+									</div>
+									<div class="value method">
+										<div class="card-type">
+											MasterCard
+											<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="cc-mastercard" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-cc-mastercard fa-w-18 fa-3x" width="18"><path fill="white" d="M482.9 410.3c0 6.8-4.6 11.7-11.2 11.7-6.8 0-11.2-5.2-11.2-11.7 0-6.5 4.4-11.7 11.2-11.7 6.6 0 11.2 5.2 11.2 11.7zm-310.8-11.7c-7.1 0-11.2 5.2-11.2 11.7 0 6.5 4.1 11.7 11.2 11.7 6.5 0 10.9-4.9 10.9-11.7-.1-6.5-4.4-11.7-10.9-11.7zm117.5-.3c-5.4 0-8.7 3.5-9.5 8.7h19.1c-.9-5.7-4.4-8.7-9.6-8.7zm107.8.3c-6.8 0-10.9 5.2-10.9 11.7 0 6.5 4.1 11.7 10.9 11.7 6.8 0 11.2-4.9 11.2-11.7 0-6.5-4.4-11.7-11.2-11.7zm105.9 26.1c0 .3.3.5.3 1.1 0 .3-.3.5-.3 1.1-.3.3-.3.5-.5.8-.3.3-.5.5-1.1.5-.3.3-.5.3-1.1.3-.3 0-.5 0-1.1-.3-.3 0-.5-.3-.8-.5-.3-.3-.5-.5-.5-.8-.3-.5-.3-.8-.3-1.1 0-.5 0-.8.3-1.1 0-.5.3-.8.5-1.1.3-.3.5-.3.8-.5.5-.3.8-.3 1.1-.3.5 0 .8 0 1.1.3.5.3.8.3 1.1.5s.2.6.5 1.1zm-2.2 1.4c.5 0 .5-.3.8-.3.3-.3.3-.5.3-.8 0-.3 0-.5-.3-.8-.3 0-.5-.3-1.1-.3h-1.6v3.5h.8V426h.3l1.1 1.4h.8l-1.1-1.3zM576 81v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V81c0-26.5 21.5-48 48-48h480c26.5 0 48 21.5 48 48zM64 220.6c0 76.5 62.1 138.5 138.5 138.5 27.2 0 53.9-8.2 76.5-23.1-72.9-59.3-72.4-171.2 0-230.5-22.6-15-49.3-23.1-76.5-23.1-76.4-.1-138.5 62-138.5 138.2zm224 108.8c70.5-55 70.2-162.2 0-217.5-70.2 55.3-70.5 162.6 0 217.5zm-142.3 76.3c0-8.7-5.7-14.4-14.7-14.7-4.6 0-9.5 1.4-12.8 6.5-2.4-4.1-6.5-6.5-12.2-6.5-3.8 0-7.6 1.4-10.6 5.4V392h-8.2v36.7h8.2c0-18.9-2.5-30.2 9-30.2 10.2 0 8.2 10.2 8.2 30.2h7.9c0-18.3-2.5-30.2 9-30.2 10.2 0 8.2 10 8.2 30.2h8.2v-23zm44.9-13.7h-7.9v4.4c-2.7-3.3-6.5-5.4-11.7-5.4-10.3 0-18.2 8.2-18.2 19.3 0 11.2 7.9 19.3 18.2 19.3 5.2 0 9-1.9 11.7-5.4v4.6h7.9V392zm40.5 25.6c0-15-22.9-8.2-22.9-15.2 0-5.7 11.9-4.8 18.5-1.1l3.3-6.5c-9.4-6.1-30.2-6-30.2 8.2 0 14.3 22.9 8.3 22.9 15 0 6.3-13.5 5.8-20.7.8l-3.5 6.3c11.2 7.6 32.6 6 32.6-7.5zm35.4 9.3l-2.2-6.8c-3.8 2.1-12.2 4.4-12.2-4.1v-16.6h13.1V392h-13.1v-11.2h-8.2V392h-7.6v7.3h7.6V416c0 17.6 17.3 14.4 22.6 10.9zm13.3-13.4h27.5c0-16.2-7.4-22.6-17.4-22.6-10.6 0-18.2 7.9-18.2 19.3 0 20.5 22.6 23.9 33.8 14.2l-3.8-6c-7.8 6.4-19.6 5.8-21.9-4.9zm59.1-21.5c-4.6-2-11.6-1.8-15.2 4.4V392h-8.2v36.7h8.2V408c0-11.6 9.5-10.1 12.8-8.4l2.4-7.6zm10.6 18.3c0-11.4 11.6-15.1 20.7-8.4l3.8-6.5c-11.6-9.1-32.7-4.1-32.7 15 0 19.8 22.4 23.8 32.7 15l-3.8-6.5c-9.2 6.5-20.7 2.6-20.7-8.6zm66.7-18.3H408v4.4c-8.3-11-29.9-4.8-29.9 13.9 0 19.2 22.4 24.7 29.9 13.9v4.6h8.2V392zm33.7 0c-2.4-1.2-11-2.9-15.2 4.4V392h-7.9v36.7h7.9V408c0-11 9-10.3 12.8-8.4l2.4-7.6zm40.3-14.9h-7.9v19.3c-8.2-10.9-29.9-5.1-29.9 13.9 0 19.4 22.5 24.6 29.9 13.9v4.6h7.9v-51.7zm7.6-75.1v4.6h.8V302h1.9v-.8h-4.6v.8h1.9zm6.6 123.8c0-.5 0-1.1-.3-1.6-.3-.3-.5-.8-.8-1.1-.3-.3-.8-.5-1.1-.8-.5 0-1.1-.3-1.6-.3-.3 0-.8.3-1.4.3-.5.3-.8.5-1.1.8-.5.3-.8.8-.8 1.1-.3.5-.3 1.1-.3 1.6 0 .3 0 .8.3 1.4 0 .3.3.8.8 1.1.3.3.5.5 1.1.8.5.3 1.1.3 1.4.3.5 0 1.1 0 1.6-.3.3-.3.8-.5 1.1-.8.3-.3.5-.8.8-1.1.3-.6.3-1.1.3-1.4zm3.2-124.7h-1.4l-1.6 3.5-1.6-3.5h-1.4v5.4h.8v-4.1l1.6 3.5h1.1l1.4-3.5v4.1h1.1v-5.4zm4.4-80.5c0-76.2-62.1-138.3-138.5-138.3-27.2 0-53.9 8.2-76.5 23.1 72.1 59.3 73.2 171.5 0 230.5 22.6 15 49.5 23.1 76.5 23.1 76.4.1 138.5-61.9 138.5-138.4z" class=""></path></svg>
+											<span>***6954</span>
+										</div>
+										<button class="delete-card">
+											<svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 0 24 24" width="16px" fill="#FC2179"><path d="M0 0h24v24H0z" fill="none"/><path d="M6 19c0 1.1.9 2 2 2h8c1.1 0 2-.9 2-2V7H6v12zM19 4h-3.5l-1-1h-5l-1 1H5v2h14V4z"/></svg>
+										</button>
+									</div>
 								</div>
-								<div class="product-actions-price">
-									<div class="price">$360</div>
+								<div class="card-info-line">
+									<div class="text">
+										Expires
+									</div>
+									<div class="value">03/21</div>
+								</div>
+								<div class="card-info-line">
+									<div class="text">
+										Subscription
+									</div>
+									<div class="value">N/A</div>
+								</div>
+								<div class="card-info-line default">
+									<div class="text">
+										DEFAULT?
+									</div>
+									<div class="switcher"><span class="checkbox"></span></div>
 								</div>
 							</div>
-							<div class="cart-item">
-								<img class="lzy_img" data-src="/assets/img/packs/construction-default-min.svg" width="70" height="56"/>
-								<div class="product-name">
-									<a href="#">Product name link</a>
-								</div>
-								<div class="product-actions-price">
-									<div class="price">$20</div>
-								</div>
-							</div>
-							<div class="cart-chekcout-lines">
-								<div class="cart-checkout-line">
-									<div class="text">Order number</div>
-									<div class="number">355345</div>
-								</div>
-								<div class="cart-checkout-line">
-									<div class="text">Date</div>
-									<div class="number">03/30/20</div>
-								</div>
-							</div>
-							<div class="cart-total-line">
-									<div class="total-text">total</div>
-									<div class="total-price">$180</div>
-							</div>
-							<div class="actions-line">
-								<div class="text">Actions</div>
-								<div class="action"><a class="btn-purp-grad">
-								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-file fa-w-12 fa-3x" width="12" fill="#fff"><path fill="#fff" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z" class=""></path></svg>	
-								View Invoice</a></div>
+						</div>
+						<div class="payment-options-container">
+									<h2 class="container-title secondary-title">
+										<span class="gradient-title">Add payment methods</span>
+									</h2>
+									<div class="payment-tabs-headers">
+											<ul id="payment-tabs" class="payment-tabs">
+												<li>
+													<a class="payment-tab"><span class="checkbox"></span> Credit card 
+													<svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 0 24 24" width="18px" fill="#FFFFFF"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"/></svg>
+													</a>
+												</li>
+												<li>
+													<a class="payment-tab"><span class="checkbox"></span>PayPal 
+													<svg xmlns="http://www.w3.org/2000/svg" fill="#fff" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="15" height="15" viewBox="0 0 435.505 435.505" style="enable-background:new 0 0 435.505 435.505;" xml:space="preserve">
+														<g>
+															<g>
+																<path d="M403.496,101.917c-4.104-5.073-8.877-9.705-14.166-13.839c0.707,13.117-0.508,27.092-3.668,41.884    c-8.627,40.413-29.256,74.754-59.656,99.304c-30.375,24.533-68.305,37.502-109.686,37.502h-60.344l-19.533,91.512    c-3.836,17.959-19.943,30.99-38.303,30.99H70.938l-4.898,22.484c-1.258,5.79,0.17,11.839,3.887,16.453    c3.715,4.614,9.324,7.298,15.25,7.298h66.498c9.24,0,17.225-6.459,19.152-15.495L193.667,313h76.188    c36.854,0,70.527-11.464,97.384-33.152c26.869-21.697,45.129-52.186,52.807-88.162    C427.822,155.309,422.253,125.106,403.496,101.917z"/>
+																<path d="M117.292,354.191l22.84-107.008h76.188c36.852,0,70.527-11.465,97.383-33.154c26.867-21.697,45.129-52.186,52.809-88.161    c7.773-36.378,2.207-66.58-16.553-89.769C331.952,13.832,301.17,0,269.633,0H103.639c-9.209,0-17.174,6.417-19.135,15.414    L12.505,345.938c-1.26,5.789,0.168,11.838,3.887,16.453c3.713,4.613,9.32,7.296,15.248,7.296h66.5    C107.38,369.687,115.36,363.229,117.292,354.191z M178.235,75.291h52.229c12.287,0,23.274,5.149,30.145,14.129    c7.297,9.539,9.431,22.729,5.853,36.188c-0.047,0.171-0.088,0.342-0.131,0.516c-6.57,27.73-33.892,50.291-60.898,50.291h-50.05    L178.235,75.291z"/>
+															</g>
+														</g>
+														<g>
+														</g>
+														<g>
+														</g>
+														<g>
+														</g>
+														<g>
+														</g>
+														<g>
+														</g>
+														<g>
+														</g>
+														<g>
+														</g>
+														<g>
+														</g>
+														<g>
+														</g>
+														<g>
+														</g>
+														<g>
+														</g>
+														<g>
+														</g>
+														<g>
+														</g>
+														<g>
+														</g>
+														<g>
+														</g>
+														</svg>
+													</a>
+												</li>
+											</ul>
+									</div>
+									<div class="payment-tab-container" style="display:none">
+										<div class="credit-card-form">
+											<form class="add-payment-method">
+												<div class="payment-fields">
+													<input class="card-number" type="number" placeholder="Cards Number"/>
+													<input class="date" type="text" placeholder="MM / YY"/>
+													<input class="cvc" type="number" placeholder="CVC"/>
+												</div>
+												<button class="btn-purp-grad" type="submit">add payment method</button>
+											</form>
+										</div>
+									</div>
+									<div class="payment-tab-container" style="display:none">
+										<div class="credit-card-form paypal">
+											<input type="text" placeholder="Paypal email">
+											<button class="btn-purp-grad subscription-form-btn">Add payment method</button>
+										</div>
+									</div>
 							</div>
 						</div>
 					</div>

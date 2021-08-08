@@ -112,6 +112,8 @@ $route['dashboard'] = "user/account";
 $route['orders'] = "user/orders";
 $route['subscriptions'] = "user/subscriptions";
 $route['downloads'] = "user/downloads";
+$route['payments'] = "user/payments";
+$route['details'] = "user/details";
 // $route['(:any)'] = "pages/show_page/$1";
 
 $route['404_override'] = '';

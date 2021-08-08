@@ -15,15 +15,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="full-width-container account-container">
 			<div class="inner-content-container">
 				<h1 class="container-title main-title">
-							<span class="gradient-title">ORDERS</span>
+							<span class="gradient-title">Account details</span>
 				</h1>
 				<div class="dashboard-container">
 					<div class="top-tabs-block">
 						<div class="mobile">
 							<div class="dropdown">
 								<div class="choosen-value">
-									<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
-									Orders
+									<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user fa-w-14 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" class=""></path></svg>
+									Account details
 								</div>
 								<ul>
 									<li>
@@ -84,8 +84,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</a>
 									</li>
 									<li>
-										<a href="/orders" class="current">
-											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
+										<a href="/orders">
+											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x" fill="#1dd1e5" width="14"><path fill="#1dd1e5" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
 											Orders
 										</a>
 									</li>
@@ -108,8 +108,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										</a>
 									</li>
 									<li>
-										<a href="/details">
-											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user fa-w-14 fa-3x" fill="#1dd1e5" width="14"><path fill="#1dd1e5" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" class=""></path></svg>
+										<a href="/details" class="current">
+											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="user" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="svg-inline--fa fa-user fa-w-14 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm89.6 32h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-74.2-60.2-134.4-134.4-134.4z" class=""></path></svg>
 											Account details
 										</a>
 									</li>
@@ -127,48 +127,68 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 
-					<div class="orders-container">
-						<div class="checkout-total-container">
-							<div class="cart-item">
-								<img class="lzy_img" data-src="/assets/img/packs/product-default.svg" width="70" height="56"/>
-								<div class="product-name">
-									<a href="#">Product name link</a>
+					<div class="account-details-container">
+						<div class="manage-account-container">
+							<h2 class="container-title secondary-title">
+								<span class="gradient-title">Manage account details</span>
+							</h2>
+							<form>
+								<div class="field-group">
+									<label>
+										First Name <span>*</span>
+									</label>
+									<input type="text" name="firstname"/>
 								</div>
-								<div class="product-actions-price">
-									<div class="price">$360</div>
+								<div class="field-group">
+									<label>
+										Last Name <span>*</span>
+									</label>
+									<input type="text" name="lastname"/>
 								</div>
-							</div>
-							<div class="cart-item">
-								<img class="lzy_img" data-src="/assets/img/packs/construction-default-min.svg" width="70" height="56"/>
-								<div class="product-name">
-									<a href="#">Product name link</a>
+								<div class="field-group with-tip">
+									<label>
+										Display Name <span>*</span>
+									</label>
+									<input type="text" name="displayname"/>
+									<svg xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 0 24 24" width="14px" fill="#F8EF31"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"/></svg>
+									<span class="tip">This will be how your name will be displayed in the account section and in reviews</span>
 								</div>
-								<div class="product-actions-price">
-									<div class="price">$20</div>
+								<div class="field-group">
+									<label>
+										Email address <span>*</span>
+									</label>
+									<input type="text" name="email"/>
 								</div>
-							</div>
-							<div class="cart-chekcout-lines">
-								<div class="cart-checkout-line">
-									<div class="text">Order number</div>
-									<div class="number">355345</div>
+								<div class="password-change-block">
+									<div class="title">
+										Password change
+									</div>
+									<div class="field-group">
+										<label>
+											Current password
+										</label>
+										<input type="password" name="currentpass"/>
+									</div>
+									<div class="field-group">
+										<label>
+											New password
+										</label>
+										<input type="password" name="newpass"/>
+									</div>
+									<div class="field-group">
+										<label>
+											Confirm New Password
+										</label>
+										<input type="password" name="confirmpass"/>
+									</div>
 								</div>
-								<div class="cart-checkout-line">
-									<div class="text">Date</div>
-									<div class="number">03/30/20</div>
+								<div class="form-actions">
+									<button class="btn-purp-grad" type="submit">Save changes</button>
 								</div>
-							</div>
-							<div class="cart-total-line">
-									<div class="total-text">total</div>
-									<div class="total-price">$180</div>
-							</div>
-							<div class="actions-line">
-								<div class="text">Actions</div>
-								<div class="action"><a class="btn-purp-grad">
-								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-file fa-w-12 fa-3x" width="12" fill="#fff"><path fill="#fff" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z" class=""></path></svg>	
-								View Invoice</a></div>
-							</div>
+							</form>
 						</div>
 					</div>
+
 
 				</div>
 			</div>
