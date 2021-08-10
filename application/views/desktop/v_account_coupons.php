@@ -15,15 +15,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="full-width-container account-container">
 			<div class="inner-content-container">
 				<h1 class="container-title main-title">
-							<span class="gradient-title">ORDERS</span>
+							<span class="gradient-title">Coupons</span>
 				</h1>
 				<div class="dashboard-container">
 					<div class="top-tabs-block">
 						<div class="mobile">
 							<div class="dropdown">
 								<div class="choosen-value">
-									<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
-									Orders
+									<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z" class=""></path></svg>
+									Coupons
 								</div>
 								<ul>
 									<li>
@@ -84,8 +84,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 									</a>
 									</li>
 									<li>
-										<a href="/orders" class="current">
-											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
+										<a href="/orders">
+											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x" fill="#1dd1e5" width="14"><path fill="#1dd1e5" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
 											Orders
 										</a>
 									</li>
@@ -114,8 +114,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										</a>
 									</li>
 									<li>
-										<a href="/coupons">
-											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16 fa-3x" fill="#1dd1e5" width="14"><path fill="#1dd1e5" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z" class=""></path></svg>
+										<a href="/coupons" class="current">
+											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tag" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tag fa-w-16 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z" class=""></path></svg>
 											Coupons
 										</a>
 									</li>
@@ -127,45 +127,66 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						</div>
 					</div>
 
-					<div class="orders-container">
-						<div class="checkout-total-container">
-							<div class="cart-item">
-								<img class="lzy_img" data-src="/assets/img/packs/product-default.svg" width="70" height="56"/>
-								<div class="product-name">
-									<a href="#">Product name link</a>
+					<div class="payment-methods-container">
+						<div class="payment-types-container">
+							<div class="card-item">
+								<div class="card-info-line">
+									<div class="text">
+										Coupon code
+									</div>
+									<div class="value method">
+										<div class="card-type">
+											<span>d5yr33redgg88h</span>
+										</div>
+										<button class="delete-card">
+											<svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 0 24 24" width="16px" fill="#1dd1e5"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>
+										</button>
+									</div>
 								</div>
-								<div class="product-actions-price">
-									<div class="price">$360</div>
+								<div class="card-info-line discount">
+									<div class="text">
+										DISCOUNT
+									</div>
+									<div class="value">-20%</div>
 								</div>
-							</div>
-							<div class="cart-item">
-								<img class="lzy_img" data-src="/assets/img/packs/construction-default-min.svg" width="70" height="56"/>
-								<div class="product-name">
-									<a href="#">Product name link</a>
+								<div class="card-info-line">
+									<div class="text">
+										Term of coupon
+									</div>
+									<div class="value">03/01/2020 - 03/31/2020</div>
 								</div>
-								<div class="product-actions-price">
-									<div class="price">$20</div>
+								<div class="timer-line">
+									<div class="timer-title">Term of coupon will end in</div>
+									<div class="timer-counter">
+												<div class="timer-counter-item">
+													<span class="count-number days">00</span>
+													<span class="count-text">days</span>
+												</div>
+												<div class="timer-counter-item">
+													<span class="count-number hours">00</span>
+													<span class="count-text">hours</span>
+												</div>
+												<div class="timer-counter-item">
+													<span class="count-number minutes">00</span>
+													<span class="count-text">mins</span>
+												</div>
+												<div class="timer-counter-item">
+													<span class="count-number seconds">00</span>
+													<span class="count-text">sec</span>
+												</div>
+									</div>
 								</div>
-							</div>
-							<div class="cart-chekcout-lines">
-								<div class="cart-checkout-line">
-									<div class="text">Order number</div>
-									<div class="number">355345</div>
+								<div class="card-info-line actions">
+									<div class="text">
+										Actions
+									</div>
+									<div class="product-actions">
+										<button class="btn-purp-grad">
+											<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="shopping-cart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" class="svg-inline--fa fa-shopping-cart fa-w-18 fa-3x" fill="#fff" width="14"><path fill="#fff" d="M528.12 301.319l47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681z" class=""></path></svg>
+											Use coupon
+										</button>
+									</div>
 								</div>
-								<div class="cart-checkout-line">
-									<div class="text">Date</div>
-									<div class="number">03/30/20</div>
-								</div>
-							</div>
-							<div class="cart-total-line">
-									<div class="total-text">total</div>
-									<div class="total-price">$180</div>
-							</div>
-							<div class="actions-line">
-								<div class="text">Actions</div>
-								<div class="action"><a class="btn-purp-grad">
-								<svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="svg-inline--fa fa-file fa-w-12 fa-3x" width="12" fill="#fff"><path fill="#fff" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z" class=""></path></svg>	
-								View Invoice</a></div>
 							</div>
 						</div>
 					</div>
