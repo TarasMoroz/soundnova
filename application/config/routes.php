@@ -110,7 +110,14 @@ $route['stage-three'] = "subscription/show_page_stagethree";
 
 // user
 $route['login'] = "user/login";
+$route['proceed_login'] = "user/proceed_login";
+
 $route['signup'] = "user/signup";
+$route['proceed_signup'] = "user/proceed_signup";
+$route['email_activate'] = "user/email_activate";
+
+$route['logout'] = "user/logout";
+
 $route['dashboard'] = "user/account";
 $route['orders'] = "user/orders";
 $route['subscriptions'] = "user/subscriptions";

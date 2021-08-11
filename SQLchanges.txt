@@ -60,14 +60,15 @@ DROP TABLE customer;
 
 CREATE TABLE IF NOT EXISTS `user` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `login` varchar(64) NOT NULL,
   `password` varchar(64) NOT NULL,
   `firstname` varchar(64) NOT NULL,
   `lastname` varchar(64) NOT NULL,
+  `displayname` varchar(64) NOT NULL,
   `dt_register` datetime NOT NULL,
   `dt_last_login` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 
 ALTER TABLE `user` ADD `email` VARCHAR( 64 ) NOT NULL AFTER `login`;
-
+ALTER TABLE `user` ADD `email_active` TINYINT( 1 ) NOT NULL COMMENT '1,0' AFTER `email`;
+ALTER TABLE `user` ADD `email_activation_code` INT( 10 ) NOT NULL AFTER `email_active`;

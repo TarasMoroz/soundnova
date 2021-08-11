@@ -100,7 +100,7 @@ $(document).ready(function() {
 	cart_apply_coupon();
 	cart_remove_coupon();
 
-	
+	user_login_events();
 
 	$(document).on('click', '.cat-ftr-cont a', function(event){
 		//event.preventDefault();
@@ -760,5 +760,21 @@ function cart_remove_coupon(){
 	        	inform(r.msg, 'red');
 	        }
 	   }, 'json');
+    });
+}
+
+
+/// ------------ USER 
+
+function user_login_events(){
+
+	// remember-me-checkbox
+	$(document).on('click', '.remember-me-checkbox', function(event){
+      event.preventDefault();
+
+      var inptObj = $('input[name=remember]'),
+          currVal = parseInt(inptObj.val());
+
+      inptObj.val(currVal == 1 ? 0 : 1);
     });
 }
