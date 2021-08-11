@@ -81,29 +81,56 @@
 
 	<!-- particular -->
 
-	<?php echo $controller;  foreach($particular_css as $css_controller => $css_actions): if($css_controller == $controller): ?>
-		<?php 
+	<?php foreach($particular_css as $css_controller => $css_actions): if($css_controller == $controller): ?>
+	<?php 
 
-			// если на весь контроллер один набор css
-			$css_set = $css_actions;
+		// если на весь контроллер один набор css
+		$css_set = $css_actions;
 
-			// если не указаны индексы массива (ассоциативный), значит в контроллере наборы css на каждый экшн
-			if(!isset($css_actions[0])){
-				foreach($css_actions as $css_action_name => $css_action_set){
-					if($css_action_name == $action){
-						$css_set = $css_action_set;
-						break;
-					}
+		// если не указаны индексы массива (ассоциативный), значит в контроллере наборы css на каждый экшн
+		if(!isset($css_actions[0])){
+			foreach($css_actions as $css_action_name => $css_action_set){
+				if($css_action_name == $action){
+					$css_set = $css_action_set;
+					break;
 				}
 			}
+		}
 
-		?>
+	?>
 		
 	<?php foreach($css_set as $css_file_path): ?>
 	<link type="text/css" rel="stylesheet" href="<?php echo base_url($css_dir.$css_file_path.$env_param);?>">
 	<?php endforeach; ?>
 
 	<?php break; endif; endforeach; ?>
+
+	<style>
+		#inform {
+		  width:320px;
+		  height:auto;
+		  padding:20px 10px;
+		  text-align: center;
+		  background: rgba(255, 255, 255, 0.95);
+		  /*box-shadow: 0px 0px 20px 10px #fff;*/
+		  border-radius: 5px;
+		  border:1px solid #ddd;
+		  color:#000;
+		  opacity: 0;
+		  visibility: hidden;
+		  top: -100px;
+		  left:50%;
+		  font-size: 15px;
+		  transform: translateX(-50%);
+		  transition: 0.2s;
+		  position: fixed;
+		  z-index: 9999;
+		}
+
+		#inform.red {background: rgba(249, 50, 50, 0.95); color:#fff;}
+		#inform.grn {background: rgba(50, 211, 95, 0.95); color:#fff;}
+		#inform.on { opacity: 1; visibility: visible; top:50px; transition-delay: 0.3s; transition: 0.5s;}s
+	</style>
 	
 	<link rel="shortcut icon" href="<?=base_url("assets/img/icon.png")?>">
 	<link rel="canonical" href="<?=base_url(explode('?',$_SERVER['REQUEST_URI'])[0])?>"/>
@@ -111,7 +138,7 @@
 	<script type="text/javascript">
 		var prds = {};
 		var lang = '<?=$lang?>';
-		var ci = {'controller': '<?php echo $controller ?>', 'action': '<?php echo $action ?>'};
+		var ci = {'controller': '<?php echo $controller; ?>', 'action': '<?php echo $action; ?>'};
 	</script>
 
 	<meta name="robots" content="noindex, nofollow"> 

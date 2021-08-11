@@ -37,3 +37,38 @@ ALTER TABLE `cart_item` ADD UNIQUE (
 `id_product` ,
 `id_variant`
 );
+
+
+-- --------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS `cart_coupon` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `code` varchar(64) NOT NULL COMMENT 'coupon code',
+  `value` int(8) NOT NULL,
+  `is_percent` tinyint(1) NOT NULL COMMENT '1,0 - percent or direct',
+  `publish` tinyint(1) NOT NULL COMMENT '1,0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
+
+ALTER TABLE `cart_coupon` ADD `dt_create` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;
+
+ALTER TABLE `cart_coupon` ADD `cnt_applies` INT( 8 ) NOT NULL COMMENT 'how many times used' AFTER `is_percent`;
+
+-- ---------------------------------------------------------
+
+DROP TABLE customer;
+
+CREATE TABLE IF NOT EXISTS `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `password` varchar(64) NOT NULL,
+  `firstname` varchar(64) NOT NULL,
+  `lastname` varchar(64) NOT NULL,
+  `displayname` varchar(64) NOT NULL,
+  `dt_register` datetime NOT NULL,
+  `dt_last_login` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
+
+ALTER TABLE `user` ADD `email` VARCHAR( 64 ) NOT NULL AFTER `id`;
+ALTER TABLE `user` ADD `email_active` TINYINT( 1 ) NOT NULL COMMENT '1,0' AFTER `email`;
+ALTER TABLE `user` ADD `email_activation_code` INT( 10 ) NOT NULL AFTER `email_active`;

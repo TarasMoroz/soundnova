@@ -156,4 +156,43 @@ if ( ! function_exists('get_common_page_data'))
 	}
 }
 
+if ( ! function_exists('send_html_mail'))
+{
+	// метод отправки html эмейлов
+	function send_html_mail($dataMail, $templateName, $to, $subj){
+
+		// $this->load->library('email');
+
+		$CI = &get_instance();
+		$CI->load->library('email');
+
+		$dataMail['lang'] = $_SESSION['lang'];
+		$dataMail['subject'] = $subj;
+
+		$configMail['protocol'] = 'mail';
+		// $configMail['smtp_host'] = 'smtp.gmail.com';
+		// $configMail['smtp_user'] = 'sitear.box@gmail.com';
+		// $configMail['smtp_pass'] = '**********';
+		// $configMail['smtp_port'] = '465';
+		// $configMail['smtp_crypto'] = 'ssl';
+		$configMail['mailtype'] = 'html';
+		$configMail['charset'] = 'utf-8';
+		
+		$CI->email->initialize($configMail);
+
+		$mailContent = $CI->load->view('mail/'.$templateName, $dataMail, true);
+
+		$dataMail['content'] = $mailContent;
+		// в основной шаблон передаем те же данные и сгенерированный контент...
+		$htmlMail = $CI->load->view('mail/v_mail', $dataMail, true);
+
+		$CI->email->from('noreply@soundnova.net', 'SOUNDNOVA');
+        $CI->email->to($to);
+        $CI->email->subject($subj);
+        $CI->email->message($htmlMail);
+
+        return $CI->email->send(FALSE);
+	}
+}
+
 ?>

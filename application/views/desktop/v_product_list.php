@@ -31,10 +31,6 @@
 	?>
 
 
-
-
-
-
 	<div class="prd" <? if(isset($favorite_list)): ?>id="prd<?=$prod['id']?>"<? endif; ?>>
 
 		<? if(isset($favorite_list)): ?>
