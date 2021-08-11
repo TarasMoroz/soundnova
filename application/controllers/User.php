@@ -177,7 +177,7 @@ class User extends CI_Controller {
 
 	public function email_activate(){
 		
-		$hash = isset($_POST['hash']) ? $_POST['hash'] : '';
+		$hash = isset($_GET['hash']) ? $_GET['hash'] : '';
 		$code = isset($_POST['code']) ? $_POST['code'] : '';
 
 		$hash = addslashes(htmlentities($hash));
