@@ -112,6 +112,13 @@ class Pages extends CI_Controller {
 			
 			echo $this->load->view($this->viewfolder.'/v_support-article', $data, true);
 		}
+				// blog page
+				public function show_page_blog(){
+
+					$data = get_common_page_data();
+					
+					echo $this->load->view($this->viewfolder.'/v_blog', $data, true);
+				}
 	// REST PAGES
 	public function show_page($alias)
 	{

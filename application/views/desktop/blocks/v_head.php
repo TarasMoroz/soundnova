@@ -42,6 +42,7 @@
 				'show_page_support' => ['support/support.min.css'],
 				'show_page_support_category' => ['support/support.min.css'],
 				'show_page_support_article' => ['support-article/support-article.min.css'],
+				'show_page_blog' => ['blog/blog.min.css'],
 			],
 			'catalog' => ['catalog/catalog.min.css'],
 			'product' => ['product/product.min.css'],
