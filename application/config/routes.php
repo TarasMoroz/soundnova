@@ -52,8 +52,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 $route['default_controller'] = 'pages';
 
-$route['upload/save_sermon'] = "upload/save_sermon";
-
 $route['admin'] = "admin/index";
 
 $route['get_orders'] = "pages/get_orders";
@@ -65,44 +63,69 @@ $route['calc'] = "pages/calc/";
 $route['photoswipe'] = "pages/photoswipe/";
 $route['callback'] = "pages/callback/";
 $route['addcomment'] = "pages/addcomment/";
-$route['subscribe'] = "pages/subscribe/";
+
 $route['sitemap'] = "pages/sitemap/";
-$route['google'] = "pages/google/";
-$route['save'] = "pages/save/";
+
+$route['save'] = "download/save/";
 
 $route['(/)?'] = $route['default_controller'];
 
-// $route['(ua|ru)/favorite'] = "pages/favorite";
-// $route['(ua|ru)/compare'] = "pages/compare";
+// pages
+$route['contact'] = "pages/show_page_contact";
+$route['sound-design-studio'] = "pages/show_page_design_studio";
+$route['about'] = "pages/show_page_aboutus";
+$route['reviews'] = "pages/show_page_reviews";
+$route['error'] = "pages/show_page_404";
+$route['support'] = "pages/show_page_support";
+$route['support/category'] = "pages/show_page_support_category";
+$route['support/article'] = "pages/show_page_support_article";
 
+// categories, catalog
 $route['catalog'] = "catalog/index";
 $route['catalog/type/(:any)'] = "catalog/index/$1";
 $route['catalog/(:any)'] = "catalog/show_category/$1";
 $route['catalog/(:any)/type/(:any)'] = "catalog/show_category/$1/$2";
+
+// product page
 $route['product/(:any)'] = "product/show_product/$1";
 
-
+// cart, checkout
 $route['cart'] = "cart/index";
+$route['cart/ajax_get_cart'] = "cart/ajax_get_cart";
+$route['cart/ajax_add_item'] = "cart/ajax_add_item";
+$route['cart/ajax_remove_item'] = "cart/ajax_remove_item";
+$route['cart/ajax_apply_coupon'] = "cart/ajax_apply_coupon";
+$route['cart/ajax_remove_coupon'] = "cart/ajax_remove_coupon";
+
 $route['checkout'] = "cart/checkout";
-$route['contact'] = "pages/show_page_contact";
-$route['sound-design-studio'] = "pages/show_page_soundstudio";
-$route['login'] = "pages/show_page_login";
-$route['signup'] = "pages/show_page_signup";
-$route['success'] = "pages/show_page_success";
+$route['success'] = "cart/purchase_success";
 
-// $route['(ua|ru)/cart'] = "cart/index";
-// $route['(ua|ru)/checkout'] = "cart/checkout";
-// $route['(ua|ru)/order/(:num)'] = "cart/order/$2";
-// $route['(ua|ru)/blog'] = "blog/index";
-// $route['(ua|ru)/blog/(:any)'] = "blog/post/$2";
-// $route['(ua|ru)/sales'] = "sales/index";
-// $route['(ua|ru)/sale/(:num)'] = "sales/sale/$2";
+// subscription
+$route['subscription'] = "subscription/index";
+$route['join-now'] = "subscription/show_page_stageone_join";
+$route['try-free'] = "subscription/show_page_stageone_free";
+$route['stage-one'] = "subscription/show_page_stageone";
+$route['stage-two'] = "subscription/show_page_stagetwo";
+$route['stage-three'] = "subscription/show_page_stagethree";
 
-$route['(:any)'] = "pages/show_page/$1";
+// user
+$route['login'] = "user/login";
+$route['proceed_login'] = "user/proceed_login";
 
-// $route['(ua|ru)/(:any)/(:any)'] = "pages/show_page/$2/$3";
-// $route['(ua|ru)/events'] = "events/index/$1";
-// $route['(ua|ru)/events/(:any)'] = "events/show_event/$2";
+$route['signup'] = "user/signup";
+$route['proceed_signup'] = "user/proceed_signup";
+$route['email_activate'] = "user/email_activate";
+
+$route['logout'] = "user/logout";
+
+$route['dashboard'] = "user/account";
+$route['orders'] = "user/orders";
+$route['subscriptions'] = "user/subscriptions";
+$route['downloads'] = "user/downloads";
+$route['payments'] = "user/payments";
+$route['details'] = "user/details";
+$route['coupons'] = "user/coupons";
+// $route['(:any)'] = "pages/show_page/$1";
 
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

@@ -1,0 +1,623 @@
+@import "../variables/variables.scss";
+
+.full-width-container {
+    &.stage-one-top-container {
+        padding: 225px 16px 35px 16px;
+        background-image: url(/assets/img/rocket-back.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        .container-title {
+            &.main-title {
+                margin-bottom: 15px;
+                .gradient-title {
+                    font-size: 26px;
+                    &.first-title {
+                        font-size: 48px;
+                    }
+                }
+            }
+        }
+        .stage-one-list {
+            display: grid;
+            grid-gap: 20px;
+            color: white;
+            font-weight: 500;
+            font-size: 14px;
+            margin-top: 28px;
+            max-width: 343px;
+            margin: 28px auto 0 auto;
+            .stage-one-item {
+                display: flex;
+                align-items: center;
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+        &.join {
+            .container-title {
+                &.main-title {
+                    margin-bottom: 24px;
+                }
+            }
+            .sbscr-timeline-title {
+                font-size: 14px;
+                color: white;
+                text-transform: uppercase;
+                font-weight: 500;
+                text-align: center;
+                margin-bottom: 27px;
+                span {
+                    font-size: 18px;
+                    color: $mainyellow;
+                }
+            }
+            .subscription-plan-timeline {
+                .line {
+                    width: 100%;
+                    position: relative;
+                    height: 10px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: white;
+                    box-shadow: 0 0px 8px -1px $lightbluecolor;
+                    .inner-line {
+                        background: $bluebuttongrad;
+                        width: 40%;
+                        height: 10px;
+                        line-height: 10px;
+                        border-radius: 10px;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                    }  
+                    .date-label {
+                        background-color: white;
+                        font-size: 12px;
+                        font-weight: 500;
+                        color: #15b8cd;
+                        line-height: 25px;
+                        height: 25px;
+                        border-radius: 5px;
+                        z-index: 1;
+                        margin-top: -7px;
+                        min-width: 50px;
+                        text-align: center;
+                        &.date1 {
+                            box-shadow: 0 0px 8px -1px $lightbluecolor;
+                            color: white;
+                            background: $bluebuttongrad;
+                        }
+                        &.date2 {
+                            box-shadow: 0 0px 8px -1px $lightbluecolor;
+                            color: white;
+                            background: $bluebuttongrad;
+                        }
+                    }          
+                }
+            }
+        }
+        &.trial {
+            background-image: url(/assets/img/try-free-back.jpg);
+            background-repeat: no-repeat;
+            background-position: center top;
+            background-size: cover;
+            padding: 85px 16px 35px 16px;
+            .try-free-title {
+                color: $lightbluecolor;
+                text-align: center;
+                margin-bottom: 28px;
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+        }
+    }
+    &.choose-plan-container-s-one {
+        padding: 0 16px 60px 16px;
+        .container-title {
+            &.secondary-title {
+                margin-bottom: 24px;
+            }
+        }
+        .secondary-subtitle {
+            margin-bottom: 30px;
+        }
+        .sbscr-timeline-title {
+            font-size: 14px;
+            color: white;
+            text-transform: uppercase;
+            font-weight: 500;
+            text-align: center;
+            margin-bottom: 27px;
+            span {
+                font-size: 18px;
+                color: $mainyellow;
+            }
+        }
+        .subscription-plan-timeline {
+            .line {
+                width: 100%;
+                position: relative;
+                height: 10px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                background-color: white;
+                box-shadow: 0 0px 8px -1px $lightbluecolor;
+                .inner-line {
+                    background: $bluebuttongrad;
+                    width: 40%;
+                    height: 10px;
+                    line-height: 10px;
+                    border-radius: 10px;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                }  
+                .date-label {
+                    background-color: white;
+                    font-size: 12px;
+                    font-weight: 500;
+                    color: #15b8cd;
+                    line-height: 25px;
+                    height: 25px;
+                    border-radius: 5px;
+                    z-index: 1;
+                    margin-top: -7px;
+                    min-width: 50px;
+                    text-align: center;
+                    &.date1 {
+                        box-shadow: 0 0px 8px -1px $lightbluecolor;
+                        color: white;
+                        background: $bluebuttongrad;
+                    }
+                    &.date2 {
+                        box-shadow: 0 0px 8px -1px $lightbluecolor;
+                        color: white;
+                        background: $bluebuttongrad;
+                    }
+                }          
+            }
+        }
+        .sbscr-plans-columns {
+            display: flex;
+            flex-flow: column-reverse;
+            margin-top: 27px;
+            align-items: center;
+            .sbscr-plan-col {
+                background-color: #101218;
+                border-radius: 10px;
+                margin-top: 20px;
+                position: relative;
+                max-width: 360px;
+                padding: 35px 25px;
+                box-shadow: 0 15px 20px -2px rgb(29, 209, 229, .1);
+                width: 100%;
+                box-sizing: border-box;
+                .best-img {
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                }
+                .plan-title {
+                    text-align: center;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 36px;
+                    letter-spacing: 2px;
+                    text-shadow: 0 0 30px rgb(255 255 255 / 60%);
+                    margin-bottom: 16px;
+                }
+                .free-trial-text {
+                    text-align: center;
+                    color: $lightbluecolor;
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-transform: uppercase;
+                    margin-bottom: 20px;
+                }
+                .per-month {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: white;
+                    text-align: center;
+                    font-weight: 500;
+                    margin-bottom: 10px;
+                    .digit {
+                        font-size: 36px;
+                        font-weight: bold;
+                    }
+                }
+                .billed-block {
+                    font-size: 16px;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: 500;
+                    text-align: center;
+                    margin-bottom: 32px;
+                }
+                .features-list {
+                    display: grid;
+                    grid-gap: 20px;
+                    font-size: 16px;
+                    color: #fff;
+                    font-weight: 300;
+                    margin-bottom: 32px;
+                    .feature-line {
+                        display: flex;
+                        align-items: center;
+                        img {
+                            margin-right: 16px;
+                        }
+                    }
+                    &.trial {
+                        display: none;
+                    }
+                }
+                .or-line {
+                    display: none;
+                }
+                .under-or-title {
+                    display: none;
+                }
+                .btn-purp-grad , .btn-blue-grad {
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+                .btn-purp-grad {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+        &.join {
+            .sbscr-plans-columns {
+                margin-top: 0;
+                .sbscr-plan-col {
+                    .free-trial-text {
+                        display: none;
+                    }
+                    .per-month {
+                        .then {
+                            display: none;
+                        }
+                    }
+                    .btn-blue-grad {
+                        display: none;
+                    }
+                    .btn-purp-grad {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        &.trial {
+            .sbscr-plans-columns {
+                margin-top: 0;
+                .sbscr-plan-col {
+                    .trial-block {
+                        display: block;
+                        .title {
+                            text-align: center;
+                            color: $lightbluecolor;
+                            font-weight: bold;
+                            font-size: 36px;
+                            letter-spacing: 2px;
+                            text-shadow: 0 0 30px rgba(29, 209, 229,.6);
+                            margin-bottom: 16px;
+                        }
+                        .trial-or-line {
+                            text-align: center;
+                            margin-bottom: 30px;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            &:before {
+                                content: "";
+                                flex: 1;
+                                height: 1px;
+                                background-color: #42454d;
+                                margin-right: 7px;
+                                box-shadow: 0 0 15px 1px #000;
+                            }
+                            &:after {
+                                content: "";
+                                flex: 1;
+                                height: 1px;
+                                background-color: #42454d;
+                                margin-left: 7px;
+                                box-shadow: 0 0 15px 1px #000;
+                            }
+                        }
+                        .features-list {
+                            &.try-free {
+                                min-height: unset;
+                            }
+                        }
+                    }
+                    .free-trial-text {
+                        display: none;
+                    }
+                    .per-month {
+                        .then {
+                            display: none;
+                        }
+                    }
+                    .btn-purp-grad {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: $bp-tablet) {
+    .full-width-container {
+        &.stage-one-top-container {
+            padding-bottom: 80px;
+            .container-title {
+                &.main-title {
+                    margin-bottom: 64px;
+                    .gradient-title {
+                        font-size: 46px;
+                        &.first-title {
+                            font-size: 76px;
+                        }
+                    }
+                }
+            }
+            .stage-one-list {
+                font-size: 24px;
+                max-width: 540px;
+                .stage-one-item {
+                    img {
+                        width: 24px;
+                        height: 24px;
+                        margin-right: 20px;
+                    }
+                }
+            }
+            &.join {
+                padding-bottom: 76px;
+                .container-title {
+                    &.main-title {
+                        margin-bottom: 50px;
+                    }
+                }
+                .sbscr-timeline-title {
+                    font-size: 28px;
+                    margin-bottom: 57px;
+                    span {
+                        font-size: 36px;
+                    }
+                }
+                .subscription-plan-timeline {
+                    max-width: 660px;
+                    margin: 0 auto;
+                    .line {
+                        height: 20px;
+                        .inner-line {
+                            width: 40%;
+                            height: 20px;
+                            line-height: 20px;
+                        }  
+                        .date-label {
+                            font-size: 16px;
+                            line-height: 36px;
+                            height: 36px;
+                            margin-top: -7px;
+                            min-width: 70px;
+                        }          
+                    }
+                } 
+            }
+            &.trial {
+                padding-bottom: 50px;
+                .try-free-title {
+                    font-size: 46px;
+                    margin-bottom: 90px;
+                }
+            }
+        }
+        &.choose-plan-container-s-one {
+            padding: 0 16px 140px 16px;
+            background-image: url(/assets/img/only-wave-back.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            .container-title {
+                &.secondary-title {
+                    margin-bottom: 34px;
+                }
+            }
+            .secondary-subtitle {
+                margin-bottom: 54px;
+                font-size: 28px;
+                max-width: unset;
+            }
+            .sbscr-timeline-title {
+                font-size: 28px;
+                margin-bottom: 57px;
+                span {
+                    font-size: 36px;
+                }
+            }
+            .subscription-plan-timeline {
+                max-width: 660px;
+                margin: 0 auto;
+                .line {
+                    height: 20px;
+                    .inner-line {
+                        width: 40%;
+                        height: 20px;
+                        line-height: 20px;
+                    }  
+                    .date-label {
+                        font-size: 16px;
+                        line-height: 36px;
+                        height: 36px;
+                        margin-top: -7px;
+                        min-width: 70px;
+                    }          
+                }
+            }
+            .sbscr-plans-columns {
+                display: grid;
+                grid-gap: 35px;
+                grid-template-columns: 1fr 1fr;
+                max-width: 755px;
+                margin: 77px auto 0 auto;
+                .sbscr-plan-col {
+                    margin-top: 0;
+                    padding: 40px 25px;
+                    .best-img {
+                        width: 55px;
+                        height: 55px;
+                        top: -15px;
+                        right: -15px;
+                    }
+                    .plan-title {
+                        font-size: 45px;
+                        margin-bottom: 26px;
+                    }
+                    .per-month {
+                        .digit {
+                            font-size: 48px;
+                        }
+                    }
+                    .features-list {
+                       min-height: 142px;
+                       display: flex;
+                       flex-flow: column;
+                        grid-gap: 0;
+                        margin-bottom: 0;
+                        
+                        .feature-line {
+                            margin-bottom: 20px;
+                        }
+                        &.trial {
+                            min-height: unset;
+                        }
+                    }
+                    .or-line {
+                        font-size: 14px;
+                        text-align: center;
+                        color: #fff;
+                        text-transform: uppercase;
+                        font-weight: 500;
+                        position: relative;
+                        align-items: center;
+                        margin-bottom: 20px;
+                        &:before {
+                            content: "";
+                            flex: 1;
+                            height: 1px;
+                            background-color: #42454d;
+                            margin-right: 7px;
+                            box-shadow: 0 0 15px 1px #000;
+                        }
+                        &:after {
+                            content: "";
+                            flex: 1;
+                            height: 1px;
+                            background-color: #42454d;
+                            margin-left: 7px;
+                            box-shadow: 0 0 15px 1px #000;
+                        }
+                    }
+                    .under-or-title {
+                        font-size: 24px;
+                        text-transform: uppercase;
+                        color: $lightbluecolor;
+                        text-align: center;
+                        font-weight: bold;
+                        margin-bottom: 15px;
+                    }
+                    .btn-purp-grad , .btn-blue-grad {
+                        line-height: 60px;
+                        font-size: 16px;
+                    }
+                    .btn-purp-grad {
+                        margin-bottom: 16px;
+                    }
+                }
+            }
+            &.trial {
+                .sbscr-plans-columns {
+                    .sbscr-plan-col {
+                        .trial-block {
+                            .title {
+                                font-size: 45px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: $bp-laptop) {
+.full-width-container {
+    &.stage-one-top-container {
+        padding-top: 312px;
+        .container-title {
+            &.main-title {
+                .gradient-title {
+                    font-size: 72px;
+                    &.first-title {
+                        font-size: 100px;
+                    }
+                }
+            }
+        }
+        &.trial {
+            padding-top: 164px;
+            padding-bottom: 70px;
+            .try-free-title {
+                font-size: 60px;
+            }
+        }
+    }
+    &.choose-plan-container-s-one {
+        .sbscr-plans-columns {
+            .sbscr-plan-col {
+                .best-img {
+                    width: 90px;
+                    height: 90px;
+                    right: -35px;
+                    top: -35px;
+                }
+            }
+        }
+    }
+}
+}
+
+@media (min-width: $bp-desktop-lg) {
+    .full-width-container {
+        &.stage-one-top-container {
+            .inner-content-container {
+                max-width: 1400px;
+            }
+            .container-title {
+                &.main-title {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+        }
+    &.choose-plan-container-s-one {
+        .container-title {
+            &.secondary-title {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+    }
+}

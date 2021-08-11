@@ -73,7 +73,7 @@ if ( ! function_exists('viewedProducts'))
 
     	$CI = &get_instance();
 
-		if($_COOKIE['viewed']){
+		if(isset($_COOKIE['viewed'])){
 			
 			$viewedIds = json_decode($_COOKIE['viewed']);
 			$pviewed = $CI->db->query("SELECT p.id, p.name_ru, p.name_ua, p.alias, p.stock, p.price, p.price_old, IF(p.price_old > p.price, CEIL((p.price_old-p.price)/(p.price_old/100)), 0) discount_percent, count(c.id) cnt_comments, TRUNCATE(AVG(c.value), 1) avg_rate FROM product p LEFT JOIN comment c ON c.id_product = p.id  WHERE p.id IN (".implode(',',$viewedIds).") GROUP BY p.id")->result_array();
@@ -124,6 +124,74 @@ if ( ! function_exists('write_page_view'))
 			$CI->db->query($query);
 		}
 
+	}
+}
+
+if ( ! function_exists('get_common_page_data'))
+{
+
+	// получает язык, список категорий, данные из настроек и др...
+	// то что исопльзуется на каждой странице
+
+	function get_common_page_data(){
+
+		$CI = &get_instance();
+		
+		$data = [];
+		$data['lang'] = $_SESSION['lang'];
+
+		// список доступных категорий каталога
+		$cats = $CI->db->query("SELECT id, alias, name, sort, img FROM category WHERE publish = 1 ORDER BY sort ASC")->result_array();
+		$data['list_categories'] = $cats;
+		
+		// controller, action
+		$data['controller'] = $CI->router->fetch_class();
+        $data['action'] = $CI->router->fetch_method();
+
+        // device
+        $data['device'] = 'desktop';
+        if($CI->agent->is_mobile()) $data['device'] =  'mobile';
+
+		return $data; // возвращаем готовые, скомпонованные данные по списку продуктов
+	}
+}
+
+if ( ! function_exists('send_html_mail'))
+{
+	// метод отправки html эмейлов
+	function send_html_mail($dataMail, $templateName, $to, $subj){
+
+		// $this->load->library('email');
+
+		$CI = &get_instance();
+		$CI->load->library('email');
+
+		$dataMail['lang'] = $_SESSION['lang'];
+		$dataMail['subject'] = $subj;
+
+		$configMail['protocol'] = 'mail';
+		// $configMail['smtp_host'] = 'smtp.gmail.com';
+		// $configMail['smtp_user'] = 'sitear.box@gmail.com';
+		// $configMail['smtp_pass'] = '**********';
+		// $configMail['smtp_port'] = '465';
+		// $configMail['smtp_crypto'] = 'ssl';
+		$configMail['mailtype'] = 'html';
+		$configMail['charset'] = 'utf-8';
+		
+		$CI->email->initialize($configMail);
+
+		$mailContent = $CI->load->view('mail/'.$templateName, $dataMail, true);
+
+		$dataMail['content'] = $mailContent;
+		// в основной шаблон передаем те же данные и сгенерированный контент...
+		$htmlMail = $CI->load->view('mail/v_mail', $dataMail, true);
+
+		$CI->email->from('noreply@soundnova.net', 'SOUNDNOVA');
+        $CI->email->to($to);
+        $CI->email->subject($subj);
+        $CI->email->message($htmlMail);
+
+        return $CI->email->send(FALSE);
 	}
 }
 

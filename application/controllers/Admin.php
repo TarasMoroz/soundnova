@@ -40,6 +40,7 @@ class Admin extends CI_Controller {
 		$this->load->model('Banner_model', 'banner');
 		$this->load->model('Orders_model', 'orders');
 		$this->load->model('Email_model', 'email');
+		$this->load->model('Coupon_model', 'coupon');
 	}
 
 	// shows admin main page
@@ -844,6 +845,7 @@ class Admin extends CI_Controller {
 
 		$return['data'] = [
 			'id_video'=>0,
+			'title'=>'',
 			'person_name'=>'',
 			'person_position'=>'',
 			'description'=>'',
@@ -986,6 +988,79 @@ class Admin extends CI_Controller {
 		if($postId) $return['data'] = $this->faq_item->get($postId);
 
 		echo $this->load->view('admin/v_ajax_faq_item_form', $return, true);
+	}
+
+	/// ------------- FAQ
+
+	public function show_coupons()
+	{
+		$this->ajax_headers();
+		$this->is_admin_logged();
+
+		$page = (isset($_GET['page'])) ? (int) $_GET['page'] : 0 ;
+
+		if($page > 1) $data['page'] = $page; // пишем только 2,3,4 ...
+
+		$inpage = 30;
+		$page = (isset($data['page']))?$data['page']:1;
+		$limit = ($page - 1) * $inpage . ', ' . $inpage;
+		
+		$query = "SELECT SQL_CALC_FOUND_ROWS c.* 
+					FROM cart_coupon c
+					WHERE 1=1 
+					ORDER BY c.id DESC 
+					LIMIT ".$limit;
+
+		$coupons = $this->db->query($query)->result_array();
+		$cntCoupons = $this->db->query("SELECT FOUND_ROWS()")->result_array();
+		$cntCoupons = current($cntCoupons[0]);
+		
+		// определяем параметры пагинации...
+		$from = ($page == 1) ? 1 : ($page-1)*$inpage+1;
+		$to = $inpage*$page;
+		$to = ($to < $cntCoupons ? $to : $cntCoupons); // по какой товар показано
+		$left = $cntCoupons - $to;
+		$left = ($left < $cntCoupons) ? $left : $cntCoupons; // сколько осталось показвыать еще...
+
+		$pagination = [
+			'base' => 'show_coupons',
+			'query' => [],
+			'pages' => ceil($cntCoupons/$inpage), // сколько страниц пагинации
+			'curr' => $page, // текущий номер страницы
+			'inpage' => $inpage, // сколько на одной страницы
+			'total' => $cntCoupons, // сколько всего в наборе
+			'from'=> $from, // от какого товара показываем
+			'to' => $to, // по какой товар показываем
+			'left' => $left, // сколько товара осталось показывать через кнопку ЕЩЕ
+		];
+
+		$data['pagination'] = $pagination;
+
+		$data['coupons'] = $coupons;
+		$data['cntCoupons'] = $cntCoupons;
+		$data['pagination_html'] = $this->load->view('admin/v_pagination', $data, TRUE);
+
+		echo $this->load->view('admin/v_ajax_coupon_list', $data, true);
+	}
+
+	public function show_coupon_form()
+	{
+		$this->ajax_headers();
+		$this->is_admin_logged();
+
+		$postId = $this->input->post('id');
+
+		$return['data'] = [
+			'code' => '',
+			'value' => 0,
+			'is_percent' => 0,
+			'cnt_applies' => 0,
+			'publish' => 1
+		];
+
+		if($postId) $return['data'] = $this->faq->get($postId);
+
+		echo $this->load->view('admin/v_ajax_coupon_form', $return, true);
 	}
 
 	/// --------- BLOG 

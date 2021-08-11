@@ -114,22 +114,26 @@ class Upload extends CI_Controller {
 			mkdir('./assets/'.$folder); // creates folder
 		}
 
-		// если нашли прошлый файл то удалим...
-	    if(is_file('./assets/'.$folder.'/'.$prev)){
-	    	unlink('./assets/'.$folder.'/'.$prev);
+	    // если нашли прошлый файл то удалим...
+		if($prev){
+			if(is_file('./assets/'.$folder.'/'.$prev)){
+		    	unlink('./assets/'.$folder.'/'.$prev);
 
-	    	$prevArr = explode('.',$prev);
+		    	$prevArr = explode('.',$prev);
 
-	    	// удаляем все прошлые ресайзы
-			foreach (glob("./assets/".$folder."/".$prevArr[0]."_*") as $file) {
-				$fExt = substr($file, -4);
-				if(in_array($fExt, ['.jpg','.png','.gif','jpeg','.svg'])){
-					//$file = str_replace("\\", "/", substr($file,1));
-					//echo "----- ". $file . "<br>";
-					unlink($file);
+		    	// удаляем все прошлые ресайзы
+		    	// 200_filename.jpg ...
+		    	// 400_filename.jpg ...
+				foreach (glob("./assets/".$folder."/*_".$prev) as $file) {
+					$fExt = substr($file, -4);
+					if(in_array($fExt, ['.jpg','.png','.gif','jpeg','.svg'])){
+						//$file = str_replace("\\", "/", substr($file,1));
+						//echo "----- ". $file . "<br>";
+						unlink($file);
+					}
 				}
-			}
-	    }
+		    }
+		}
 
 		$this->load->library('upload', $config);
 
@@ -166,7 +170,7 @@ class Upload extends CI_Controller {
 						        $configResize['maintain_ratio'] = TRUE;
 						        $configResize['width']    = (int) $size;
 						        // $configResize['height']   = 300;
-						        $configResize['new_image']   = $ts.'_'.$size.'.'.$fileExt;
+						        $configResize['new_image']   = $size.'_'.$config['file_name'];
 
 						        $this->load->library('image_lib');
 						        $this->image_lib->initialize($configResize);
