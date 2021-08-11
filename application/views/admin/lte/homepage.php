@@ -475,8 +475,6 @@ to get the desired effect
 
 <!-- REQUIRED SCRIPTS -->
 
-<!-- jQuery -->
-<script src="/assets/lte/plugins/jquery/jquery.min.js"></script>
 <!-- Bootstrap -->
 <script src="/assets/lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE -->

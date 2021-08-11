@@ -128,7 +128,7 @@
 
 		#inform.red {background: rgba(249, 50, 50, 0.95); color:#fff;}
 		#inform.grn {background: rgba(50, 211, 95, 0.95); color:#fff;}
-		#inform.on { opacity: 1; visibility: visible; top:50px; transition-delay: 0.3s; transition: 0.5s;}s
+		#inform.on { opacity: 1; visibility: visible; top:50px; transition-delay: 0.3s; transition: 0.5s;}
 	</style>
 	
 	<link rel="shortcut icon" href="<?=base_url("assets/img/icon.png")?>">
@@ -150,4 +150,7 @@
 	})(window,document,'script','dataLayer','GTM-KT898Z4');</script>
 	<!-- End Google Tag Manager -->
 
+
+	<!-- jQuery -->
+	<script src="/assets/lte/plugins/jquery/jquery.min.js"></script>
 </head>
