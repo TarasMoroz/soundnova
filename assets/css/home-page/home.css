@@ -1681,6 +1681,13 @@ body {
   z-index: -1;
   top: 0;
   left: 0;
+  opacity: 0;
+  -webkit-transition: 3s;
+  transition: 3s;
+  left: -25%;
+}
+
+#bg-2d-waves.show-bg {
   opacity: 0.5;
 }
 

@@ -1226,7 +1226,13 @@ body {
     z-index: -1;
     top: 0;
     left: 0;
-    opacity: 0.5;
+    opacity: 0;
+    transition: 3s;
+    left: -25%;
+
+    &.show-bg {
+        opacity: 0.5;
+    }
 }
 
 @media (min-width: $bp-tablet) {
