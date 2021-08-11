@@ -499,7 +499,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <td align="center" valign="top" id="bodyCell">
           <!--[if gte mso 9]><table align="center" border="0" cellspacing="0" cellpadding="0" width="600" style="width:600px;"><tr><td align="center" valign="top" width="600" style="width:600px;"> <![endif]-->
           <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateContainer">
-            <tr>
+            <!-- <tr>
               <td valign="top" id="templatePreheader">
                 <table class="mcnTextBlock" style="min-width:100%;" border="0" cellpadding="0" cellspacing="0" width="100%">
                   <tbody class="mcnTextBlockOuter">
@@ -511,7 +511,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                   </tbody>
                 </table>
               </td>
-            </tr>
+            </tr> -->
             <tr>
               <td valign="top" id="templateHeader">
                 <table class="mcnImageBlock" style="min-width:100%;" border="0" cellpadding="0" cellspacing="0" width="100%">
@@ -521,7 +521,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         <table class="mcnImageContentContainer" style="min-width:100%;" align="left" border="0" cellpadding="0" cellspacing="0" width="100%">
                           <tbody>
                             <tr>
-                              <td class="mcnImageContent" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0;" valign="top"> <img alt="" src="https://soundnova.net/assets/img/icons/soundnova_logo.svg" style="max-width:204px; width:204px; height:35px; padding-bottom: 30px; display: inline !important; vertical-align: bottom;" class="mcnImage" align="left" width="79"></td>
+                              <td class="mcnImageContent" style="padding-right: 9px; padding-left: 9px; padding-top: 0; padding-bottom: 0;" valign="top"> <img alt="" src="https://soundnova.net/assets/img/logo-head.png" style="max-width:204px; width:204px; height:35px; padding-bottom: 30px; display: inline !important; vertical-align: bottom;" class="mcnImage" align="left" width="79"></td>
                             </tr>
                           </tbody>
                         </table>

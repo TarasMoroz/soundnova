@@ -69,6 +69,6 @@ CREATE TABLE IF NOT EXISTS `user` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 
-ALTER TABLE `user` ADD `email` VARCHAR( 64 ) NOT NULL AFTER `login`;
+ALTER TABLE `user` ADD `email` VARCHAR( 64 ) NOT NULL AFTER `id`;
 ALTER TABLE `user` ADD `email_active` TINYINT( 1 ) NOT NULL COMMENT '1,0' AFTER `email`;
 ALTER TABLE `user` ADD `email_activation_code` INT( 10 ) NOT NULL AFTER `email_active`;

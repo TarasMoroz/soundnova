@@ -2,6 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
+<? $hashLink = 'https://soundnova.net/email_activate?hash='.md5($email.$activationCode); ?>
 
 <h1 style="margin-bottom: 20px;">Hi!</h1>
 
@@ -11,5 +12,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <p>
 	Or simply follow activation link, to make it automatically: 
-	<a href="https://soundnova.net/email_activate?hash=<?php echo md5($email.$activationCode); ?>" target="_blank"></a>
+	<a href="<?php echo $hashLink; ?>"><?php echo $hashLink; ?></a>
 </p>
