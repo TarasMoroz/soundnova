@@ -1677,7 +1677,7 @@ body {
 
 #bg-2d-waves {
   position: absolute;
-  max-height: 450px;
+  max-height: 100%;
   z-index: -1;
   top: 0;
   left: 0;
@@ -1685,10 +1685,18 @@ body {
   -webkit-transition: 3s;
   transition: 3s;
   left: -25%;
+  right: 0;
+  overflow: hidden;
 }
 
 #bg-2d-waves.show-bg {
-  opacity: 0.5;
+  opacity: 0.2;
+}
+
+@media (min-width: 675px) {
+  #bg-2d-waves.show-bg {
+    opacity: 0.5;
+  }
 }
 
 @media (min-width: 675px) {

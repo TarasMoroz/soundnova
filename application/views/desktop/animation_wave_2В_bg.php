@@ -48,13 +48,21 @@
       // fill the screen
       SineWaveGenerator.prototype._resizeWidth = function() {
         this.dpr = window.devicePixelRatio || 1;
+
+
+        const _W = document.documentElement.clientWidth;
+        const _H = document.documentElement.clientHeight;
         
-        this.width = this.el.width = window.innerWidth * this.dpr;
-        this.height = this.el.height = window.innerHeight * this.dpr;
-        this.el.style.width = window.innerWidth * 1.5 + 'px';
+        this.width = this.el.width = _W* this.dpr;
+        this.height = this.el.height = _H * this.dpr;
+        this.el.style.width = _W * 1.5 + 'px';
+        // console.log(_W, _H);
         // this.el.style.width = '750px';
-        // this.el.style.height = window.innerHeight + 'px';
-        this.el.style.height = '1100px';
+        // this.el.style.height = _H + 'px';
+        this.el.style.height = '750px'; //'1100px';
+        if (_W > 675) {
+          this.el.style.height = '1100px';
+        }
         
         this.waveWidth = this.width * 0.99;
         this.waveLeft = this.width * 0.01;
