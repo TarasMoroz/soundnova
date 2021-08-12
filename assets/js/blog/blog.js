@@ -13,3 +13,25 @@ let blogSliderOne = new Swiper('.category-posts-wrapper-one', {
       el: '.swiper-pagination',
     },
 });
+let blogSliderTwo = new Swiper('.category-posts-wrapper-two', {
+    slidesPerView: 1,
+    spaceBetween: 40,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+});
+let blogSliderThree = new Swiper('.category-posts-wrapper-three', {
+    slidesPerView: 1,
+    spaceBetween: 40,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+    },
+});
