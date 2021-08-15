@@ -110,6 +110,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			'show_page_support_category' => [],
 			'show_page_support_article' => [],
 			'show_page_blog' => ['blog/blog.js'],
+			'show_page_blog_category' => ['blog/blog.js'],
+			'show_page_blog_subcategory' => ['blog/blog.js'],
 		],
 		'catalog' => ['catalog/catalog.js'],
 		'product' => ['product/product.js'],
