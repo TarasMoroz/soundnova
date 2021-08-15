@@ -45,6 +45,7 @@
 				'show_page_blog' => ['blog/blog.min.css'],
 				'show_page_blog_category' => ['blog/blog.min.css'],
 				'show_page_blog_subcategory' => ['blog/blog.min.css'],
+				'show_page_blog_post' => ['blog/blog.min.css'],
 			],
 			'catalog' => ['catalog/catalog.min.css'],
 			'product' => ['product/product.min.css'],

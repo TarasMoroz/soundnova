@@ -112,6 +112,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			'show_page_blog' => ['blog/blog.js'],
 			'show_page_blog_category' => ['blog/blog.js'],
 			'show_page_blog_subcategory' => ['blog/blog.js'],
+			'show_page_blog_post' => ['blog/blog.js'],
 		],
 		'catalog' => ['catalog/catalog.js'],
 		'product' => ['product/product.js'],

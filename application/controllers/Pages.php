@@ -133,6 +133,13 @@ class Pages extends CI_Controller {
 					
 			echo $this->load->view($this->viewfolder.'/v_blog_subcategory', $data, true);
 		}
+		// blog post page
+		public function show_page_blog_post(){
+
+			$data = get_common_page_data();
+					
+			echo $this->load->view($this->viewfolder.'/v_blog_post', $data, true);
+		}
 	// REST PAGES
 	public function show_page($alias)
 	{
