@@ -50,7 +50,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<div class="main-pack-block">
 								<div class="bundle-discount">-30%</div>
 								<div class="bundle-shadow"></div>
-								<img class="lzy_img" data-src="../assets/img/packs/main-pack-min.svg"/>
+								<img width="342" class="lzy_img" data-src="../assets/img/packs/main-pack-min.svg"/>
 								<button class="bundle-play video-open" data-code="Zo6Gu8RUExM">
 									<div class="inner">
 										<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
@@ -121,7 +121,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 								<div class="bundle-discount">-30%</div>
 								<div class="bundle-shadow"></div>
-								<img class="lzy_img" data-src="../assets/img/packs/main-pack-min.svg"/>
+								<img width="342" class="lzy_img" data-src="../assets/img/packs/main-pack-min.svg"/>
 								<button class="bundle-play video-open" data-code="Zo6Gu8RUExM">
 									<div class="inner">
 										<i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
