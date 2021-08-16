@@ -148,7 +148,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <script src="<?php echo base_url($js_dir.'svg.js'.$env_param);?>"></script>
 <script src="<?php echo base_url($js_dir.'swiper.min.js');?>"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
 <script src="<?php echo base_url($js_dir.'custom.js'.$env_param);?>"></script>
 <script src="<?php echo base_url($js_dir.'main.js'.$env_param);?>"></script>
 

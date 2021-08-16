@@ -50,6 +50,46 @@
         }
     }
 }
+
+.flying-astronaut {
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: fly;
+    animation-timing-function: ease-in-out;
+}
+@keyframes fly {
+    0% {
+        transform: translateY(0) rotate(-15deg);
+        // transform: rotate(0deg);
+        left: 26%;
+    }
+    25% {
+        transform: translateY(-15px) rotate(-18deg);
+    }
+    50% {
+        left: 34%;
+        transform: translateY(0) rotate(-20deg);
+    }
+    75% {
+        transform: translateY(-15px) rotate(-18deg);
+    }
+    // 25% {
+    //     transform: translateY(-25px) rotate(-20deg) translateZ(0);
+    //     // transform: rotate(45deg);
+    //     left: 32%;
+    // }
+    // 65% {
+    //     transform: translateY(-30px) rotate(-17deg) translateZ(0);
+    //     // transform: rotate(45deg);
+    //     left: 25%;
+    // }
+    100% {
+        transform: translateY(0) rotate(-15deg);
+        // transform: rotate(0deg);
+        left: 26%;
+    }
+}
+
 @media (min-width: $bp-tablet) {
     .full-width-container {
         &.error-container {
@@ -79,7 +119,7 @@
             }
             .error-form-container {
                 .top-text {
-                   font-size: 28px;
+                    font-size: 28px;
                     line-height: 30px;
                     margin-bottom: 20px;
                     max-width: unset;
