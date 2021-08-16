@@ -459,9 +459,9 @@
 @media (min-width: 1023px) {
   #main-catalog {
     background-image: url(/assets/img/main-new.jpg);
-    background-position: right top;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
   }
 
   .full-width-container.catalog-first {
