@@ -430,6 +430,7 @@
 @media (min-width: 675px) {
   .full-width-container.catalog-first {
     padding-bottom: 85px;
+    box-shadow: none;
   }
   .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner.mobile .catalog-sales-right .btn-purp-grad {
     height: 60px;
@@ -450,6 +451,7 @@
   }
   .full-width-container.catalog-second {
     padding-bottom: 110px;
+    box-shadow: none;
   }
   .full-width-container.catalog-second #catalog-wrapper .prods {
     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));

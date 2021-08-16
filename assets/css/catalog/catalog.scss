@@ -451,6 +451,7 @@
     .full-width-container {
         &.catalog-first {
             padding-bottom: 85px;
+            box-shadow: none;
             .catalog-top-sales-block {
                 .catalog-top-sales-inner {
                     &.mobile {
@@ -479,6 +480,7 @@
         }
         &.catalog-second {
             padding-bottom: 110px;
+            box-shadow: none;
             #catalog-wrapper {
                 .prods {
                     grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
