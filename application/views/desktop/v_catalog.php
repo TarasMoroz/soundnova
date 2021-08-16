@@ -13,7 +13,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 		<section id="main" class="content">
 
-		<div id="main-catalog">
+		<div id="main-catalog" style="background-image: url(/assets/img/catalog-backs/<?=(isset($category['id']) ? $category['id'].'-back.jpg' :'main-new.jpg')?>">
+
 
 
 			<div class="full-width-container catalog-first">

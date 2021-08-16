@@ -112,6 +112,34 @@ class Pages extends CI_Controller {
 			
 			echo $this->load->view($this->viewfolder.'/v_support-article', $data, true);
 		}
+		// blog page
+		public function show_page_blog(){
+
+			$data = get_common_page_data();
+					
+			echo $this->load->view($this->viewfolder.'/v_blog', $data, true);
+		}
+		// blog category page
+		public function show_page_blog_category(){
+
+			$data = get_common_page_data();
+					
+			echo $this->load->view($this->viewfolder.'/v_blog_category', $data, true);
+		}
+		// blog subcategory page
+		public function show_page_blog_subcategory(){
+
+			$data = get_common_page_data();
+					
+			echo $this->load->view($this->viewfolder.'/v_blog_subcategory', $data, true);
+		}
+		// blog post page
+		public function show_page_blog_post(){
+
+			$data = get_common_page_data();
+					
+			echo $this->load->view($this->viewfolder.'/v_blog_post', $data, true);
+		}
 	// REST PAGES
 	public function show_page($alias)
 	{

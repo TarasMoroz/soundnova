@@ -79,6 +79,10 @@ $route['error'] = "pages/show_page_404";
 $route['support'] = "pages/show_page_support";
 $route['support/category'] = "pages/show_page_support_category";
 $route['support/article'] = "pages/show_page_support_article";
+$route['blog'] = "pages/show_page_blog";
+$route['blog/category'] = "pages/show_page_blog_category";
+$route['blog/subcategory'] = "pages/show_page_blog_subcategory";
+$route['blog/post'] = "pages/show_page_blog_post";
 
 // categories, catalog
 $route['catalog'] = "catalog/index";

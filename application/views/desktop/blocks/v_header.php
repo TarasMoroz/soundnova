@@ -93,7 +93,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="/blog">
 								Blog
 							</a>
 						</li>
@@ -169,7 +169,7 @@
 							</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="/blog">
 								Blog
 							</a>
 						</li>
