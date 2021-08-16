@@ -42,7 +42,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <a href="#" class="page-number">5</a>
                             <a href="#" class="page-number next">></a>
                             <a href="#" class="page-number to-end">>></a>
-                        </div>
+                </div>
                 <div class="contact-us-container">
                     <div class="contact-us-inner-block">
                         <div class="title">Didn’t find what you were looking for? Contact us</div>

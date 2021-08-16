@@ -17,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 imgObserver.unobserve(lazyImage);
             }
         })
-    });
+    },
+	{rootMargin: '400px 0px'});
     const arr = document.querySelectorAll('img.lzy_img')
     arr.forEach((v) => {
         imageObserver.observe(v);
