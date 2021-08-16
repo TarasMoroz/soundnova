@@ -112,6 +112,8 @@ $route['stage-three'] = "subscription/show_page_stagethree";
 $route['login'] = "user/login";
 $route['proceed_login'] = "user/proceed_login";
 
+$route['g_login'] = "user/g_login";
+
 $route['signup'] = "user/signup";
 $route['proceed_signup'] = "user/proceed_signup";
 $route['email_activate'] = "user/email_activate";

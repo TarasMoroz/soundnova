@@ -282,7 +282,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</a>
 
 								<div class="prd-sndcld">
-									<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+									<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame sc-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 								</div>
 
 								<div class="prd-ft">

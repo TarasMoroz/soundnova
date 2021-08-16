@@ -8,6 +8,9 @@ class User extends CI_Controller {
 	private $device = 'desktop';
 	private $viewfolder = 'desktop';
 
+	private $gClientId = '309301136744-th5lcvvm1jbka2f73922ra8hqtm8m0pq.apps.googleusercontent.com';
+	private $gClientSecret = '-9AclzW9mx3LJonDg5bn-Vas';
+
 	public function __construct()
  	{
  		
@@ -35,16 +38,132 @@ class User extends CI_Controller {
 	}
 
 
+
+	public function g_login()
+	{
+
+		$google_client = $this->g_init_client();
+
+		if(isset($_GET["code"]))
+		{
+			$token = $google_client->fetchAccessTokenWithAuthCode($_GET["code"]);
+
+			if(!isset($token["error"]))
+			{
+				$google_client->setAccessToken($token['access_token']);
+
+				$this->session->set_userdata('access_token', $token['access_token']);
+
+				$google_service = new Google_Service_Oauth2($google_client);
+
+				$data = $google_service->userinfo->get();
+
+				$current_datetime = date('Y-m-d H:i:s');
+
+				$expectedUser = $this->get_user_data_by_g_uid($data['id']);
+
+				if(!$expectedUser['id']) $expectedUser = $this->get_user_data_by_email($data['email']);
+
+				$id_logged_user = 0;
+
+				if($expectedUser['id'])
+				{
+
+					// we found user that already existed with google uuid 
+					// check for correct data
+
+					$refreshUserData = [];
+
+					if(!$expectedUser['g_email']) $refreshUserData['g_email'] = $data['email'];
+					if(!$expectedUser['firstname']) $refreshUserData['firstname'] = $data['given_name'];
+					if(!$expectedUser['lastname']) $refreshUserData['lastname'] = $data['family_name'];
+					if(!$expectedUser['picture']) $refreshUserData['picture'] = $data['picture'];
+
+					// updating
+					if(!empty($refreshUserData)){
+
+						$sUserUpdate = '';
+
+						foreach($refreshUserData as $key => $value){
+							$sUserUpdate .= ", ".$key." = '".$value."'";
+						}
+
+						$this->db->simple_query("UPDATE user SET dt_last_login = NOW() ".$sUserUpdate."  WHERE id = ".$expectedUser['id']);
+					}
+
+					$id_logged_user = $expectedUser['id'];
+				}
+				else
+				{
+					//insert data
+					$this->db->simple_query("INSERT 
+										INTO user (email,email_active,email_activation_code,password,picture,firstname,lastname,dt_register) 
+										VALUES ('".$data['email']."',1,'','','".$data['picture']."','".$data['given_name']."','".$data['family_name']."',NOW())");
+
+					$id_logged_user = $this->db->insert_id();
+				}
+
+				// All is good! here we can login user and redirect to dashboard!
+				if($id_logged_user){
+
+					$this->user_login_handler($id_logged_user, true, $data['email']);
+				}
+			} else {
+				// Google login Error handle
+
+				// $token["error"];
+				// writes errors to ses and redir to signup page
+				$this->session->set_userdata([
+					'displayLoginErrors' => $token["error"]
+					// 'loginEmail' => $email
+				]);
+
+				redirect(base_url('login/'));
+				exit();
+			}
+		}
+	}
+
+	private function g_init_client(){
+
+		include_once APPPATH . "third_party/google-api-php/src/Google/autoload.php";
+
+		// $google_client = new Google\Client();
+
+		// $client->setDeveloperKey($api_key);
+
+		// $client->setAuthConfig('client_secret_309301136744-th5lcvvm1jbka2f73922ra8hqtm8m0pq.apps.googleusercontent.com.json');
+		// $client->addScope(Google\Service\Drive::DRIVE_METADATA_READONLY);
+		// $client->setRedirectUri('http://' . $_SERVER['HTTP_HOST'] . '/oauth2callback.php');
+		// $client->setAccessType('offline');        // offline access
+		// $client->setIncludeGrantedScopes(true);   // incremental auth
+
+		$google_client = new Google_Client();
+
+		$google_client->setClientId($this->gClientId); //Define your ClientID
+		$google_client->setClientSecret($this->gClientSecret); //Define your Client Secret Key
+		$google_client->setRedirectUri('https://soundnova.net/g_login'); //Define your Redirect Uri
+
+		$google_client->addScope('email');
+		$google_client->addScope('profile');
+
+		return $google_client;
+	}
+
  	public function login(){
 
  		// if already logged in
-
  		if($this->session->userdata('aUser')){
 			redirect(base_url('dashboard/'));
 			exit();
 		}
 
+		$google_client = $this->g_init_client();
+
 		$data = get_common_page_data();
+
+		// perform google button
+		$data['g_login_url'] = $google_client->createAuthUrl();
 
 		// Once user tryed to login
 		$data['displayLoginErrors'] = $this->session->userdata('displayLoginErrors');
@@ -110,33 +229,9 @@ class User extends CI_Controller {
 		}
 
 		if($validate){
-			
+
 			// All is good! here we can login user and redirect to dashboard!
-			$aUser = $this->get_user_data_by_id($expectedUser['id']);
-
-			if($aUser) $this->session->set_userdata(['aUser' => $aUser]);
-
-			$this->db->simple_query("UPDATE user SET dt_last_login = NOW() WHERE id = ".$expectedUser['id']);
-
-			// If we need to store hash in cookies!
-			if($remember){
-
-				$tokenData = [
-					'id' => $expectedUser['id'],
-					'email' => $expectedUser['email'],
-					'timeStamp' => Date('Y-m-d h:i:s')
-				];
-
-        		$jwtToken = $this->objOfJwt->GenerateToken($tokenData);
-        
-        		// die($jwtToken);
-
-        		setcookie('jwt', $jwtToken, time() + (86400 * 30), "/", "", false, false); // 86400 = 1 day * 30
-			}
-
-			redirect(base_url('dashboard/'));
-
-			exit();
+			$this->user_login_handler($expectedUser['id'], $remember, $expectedUser['email']);
 
 		} else {
 
@@ -151,6 +246,40 @@ class User extends CI_Controller {
 
 		}
 
+	}
+
+	// how do we handle user login procedure
+	private function user_login_handler($id, $remember = false, $email = ''){
+
+		$id = (int) $id;
+
+		if(!$id) return false;
+
+		$aUser = $this->get_user_data_by_id($id);
+
+		if($aUser) $this->session->set_userdata(['aUser' => $aUser]);
+
+		$this->db->simple_query("UPDATE user SET dt_last_login = NOW() WHERE id = ".$id);
+
+		// If we need to store hash in cookies!
+		if($remember && $email){
+
+			$tokenData = [
+				'id' => $id,
+				'email' => $email,
+				'timeStamp' => Date('Y-m-d h:i:s')
+			];
+
+    		$jwtToken = $this->objOfJwt->GenerateToken($tokenData);
+    
+    		// die($jwtToken);
+
+    		setcookie('jwt', $jwtToken, time() + (86400 * 30), "/", "", false, false); // 86400 = 1 day * 30
+		}
+
+		redirect(base_url('dashboard/'));
+
+		exit();
 	}
 
  	public function signup(){
@@ -416,6 +545,8 @@ class User extends CI_Controller {
 		}
 	}
 
+	// MODEL
+
 	private function get_user_data_by_id($id){
 		
 		$id = (int) $id;
@@ -423,5 +554,19 @@ class User extends CI_Controller {
 		if(!$id) return [];
 
 		return $this->db->query("SELECT email, firstname, lastname, displayname FROM user WHERE id = ".$id)->row_array();
+	}
+
+	private function get_user_data_by_g_uid($uid){
+
+		if(!$uid) return false;
+
+		return $this->db->query("SELECT * FROM user WHERE g_uid = '".$uid."'")->row_array();
+	}
+
+	private function get_user_data_by_email($email){
+
+		if(!$email) return false;
+
+		return $this->db->query("SELECT * FROM user WHERE email = '".$email."'")->row_array();
 	}
 }

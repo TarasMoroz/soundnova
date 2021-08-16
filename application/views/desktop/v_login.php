@@ -21,7 +21,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="login-container-inner">
 							<div class="login-buttons">
 									<button class="facebook-btn">Continue with <span>Facebook</span></button>
-									<button class="google-btn">Continue with <span>Google</span></button>
+									<button class="google-btn" onclick="location.href='<?php echo $g_login_url; ?>'">Continue with <span>Google</span></button>
 							</div>
 							<div class="or-line">Or</div>
 							<form action="/proceed_login" method="post">

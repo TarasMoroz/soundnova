@@ -72,3 +72,7 @@ CREATE TABLE IF NOT EXISTS `user` (
 ALTER TABLE `user` ADD `email` VARCHAR( 64 ) NOT NULL AFTER `id`;
 ALTER TABLE `user` ADD `email_active` TINYINT( 1 ) NOT NULL COMMENT '1,0' AFTER `email`;
 ALTER TABLE `user` ADD `email_activation_code` INT( 10 ) NOT NULL AFTER `email_active`;
+
+ALTER TABLE `user` ADD `g_uid` VARCHAR( 128 ) NOT NULL COMMENT 'g login' AFTER `dt_last_login`;
+ALTER TABLE `user` ADD `g_email` VARCHAR( 64 ) NOT NULL COMMENT 'g email' AFTER `g_uid`;
+ALTER TABLE `user` ADD `picture` VARCHAR( 256 ) NOT NULL COMMENT 'profile picture' AFTER `password`;
