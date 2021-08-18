@@ -32,7 +32,13 @@
             .close-icon {
                 transform: rotate(45deg);
             }
-            
+            .registered {
+                height: 27px;
+                flex: 0 0 27px;
+                border-radius: 50%;
+                border: 2px solid white;
+                box-sizing: border-box;
+            }
         }
         .mobile-menu-content {
             position: fixed;
@@ -289,6 +295,13 @@
                     }
                     img {
                         width: 30px;
+                    }
+                    .registered {
+                        height: 30px;
+                        flex: 0 0 30px;
+                        border-radius: 50%;
+                        border: 2px solid white;
+                        box-sizing: border-box;
                     }
                 }
             }
