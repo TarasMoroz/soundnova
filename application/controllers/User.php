@@ -2,14 +2,39 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 require APPPATH . '/libraries/CreatorJwt.php';
+include APPPATH . 'third_party/Hybridauth/autoload.php';
+
+use Hybridauth\Exception\Exception;
+use Hybridauth\Hybridauth;
+use Hybridauth\HttpClient;
+use Hybridauth\Storage\Session;
+
 
 class User extends CI_Controller {
 
 	private $device = 'desktop';
 	private $viewfolder = 'desktop';
 
-	private $gClientId = '309301136744-th5lcvvm1jbka2f73922ra8hqtm8m0pq.apps.googleusercontent.com';
-	private $gClientSecret = '-9AclzW9mx3LJonDg5bn-Vas';
+	private $configHybridauth = [
+
+        'callback' => 'https://soundnova.net/soc_auth_callback',
+        'providers' => [
+            'Google' => [
+                'enabled' => true,
+                'keys' => [
+                    'id' => '309301136744-th5lcvvm1jbka2f73922ra8hqtm8m0pq.apps.googleusercontent.com',
+                    'secret' => '-9AclzW9mx3LJonDg5bn-Vas',
+                ],
+            ],
+            'Facebook' => [
+                'enabled' => true,
+                'keys' => [
+                    'id' => '357029112558904',
+                    'secret' => '89514b26b84e57713d4c8b2d59a068c2',
+                ],
+            ],
+        ],
+    ];
 
 	public function __construct()
  	{
@@ -30,13 +55,140 @@ class User extends CI_Controller {
 		$this->load->view($this->viewfolder.'/v_error-404', $data);
  	}
 
- 	public function logout(){
+ 	public function logout()
+ 	{
 
+ 		// firstly kills all connected adapters!
+ 		$hybridauth = new Hybridauth($this->configHybridauth);
+ 		$adapters = $hybridauth->getConnectedAdapters();
+
+		foreach ($adapters as $name => $adapter) {
+
+            $adapter = $hybridauth->getAdapter($name);
+            $adapter->disconnect();
+
+        }
+
+        // destroys internal users session variable
 		$this->session->unset_userdata('aUser');
 		redirect(base_url('/'));
 
 	}
 
+	public function get_soc_auth_adapters(){
+		
+	}
+
+
+	// hybridauth callback
+	public function soc_auth_callback(){
+
+		$refStr = isset($_SERVER['HTTP_REFERER']) ? strtolower($_SERVER['HTTP_REFERER']) : '';
+
+	    if(strpos($refStr, 'soundnova.net') !== false){
+	        $_SESSION['soc_referer'] = $_SERVER['HTTP_REFERER'];
+	    }
+
+		try {
+
+	          $hybridauth = new Hybridauth($this->configHybridauth);
+
+	          $storage = new Session();
+
+	          if (isset($_GET['provider'])) {
+	              $storage->set('provider', $_GET['provider']);
+	          }
+
+	          if ($provider = $storage->get('provider')) {
+	              $hybridauth->authenticate($provider);
+	              $storage->set('provider', null);
+	          }
+
+	          if (isset($_GET['logout'])) {
+	              $adapter = $hybridauth->getAdapter($_GET['logout']);
+	              $adapter->disconnect();
+	          }
+
+	          // social login procedure
+	          $adapters = $hybridauth->getConnectedAdapters();
+
+	          foreach ($adapters as $name => $adapter) {
+	          	if($name == $_GET['provider']){
+
+	          		$profileObj = $adapter->getUserProfile();
+
+	          		// seems like all is good and we can retrieve user profile info
+	          		$expectedSoc = $this->get_user_soc($name, $profileObj->email);
+
+	          		$expectedUser = $this->get_user_data_by_email($profileObj->email);
+
+	          		// die($profileObj->email);
+
+	          		$id_logged_user = 0;
+
+					if($expectedUser['id'])
+					{
+
+						$refreshUserData = [];
+
+						if(!$expectedUser['firstname']) $refreshUserData['firstname'] = $profileObj->firstName;
+						if(!$expectedUser['lastname']) $refreshUserData['lastname'] = $profileObj->lastName;
+						if(!$expectedUser['picture']) $refreshUserData['picture'] = $profileObj->photoURL;
+
+						// updating
+						if(!empty($refreshUserData)){
+
+							$sUserUpdate = '';
+
+							foreach($refreshUserData as $key => $value){
+								$sUserUpdate .= ", ".$key." = '".$value."'";
+							}
+
+							// $this->db->simple_query("UPDATE user SET dt_last_login = NOW() ".$sUserUpdate."  WHERE id = ".$expectedUser['id']);
+						}
+
+						$id_logged_user = $expectedUser['id'];
+
+					}
+					else
+					{
+
+						$genPassword = rand(1000,9999);
+
+						//insert data
+						$this->db->simple_query("INSERT 
+											INTO user (email,email_active,email_activation_code,password,picture,firstname,lastname,dt_register) 
+											VALUES ('".$profileObj->email."',1,'','".$genPassword."','".$profileObj->photoURL."','".$profileObj->firstName."','".$profileObj->lastName."',NOW())");
+
+						// here we may send email with GENERATED password !!!
+						$id_logged_user = $this->db->insert_id();
+					}
+
+					if(!$expectedSoc['id'] && $id_logged_user){
+
+						// bind soc account data
+						$this->db->simple_query("INSERT 
+											INTO user_soc (id_user,provider,identity,email) 
+											VALUES ('".$id_logged_user."','".$name."','".$profileObj->identifier."','".$profileObj->email."')");
+					}
+
+					// All is good! here we can login user and redirect to dashboard!
+					if($id_logged_user){
+						$this->user_login_handler($id_logged_user, true, $data['email']);
+					}
+
+	          	}
+	          }
+
+	          $redirectURI = isset($_SESSION['soc_referer']) ? $_SESSION['soc_referer'] : 'https://soundnova.net';
+
+	          HttpClient\Util::redirect($redirectURI);
+
+	    } catch (Exception $e) {
+	          echo $e->getMessage();
+	    }
+
+	}
 
 
 	public function g_login()
@@ -158,12 +310,11 @@ class User extends CI_Controller {
 			exit();
 		}
 
-		$google_client = $this->g_init_client();
-
 		$data = get_common_page_data();
 
 		// perform google button
-		$data['g_login_url'] = $google_client->createAuthUrl();
+		$data['g_login_url'] = $this->configHybridauth['callback'].'?provider=Google';
+		$data['f_login_url'] = $this->configHybridauth['callback'].'?provider=Facebook';
 
 		// Once user tryed to login
 		$data['displayLoginErrors'] = $this->session->userdata('displayLoginErrors');
@@ -568,5 +719,13 @@ class User extends CI_Controller {
 		if(!$email) return false;
 
 		return $this->db->query("SELECT * FROM user WHERE email = '".$email."'")->row_array();
+	}
+
+
+	private function get_user_soc($provider, $email){
+
+		if(!$provider || !$identity) return false;
+
+		return $this->db->query("SELECT * FROM user_soc WHERE provider = '".$provider."' AND email = '".$email."'")->row_array();
 	}
 }

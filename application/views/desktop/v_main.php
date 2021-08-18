@@ -20,7 +20,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			<?php // $this->load->view('desktop/animation_wave_3d_dots_bg'); ?>
 			<?php //$this->load->view('desktop/animation_wave_equalizer_bg'); ?>
-			<?php $this->load->view('desktop/animation_wave_2В_bg'); ?>
+			<?php $this->load->view('desktop/animation_wave_2b_bg'); ?>
 
 				<div class="inner-content-container">
 				<h1 class="container-title main-title">

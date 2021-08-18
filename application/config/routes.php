@@ -116,7 +116,8 @@ $route['stage-three'] = "subscription/show_page_stagethree";
 $route['login'] = "user/login";
 $route['proceed_login'] = "user/proceed_login";
 
-$route['g_login'] = "user/g_login";
+$route['soc_auth_callback'] = "user/soc_auth_callback";
+$route['get_soc_auth_adapters'] = "user/get_soc_auth_adapters";
 
 $route['signup'] = "user/signup";
 $route['proceed_signup'] = "user/proceed_signup";

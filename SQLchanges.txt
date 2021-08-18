@@ -76,3 +76,12 @@ ALTER TABLE `user` ADD `email_activation_code` INT( 10 ) NOT NULL AFTER `email_a
 ALTER TABLE `user` ADD `g_uid` VARCHAR( 128 ) NOT NULL COMMENT 'g login' AFTER `dt_last_login`;
 ALTER TABLE `user` ADD `g_email` VARCHAR( 64 ) NOT NULL COMMENT 'g email' AFTER `g_uid`;
 ALTER TABLE `user` ADD `picture` VARCHAR( 256 ) NOT NULL COMMENT 'profile picture' AFTER `password`;
+
+CREATE TABLE IF NOT EXISTS `user_soc` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id_user` int(11) NOT NULL,
+  `provider` varchar(64) NOT NULL COMMENT 'FB, Google ...',
+  `identity` varchar(256) NOT NULL,
+  `email` varchar(256) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
