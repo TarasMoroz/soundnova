@@ -126,7 +126,10 @@
           </div>
           <a class="mobile-header-logo" href="/"><img src="/assets/img/icons/mobile-logo.svg"/></a>
           <div class="mobile-header-user">
-            <a href="/dashboard" class="mobile-user"><img src="/assets/img/icons/user.svg"/></a>
+            <a href="/dashboard" class="mobile-user">
+				<img class="not-registered" src="/assets/img/icons/user.svg"/>
+				<img style="display:none" class="registered" src="/assets/img/avatar3.gif"/>
+			</a>
             <a href="/cart" class="mobile-bucket">
                 <img src="/assets/img/icons/shopping-bag.svg"/>
                 <span class="shopping-products-amount" style="display: none;">0</span>
@@ -143,7 +146,10 @@
 					<img src="/assets/img/icons/shopping-bag.svg"/>
 					<span class="shopping-products-amount" style="display: none;">0</span>
 				</a>
-				<a href="/dashboard" class="desktop-user"><img src="/assets/img/icons/user.svg"/></a>
+				<a href="/dashboard" class="desktop-user">
+					<img class="not-registered" src="/assets/img/icons/user.svg"/>
+					<img style="display:none" class="registered" src="/assets/img/avatar3.gif"/>
+				</a>
         </div>
 		</div>
 		<div class="header-main-container">

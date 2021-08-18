@@ -38,6 +38,14 @@
 .mobile-header .mobile-header-user a .close-icon {
   transform: rotate(45deg);
 }
+.mobile-header .mobile-header-menu a .registered,
+.mobile-header .mobile-header-user a .registered {
+  height: 27px;
+  flex: 0 0 27px;
+  border-radius: 50%;
+  border: 2px solid white;
+  box-sizing: border-box;
+}
 .mobile-header .mobile-header-menu .mobile-menu-content,
 .mobile-header .mobile-header-user .mobile-menu-content {
   position: fixed;
@@ -310,6 +318,13 @@
   }
   .desktop-header .header-top-container .desktop-header-user a img {
     width: 30px;
+  }
+  .desktop-header .header-top-container .desktop-header-user a .registered {
+    height: 30px;
+    flex: 0 0 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-sizing: border-box;
   }
   .desktop-header .header-main-container {
     display: flex;
