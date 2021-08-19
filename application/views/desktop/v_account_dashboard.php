@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="full-width-container account-container">
 			<div class="inner-content-container">
 				<h1 class="container-title main-title">
-							<span class="gradient-title">Account</span>
+							<span class="gradient-title"><?php echo $aUser['lastname'].' '.$aUser['firstname']; ?>, WELCOME TO YOUR ACCOUNT</span>
 				</h1>
 				<div class="dashboard-container">
 					<div class="top-tabs-block">

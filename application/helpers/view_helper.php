@@ -152,6 +152,8 @@ if ( ! function_exists('get_common_page_data'))
         $data['device'] = 'desktop';
         if($CI->agent->is_mobile()) $data['device'] =  'mobile';
 
+        $data['aUser'] = (!$CI->session->userdata('aUser')) ? false : $CI->session->userdata('aUser');
+
 		return $data; // возвращаем готовые, скомпонованные данные по списку продуктов
 	}
 }

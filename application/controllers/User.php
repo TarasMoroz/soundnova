@@ -113,7 +113,10 @@ class User extends CI_Controller {
 	          $adapters = $hybridauth->getConnectedAdapters();
 
 	          foreach ($adapters as $name => $adapter) {
-	          	if($name == $_GET['provider']){
+
+	          	// echo $name;
+
+	          	// if($name == $_GET['provider']){
 
 	          		$profileObj = $adapter->getUserProfile();
 
@@ -144,7 +147,7 @@ class User extends CI_Controller {
 								$sUserUpdate .= ", ".$key." = '".$value."'";
 							}
 
-							// $this->db->simple_query("UPDATE user SET dt_last_login = NOW() ".$sUserUpdate."  WHERE id = ".$expectedUser['id']);
+							$this->db->simple_query("UPDATE user SET dt_last_login = NOW() ".$sUserUpdate."  WHERE id = ".$expectedUser['id']);
 						}
 
 						$id_logged_user = $expectedUser['id'];
@@ -162,6 +165,19 @@ class User extends CI_Controller {
 
 						// here we may send email with GENERATED password !!!
 						$id_logged_user = $this->db->insert_id();
+
+						// confirmation mail
+						$createdUser = $this->get_user_data_by_email($profileObj->email);
+
+						if($createdUser['id'] && $createdUser['email']){
+							$mailRes = send_html_mail([
+									'createdUser' => $createdUser
+								],
+								'v_mail_signup_soc', 
+								$createdUser['email'], 
+								'Registration'
+							);
+						}
 					}
 
 					if(!$expectedSoc['id'] && $id_logged_user){
@@ -177,129 +193,17 @@ class User extends CI_Controller {
 						$this->user_login_handler($id_logged_user, true, $data['email']);
 					}
 
-	          	}
+	          	// }
 	          }
 
-	          $redirectURI = isset($_SESSION['soc_referer']) ? $_SESSION['soc_referer'] : 'https://soundnova.net';
+	          // $redirectURI = isset($_SESSION['soc_referer']) ? $_SESSION['soc_referer'] : 'https://soundnova.net';
 
-	          HttpClient\Util::redirect($redirectURI);
+	          // HttpClient\Util::redirect($redirectURI);
 
 	    } catch (Exception $e) {
 	          echo $e->getMessage();
 	    }
 
-	}
-
-
-	public function g_login()
-	{
-
-		$google_client = $this->g_init_client();
-
-		if(isset($_GET["code"]))
-		{
-			$token = $google_client->fetchAccessTokenWithAuthCode($_GET["code"]);
-
-			if(!isset($token["error"]))
-			{
-				$google_client->setAccessToken($token['access_token']);
-
-				$this->session->set_userdata('access_token', $token['access_token']);
-
-				$google_service = new Google_Service_Oauth2($google_client);
-
-				$data = $google_service->userinfo->get();
-
-				$current_datetime = date('Y-m-d H:i:s');
-
-				$expectedUser = $this->get_user_data_by_g_uid($data['id']);
-
-				if(!$expectedUser['id']) $expectedUser = $this->get_user_data_by_email($data['email']);
-
-				$id_logged_user = 0;
-
-				if($expectedUser['id'])
-				{
-
-					// we found user that already existed with google uuid 
-					// check for correct data
-
-					$refreshUserData = [];
-
-					if(!$expectedUser['g_email']) $refreshUserData['g_email'] = $data['email'];
-					if(!$expectedUser['firstname']) $refreshUserData['firstname'] = $data['given_name'];
-					if(!$expectedUser['lastname']) $refreshUserData['lastname'] = $data['family_name'];
-					if(!$expectedUser['picture']) $refreshUserData['picture'] = $data['picture'];
-
-					// updating
-					if(!empty($refreshUserData)){
-
-						$sUserUpdate = '';
-
-						foreach($refreshUserData as $key => $value){
-							$sUserUpdate .= ", ".$key." = '".$value."'";
-						}
-
-						$this->db->simple_query("UPDATE user SET dt_last_login = NOW() ".$sUserUpdate."  WHERE id = ".$expectedUser['id']);
-					}
-
-					$id_logged_user = $expectedUser['id'];
-				}
-				else
-				{
-					//insert data
-					$this->db->simple_query("INSERT 
-										INTO user (email,email_active,email_activation_code,password,picture,firstname,lastname,dt_register) 
-										VALUES ('".$data['email']."',1,'','','".$data['picture']."','".$data['given_name']."','".$data['family_name']."',NOW())");
-
-					$id_logged_user = $this->db->insert_id();
-				}
-
-				// All is good! here we can login user and redirect to dashboard!
-				if($id_logged_user){
-
-					$this->user_login_handler($id_logged_user, true, $data['email']);
-				}
-			} else {
-				// Google login Error handle
-
-				// $token["error"];
-				// writes errors to ses and redir to signup page
-				$this->session->set_userdata([
-					'displayLoginErrors' => $token["error"]
-					// 'loginEmail' => $email
-				]);
-
-				redirect(base_url('login/'));
-				exit();
-			}
-		}
-	}
-
-	private function g_init_client(){
-
-		include_once APPPATH . "third_party/google-api-php/src/Google/autoload.php";
-
-		// $google_client = new Google\Client();
-
-		// $client->setDeveloperKey($api_key);
-
-		// $client->setAuthConfig('client_secret_309301136744-th5lcvvm1jbka2f73922ra8hqtm8m0pq.apps.googleusercontent.com.json');
-		// $client->addScope(Google\Service\Drive::DRIVE_METADATA_READONLY);
-		// $client->setRedirectUri('http://' . $_SERVER['HTTP_HOST'] . '/oauth2callback.php');
-		// $client->setAccessType('offline');        // offline access
-		// $client->setIncludeGrantedScopes(true);   // incremental auth
-
-		$google_client = new Google_Client();
-
-		$google_client->setClientId($this->gClientId); //Define your ClientID
-		$google_client->setClientSecret($this->gClientSecret); //Define your Client Secret Key
-		$google_client->setRedirectUri('https://soundnova.net/g_login'); //Define your Redirect Uri
-
-		$google_client->addScope('email');
-		$google_client->addScope('profile');
-
-		return $google_client;
 	}
 
  	public function login(){
@@ -670,13 +574,14 @@ class User extends CI_Controller {
 		        {
 		            $jwtData = $this->objOfJwt->DecodeToken($jwttoken);
 
-		            // die(json_encode($jwtData));
-
 		            $aUser = $this->get_user_data_by_id($jwtData['id']);
 
-					if($aUser) $this->session->set_userdata(['aUser' => $aUser]);
+					if($aUser['id']){
+						$this->session->set_userdata(['aUser' => $aUser]);
+						$this->db->simple_query("UPDATE user SET dt_last_login = NOW() WHERE id = ".$aUser['id']);
 
-					$this->db->simple_query("UPDATE user SET dt_last_login = NOW() WHERE id = ".$aUser['id']);
+						redirect($_SERVER['REQUEST_URI'], 'refresh'); 
+					}
 
 		        }
 		        catch (Exception $e){
@@ -704,14 +609,7 @@ class User extends CI_Controller {
 
 		if(!$id) return [];
 
-		return $this->db->query("SELECT email, firstname, lastname, displayname FROM user WHERE id = ".$id)->row_array();
-	}
-
-	private function get_user_data_by_g_uid($uid){
-
-		if(!$uid) return false;
-
-		return $this->db->query("SELECT * FROM user WHERE g_uid = '".$uid."'")->row_array();
+		return $this->db->query("SELECT email, firstname, lastname, displayname, picture FROM user WHERE id = ".$id)->row_array();
 	}
 
 	private function get_user_data_by_email($email){
@@ -724,7 +622,7 @@ class User extends CI_Controller {
 
 	private function get_user_soc($provider, $email){
 
-		if(!$provider || !$identity) return false;
+		if(!$provider || !$email) return false;
 
 		return $this->db->query("SELECT * FROM user_soc WHERE provider = '".$provider."' AND email = '".$email."'")->row_array();
 	}

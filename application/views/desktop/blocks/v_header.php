@@ -127,8 +127,13 @@
           <a class="mobile-header-logo" href="/"><img src="/assets/img/icons/mobile-logo.svg"/></a>
           <div class="mobile-header-user">
             <a href="/dashboard" class="mobile-user">
-				<img class="not-registered" src="/assets/img/icons/user.svg"/>
-				<img style="display:none" class="registered" src="/assets/img/avatar3.gif"/>
+            	
+            	<?php if(!$aUser): ?>
+					<img class="not-registered" src="/assets/img/icons/user.svg"/>
+				<?php else: ?>
+					<img class="registered" src="<?php echo $aUser['picture']; ?>"/>
+				<?php endif; ?>
+
 			</a>
             <a href="/cart" class="mobile-bucket">
                 <img src="/assets/img/icons/shopping-bag.svg"/>
@@ -142,13 +147,18 @@
 				<a class="get-free-subscr">Get FREE monthly subcription</a>
 				<div class="header-top-text">We create professional SOUND EFFECTS</div>
 				<div class="desktop-header-user">
+				
 				<a href="/cart" class="desktop-bucket">
 					<img src="/assets/img/icons/shopping-bag.svg"/>
 					<span class="shopping-products-amount" style="display: none;">0</span>
 				</a>
+
 				<a href="/dashboard" class="desktop-user">
-					<img class="not-registered" src="/assets/img/icons/user.svg"/>
-					<img style="display:none" class="registered" src="/assets/img/avatar3.gif"/>
+					<?php if(!$aUser): ?>
+						<img class="not-registered" src="/assets/img/icons/user.svg"/>
+					<?php else: ?>
+						<img class="registered" src="<?php echo $aUser['picture']; ?>"/>
+					<?php endif; ?>
 				</a>
         </div>
 		</div>
