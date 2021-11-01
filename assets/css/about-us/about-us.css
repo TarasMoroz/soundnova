@@ -9,22 +9,27 @@
   background-position: center;
   background-size: cover;
 }
+
 .full-width-container.about-us-top .main-subtitle {
   text-transform: uppercase;
   font-size: 10px;
 }
+
 .full-width-container.about-us-top .about-us-top-content {
   padding-top: 200px;
 }
+
 .full-width-container.about-us-top .about-us-top-content p {
   color: white;
   font-size: 14px;
   line-height: 24px;
   margin: 0 0 30px 0;
 }
+
 .full-width-container.meet-team-container {
   background-color: #13161D;
 }
+
 .full-width-container.meet-team-container .secondary-subtitle {
   font-size: 12px;
   text-transform: unset;
@@ -32,15 +37,22 @@
   line-height: 22px;
   margin-bottom: 45px;
 }
+
 .full-width-container.meet-team-container .team-columns {
   display: none;
 }
+
 .full-width-container.meet-team-container .team-column {
   position: relative;
+  display: -ms-grid;
   display: grid;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .full-width-container.meet-team-container .team-column .name {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(30%, #ef4cc6), color-stop(60%, #10a9bf));
   background-image: linear-gradient(90deg, #ef4cc6 30%, #10a9bf 60%);
   -webkit-background-clip: text;
   background-clip: text;
@@ -52,18 +64,23 @@
   font-size: 36px;
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
+
 .full-width-container.meet-team-container .team-column .human-img {
   z-index: 1;
   margin-top: 28px;
 }
+
 .full-width-container.meet-team-container .team-column .sphere-img {
   position: absolute;
   left: calc(50% + 55px);
   top: 32px;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
+
 .full-width-container.meet-team-container .team-column .position {
   color: white;
   text-align: center;
@@ -72,6 +89,7 @@
   margin-bottom: 20px;
   margin-top: 5px;
 }
+
 .full-width-container.meet-team-container .team-column .yellow-line {
   height: 2px;
   display: inline-block;
@@ -79,14 +97,17 @@
   background-color: #f9ed1d;
   margin: 0 auto;
 }
+
 .full-width-container.meet-team-container .team-slider .swiper-container {
   padding: 0 30px 40px 30px;
 }
+
 .full-width-container.meet-team-container .team-slider .swiper-container-horizontal > .swiper-pagination-bullets,
 .full-width-container.meet-team-container .team-slider .swiper-pagination-custom,
 .full-width-container.meet-team-container .team-slider .swiper-pagination-fraction {
   bottom: 0;
 }
+
 .full-width-container.meet-team-container .team-slider .swiper-button-next,
 .full-width-container.meet-team-container .team-slider .swiper-container-rtl .swiper-button-prev {
   background-image: url(/assets/img/icons/yellow-arrow-right.svg);
@@ -94,12 +115,14 @@
   right: 0;
   outline: none;
 }
+
 .full-width-container.meet-team-container .team-slider .swiper-button-prev {
   background-image: url(/assets/img/icons/yellow-arrow-left.svg);
   background-size: 16px;
   left: 0;
   outline: none;
 }
+
 .full-width-container.team-quote-container {
   padding-top: 69px;
   padding-bottom: 65px;
@@ -108,30 +131,45 @@
   background-position: center;
   background-size: cover;
 }
+
 .full-width-container.team-quote-container .transparent-title {
   color: rgba(56, 65, 86, 0.2);
 }
+
 .full-width-container.team-partners-container {
   padding: 50px 16px;
 }
+
 .full-width-container.team-partners-container .home-partners-block {
+  display: -ms-grid;
   display: grid;
   justify-items: center;
 }
+
 .full-width-container.team-partners-container .home-partners-block .clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 1170px;
   margin: auto;
 }
+
 .full-width-container.team-partners-container .home-partners-block .clients img {
   max-width: 140px;
   margin-bottom: 40px;
-  flex: 0 0 50%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
 }
+
 .full-width-container.team-partners-container .home-partners-block .more-clients {
   font-size: 16px;
   text-transform: uppercase;
@@ -139,13 +177,16 @@
   font-weight: 500;
   margin-top: 5px;
 }
+
 .full-width-container.team-partners-container .container-title.secondary-title {
   margin-bottom: 40px;
   position: relative;
 }
+
 .full-width-container.team-partners-container .container-title.secondary-title span {
   text-shadow: 0 0px 65px rgba(239, 76, 198, 0.25);
 }
+
 .full-width-container.team-partners-container .container-title.secondary-title .desktop-title-last {
   display: none;
 }
@@ -184,11 +225,14 @@
     display: none;
   }
   .full-width-container.meet-team-container .team-columns {
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 64px 32px;
   }
 }
+
 @media (min-width: 1023px) {
   .full-width-container.about-us-top {
     padding: 270px 16px 135px 16px;
@@ -209,9 +253,10 @@
     margin-bottom: 60px;
   }
 }
+
 @media (min-width: 1310px) {
   .full-width-container.team-partners-container .container-title.secondary-title .desktop-title,
-.full-width-container.team-partners-container .container-title.secondary-title .desktop-title-last {
+  .full-width-container.team-partners-container .container-title.secondary-title .desktop-title-last {
     display: block;
   }
   .full-width-container.team-partners-container .container-title.secondary-title .mobile-title {
@@ -220,4 +265,5 @@
   .full-width-container.team-partners-container .container-title.secondary-title br {
     display: none;
   }
-}/*# sourceMappingURL=about-us.css.map */
+}
+/*# sourceMappingURL=about-us.css.map */
