@@ -1673,7 +1673,7 @@ body {
 #bg-2d-waves {
   position: absolute;
   max-height: 100%;
-  z-index: -1;
+  z-index: -2;
   top: 0;
   left: 0;
   opacity: 0;
@@ -1722,6 +1722,7 @@ body {
     bottom: 0px;
     left: 0px;
     opacity: 0.75;
+    z-index: -1;
   }
   .full-width-container.home-first-container .main-subtitle {
     font-size: 20px;
