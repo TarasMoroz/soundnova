@@ -84,6 +84,11 @@ in the subscription</div>
                                                             <div class="new-product-col">
                                                                 <div class="gradient-subtitle">standard & premium subscription</div>
                                                                 <div class="new-product-title">Technology Pack</div>
+																																<div class="product-sound-player">
+																																	<iframe class="lazy-frame sn-player-style invert-colors" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+																																		data-src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/211157423&color=0044f1&buying=false&sharing=false&download=false&show_artwork=false&show_playcount=false&show_user=false&single_active=false">
+																																	</iframe>
+																																</div>
                                                                 <div class="new-product-prices">
                                                                     <div class="new-old">
                                                                         <div class="new">$55</div>
@@ -115,6 +120,11 @@ in the subscription</div>
                                                             <div class="new-product-col">
                                                                 <div class="gradient-subtitle">standard & premium subscription</div>
                                                                 <div class="new-product-title">Technology Pack</div>
+																																<div class="product-sound-player">
+																																	<iframe class="lazy-frame sn-player-style invert-colors" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+																																		data-src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/211157423&color=0044f1&buying=false&sharing=false&download=false&show_artwork=false&show_playcount=false&show_user=false&single_active=false">
+																																	</iframe>
+																																</div>
                                                                 <div class="new-product-prices">
                                                                     <div class="new-old">
                                                                         <div class="new">$55</div>

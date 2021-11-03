@@ -289,8 +289,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 								<div class="prd-sndcld">
 
-									<iframe class="sn-player-style invert-colors" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-									src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/211157423&color=0044f1&buying=false&sharing=false&download=false&show_artwork=false&show_playcount=false&show_user=false&single_active=false">
+									<iframe class="lazy-frame sn-player-style invert-colors" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+									data-src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/211157423&color=0044f1&buying=false&sharing=false&download=false&show_artwork=false&show_playcount=false&show_user=false&single_active=false">
 									</iframe>
 									<!-- <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe> -->
 								</div>
@@ -322,8 +322,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</a>
 
 								<div class="prd-sndcld">
-									<iframe class="sn-player-style invert-colors blue-btn" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
-										src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/211157423&color=0044f1&buying=false&sharing=false&download=false&show_artwork=false&show_playcount=false&show_user=false&single_active=false">
+									<iframe class="lazy-frame sn-player-style invert-colors" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+										data-src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/211157423&color=0044f1&buying=false&sharing=false&download=false&show_artwork=false&show_playcount=false&show_user=false&single_active=false">
 									</iframe>
 									<!-- <iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe> -->
 								</div>
@@ -356,7 +356,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</a>
 
 								<div class="prd-sndcld">
-									<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+									<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame sn-player-style invert-colors" 
+									data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=0044f1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 								</div>
 
 								<div class="prd-ft">
@@ -418,7 +419,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 														</div>
 														<div class="new-product-actions">
 														<div class="new-product-title">Technology Pack</div>
-														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame sn-player-style invert-colors" 
+														data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=0044f1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 														<div class="buy-buttons-container">
 															<a href="#" class="btn-purp-grad btn-new-product">ADD TO CART <span> $59</span></a>
 															<a href="#" class="btn-blue-border btn-new-product">LEARN MORE</a>
@@ -434,7 +436,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 														<img src="/assets/img/packs/new-product.svg">
 														</div>
 														<div class="new-product-actions">
-														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame sn-player-style invert-colors" 
+														data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=0044f1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 														<div class="buy-buttons-container">
 															<a href="#" class="btn-purp-grad btn-new-product">ADD TO CART <span> $59</span></a>
 															<a href="#" class="btn-blue-border btn-new-product">LEARN MORE</a>
@@ -448,7 +451,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 														</div>
 														<div class="new-product-actions">
 														<div class="new-product-title">Technology Pack</div>
-														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame sn-player-style invert-colors" 
+														data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=0044f1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
 														<div class="buy-buttons-container">
 															<a href="#" class="btn-purp-grad btn-new-product">ADD TO CART <span> $59</span></a>
 															<a href="#" class="btn-blue-border btn-new-product">LEARN MORE</a>
