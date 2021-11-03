@@ -144,6 +144,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-2.svg"/>Product name</a></div>
 											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-1.svg"/>Product name</a></div>
 											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-2.svg"/>Product name</a></div>
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-1.svg"/>Product name</a></div>
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-2.svg"/>Product name</a></div>
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-1.svg"/>Product name</a></div>
+											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-2.svg"/>Product name</a></div>
 											</div>
 											    <!-- Add Arrows -->
 												<div class="swiper-button-next"></div>
