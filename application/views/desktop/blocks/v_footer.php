@@ -28,6 +28,7 @@
 			<a href="#">Return and Refunds</a>
 			<a href="#">Support</a>
 			<a href="#">Contact</a>	
+			<a href="/blog">Blog</a>
 		</div>
 
 		<div class="ft-col links-col">

@@ -44,8 +44,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<div class="login-container">
 						<div class="login-container-inner">
 							<div class="login-buttons">
-									<button class="facebook-btn">Continue with <span>Facebook</span></button>
-									<button class="google-btn">Continue with <span>Google</span></button>
+									<!-- <button class="facebook-btn">Continue with <span>Facebook</span></button>
+									<button class="google-btn">Continue with <span>Google</span></button> -->
+									<div class="sociallogin-btn facebook">
+										<div class="icon-wrapper">
+											<img class="icon" src="/assets/img/icons/facebook-icon.svg"/>
+										</div>
+										<p class="btn-text">Continue with <b>Facebook</b></p>
+									</div>
+									<div class="sociallogin-btn google">
+										<div class="icon-wrapper">
+											<img class="icon" src="/assets/img/icons/google-icon-color.svg"/>
+										</div>
+										<p class="btn-text">Sign in with <b>Google</b></p>
+									</div>
 							</div>
 							<div class="or-line">Or</div>
 							<form action="/proceed_signup" method="post">

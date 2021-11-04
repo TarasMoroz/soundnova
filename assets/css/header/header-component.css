@@ -119,8 +119,8 @@
   margin-bottom: 40px;
   -webkit-box-shadow: 0 0px 15px -7px #1dd1e5;
           box-shadow: 0 0px 15px -7px #1dd1e5;
-  -webkit-transition: all .2s;
-  transition: all .2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 
 .mobile-header .mobile-header-menu .mobile-menu-content .get-free-subscr:hover,
@@ -204,7 +204,7 @@
           align-items: center;
   padding: 7px 16px;
   z-index: 1;
-  border-top: 2px solid #1C1F2A;
+  border-top: 2px solid #1c1f2a;
   -webkit-box-shadow: 0 5px 8px -7px #1dd1e578;
           box-shadow: 0 5px 8px -7px #1dd1e578;
 }
@@ -218,7 +218,7 @@
 .mobile-header .mobile-header-menu .mobile-search-content .header-search-block input,
 .mobile-header .mobile-header-user .mobile-search-content .header-search-block input {
   outline: none;
-  background: #1B1F29;
+  background: #1b1f29;
   border: none;
   border-radius: 4px;
   padding: 0 40px 0 25px;
@@ -401,6 +401,15 @@
     outline: none;
     margin-left: 50px;
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .desktop-header .header-top-container .desktop-header-user a.desktop-bucket {
     display: -webkit-box;
