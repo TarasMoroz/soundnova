@@ -58,9 +58,17 @@
 }
 
 .full-width-container.sbc-new-products-container .new-products-slider-container .new-product-inner .new-product-image img {
-  max-width: 185px;
+  max-width: 200px;
   margin: auto;
   z-index: 1;
+  margin-left: 10%;
+}
+
+@media (min-width: 675px) {
+  .full-width-container.sbc-new-products-container .new-products-slider-container .new-product-inner .new-product-image img {
+    margin-left: auto;
+    max-width: 185px;
+  }
 }
 
 .full-width-container.sbc-new-products-container .new-products-slider-container .new-product-inner .new-product-image:before {
@@ -113,13 +121,21 @@
 .full-width-container.sbc-new-products-container .new-products-slider-container .new-product-inner .new-product-cols {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
   grid-gap: 30px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  margin-top: 35px;
+  margin-top: 15px;
+}
+
+@media (min-width: 675px) {
+  .full-width-container.sbc-new-products-container .new-products-slider-container .new-product-inner .new-product-cols {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    margin-top: 35px;
+  }
 }
 
 .full-width-container.sbc-new-products-container .new-products-slider-container .new-product-inner .new-product-cols .new-product-col .gradient-subtitle {
@@ -128,6 +144,10 @@
 
 .full-width-container.sbc-new-products-container .new-products-slider-container .new-product-inner .new-product-cols .new-product-col .new-product-title {
   display: none;
+}
+
+.full-width-container.sbc-new-products-container .new-products-slider-container .new-product-inner .new-product-cols .new-product-col .product-sound-player {
+  margin-bottom: 15px;
 }
 
 .full-width-container.sbc-new-products-container .new-products-slider-container .new-product-inner .new-product-cols .new-product-col .buy-buttons-container {
@@ -195,7 +215,7 @@
 }
 
 .full-width-container.sbc-new-products-container .new-products-slider-container .new-product-inner .buy-buttons-container.bottom a {
-  max-width: 332px;
+  max-width: 250px;
   width: 100%;
 }
 
@@ -212,18 +232,18 @@
 .full-width-container.sbc-new-products-container .new-products-slider-container .swiper-button-next,
 .full-width-container.sbc-new-products-container .new-products-slider-container .swiper-container-rtl .swiper-button-prev {
   background-image: url(/assets/img/icons/yellow-arrow-right.svg);
-  background-size: 16px;
-  right: 0;
+  background-size: 38px;
+  right: 5px;
   outline: none;
-  top: 10%;
+  top: 25%;
 }
 
 .full-width-container.sbc-new-products-container .new-products-slider-container .swiper-button-prev {
   background-image: url(/assets/img/icons/yellow-arrow-left.svg);
-  background-size: 16px;
-  left: 0;
+  background-size: 38px;
+  left: 5px;
   outline: none;
-  top: 10%;
+  top: 25%;
 }
 
 .full-width-container.sbc-new-products-container .new-products-slider-container .swiper-pagination-bullet {
@@ -579,18 +599,18 @@
 .full-width-container.overviews-container .inner-content-container .overviews-slider .swiper-button-next,
 .full-width-container.overviews-container .inner-content-container .overviews-slider .swiper-container-rtl .swiper-button-prev {
   background-image: url(/assets/img/icons/yellow-arrow-right.svg);
-  background-size: 16px;
-  right: 0;
+  background-size: 38px;
+  right: 3px;
   outline: none;
-  top: 80%;
+  top: 35%;
 }
 
 .full-width-container.overviews-container .inner-content-container .overviews-slider .swiper-button-prev {
   background-image: url(/assets/img/icons/yellow-arrow-left.svg);
-  background-size: 16px;
-  left: 0;
+  background-size: 38px;
+  left: 3px;
   outline: none;
-  top: 80%;
+  top: 35%;
 }
 
 .full-width-container.overviews-container .inner-content-container .overviews-slider .swiper-pagination-bullet {
@@ -1159,9 +1179,6 @@
     display: block;
     font-size: 36px;
     text-align: left;
-    margin-bottom: 15px;
-  }
-  .full-width-container.sbc-new-products-container .new-products-slider-container .new-product-inner .new-product-cols .new-product-col .product-sound-player {
     margin-bottom: 15px;
   }
   .full-width-container.sbc-new-products-container .new-products-slider-container .new-product-inner .new-product-cols .new-product-col .new-product-prices {

@@ -38,9 +38,14 @@
                     align-items: center;
                     justify-content: center;
                     img {
-                        max-width: 185px;
+                        max-width: 200px;
                         margin: auto;
                         z-index: 1;
+                        margin-left: 10%;
+                        @media (min-width: $bp-tablet) {
+                            margin-left: auto;
+                            max-width: 185px;
+                        }
                     }
                     &:before {
                         content: "";
@@ -81,16 +86,23 @@
                 }
                 .new-product-cols {
                     display: grid;
-                    grid-template-columns: 1fr 1fr;
+                    grid-template-columns: 1fr;
                     grid-gap: 30px;
                     align-items: flex-end;
-                    margin-top: 35px;
+                    margin-top: 15px;
+                    @media (min-width: $bp-tablet) {
+                        grid-template-columns: 1fr 1fr;
+                        margin-top: 35px;
+                    }
                     .new-product-col {
                         .gradient-subtitle {
                             display: none;
                         }
                         .new-product-title {
                             display: none;
+                        }
+                        .product-sound-player {
+                            margin-bottom: 15px;
                         }
                         .buy-buttons-container {
                             display: none;
@@ -142,7 +154,7 @@
                 .buy-buttons-container {
                     &.bottom {
                         a {
-                            max-width: 332px;
+                            max-width: 250px;
                             width: 100%;
                         }
                     }
@@ -159,17 +171,17 @@
             .swiper-button-next,
             .swiper-container-rtl .swiper-button-prev {
                 background-image: url(/assets/img/icons/yellow-arrow-right.svg);
-                background-size: 16px;
-                right: 0;
+                background-size: 38px;
+                right: 5px;
                 outline: none;
-                top: 10%;
+                top: 25%;
             }
             .swiper-button-prev {
                 background-image: url(/assets/img/icons/yellow-arrow-left.svg);
-                background-size: 16px;
-                left: 0;
+                background-size: 38px;
+                left: 5px;
                 outline: none;
-                top: 10%;
+                top: 25%;
             }
             .swiper-pagination-bullet {
                 background: #51545a;
@@ -471,17 +483,17 @@
                 .swiper-button-next,
                 .swiper-container-rtl .swiper-button-prev {
                     background-image: url(/assets/img/icons/yellow-arrow-right.svg);
-                    background-size: 16px;
-                    right: 0;
+                    background-size: 38px;
+                    right: 3px;
                     outline: none;
-                    top: 80%;
+                    top: 35%;
                 }
                 .swiper-button-prev {
                     background-image: url(/assets/img/icons/yellow-arrow-left.svg);
-                    background-size: 16px;
-                    left: 0;
+                    background-size: 38px;
+                    left: 3px;
                     outline: none;
-                    top: 80%;
+                    top: 35%;
                 }
                 .swiper-pagination-bullet {
                     background: #51545a;
@@ -991,9 +1003,6 @@
                                 display: block;
                                 font-size: 36px;
                                 text-align: left;
-                                margin-bottom: 15px;
-                            }
-                            .product-sound-player {
                                 margin-bottom: 15px;
                             }
                             .new-product-prices {
