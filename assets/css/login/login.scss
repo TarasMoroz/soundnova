@@ -1,4 +1,5 @@
 @import "../variables/variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 .full-width-container {
     &.login-container {
@@ -14,9 +15,9 @@
             }
         }
         .login-container {
-            background-color: rgba(16,18,24,.2);
+            background-color: rgba(16, 18, 24, 0.2);
             border-radius: 8px;
-            box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+            box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
             padding: 20px 10px;
             max-width: 750px;
             margin: 0 auto;
@@ -26,10 +27,13 @@
             }
             .login-buttons {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-template-columns: 1fr;
                 grid-gap: 10px;
                 margin-bottom: 20px;
-                 button {
+                @media (min-width: $bp-tablet) {
+                    grid-template-columns: 1fr 1fr;
+                }
+                button {
                     font-size: 12px;
                     line-height: 34px;
                     border-radius: 5px;
@@ -41,15 +45,16 @@
                         font-weight: 500;
                     }
                     &.facebook-btn {
-                        background-color: #4568B3;
-                        background-image: url('/assets/img/icons/facebook-icon.svg');
+                        font-family: "Roboto";
+                        background-color: #4568b3;
+                        background-image: url("/assets/img/icons/facebook-icon.svg");
                         background-repeat: no-repeat;
                         background-position: 10px 10px;
                         background-size: 12px;
                     }
                     &.google-btn {
-                        background-color: #DC4E43;
-                        background-image: url('/assets/img/icons/google-icon.svg');
+                        background-color: #dc4e43;
+                        background-image: url("/assets/img/icons/google-icon.svg");
                         background-repeat: no-repeat;
                         background-position: 10px 10px;
                         background-size: 12px;
@@ -67,18 +72,18 @@
                 align-items: center;
                 margin-bottom: 15px;
                 &:before {
-                    content: '';
+                    content: "";
                     flex: 1;
                     height: 1px;
-                    background-color: #42454D;
+                    background-color: #42454d;
                     margin-right: 7px;
                     box-shadow: 0 0 15px 1px black;
                 }
                 &:after {
-                    content: '';
+                    content: "";
                     flex: 1;
                     height: 1px;
-                    background-color: #42454D;
+                    background-color: #42454d;
                     margin-left: 7px;
                     box-shadow: 0 0 15px 1px black;
                 }
@@ -92,14 +97,14 @@
                         line-height: 45px;
                         background: #101218;
                         outline: 0;
-                        box-shadow: 0px 0px 10px rgb(36 230 250 / 10%);
+                        box-shadow: 0px 0px 10px rgba(36, 230, 250, 0.1);
                         border: 0;
                         border-radius: 5px;
                         width: 100%;
                         padding: 0 30px 0 12px;
                         font-size: 14px;
                         color: #fff;
-                        font-family: "UniSans",sans-serif;
+                        font-family: "UniSans", sans-serif;
                         box-sizing: border-box;
                         font-weight: 500;
                         &::placeholder {
@@ -124,7 +129,7 @@
                         align-items: flex-end;
                         .checkbox {
                             width: 30px;
-                            background-color: #282D3B;
+                            background-color: #282d3b;
                             border-radius: 10px;
                             height: 16px;
                             border: none;
@@ -134,16 +139,16 @@
                             position: relative;
                             flex: 0 0 30px;
                             &:after {
-                                content: '';
+                                content: "";
                                 width: 13px;
                                 height: 13px;
                                 display: block;
                                 border-radius: 50%;
-                                background-color: #15141C;
+                                background-color: #15141c;
                                 right: unset;
                                 left: 3px;
                                 position: absolute;
-                                transition: all .5s;
+                                transition: all 0.5s;
                             }
                         }
                         &.active {
@@ -161,7 +166,6 @@
                         cursor: pointer;
                         font-size: 12px;
                     }
-                    
                 }
                 .btn-purp-grad {
                     max-width: 260px;
@@ -204,6 +208,69 @@
                 }
             }
         }
+    }
+}
+
+$white: #fff;
+$google-blue: #4285f4;
+$facebook-blue: #3a5a97;
+$button-active-blue: #1669f2;
+
+.sociallogin-btn {
+    &.google {
+        background-color: $google-blue;
+        .icon-wrapper {
+            background-color: #fff;
+            .icon {
+                position: absolute;
+                margin-top: 11px;
+                margin-left: 11px;
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+    &.facebook {
+        background-color: $facebook-blue;
+        .icon-wrapper {
+            margin-left: 10px;
+            width: 25px;
+            height: 25px;
+            .icon {
+                position: absolute;
+                // margin-top: 8px;
+                // margin-left: 8px;
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+    cursor: pointer;
+    height: 42px;
+    border-radius: 2px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+    .icon-wrapper {
+        width: 40px;
+        height: 40px;
+        border-radius: 2px;
+        margin: 1px;
+    }
+    .btn-text {
+        flex: 1;
+        text-align: center;
+        color: $white;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        font-family: "Roboto";
+    }
+    &:hover {
+        box-shadow: 0 0 6px $google-blue;
+    }
+    &:active {
+        background: $button-active-blue;
     }
 }
 
