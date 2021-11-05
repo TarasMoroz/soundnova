@@ -164,7 +164,7 @@
       new SineWaveGenerator({
         el: document.getElementById('waves-2d'),
         
-        speed: 8,
+        speed: 1.5,
         
         waves: [
           {

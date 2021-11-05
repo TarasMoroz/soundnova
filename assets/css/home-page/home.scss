@@ -272,8 +272,8 @@ body {
         }
         .bundle-play {
             position: absolute;
-            top: 15%;
-            left: 37%;
+            top: 10%;
+            left: 35%;
             z-index: 3;
         }
         .bundle-discount {
@@ -328,8 +328,6 @@ body {
                     height: 11px;
                     border: none;
                     outline: none;
-                    border: none;
-                    outline: none;
                     margin: 0;
                     top: calc(50% - 6px);
                     background-size: 14px;
@@ -341,8 +339,6 @@ body {
                     left: 0;
                     width: 11px;
                     height: 11px;
-                    border: none;
-                    outline: none;
                     border: none;
                     outline: none;
                     margin: 0;
@@ -1085,7 +1081,6 @@ body {
         z-index: -1;
         opacity: 0.5;
         margin-left: 10px;
-        margin-left: 10px;
         width: 100px;
         height: 20px;
         background: $color_bar;
@@ -1222,7 +1217,7 @@ body {
 #bg-2d-waves {
     position: absolute;
     max-height: 100%;
-    z-index: -1;
+    z-index: -2;
     top: 0;
     left: 0;
     opacity: 0;
@@ -1266,7 +1261,7 @@ body {
                 bottom: 0px;
                 left: 0px;
                 opacity: 0.75;
-                // z-index: -5;
+                z-index: -1;
             }
             .main-subtitle {
                 font-size: 20px;

@@ -30,7 +30,7 @@
                     -webkit-background-clip: text;
                     background-clip: text;
                     color: transparent;
-                    text-shadow: 0 0px 15px rgb(30, 214, 233, .35);
+                    text-shadow: 0 0px 15px rgba(30, 214, 233, 0.35);
                 }
                 .new-product-image {
                     position: relative;
@@ -38,9 +38,14 @@
                     align-items: center;
                     justify-content: center;
                     img {
-                        max-width: 185px;
+                        max-width: 200px;
                         margin: auto;
                         z-index: 1;
+                        margin-left: 10%;
+                        @media (min-width: $bp-tablet) {
+                            margin-left: auto;
+                            max-width: 185px;
+                        }
                     }
                     &:before {
                         content: "";
@@ -81,16 +86,23 @@
                 }
                 .new-product-cols {
                     display: grid;
-                    grid-template-columns: 1fr 1fr;
+                    grid-template-columns: 1fr;
                     grid-gap: 30px;
                     align-items: flex-end;
-                    margin-top: 35px;
+                    margin-top: 15px;
+                    @media (min-width: $bp-tablet) {
+                        grid-template-columns: 1fr 1fr;
+                        margin-top: 35px;
+                    }
                     .new-product-col {
                         .gradient-subtitle {
                             display: none;
                         }
                         .new-product-title {
                             display: none;
+                        }
+                        .product-sound-player {
+                            margin-bottom: 15px;
                         }
                         .buy-buttons-container {
                             display: none;
@@ -117,15 +129,13 @@
                                 color: white;
                                 position: relative;
                                 &:after {
-                                    content: '';
+                                    content: "";
                                     width: 115%;
                                     height: 2px;
                                     background-color: white;
                                     display: block;
                                     position: absolute;
-                                    transform: rotate(
-                                -13deg
-                                ) translateX(-50%);
+                                    transform: rotate(-13deg) translateX(-50%);
                                     top: 35%;
                                     left: 50%;
                                 }
@@ -144,7 +154,7 @@
                 .buy-buttons-container {
                     &.bottom {
                         a {
-                            max-width: 332px;
+                            max-width: 250px;
                             width: 100%;
                         }
                     }
@@ -161,17 +171,17 @@
             .swiper-button-next,
             .swiper-container-rtl .swiper-button-prev {
                 background-image: url(/assets/img/icons/yellow-arrow-right.svg);
-                background-size: 16px;
-                right: 0;
+                background-size: 38px;
+                right: 5px;
                 outline: none;
-                top: 10%;
+                top: 25%;
             }
             .swiper-button-prev {
                 background-image: url(/assets/img/icons/yellow-arrow-left.svg);
-                background-size: 16px;
-                left: 0;
+                background-size: 38px;
+                left: 5px;
                 outline: none;
-                top: 10%;
+                top: 25%;
             }
             .swiper-pagination-bullet {
                 background: #51545a;
@@ -233,7 +243,7 @@
             .subscription-first-col {
                 max-width: 332px;
                 margin: 0 auto;
-                width:100%;
+                width: 100%;
                 .under-video-descr {
                     font-size: 14px;
                     line-height: 28px;
@@ -256,7 +266,7 @@
                     background-size: cover;
                     background-position: center top;
                     background-repeat: no-repeat;
-                    box-shadow: inset 0px 0px 100px 50px rgb(30, 35, 45, .7), 0px 0px 35px rgb(36, 230, 250, .2);
+                    box-shadow: inset 0px 0px 100px 50px rgba(30, 35, 45, 0.7), 0px 0px 35px rgba(36, 230, 250, 0.2);
                     .bundle-play {
                         position: absolute;
                         top: 50%;
@@ -288,16 +298,18 @@
                     position: relative;
                     &:after {
                         position: absolute;
-                        content: '';
+                        content: "";
                         top: 0;
                         left: 0;
                         right: 0;
                         bottom: 0;
                         background-image: linear-gradient(
-                    90deg
-                    , rgba(63,187,254,.6) 30%, rgba(165,65,255,.6) 60%);
+                            90deg,
+                            rgba(63, 187, 254, 0.6) 30%,
+                            rgba(165, 65, 255, 0.6) 60%
+                        );
                         border-radius: 10px;
-                        box-shadow: inset 0px 0px 100px 50px rgb(30, 35, 45,.4);
+                        box-shadow: inset 0px 0px 100px 50px rgba(30, 35, 45, 0.4);
                     }
                 }
                 &.discount {
@@ -471,17 +483,17 @@
                 .swiper-button-next,
                 .swiper-container-rtl .swiper-button-prev {
                     background-image: url(/assets/img/icons/yellow-arrow-right.svg);
-                    background-size: 16px;
-                    right: 0;
+                    background-size: 38px;
+                    right: 3px;
                     outline: none;
-                    top: 80%;
+                    top: 35%;
                 }
                 .swiper-button-prev {
                     background-image: url(/assets/img/icons/yellow-arrow-left.svg);
-                    background-size: 16px;
-                    left: 0;
+                    background-size: 38px;
+                    left: 3px;
                     outline: none;
-                    top: 80%;
+                    top: 35%;
                 }
                 .swiper-pagination-bullet {
                     background: #51545a;
@@ -503,7 +515,7 @@
                     background-position: center top;
                     background-repeat: no-repeat;
                     margin-bottom: 25px;
-                    box-shadow: 0px 0 20px -10px rgb(36, 230, 250, .2);
+                    box-shadow: 0px 0 20px -10px rgba(81, 85, 85, 0.2);
                     .bundle-play {
                         position: absolute;
                         top: 50%;
@@ -523,7 +535,6 @@
                         font-weight: 500;
                     }
                 }
-
             }
         }
         &.tutorials-container {
@@ -574,7 +585,7 @@
                     position: absolute;
                     top: 0;
                     bottom: 0;
-                }  
+                }
                 .date-label {
                     background-color: white;
                     font-size: 12px;
@@ -597,7 +608,7 @@
                         color: white;
                         background: $bluebuttongrad;
                     }
-                }          
+                }
             }
         }
         .sbscr-plans-columns {
@@ -612,7 +623,7 @@
                 position: relative;
                 max-width: 360px;
                 padding: 35px 25px;
-                box-shadow: 0 15px 20px -2px rgb(29, 209, 229, .1);
+                box-shadow: 0 15px 20px -2px rgba(29, 209, 229, 0.1);
                 width: 100%;
                 box-sizing: border-box;
                 .best-img {
@@ -626,7 +637,7 @@
                     font-weight: bold;
                     font-size: 36px;
                     letter-spacing: 2px;
-                    text-shadow: 0 0 30px rgb(255 255 255 / 60%);
+                    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
                     margin-bottom: 16px;
                 }
                 .free-trial-text {
@@ -681,7 +692,8 @@
                 .under-or-title {
                     display: none;
                 }
-                .btn-purp-grad , .btn-blue-grad {
+                .btn-purp-grad,
+                .btn-blue-grad {
                     width: 100%;
                     box-sizing: border-box;
                 }
@@ -723,18 +735,17 @@
                     }
                 }
                 .new-product-inner {
-                     
-                        .new-product-image {
-                            img {
-                                max-width: 250px;
-                            }
+                    .new-product-image {
+                        img {
+                            max-width: 250px;
                         }
-                        .gradient-subtitle {
-                            font-size: 16px;
-                        }
-                        .new-product-title {
-                            font-size: 36px;
-                        }
+                    }
+                    .gradient-subtitle {
+                        font-size: 16px;
+                    }
+                    .new-product-title {
+                        font-size: 36px;
+                    }
                 }
             }
             .container-title {
@@ -803,14 +814,14 @@
                         width: 40%;
                         height: 20px;
                         line-height: 20px;
-                    }  
+                    }
                     .date-label {
                         font-size: 16px;
                         line-height: 36px;
                         height: 36px;
                         margin-top: -7px;
                         min-width: 70px;
-                    }          
+                    }
                 }
             }
             .sbscr-plans-columns {
@@ -841,12 +852,11 @@
                         }
                     }
                     .features-list {
-                       min-height: 142px;
-                       display: flex;
-                       flex-flow: column;
+                        min-height: 142px;
+                        display: flex;
+                        flex-flow: column;
                         grid-gap: 0;
                         margin-bottom: 0;
-                        
                         .feature-line {
                             margin-bottom: 20px;
                         }
@@ -892,7 +902,8 @@
                         font-weight: bold;
                         margin-bottom: 15px;
                     }
-                    .btn-purp-grad , .btn-blue-grad {
+                    .btn-purp-grad,
+                    .btn-blue-grad {
                         line-height: 60px;
                         font-size: 16px;
                     }
@@ -992,17 +1003,17 @@
                                 display: block;
                                 font-size: 36px;
                                 text-align: left;
-                                margin-bottom: 35px;
+                                margin-bottom: 15px;
                             }
                             .new-product-prices {
                                 margin-bottom: 0;
                                 .new-old {
                                     margin-right: 25px;
                                 }
-                                    .save-block {
-                                        flex: 1;
-                                        margin-top: 0;
-                                    }
+                                .save-block {
+                                    flex: 1;
+                                    margin-top: 0;
+                                }
                             }
                             .buy-buttons-container {
                                 display: block;
@@ -1017,16 +1028,16 @@
                             }
                         }
                     }
-                        .new-product-image {
-                            img {
-                                max-width: 350px;
-                            }
+                    .new-product-image {
+                        img {
+                            max-width: 350px;
                         }
-                        .buy-buttons-container {
-                            &.bottom {
-                                display: none;
-                            }
+                    }
+                    .buy-buttons-container {
+                        &.bottom {
+                            display: none;
                         }
+                    }
                 }
                 .swiper-pagination-bullet {
                     width: 55px;
@@ -1179,15 +1190,15 @@
                     }
                 }
             }
-    }
-    &.choose-plan-container {
-        .container-title {
-            &.secondary-title {
-                br {
-                    display: none;
+        }
+        &.choose-plan-container {
+            .container-title {
+                &.secondary-title {
+                    br {
+                        display: none;
+                    }
                 }
             }
         }
-    }
     }
 }

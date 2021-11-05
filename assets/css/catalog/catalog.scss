@@ -58,11 +58,14 @@
                         padding-left: 10px;
                         .btn-purp-grad {
                             max-width: 160px;
-                            font-size: 12px;
+                            font-size: 14px;
                             height: 36px;
                             line-height: 36px;
-                            margin: auto;
+                            margin: 0 3px;
                             width: auto;
+                            > s {
+                                margin-left: 6px;
+                            }
                         }
                         .bundle-title-blue {
                             margin: 10px 0;
@@ -177,6 +180,7 @@
                             width: calc(100% - 40px);
                             border-radius: 10px;
                             top: 46px;
+                            left: 0;
                             height: auto;
                             padding: 20px 20px 40px 20px;
                             background: $maindarkgray;

@@ -92,11 +92,11 @@
 								Sound design studio
 							</a>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="/blog">
 								Blog
 							</a>
-						</li>
+						</li> -->
 						<li>
 							<a href="/support">
 								Support
@@ -184,11 +184,11 @@
 								Sound design studio
 							</a>
 						</li>
-						<li>
+						<!-- <li>
 							<a href="/blog">
 								Blog
 							</a>
-						</li>
+						</li> -->
 						<li>
 							<a href="/support">
 								Support
