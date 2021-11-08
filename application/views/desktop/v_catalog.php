@@ -115,7 +115,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="ftrs-inner">
 			<div class="cat-ftr" data-ftr="1">
 				<div class="cat-ftr-title" data-ftr="1">
-					<span class="first-title">Sound category</span> <span class="ftr-sel">All categories</span> <i class="darrsvg"></i>
+					<div class="first-title">
+						<div class="text">Sound category</div>
+						<img class="icon" src="/assets/img/icons/blue-arrow-left.svg" alt="Sound category">
+					</div> 
+					<span class="ftr-sel">All categories</span> <i class="darrsvg"></i>
 				</div>
 
 				<div class="cat-ftr-cont">
@@ -137,7 +141,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="ftrs-inner">
 			<div class="cat-ftr" data-ftr="2">
 				<div class="cat-ftr-title" data-ftr="2">
-					<span class="first-title">Product type</span> <span class="ftr-sel">All types</span> <i class="darrsvg"></i>
+					<div class="first-title">
+						<div class="text">Product type</div>
+						<img class="icon" src="/assets/img/icons/blue-arrow-left.svg" alt="Sound category">
+					</div>
+					<span class="ftr-sel">All types</span> <i class="darrsvg"></i>
 				</div>
 
 				<div class="cat-ftr-cont">
@@ -158,7 +166,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div class="ftrs-inner">
 			<div class="cat-ftr" data-ftr="3">
 				<div class="cat-ftr-title" data-ftr="3">
-					<span class="first-title">Product sorting</span> <span class="ftr-sel">Default sorting</span> <i class="darrsvg"></i>
+					<div class="first-title">
+						<div class="text">Product sorting</div>
+						<img class="icon" src="/assets/img/icons/blue-arrow-left.svg" alt="Sound category">
+					</div>
+					<span class="ftr-sel">Default sorting</span> <i class="darrsvg"></i>
 				</div>
 
 				<div class="cat-ftr-cont">
