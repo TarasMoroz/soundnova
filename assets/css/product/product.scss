@@ -447,23 +447,23 @@ body {
                 &.image-right {
                     grid-gap: 30px;
                 }
-                    &.design-construct {
-                        .left-col {
-                            .bundle-shadow {
-                                transform: translateY(-40%) translateX(-30%) !important;
-                                left: 30%;
-                            }
+                &.design-construct {
+                    .left-col {
+                        .bundle-shadow {
+                            transform: translateY(-40%) translateX(-30%) !important;
+                            left: 30%;
                         }
                     }
-                    &.bundle {
-                        .left-col {
-                            .bundle-shadow {
-                                transform: translateY(-60%) translateX(-50%) !important;
-                                top: 60% !important;
-                                height: 50% !important;
-                            }
+                }
+                &.bundle {
+                    .left-col {
+                        .bundle-shadow {
+                            transform: translateY(-60%) translateX(-50%) !important;
+                            top: 60% !important;
+                            height: 50% !important;
                         }
                     }
+                }
             }
             .product-right-download-info {
                 border: 2px solid #36393f;
@@ -857,7 +857,7 @@ body {
                 }
                 .product-software-inner {
                     display: grid;
-                    grid-template-columns: repeat(auto-fill,minmax(140px,1fr));
+                    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
                     grid-gap: 18px 25px;
                     .product-software-item {
                         display: flex;
@@ -869,12 +869,12 @@ body {
                             padding: 5px;
                             background-color: white;
                             border: 3px solid $lightbluecolor;
-                            box-shadow: 0px 0 14px 1px rgb(36,230,250,.5);
+                            box-shadow: 0px 0 14px 1px rgba(36, 230, 250, 0.5);
                             margin-right: 14px;
                         }
                         span {
                             font-size: 16px;
-                            color:white;
+                            color: white;
                             font-weight: 300;
                         }
                     }
@@ -884,7 +884,7 @@ body {
     }
     &.who-needs-container {
         padding: 60px 16px;
-        background-color: #13161D;
+        background-color: #13161d;
         .inner-content-container {
             .container-title {
                 &.secondary-title {
@@ -930,7 +930,7 @@ body {
                         top: 105px;
                         left: 50%;
                         transform: translateX(-50%);
-                        color: #181C24;
+                        color: #181c24;
                         z-index: -1;
                         line-height: 1;
                     }
@@ -948,7 +948,7 @@ body {
                         background-position: center top;
                         background-repeat: no-repeat;
                         margin-bottom: 25px;
-                        box-shadow: 0px 0 20px -5px rgb(36, 230, 250, .2);
+                        box-shadow: 0px 0 20px -5px rgba(36, 230, 250, 0.2);
                         .bundle-play {
                             position: absolute;
                             top: 50%;
@@ -975,9 +975,9 @@ body {
             }
         }
     }
-    &.how-use-container{
+    &.how-use-container {
         padding: 80px 16px 110px 16px;
-        background-color: #13161D;
+        background-color: #13161d;
         .inner-content-container {
             .container-title {
                 &.secondary-title {
@@ -1030,7 +1030,7 @@ body {
                         background-position: center top;
                         background-repeat: no-repeat;
                         margin-bottom: 25px;
-                        box-shadow: 0px 0 20px -5px rgb(36, 230, 250, .2);
+                        box-shadow: 0px 0 20px -5px rgba(36, 230, 250, 0.2);
                         .bundle-play {
                             position: absolute;
                             top: 50%;
@@ -1067,11 +1067,11 @@ body {
         padding: 60px 16px;
         position: relative;
         &:after {
-            content: '';
+            content: "";
             width: 1px;
             height: 1px;
             display: block;
-            box-shadow: 0px 0px 500px 85px rgb(36 230 250 / 30%);
+            box-shadow: 0px 0px 500px 85px rgba(36, 230, 250, 0.3);
             left: 0;
             top: 0;
             position: absolute;
@@ -1120,7 +1120,7 @@ body {
                     background-position: center top;
                     background-repeat: no-repeat;
                     margin-bottom: 25px;
-                    box-shadow: 0px 0 20px -5px rgb(36, 230, 250, .2);
+                    box-shadow: 0px 0 20px -5px rgba(36, 230, 250, 0.2);
                     .bundle-play {
                         position: absolute;
                         top: 50%;
@@ -1151,7 +1151,7 @@ body {
                         bottom: 20%;
                         width: 80%;
                         height: 10px;
-                        box-shadow: 0px 10px 40px 5px rgb(36, 230, 250, .3);
+                        box-shadow: 0px 10px 40px 5px rgba(36, 230, 250, 0.3);
                         left: 50%;
                         transform: translateX(-50%);
                     }
@@ -1270,7 +1270,7 @@ body {
                     background-position: center top;
                     background-repeat: no-repeat;
                     margin-bottom: 25px;
-                    box-shadow: 0px 0 20px -10px rgb(36, 230, 250, .2);
+                    box-shadow: 0px 0 20px -10px rgba(36, 230, 250, 0.2);
                     .bundle-play {
                         position: absolute;
                         top: 50%;
@@ -1290,7 +1290,6 @@ body {
                         font-weight: 500;
                     }
                 }
-
             }
         }
         &.tutorials-container {
@@ -1604,7 +1603,7 @@ body {
                     margin-bottom: 30px;
                     border-bottom: 1px solid #1f232e;
                     .prod-rev-dash {
-                        box-shadow: 0px 0px 10px 2px rgb(36, 230, 250, .2);
+                        box-shadow: 0px 0px 10px 2px rgba(36, 230, 250, 0.2);
                         width: 50px;
                         height: 2px;
                         background: $lightbluecolor;
@@ -1619,13 +1618,13 @@ body {
                         height: 50px;
                         border-radius: 50%;
                         margin-right: 30px;
-                        box-shadow: 0px 0px 10px 2px rgb(36, 230, 250, .2);
+                        box-shadow: 0px 0px 10px 2px rgba(36, 230, 250, 0.2);
                         img {
                             width: 50px;
                             height: 50px;
                             border-radius: 50%;
                             border: 2px solid $lightbluecolor;
-                            box-shadow: 0px 0px 10px 2px rgb(36, 230, 250, .2);
+                            box-shadow: 0px 0px 10px 2px rgba(36, 230, 250, 0.2);
                         }
                     }
                     .prod-rev-cont {
@@ -1667,7 +1666,7 @@ body {
                 margin: 0 auto;
                 display: block;
                 cursor: pointer;
-                 i {
+                i {
                     display: block;
                     width: 40px;
                     height: 40px;
@@ -1722,7 +1721,7 @@ body {
                         }
                         &.act {
                             svg {
-                                    fill: $mainyellow;
+                                fill: $mainyellow;
                             }
                         }
                     }
@@ -1743,7 +1742,7 @@ body {
                         line-height: 45px;
                         background: #101218;
                         outline: 0;
-                        box-shadow: 0px 0px 10px rgb(36, 230, 250, .1);
+                        box-shadow: 0px 0px 10px rgba(36, 230, 250, 0.1);
                         border: 0;
                         border-radius: 5px;
                         width: calc(100% - 20px);
@@ -1752,7 +1751,7 @@ body {
                         color: #fff;
                         font-family: $mainfont;
                         &::placeholder {
-                            color:#434e67;
+                            color: #434e67;
                         }
                     }
                     textarea {
@@ -1764,11 +1763,11 @@ body {
                         resize: none;
                         background: #101218;
                         outline: 0;
-                        box-shadow: 0px 0px 10px rgb(36 230 250 / 10%);
+                        box-shadow: 0px 0px 10px rgba(36, 230, 250, 0.1);
                         border: 0;
                         font-family: $mainfont;
                         &::placeholder {
-                            color:#434e67;
+                            color: #434e67;
                         }
                     }
                     .btn-purp-grad {
@@ -1849,9 +1848,9 @@ body {
                 color: white;
                 font-size: 14px;
                 line-height: 1.5;
-                 h3 {
-                        margin-bottom: 8px;
-                        font-size: 16px;
+                h3 {
+                    margin-bottom: 8px;
+                    font-size: 16px;
                 }
             }
         }
@@ -2172,7 +2171,7 @@ body {
                         }
                         .prod-rev-cont {
                             .prod-rev-text {
-                                font-size: 14px;;
+                                font-size: 14px;
                                 line-height: 24px;
                             }
                         }
@@ -2242,15 +2241,15 @@ body {
                 padding-top: 90px;
                 .product-top-info-container {
                     display: flex;
-                    max-width: 1355px;
+                    max-width: 1170px;
                     margin: auto;
-
+                    justify-content: space-between;
                     .left-col {
-                        padding-top: 55px;
                         display: flex;
                         flex-flow: column;
                         flex: 0 0 50%;
-                        padding-right: 55px;
+                        padding: 0;
+                        max-width: 600px;
                         .bundle-sale {
                             position: relative;
                             img {
@@ -2270,10 +2269,11 @@ body {
                             }
                             .bundle-shadow {
                                 position: absolute;
-                                top: 50%;
+                                top: 40%;
                                 width: 60%;
-                                height: 10px;
-                                box-shadow: 0px 10px 140px 50px rgba(36, 230, 250, 0.3);
+                                height: 0;
+                                // box-shadow: 0px 10px 140px 50px rgba(36, 230, 250, 0.3);
+                                box-shadow: 0px 0 150px 150px rgba(24, 193, 213, 0.35);
                                 left: 50%;
                                 transform: translateX(-50%);
                             }
@@ -2358,6 +2358,7 @@ body {
                         }
                     }
                     .right-col {
+                        box-sizing: border-box;
                         padding: 45px 25px 65px 25px;
                         background-color: #111217;
                         background-position: top center, center 132%;
@@ -2366,8 +2367,9 @@ body {
                         background-size: contain, 800px;
                         border-radius: 10px;
                         box-shadow: 0 0 30px -1px rgba(16, 169, 191, 0.07);
-                        max-width: 500px;
+                        max-width: 460px;
                         width: 100%;
+                        height: fit-content;
                         .container-title {
                             &.main-title {
                                 font-size: 30px;
@@ -2527,11 +2529,11 @@ body {
                                     right: -6%;
                                     top: 6%;
                                 }
-                                .bundle-shadow {
-                                    width: 70%;
-                                    height: 50px;
-                                    box-shadow: 0px 10px 180px 50px rgba(36, 230, 250, 0.3);
-                                }
+                                // .bundle-shadow {
+                                //     width: 70%;
+                                //     height: 50px;
+                                //     box-shadow: 0px 10px 180px 50px rgba(36, 230, 250, 0.3);
+                                // }
                             }
                             .you-save-block {
                                 color: white;
@@ -2541,8 +2543,8 @@ body {
                                 margin-top: 6px;
                             }
                             .main-pack-slider-container {
-                                background-color: $maindarkgray;
-                                box-shadow: 0 0 20px 10px rgba(16, 169, 191, 0.1);
+                                background-color: rgb(8 13 20 / 50%);
+                                box-shadow: 0 0 20px 0 rgb(16 169 191 / 35%);
                                 border-radius: 8px;
                                 .main-pack-slider-heading {
                                     padding: 0 7px;
@@ -2773,7 +2775,6 @@ body {
                         }
                     }
                 }
-                
             }
         }
         &.right-background-container {
@@ -2808,7 +2809,7 @@ body {
         &.sounds-slider-container {
             padding: 120px 16px;
             .inner-content-container {
-                .container-title  {
+                .container-title {
                     &.secondary-title {
                         text-align: left;
                         margin-bottom: 75px;
@@ -2822,7 +2823,7 @@ body {
                 }
                 .desktop-sounds-preview {
                     display: grid;
-                    grid-template-columns: repeat(auto-fit,minmax(265px,1fr));
+                    grid-template-columns: repeat(auto-fit, minmax(265px, 1fr));
                     grid-gap: 45px 28px;
                     .product-sound_preview {
                         .product-sound_preview-title {
@@ -2861,7 +2862,7 @@ body {
                         text-align: left;
                     }
                     .product-software-inner {
-                        grid-gap:30px;
+                        grid-gap: 30px;
                     }
                 }
             }
@@ -2893,7 +2894,8 @@ body {
                                 position: relative;
                             }
                         }
-                        .left-col , .right-col {
+                        .left-col,
+                        .right-col {
                             position: relative;
                             flex: 1;
                             .prod-vid {
@@ -2906,7 +2908,7 @@ body {
                                 background-position: center top;
                                 background-repeat: no-repeat;
                                 margin-bottom: 25px;
-                                box-shadow: 0px 0 20px -5px rgb(36, 230, 250, .2);
+                                box-shadow: 0px 0 20px -5px rgba(36, 230, 250, 0.2);
                                 .bundle-play {
                                     position: absolute;
                                     top: 50%;
@@ -2922,7 +2924,7 @@ body {
                                 z-index: 1;
                                 position: relative;
                             }
-                             .slide-digit {
+                            .slide-digit {
                                 position: absolute;
                                 font-size: 420px;
                                 font-weight: bold;
@@ -2979,7 +2981,8 @@ body {
                                 position: relative;
                             }
                         }
-                        .left-col , .right-col {
+                        .left-col,
+                        .right-col {
                             position: relative;
                             flex: 1;
                             .prod-vid {
@@ -2992,7 +2995,7 @@ body {
                                 background-position: center top;
                                 background-repeat: no-repeat;
                                 margin-bottom: 25px;
-                                box-shadow: 0px 0 20px -5px rgb(36, 230, 250, .2);
+                                box-shadow: 0px 0 20px -5px rgba(36, 230, 250, 0.2);
                                 .bundle-play {
                                     position: absolute;
                                     top: 50%;
@@ -3125,7 +3128,7 @@ body {
                     }
                     &.bundle {
                         .left-col {
-                            padding-right: 90px;
+                            // padding-right: 90px;
                             flex: 1;
                             .main-pack-slider-container {
                                 max-width: 700px;
@@ -3165,6 +3168,6 @@ body {
                     }
                 }
             }
-    }
+        }
     }
 }

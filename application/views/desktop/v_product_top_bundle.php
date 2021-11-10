@@ -5,7 +5,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 <div class="product-top-container full-width-container" id="product1">
-	<div class="product-top-inner-content">
+	<div class="product-top-inner-content inner-content-container">
 		<div class="product-top-mobile">
 			<h1 class="container-title main-title">
 				<span class="gradient-title"><?=$product['name']?></span>
@@ -294,7 +294,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 						<div id="product1-right-soundcloud">
-							<iframe width="100%" class="lazy-frame" height="<?=($edition?'100':'166')?>" scrolling="no" frameborder="no" allow="autoplay" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+							<!-- <iframe width="100%" class="lazy-frame" height="<?=($edition?'100':'166')?>" scrolling="no" frameborder="no" allow="autoplay" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe> -->
+							<iframe class="lazy-frame sn-player-style invert-colors" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay"
+								data-src="https://w.soundcloud.com/player/?url=https://api.soundcloud.com/tracks/211157423&color=0044f1&buying=false&sharing=false&download=false&show_artwork=false&show_playcount=false&show_user=false&single_active=false">
+							</iframe>
 						</div>
 						
 						<div id="product1-right-buy">
