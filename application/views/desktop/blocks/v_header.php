@@ -119,7 +119,7 @@
 			  </div>
 			  <div class="mobile-search-content" style="display:none">
 			  	<div class="header-search-block">
-						<input type="text" placeholder="Search sound effects">
+						<input type="text" placeholder="Search...">
 						<a href="#"><i class="srchsvg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 53" width="53" height="53"><path d="M51.7 51.3l-15-15.5A21 21 0 0 0 43 21 21 21 0 0 0 22 0 21 21 0 0 0 1 21a21 21 0 0 0 21 21 21 21 0 0 0 13.4-4.8l15 15.5c.2.2.5.3.7.3a1 1 0 0 0 .7-1.7zM22 40A19 19 0 0 1 3 21 19 19 0 0 1 22 2a19 19 0 0 1 19 19 19 19 0 0 1-19 19z"></path></svg></i></a>
 				</div>
 			  </div>
@@ -202,8 +202,10 @@
 					</ul>
 				</div>
 				<div class="header-search-block">
-						<input type="text" placeholder="Search sound effects">
-						<a href="#"><i class="srchsvg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 53" width="53" height="53"><path d="M51.7 51.3l-15-15.5A21 21 0 0 0 43 21 21 21 0 0 0 22 0 21 21 0 0 0 1 21a21 21 0 0 0 21 21 21 21 0 0 0 13.4-4.8l15 15.5c.2.2.5.3.7.3a1 1 0 0 0 .7-1.7zM22 40A19 19 0 0 1 3 21 19 19 0 0 1 22 2a19 19 0 0 1 19 19 19 19 0 0 1-19 19z"></path></svg></i></a>
+						<input type="text" placeholder="Search...">
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 53" width="53" height="53"><path d="M51.7 51.3l-15-15.5A21 21 0 0 0 43 21 21 21 0 0 0 22 0 21 21 0 0 0 1 21a21 21 0 0 0 21 21 21 21 0 0 0 13.4-4.8l15 15.5c.2.2.5.3.7.3a1 1 0 0 0 .7-1.7zM22 40A19 19 0 0 1 3 21 19 19 0 0 1 22 2a19 19 0 0 1 19 19 19 19 0 0 1-19 19z"></path></svg>
+						</a>
 				</div>
 		</div>
 	</div>
