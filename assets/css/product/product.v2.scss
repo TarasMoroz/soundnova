@@ -1,0 +1,41 @@
+@import "../variables/variables.scss";
+
+section {
+    margin-top: 115px;
+    @media (min-width: $bp-tablet-lg) {
+        margin-top: 140px 0;
+    }
+    @media (min-width: $bp-laptop) {
+        margin-top: 200px 0;
+    }
+}
+.product {
+    &.main-info {
+        // &.desktop &.mobile
+        @media (min-width: $bp-laptop) {
+            > div {
+                justify-self: stretch;
+                align-self: stretch;
+                min-height: 300px;
+                background-color: gray;
+            }
+            display: grid;
+            row-gap: 15px;
+            column-gap: 100px;
+            grid-template-columns: 1fr 410px;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "photo data"
+                "details data";
+            .photo {
+                grid-area: photo;
+            }
+            .details {
+                grid-area: details;
+            }
+            .data {
+                grid-area: data;
+            }
+        }
+    }
+}

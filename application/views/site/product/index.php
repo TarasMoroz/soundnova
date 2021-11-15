@@ -9,13 +9,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- header -->
 	<? $this->load->view('desktop/blocks/v_header'); ?>
 
-	<main style="color:#fff">
-    <h1>TEST TEST 444</h1>
-    <h1>TEST TEST 444</h1>
-    <h1>TEST TEST 444</h1>
-    <h1>TEST TEST 444</h1>
-    <h1>TEST TEST 444</h1>
-    <h1>TEST TEST 444</h1>
+	<main class="main-content">
+    <div class="full-width-container">
+      <div class="inner-content-container w-md">
+        
+        <!-- LOAD MAIN PRODUCT INFO -->
+        <? $this->load->view($basePath . 'sections/main-info'); ?>
+
+      </div>
+    </div>
   </main>
 
 	<!-- footer -->

@@ -14,9 +14,9 @@
             }
         }
         .reviews-top-container {
-            background-color: rgba(16,18,24,.2);
+            background-color: rgba(16, 18, 24, 0.2);
             border-radius: 8px;
-            box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+            box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
             padding: 20px 12px;
             max-width: 1140px;
             margin: 0 auto 20px auto;
@@ -115,7 +115,7 @@
                 }
             }
             select {
-                background-color: rgba(16,18,24,.2);
+                background-color: rgba(16, 18, 24, 0.2);
                 color: #fff;
                 height: 35px;
                 border: none;
@@ -133,10 +133,10 @@
                 background-repeat: no-repeat;
                 background-size: 8px;
                 background-position: 90%;
-                box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
                 min-width: 120px;
                 option {
-                    background-color: rgba(16,18,24,.8);
+                    background-color: rgba(16, 18, 24, 0.8);
                 }
             }
         }
@@ -176,7 +176,7 @@
                     }
                 }
                 .prod-rev-dash {
-                    box-shadow: 0px 0px 10px 2px rgb(36, 230, 250, .2);
+                    box-shadow: 0px 0px 10px 2px rgba(36, 230, 250, 0.2);
                     width: 50px;
                     height: 2px;
                     background: $lightbluecolor;
@@ -189,13 +189,13 @@
                     height: 50px;
                     border-radius: 50%;
                     margin-right: 15px;
-                    box-shadow: 0px 0px 10px 2px rgb(36, 230, 250, .2);
+                    box-shadow: 0px 0px 10px 2px rgba(36, 230, 250, 0.2);
                     img {
                         width: 50px;
                         height: 50px;
                         border-radius: 50%;
                         border: 2px solid $lightbluecolor;
-                        box-shadow: 0px 0px 10px 2px rgb(36, 230, 250, .2);
+                        box-shadow: 0px 0px 10px 2px rgba(36, 230, 250, 0.2);
                     }
                 }
                 .prod-rev-cont {
@@ -225,7 +225,7 @@
                             background-image: url(/assets/img/icons/stars.svg);
                         }
                         .review-status {
-                            color: #A8A9A9;
+                            color: #a8a9a9;
                             font-size: 14px;
                             display: grid;
                             grid-gap: 6px;
@@ -246,7 +246,7 @@
                         }
                     }
                     .review-date {
-                        color: #3F4757;
+                        color: #3f4757;
                         font-weight: 500;
                         font-size: 10px;
                         margin-top: 20px;
@@ -274,7 +274,7 @@
                     text-align: center;
                     font-weight: bold;
                     color: $lightbluecolor;
-                    box-shadow: 0px 0px 10px -2px rgb(36, 230, 250, .2);
+                    box-shadow: 0px 0px 10px -2px rgba(36, 230, 250, 0.2);
                     &.current {
                         background-color: $lightbluecolor;
                         color: white;
@@ -346,7 +346,7 @@
                 }
             }
         }
-        &.reviews-container-bottom { 
+        &.reviews-container-bottom {
             .reviews-list {
                 .prod-rev {
                     .prod-rev-main {
@@ -419,17 +419,17 @@
     }
 }
 @media (min-width: $bp-laptop) {
-.full-width-container {
-    &.reviews-container {
-        padding-top: 165px;
-        .container-title {
-            &.main-title {
-                font-size: 72px;
+    .full-width-container {
+        &.reviews-container {
+            padding-top: 165px;
+            .container-title {
+                &.main-title {
+                    font-size: 72px;
+                }
             }
         }
+        &.reviews-container-bottom {
+            padding-bottom: 120px;
+        }
     }
-    &.reviews-container-bottom {
-        padding-bottom: 120px;
-    }
-}
 }

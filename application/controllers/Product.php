@@ -100,7 +100,10 @@ class Product extends CI_Controller {
 			$data['meta_title'] = ($data['product']['meta_title']) ? $data['product']['meta_title'] : $data['product']['name'];
 			$data['meta_description'] = ($data['product']['meta_description']) ? $data['product']['meta_description'] : $data['meta_title'];
 
-			$this->load->view($this->viewfolder.'/v_index', $data);
+			$data['basePath'] = $this->viewfolder . DIRECTORY_SEPARATOR; // Send folder path to view, for using load->view() inside view
+			$data['deviceType'] = $this->device; // Send device type to view for load correct sections
+
+			$this->load->view($this->viewfolder.'/index', $data);
 		}
 		else {
 			header("HTTP/1.0 404 Not Found");

@@ -1,2 +1,48 @@
+/*Colors*/
+/*Fonts*/
+/*breakpoints OLD*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+section {
+  margin-top: 115px;
+}
+@media (min-width: 768px) {
+  section {
+    margin-top: 140px 0;
+  }
+}
+@media (min-width: 992px) {
+  section {
+    margin-top: 200px 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .product.main-info {
+    display: grid;
+    row-gap: 15px;
+    column-gap: 100px;
+    grid-template-columns: 1fr 410px;
+    grid-template-rows: auto;
+    grid-template-areas: "photo data" "details data";
+  }
+  .product.main-info > div {
+    justify-self: stretch;
+    align-self: stretch;
+    min-height: 300px;
+    background-color: gray;
+  }
+  .product.main-info .photo {
+    grid-area: photo;
+  }
+  .product.main-info .details {
+    grid-area: details;
+  }
+  .product.main-info .data {
+    grid-area: data;
+  }
+}
 
 /*# sourceMappingURL=product.v2.css.map */

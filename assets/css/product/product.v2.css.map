@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"product.v2.css"}
+{"version":3,"sourceRoot":"","sources":["../variables/variables.scss","product.v2.scss"],"names":[],"mappings":"AAAA;AAoBA;AAGA;AAOA;AAEA;AAEA;AAEA;AClCA;EACI;;AACA;EAFJ;IAGQ;;;AAEJ;EALJ;IAMQ;;;;AAMA;EAFJ;IASQ;IACA;IACA;IACA;IACA;IACA,qBACI;;EAZJ;IACI;IACA;IACA;IACA;;EAUJ;IACI;;EAEJ;IACI;;EAEJ;IACI","file":"product.v2.css"}

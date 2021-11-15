@@ -1,6 +1,10 @@
 /*Colors*/
 /*Fonts*/
-/*breakpoints*/
+/*breakpoints OLD*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 @font-face {
   font-family: "UniSans";
   src: url("/assets/fonts/unisans/UniSansLight.ttf") format("truetype");
@@ -91,14 +95,29 @@ h5 {
   margin: 0;
 }
 
+main.main-content {
+  padding: 50px 0;
+}
+@media (min-width: 992px) {
+  main.main-content {
+    padding: 120px 0;
+  }
+}
+
 .full-width-container {
   padding: 0 16px;
   -webkit-box-shadow: inset 0px 150px 100px 0px #14161d, inset 0px -150px 100px 0px #14161d;
           box-shadow: inset 0px 150px 100px 0px #14161d, inset 0px -150px 100px 0px #14161d;
 }
 .full-width-container .inner-content-container {
-  max-width: 1170px;
+  max-width: 1140px;
   margin: 0 auto;
+}
+.full-width-container .inner-content-container.w-md {
+  max-width: 1005px;
+}
+.full-width-container .inner-content-container.w-sm {
+  max-width: 975px;
 }
 
 .header-container {
@@ -285,8 +304,8 @@ h5 {
   -webkit-transition: 0.1s;
   transition: 0.1s;
   background: transparent;
-  color: #1dd1e5;
-  border: 2px solid #1dd1e5;
+  color: #23e7fb;
+  border: 2px solid #23e7fb;
   -webkit-box-shadow: 0px 0px 50px rgba(36, 230, 250, 0.1);
           box-shadow: 0px 0px 50px rgba(36, 230, 250, 0.1);
   font-weight: normal;
@@ -321,7 +340,7 @@ h5 {
 #up i svg {
   width: 30px;
   height: 30px;
-  stroke: #1dd1e5;
+  stroke: #23e7fb;
 }
 #up.on {
   bottom: 50px;
@@ -337,8 +356,8 @@ h5 {
   transition: all 0.3s;
   -webkit-box-shadow: 0 0px 8px -2px #ef4cc6;
           box-shadow: 0 0px 8px -2px #ef4cc6;
-  background: -webkit-gradient(linear, left top, right top, from(#e143a7), to(#d0009c));
-  background: linear-gradient(to right, #e143a7, #d0009c);
+  background: -webkit-gradient(linear, left top, right top, from(#ed06e0), to(#d902b1));
+  background: linear-gradient(to right, #ed06e0, #d902b1);
   line-height: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -368,8 +387,8 @@ h5 {
   text-decoration: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  -webkit-box-shadow: 0 0px 8px -2px #1dd1e5;
-          box-shadow: 0 0px 8px -2px #1dd1e5;
+  -webkit-box-shadow: 0 0px 8px -2px #23e7fb;
+          box-shadow: 0 0px 8px -2px #23e7fb;
   background: -webkit-gradient(linear, left top, right top, from(#1ed6e9), to(#15b8cd));
   background: linear-gradient(to right, #1ed6e9, #15b8cd);
   line-height: 50px;
@@ -401,15 +420,15 @@ h5 {
   padding: 0 15px;
   font-size: 12px;
   border-radius: 30px;
-  border: 2px solid #1dd1e5;
-  color: #1dd1e5;
+  border: 2px solid #23e7fb;
+  color: #23e7fb;
   text-transform: uppercase;
   font-weight: 500;
-  -webkit-box-shadow: 0 0px 8px -2px #1dd1e5;
-          box-shadow: 0 0px 8px -2px #1dd1e5;
+  -webkit-box-shadow: 0 0px 8px -2px #23e7fb;
+          box-shadow: 0 0px 8px -2px #23e7fb;
 }
 .btn-blue-border:hover {
-  background-color: #1dd1e5;
+  background-color: #23e7fb;
   color: #f7f7f7;
 }
 
@@ -554,7 +573,7 @@ h5 {
   height: 200px;
 }
 
-@media (min-width: 675px) {
+@media (min-width: 600px) {
   .container-title.secondary-title {
     font-size: 46px;
     margin-bottom: 26px;
@@ -592,7 +611,7 @@ h5 {
           filter: invert(98%) sepia(6%) hue-rotate(157deg) brightness(100%) contrast(94%);
 }
 
-@media (min-width: 1023px) {
+@media (min-width: 992px) {
   .container-title.secondary-title {
     font-size: 60px;
     letter-spacing: 4px;

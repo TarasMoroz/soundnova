@@ -72,7 +72,7 @@
                         position: absolute;
                         top: 0;
                         bottom: 0;
-                    }  
+                    }
                     .date-label {
                         background-color: white;
                         font-size: 12px;
@@ -95,7 +95,7 @@
                             color: white;
                             background: $bluebuttongrad;
                         }
-                    }          
+                    }
                 }
             }
         }
@@ -156,7 +156,7 @@
                     position: absolute;
                     top: 0;
                     bottom: 0;
-                }  
+                }
                 .date-label {
                     background-color: white;
                     font-size: 12px;
@@ -179,7 +179,7 @@
                         color: white;
                         background: $bluebuttongrad;
                     }
-                }          
+                }
             }
         }
         .sbscr-plans-columns {
@@ -194,7 +194,7 @@
                 position: relative;
                 max-width: 360px;
                 padding: 35px 25px;
-                box-shadow: 0 15px 20px -2px rgb(29, 209, 229, .1);
+                box-shadow: 0 15px 20px -2px rgba(29, 209, 229, 0.1);
                 width: 100%;
                 box-sizing: border-box;
                 .best-img {
@@ -208,7 +208,7 @@
                     font-weight: bold;
                     font-size: 36px;
                     letter-spacing: 2px;
-                    text-shadow: 0 0 30px rgb(255 255 255 / 60%);
+                    text-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
                     margin-bottom: 16px;
                 }
                 .free-trial-text {
@@ -263,7 +263,8 @@
                 .under-or-title {
                     display: none;
                 }
-                .btn-purp-grad , .btn-blue-grad {
+                .btn-purp-grad,
+                .btn-blue-grad {
                     width: 100%;
                     box-sizing: border-box;
                 }
@@ -305,7 +306,7 @@
                             font-weight: bold;
                             font-size: 36px;
                             letter-spacing: 2px;
-                            text-shadow: 0 0 30px rgba(29, 209, 229,.6);
+                            text-shadow: 0 0 30px rgba(29, 209, 229, 0.6);
                             margin-bottom: 16px;
                         }
                         .trial-or-line {
@@ -402,16 +403,16 @@
                             width: 40%;
                             height: 20px;
                             line-height: 20px;
-                        }  
+                        }
                         .date-label {
                             font-size: 16px;
                             line-height: 36px;
                             height: 36px;
                             margin-top: -7px;
                             min-width: 70px;
-                        }          
+                        }
                     }
-                } 
+                }
             }
             &.trial {
                 padding-bottom: 50px;
@@ -453,14 +454,14 @@
                         width: 40%;
                         height: 20px;
                         line-height: 20px;
-                    }  
+                    }
                     .date-label {
                         font-size: 16px;
                         line-height: 36px;
                         height: 36px;
                         margin-top: -7px;
                         min-width: 70px;
-                    }          
+                    }
                 }
             }
             .sbscr-plans-columns {
@@ -488,12 +489,12 @@
                         }
                     }
                     .features-list {
-                       min-height: 142px;
-                       display: flex;
-                       flex-flow: column;
+                        min-height: 142px;
+                        display: flex;
+                        flex-flow: column;
                         grid-gap: 0;
                         margin-bottom: 0;
-                        
+
                         .feature-line {
                             margin-bottom: 20px;
                         }
@@ -535,7 +536,8 @@
                         font-weight: bold;
                         margin-bottom: 15px;
                     }
-                    .btn-purp-grad , .btn-blue-grad {
+                    .btn-purp-grad,
+                    .btn-blue-grad {
                         line-height: 60px;
                         font-size: 16px;
                     }
@@ -560,40 +562,40 @@
 }
 
 @media (min-width: $bp-laptop) {
-.full-width-container {
-    &.stage-one-top-container {
-        padding-top: 312px;
-        .container-title {
-            &.main-title {
-                .gradient-title {
-                    font-size: 72px;
-                    &.first-title {
-                        font-size: 100px;
+    .full-width-container {
+        &.stage-one-top-container {
+            padding-top: 312px;
+            .container-title {
+                &.main-title {
+                    .gradient-title {
+                        font-size: 72px;
+                        &.first-title {
+                            font-size: 100px;
+                        }
+                    }
+                }
+            }
+            &.trial {
+                padding-top: 164px;
+                padding-bottom: 70px;
+                .try-free-title {
+                    font-size: 60px;
+                }
+            }
+        }
+        &.choose-plan-container-s-one {
+            .sbscr-plans-columns {
+                .sbscr-plan-col {
+                    .best-img {
+                        width: 90px;
+                        height: 90px;
+                        right: -35px;
+                        top: -35px;
                     }
                 }
             }
         }
-        &.trial {
-            padding-top: 164px;
-            padding-bottom: 70px;
-            .try-free-title {
-                font-size: 60px;
-            }
-        }
     }
-    &.choose-plan-container-s-one {
-        .sbscr-plans-columns {
-            .sbscr-plan-col {
-                .best-img {
-                    width: 90px;
-                    height: 90px;
-                    right: -35px;
-                    top: -35px;
-                }
-            }
-        }
-    }
-}
 }
 
 @media (min-width: $bp-desktop-lg) {
@@ -610,14 +612,14 @@
                 }
             }
         }
-    &.choose-plan-container-s-one {
-        .container-title {
-            &.secondary-title {
-                br {
-                    display: none;
+        &.choose-plan-container-s-one {
+            .container-title {
+                &.secondary-title {
+                    br {
+                        display: none;
+                    }
                 }
             }
         }
-    }
     }
 }

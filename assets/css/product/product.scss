@@ -16,7 +16,7 @@ body {
         }
     }
     .inner-content-container {
-        max-width: 1170px;
+        max-width: 1140px;
         margin: 0 auto;
     }
     &.product-top-container {
@@ -2543,8 +2543,8 @@ body {
                                 margin-top: 6px;
                             }
                             .main-pack-slider-container {
-                                background-color: rgb(8 13 20 / 50%);
-                                box-shadow: 0 0 20px 0 rgb(16 169 191 / 35%);
+                                background-color: rgba(8, 13, 20, 0.5);
+                                box-shadow: 0 0 20px 0 rgba(16, 169, 191, 0.35);
                                 border-radius: 8px;
                                 .main-pack-slider-heading {
                                     padding: 0 7px;
@@ -3086,7 +3086,7 @@ body {
             }
         }
         .inner-content-container {
-            max-width: 1170px;
+            max-width: 1140px;
             margin: 0 auto;
         }
         &.product-top-container {

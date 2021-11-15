@@ -50,7 +50,7 @@
                 outline: none;
                 cursor: pointer;
                 text-decoration: none;
-                transition: all .3s;
+                transition: all 0.3s;
                 box-shadow: 0 0px 8px -2px $lightbluecolor;
                 line-height: 50px;
                 text-align: center;
@@ -66,23 +66,23 @@
                 &:hover {
                     background: $bluebuttongrad;
                     color: white;
-                    box-shadow: inset 270px 0px 10px rgb(36, 230, 250, .5), 0px 0px 20px rgb(36, 230, 250, .5);
+                    box-shadow: inset 270px 0px 10px rgba(36, 230, 250, 0.5), 0px 0px 20px rgba(36, 230, 250, 0.5);
                 }
             }
         }
     }
     &.thank-you-order {
         padding: 0 16px 52px 16px;
-        background-color: #13161D;
+        background-color: #13161d;
         .container-title {
             &.secondary-title {
                 margin-bottom: 24px;
             }
         }
         .checkout-total-container {
-            background-color: rgba(16,18,24,.2);
+            background-color: rgba(16, 18, 24, 0.2);
             border-radius: 8px;
-            box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+            box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
             max-width: 750px;
             margin: 0 auto;
             .cart-items {
@@ -141,7 +141,7 @@
                 }
             }
             .cart-subtotal-container {
-                border-top: 2px solid #2D363E;
+                border-top: 2px solid #2d363e;
                 .cart-subtotal-line {
                     padding: 18px 18px 14px 18px;
                     display: flex;
@@ -485,7 +485,7 @@
                 justify-content: space-between;
                 background-color: #111219;
                 padding: 8px 6px 8px 14px;
-                box-shadow: 0 0 15px rgb(16, 169, 91, .1);
+                box-shadow: 0 0 15px rgba(16, 169, 91, 0.1);
                 .rating-line-text {
                     font-size: 12px;
                     color: white;
@@ -496,20 +496,20 @@
                     grid-template-columns: 1fr 1fr;
                     grid-gap: 4px;
                     button {
-                            width: 30px;
-                            height: 30px;
-                            flex: 0 0 30px;
-                            border-radius: 4px;
-                            border: none;
-                            font-size: 26px;
-                            line-height: 26px;
-                            background-color: #F7F7F7;
-                            color: black;
-                            font-weight: 500;
-                            &.active {
-                                background-color: $lightbluecolor;
-                                color: white;
-                            }
+                        width: 30px;
+                        height: 30px;
+                        flex: 0 0 30px;
+                        border-radius: 4px;
+                        border: none;
+                        font-size: 26px;
+                        line-height: 26px;
+                        background-color: #f7f7f7;
+                        color: black;
+                        font-weight: 500;
+                        &.active {
+                            background-color: $lightbluecolor;
+                            color: white;
+                        }
                     }
                 }
             }

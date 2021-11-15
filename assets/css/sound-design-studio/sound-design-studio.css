@@ -1,6 +1,10 @@
 /*Colors*/
 /*Fonts*/
-/*breakpoints*/
+/*breakpoints OLD*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .full-width-container .main-subtitle {
   margin: 0 0 20px 0;
   font-size: 12px;
@@ -239,7 +243,7 @@
   text-transform: uppercase;
 }
 .full-width-container.why-important-container .inner-content-container .why-important-slider .subtext a {
-  color: #1dd1e5;
+  color: #23e7fb;
   font-weight: 500;
 }
 .full-width-container.why-important-container.tutorials-container {
@@ -439,7 +443,7 @@
   width: 100%;
   text-align: center;
   font-size: 12px;
-  color: #1dd1e5;
+  color: #23e7fb;
   font-weight: 300;
 }
 .full-width-container.testimonials-container .testimonials-block .testimonials-video-wrapper-mobile .review-item .review-text,
@@ -640,7 +644,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 50px 0 30px 0;
-  background-image: linear-gradient(90deg, #ef4cc6 30%, #10a9bf 60%);
+  background-image: linear-gradient(130deg, #ef4bc5 40%, #0fa9bf 60%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -673,12 +677,6 @@
   color: #fff;
   font-family: "UniSans", sans-serif;
 }
-.full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row input::-moz-placeholder {
-  color: #434e67;
-}
-.full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row input:-ms-input-placeholder {
-  color: #434e67;
-}
 .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row input::placeholder {
   color: #434e67;
 }
@@ -694,12 +692,6 @@
   box-shadow: 0px 0px 10px rgba(36, 230, 250, 0.1);
   border: 0;
   font-family: "UniSans", sans-serif;
-}
-.full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row textarea::-moz-placeholder {
-  color: #434e67;
-}
-.full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row textarea:-ms-input-placeholder {
-  color: #434e67;
 }
 .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row textarea::placeholder {
   color: #434e67;
@@ -749,10 +741,10 @@
   font-weight: 500;
 }
 .full-width-container.our-works-container .our-works-tabs-header .filter-group .filters-dropdown .btn.active {
-  color: #1dd1e5;
+  color: #23e7fb;
 }
 .full-width-container.our-works-container .our-works-tabs-header .filter-group .choosen-filter {
-  color: #1dd1e5;
+  color: #23e7fb;
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 500;
@@ -769,7 +761,7 @@
   justify-content: space-between;
 }
 .full-width-container.our-works-container .our-works-tabs-header .filter-group .choosen-filter svg {
-  stroke: #1dd1e5;
+  stroke: #23e7fb;
   width: 16px;
   height: 16px;
 }
@@ -812,7 +804,7 @@
   margin: 0 0 24px 0;
 }
 
-@media (min-width: 675px) {
+@media (min-width: 600px) {
   .full-width-container.sound-design-top-container {
     padding: 164px 16px 235px 16px;
     background-image: url(/assets/img/studio-desktop-back.jpg);
@@ -994,13 +986,8 @@
   .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row .add-review-label sup {
     color: #ef4cc6;
   }
-  .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row input::-moz-placeholder, .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row textarea::-moz-placeholder {
-    color: transparent;
-  }
-  .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row input:-ms-input-placeholder, .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row textarea:-ms-input-placeholder {
-    color: transparent;
-  }
-  .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row input::placeholder, .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row textarea::placeholder {
+  .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row input::placeholder,
+.full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row textarea::placeholder {
     color: transparent;
   }
   .full-width-container.our-works-container {
@@ -1039,7 +1026,7 @@
     margin-bottom: 10px;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .full-width-container.sound-design-second-block .two-cols-block {
     grid-template-columns: 1fr 1fr;
     grid-gap: 55px;
@@ -1076,7 +1063,8 @@
     line-height: 30px;
     margin-bottom: 50px;
   }
-  .full-width-container.why-important-container .inner-content-container .swiper-button-next, .full-width-container.why-important-container .inner-content-container .swiper-button-prev {
+  .full-width-container.why-important-container .inner-content-container .swiper-button-next,
+.full-width-container.why-important-container .inner-content-container .swiper-button-prev {
     display: none;
   }
   .full-width-container.contact-us-container.contact-us-sound {
@@ -1126,7 +1114,7 @@
     margin: 10px auto 0 95px;
   }
 }
-@media (min-width: 1023px) {
+@media (min-width: 992px) {
   .full-width-container.sound-design-second-block .two-cols-block {
     grid-gap: 120px;
   }
@@ -1192,7 +1180,7 @@
     width: calc(33.33% - 20px);
   }
 }
-@media (min-width: 1310px) {
+@media (min-width: 1200px) {
   .full-width-container.sound-design-top-container .container-title.main-title br {
     display: none;
   }
@@ -1206,4 +1194,6 @@
   .full-width-container.home-partners-container .container-title.secondary-title br {
     display: none;
   }
-}/*# sourceMappingURL=sound-design-studio.css.map */
+}
+
+/*# sourceMappingURL=sound-design-studio.css.map */

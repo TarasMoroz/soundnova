@@ -48,7 +48,8 @@
 				'show_page_blog_post' => ['blog/blog.min.css'],
 			],
 			'catalog' => ['catalog/catalog.min.css'],
-			'product' => ['product/product.min.css'],
+			// 'product' => ['product/product.min.css'],
+			'product' => ['product/product.v2.min.css'],
 			'cart' => [
 				'index' => ['cart/cart.min.css'],
 				'checkout' => ['checkout/checkout.min.css'],

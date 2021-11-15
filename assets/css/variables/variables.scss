@@ -21,9 +21,21 @@ $blueshadow: inset 270px 0px 10px rgba(36, 230, 250, 0.5), 0px 0px 20px rgba(36,
 /*Fonts*/
 $mainfont: "UniSans", sans-serif;
 
-/*breakpoints*/
-$bp-tablet: 675px;
-$bp-tablet-lg: 800px;
-$bp-laptop: 1023px;
-$bp-desktop: 1090px;
-$bp-desktop-lg: 1310px;
+/*breakpoints OLD*/
+// $bp-tablet: 675px;
+// $bp-tablet-lg: 800px;
+// $bp-laptop: 1023px;
+// $bp-desktop: 1090px;
+// $bp-desktop-lg: 1310px;
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+$bp-tablet: 600px;
+/* Medium devices (landscape tablets, 768px and up) */
+$bp-tablet-lg: 768px;
+/* Large devices (laptops/desktops, 992px and up) */
+$bp-laptop: 992px;
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+$bp-desktop: 1200px;
+
+// No need larger size than 1200px
+$bp-desktop-lg: $bp-desktop;

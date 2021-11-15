@@ -17,11 +17,11 @@
             display: grid;
             grid-gap: 15px;
             .checkout-total-container {
-                background-color: rgba(16,18,24,.2);
+                background-color: rgba(16, 18, 24, 0.2);
                 border-radius: 8px;
-                box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
                 .cart-item {
-                    padding: 12px 18px 0px 12px;;
+                    padding: 12px 18px 0px 12px;
                     display: flex;
                     align-items: center;
                     img {
@@ -78,7 +78,7 @@
                     align-items: center;
                     padding: 16px 18px 20px 22px;
                     justify-content: space-between;
-                    border-top: 1px solid #4F4E56;
+                    border-top: 1px solid #4f4e56;
                     .total-text {
                         font-size: 22px;
                         font-weight: 900;
@@ -96,9 +96,9 @@
                 }
             }
             .login-container {
-                background-color: rgba(16,18,24,.2);
+                background-color: rgba(16, 18, 24, 0.2);
                 border-radius: 8px;
-                box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
                 padding: 20px 10px;
                 .container-title {
                     margin-bottom: 16px;
@@ -134,7 +134,7 @@
                         display: grid;
                         grid-template-columns: 1fr 1fr;
                         grid-gap: 10px;
-                         button {
+                        button {
                             font-size: 12px;
                             line-height: 34px;
                             border-radius: 5px;
@@ -146,15 +146,15 @@
                                 font-weight: 500;
                             }
                             &.facebook-btn {
-                                background-color: #4568B3;
-                                background-image: url('/assets/img/icons/facebook-icon.svg');
+                                background-color: #4568b3;
+                                background-image: url("/assets/img/icons/facebook-icon.svg");
                                 background-repeat: no-repeat;
                                 background-position: 10px 10px;
                                 background-size: 12px;
                             }
                             &.google-btn {
-                                background-color: #DC4E43;
-                                background-image: url('/assets/img/icons/google-icon.svg');
+                                background-color: #dc4e43;
+                                background-image: url("/assets/img/icons/google-icon.svg");
                                 background-repeat: no-repeat;
                                 background-position: 10px 10px;
                                 background-size: 12px;
@@ -164,9 +164,9 @@
                 }
             }
             .payment-choice-container {
-                background-color: rgba(16,18,24,.2);
+                background-color: rgba(16, 18, 24, 0.2);
                 border-radius: 8px;
-                box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
                 padding: 24px 10px;
                 .payment-options-container {
                     .payment-tabs {
@@ -221,7 +221,7 @@
                             .checkbox {
                                 width: 8px;
                                 height: 8px;
-                                border: 2px solid #282D3B;
+                                border: 2px solid #282d3b;
                                 border-radius: 50%;
                                 margin-right: 6px;
                                 background-color: $lightbluecolor;
@@ -353,7 +353,7 @@
                                 margin: 0 25px;
                                 .checkbox {
                                     width: 30px;
-                                    background-color: #282D3B;
+                                    background-color: #282d3b;
                                     border-radius: 10px;
                                     height: 16px;
                                     border: none;
@@ -362,7 +362,7 @@
                                     align-items: center;
                                     position: relative;
                                     &:after {
-                                        content: '';
+                                        content: "";
                                         width: 13px;
                                         height: 13px;
                                         display: block;
@@ -370,14 +370,14 @@
                                         border-radius: 50%;
                                         right: 3px;
                                         position: absolute;
-                                        transition: all .5s;
+                                        transition: all 0.5s;
                                     }
                                 }
                                 &.inactive {
                                     .checkbox {
-                                        background-color: #282D3B;
+                                        background-color: #282d3b;
                                         &:after {
-                                            background-color: #15141C;
+                                            background-color: #15141c;
                                             right: unset;
                                             left: 3px;
                                         }
@@ -423,7 +423,6 @@
                     }
                 }
             }
-
         }
     }
 }
@@ -440,7 +439,6 @@
                     margin-bottom: 60px;
                 }
             }
-
         }
     }
 }
