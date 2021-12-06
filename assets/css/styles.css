@@ -93,6 +93,15 @@ h3,
 h4,
 h5 {
   margin: 0;
+  line-height: 1;
+}
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.mb-2 {
+  margin-bottom: 20px;
 }
 
 main.main-content {
