@@ -11,31 +11,12 @@
 <div class="full-width-container <?= $deviceType ?>">
   <div class="inner-content-container w-md">
 
-    <section class="main-info">
-      <h1 class="container-title text-uppercase mb-2">
-        <span class="gradient-title"><?=$product['name']?></span>
-      </h1>
+    <div class="view-mobile">
+      <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'mobile', ['pathToCurrentSection' => $pathToCurrentSection]); ?>
+    </div>
+    <div class="view-desktop">
+      <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'desktop', ['pathToCurrentSection' => $pathToCurrentSection]); ?>
+    </div>
 
-      <div class="product-preview">
-        <!-- PHOTO AREA -->
-        <div class="photo">
-          <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'photo'); ?>
-        </div>
-
-        <!-- DETAILS AREA -->
-        <div class="details">
-          <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'price'); ?>
-          <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'edition-select'); ?>
-          <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'review-stars'); ?>
-        </div>
-
-        <!-- BUY AREA  -->
-        <div class="buy">
-            <!-- Player Here - Must Be Global -->
-            <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'content-info'); ?>
-        </div>
-      </div>
-
-    </section>
   </div>
 </div>

@@ -93,22 +93,109 @@ h5 {
 }
 
 .text-uppercase {
-    text-transform: uppercase;
+    text-transform: uppercase !important;
+}
+.m-auto {
+    margin: auto;
+}
+.mb-1 {
+    margin-bottom: 10px !important;
+}
+.mb-2 {
+    margin-bottom: 20px !important;
+}
+.mt-1 {
+    margin-top: 10px !important;
+}
+.mt-2 {
+    margin-top: 20px !important;
+}
+.p-1 {
+    padding: 10px !important;
+}
+.pb-2 {
+    padding-bottom: 20px !important;
+}
+.bg {
+    &-castle {
+        background-image: url(/assets/img/product1-bg-min.jpg);
+        background-size: 130%;
+        background-repeat: no-repeat;
+        background-position: center top;
+    }
+    &-filter::before {
+        content: "";
+        background: rgba($maindarkgray, 0.4);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        z-index: -1;
+    }
+}
+.card {
+    padding: 30px 20px;
+    border-radius: 10px;
+    &.dark {
+        background-color: #0f1218;
+        box-shadow: 0 0 30px -1px rgba(16, 169, 191, 0.07);
+    }
 }
 
-.mb-2 {
-    margin-bottom: 20px;
+.view {
+    &-mobile {
+        display: block;
+        @media (min-width: $bp-laptop) {
+            display: none;
+        }
+    }
+    &-desktop {
+        display: none;
+        @media (min-width: $bp-laptop) {
+            display: block;
+        }
+    }
+}
+
+.d {
+    &-flex {
+        display: flex;
+        &.ai-center {
+            align-items: center;
+        }
+        &.ai-end {
+            align-items: flex-end;
+        }
+        &.jc-between {
+            justify-content: space-between;
+        }
+        &.jc-end {
+            justify-content: flex-end;
+        }
+    }
 }
 
 main.main-content {
-    padding: 50px 0;
-    @media (min-width: $bp-laptop) {
-        padding: 120px 0;
+    > div {
+        &:first-child {
+            padding-top: 50px;
+            @media (min-width: $bp-laptop) {
+                padding-top: 120px;
+            }
+        }
+        &:last-child {
+            padding-bottom: 50px;
+            @media (min-width: $bp-laptop) {
+                padding-bottom: 120px;
+            }
+        }
     }
 }
 .full-width-container {
+    position: relative;
+    z-index: 0;
     padding: 0 16px;
-    box-shadow: inset 0px 150px 100px 0px #14161d, inset 0px -150px 100px 0px #14161d;
+    // box-shadow: inset 0px 100px 100px 0px #14161d, inset 0px -100px 100px 0px #14161d;
     .inner-content-container {
         max-width: 1140px;
         margin: 0 auto;
@@ -127,6 +214,10 @@ main.main-content {
 
 .container-title {
     text-align: center;
+    &.product-title {
+        font-size: 22px;
+        text-transform: uppercase;
+    }
     &.secondary-title {
         font-size: 22px;
         text-transform: uppercase;
@@ -283,11 +374,12 @@ main.main-content {
 // Buttons styles
 
 .btn-purp-grad {
+    max-height: 50px;
     outline: none;
     cursor: pointer;
     text-decoration: none;
     transition: all 0.3s;
-    box-shadow: 0 0px 8px -2px $mainrose;
+    box-shadow: 0 0px 30px 5px rgba($mainrose, 0.2); // 0 0px 8px -2px $mainrose;
     background: $rosegradient;
     line-height: 50px;
     display: flex;
@@ -341,13 +433,14 @@ main.main-content {
     color: $lightbluecolor;
     text-transform: uppercase;
     font-weight: 500;
-    box-shadow: 0 0px 8px -2px $lightbluecolor;
+    box-shadow: 0 0px 20px 0px rgba($lightbluecolor, 0.2), inset 0 0px 10px 5px rgba($lightbluecolor, 0.1); // 0 0px 8px -2px $mainrose;
     &:hover {
         background-color: $lightbluecolor;
         color: $lightwhite;
     }
 }
 .btn-purp-border {
+    max-height: 50px;
     outline: none;
     cursor: pointer;
     text-decoration: none;
@@ -363,7 +456,7 @@ main.main-content {
     color: $mainrose;
     text-transform: uppercase;
     font-weight: 500;
-    box-shadow: 0 0px 8px -2px $mainrose;
+    box-shadow: 0 0px 20px 0px rgba($mainrose, 0.2), inset 0 0px 10px 5px rgba($mainrose, 0.1);
     &:hover {
         background-color: $mainrose;
         color: $lightwhite;
@@ -374,8 +467,8 @@ main.main-content {
 .timer-counter {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    max-width: 190px;
-    margin: auto;
+    // max-width: 190px;
+    // margin: auto;
     text-align: center;
     grid-gap: 8px;
     position: relative;
@@ -390,24 +483,39 @@ main.main-content {
         flex-flow: column;
         align-items: center;
         justify-content: center;
+        @media (min-width: $bp-laptop) {
+            width: 45px;
+            height: 45px;
+        }
         .count-number {
             font-size: 13px;
             line-height: 1;
             display: block;
             font-weight: 500;
+            margin-top: 2px;
+            @media (min-width: $bp-laptop) {
+                font-size: 16px;
+            }
         }
         .count-text {
-            font-size: 10px;
+            font-size: 9px;
             font-weight: 300;
+            line-height: 1;
+            margin-top: -2px;
+            @media (min-width: $bp-laptop) {
+                font-size: 11px;
+            }
         }
-    }
-    &:before {
-        content: "";
-        position: absolute;
-        box-shadow: 0 30px 150px 25px $mainyellow;
-        width: 1px;
-        height: 1px;
-        display: block;
+
+        &:before {
+            content: "";
+            position: absolute;
+            box-shadow: 0 0 30px 16px rgba($mainyellow, 0.25);
+            border-radius: 50%;
+            width: 1px;
+            height: 1px;
+            display: block;
+        }
     }
 }
 
@@ -473,20 +581,6 @@ main.main-content {
         &.main-title {
             font-size: 52px;
             margin-bottom: 26px;
-        }
-    }
-    .timer-counter {
-        max-width: 245px;
-        grid-gap: 10px;
-        .timer-counter-item {
-            width: 50px;
-            height: 50px;
-            .count-number {
-                font-size: 18px;
-            }
-            .count-text {
-                font-size: 12px;
-            }
         }
     }
     #popup-video-wrapper {
