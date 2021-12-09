@@ -3,20 +3,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
 <div class="photo-wrapper">
-  <?php // if($product['adv1']||$product['adv2']||$product['adv3']): ?>
+  <? if($product['adv1']||$product['adv2']||$product['adv3']): ?>
     <div class="main-pack-slider-texts">
-    <div class="main-pack-slider-texts-col">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M13.3 4L6 11.3 2.7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          <span>sdad asd asdsadsa</span>
-        </div>
-        <div class="main-pack-slider-texts-col">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M13.3 4L6 11.3 2.7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          <span>asdsadasd asdsad sad</span>
-        </div>
-        <div class="main-pack-slider-texts-col">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M13.3 4L6 11.3 2.7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
-          <span>asdsad asds sadsadsa asdsad asdsadsadasd asd</span>
-        </div>
         <? if($product['adv1']): ?>
         <div class="main-pack-slider-texts-col">
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"><path d="M13.3 4L6 11.3 2.7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
@@ -36,7 +24,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <? endif; ?>
     </div>
-  <?php // endif; ?>
+  <? endif; ?>
 
   <? 
     $im = '/assets/img/packs/product-default.svg';

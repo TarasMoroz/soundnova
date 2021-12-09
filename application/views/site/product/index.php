@@ -11,9 +11,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 	<main class="main-content <?= $mainVariant['variant'] ?>">
   
-      <!-- LOAD MAIN PRODUCT INFO -->
-			<div class="bg-castle bg-filter">
+			<div class="bg-castle">
+				<!-- LOAD MAIN PRODUCT INFO -->
       	<? $this->load->view($basePath . 'sections/main-info'); ?>
+      	<div class="mt-11">
+					<? $this->load->view('modules/text-and-video'); ?>
+				</div>
 			</div>
 
   </main>

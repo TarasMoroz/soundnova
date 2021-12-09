@@ -4,7 +4,7 @@
 
 <!-- MOBILE -->
 <section class="main-info">
-  <h1 class="container-title text-uppercase mb-2">
+  <h1 class="container-title txt-uppercase mb-2">
     <span class="gradient-title"><?=$product['name']?></span>
   </h1>
 

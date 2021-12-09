@@ -17,8 +17,8 @@
 
     <!-- BUY AREA  -->
     <div class="buy">
-      <div class="card dark">
-        <h1 class="container-title product-title text-uppercase mb-1 mt-1">
+      <div class="card dark space-bg">
+        <h1 class="container-title product-title txt-uppercase mb-1 mt-1">
           <span class="gradient-title"><?=$product['name']?></span>
         </h1>
         <div class="d-flex jc-between ai-center">

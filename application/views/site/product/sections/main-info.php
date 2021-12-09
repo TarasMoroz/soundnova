@@ -8,7 +8,7 @@
   // $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . $deviceType); // Load view by device type "desktop" or "mobile"
         
 ?>
-<div class="full-width-container <?= $deviceType ?>">
+<div class="full-width-container">
   <div class="inner-content-container w-md">
 
     <div class="view-mobile">

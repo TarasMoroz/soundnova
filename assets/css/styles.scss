@@ -92,8 +92,25 @@ h5 {
     line-height: 1;
 }
 
-.text-uppercase {
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: auto;
+    margin-bottom: 30px;
+    @media (min-width: $bp-laptop) {
+        font-size: 42px;
+        margin-bottom: 50px;
+    }
+}
+
+p {
+    margin-block-end: 2em;
+}
+.txt-uppercase {
     text-transform: uppercase !important;
+}
+.txt-center {
+    text-align: center;
 }
 .m-auto {
     margin: auto;
@@ -104,11 +121,17 @@ h5 {
 .mb-2 {
     margin-bottom: 20px !important;
 }
+.mb-3 {
+    margin-bottom: 30px !important;
+}
 .mt-1 {
     margin-top: 10px !important;
 }
 .mt-2 {
     margin-top: 20px !important;
+}
+.mt-11 {
+    margin-top: 110px !important;
 }
 .p-1 {
     padding: 10px !important;
@@ -118,7 +141,7 @@ h5 {
 }
 .bg {
     &-castle {
-        background-image: url(/assets/img/product1-bg-min.jpg);
+        background-image: url(/assets/img/product-bg-top-min.jpg);
         background-size: 130%;
         background-repeat: no-repeat;
         background-position: center top;
@@ -139,6 +162,12 @@ h5 {
     &.dark {
         background-color: #0f1218;
         box-shadow: 0 0 30px -1px rgba(16, 169, 191, 0.07);
+    }
+    &.space-bg {
+        background-image: url(/assets/img/product1-right-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: top, right;
     }
 }
 
@@ -197,8 +226,11 @@ main.main-content {
     padding: 0 16px;
     // box-shadow: inset 0px 100px 100px 0px #14161d, inset 0px -100px 100px 0px #14161d;
     .inner-content-container {
-        max-width: 1140px;
+        max-width: 1140px; // default
         margin: 0 auto;
+        &.w-lg {
+            max-width: 1140px;
+        }
         &.w-md {
             max-width: 1005px;
         }
@@ -232,14 +264,13 @@ main.main-content {
         font-weight: 900;
         line-height: 1;
     }
-    .gradient-title {
-        background-image: $titlesgradient;
-        -webkit-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        &.shadowed {
-            text-shadow: 0 0px 85px rgba(239, 76, 198, 0.35);
-        }
+}
+.gradient-title {
+    background-image: $titlesgradient;
+    background-clip: text;
+    color: transparent;
+    &.shadowed {
+        text-shadow: 0 0px 85px rgba(239, 76, 198, 0.35);
     }
 }
 .secondary-subtitle {
@@ -260,32 +291,43 @@ main.main-content {
     cursor: pointer;
     transition: 0.3s;
     box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.2);
-    width: 35px;
-    height: 35px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background: rgba(255, 255, 255, 0.2);
+    @media (min-width: $bp-laptop) {
+        width: 82px;
+        height: 82px;
+    }
     .inner {
         display: flex;
-        box-shadow: 0px 0px 100px $mainyellow;
+        // box-shadow: 0px 0px 100px $mainyellow;
+        box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.4), 0px 0px 75px $mainyellow;
         transition: 0.4s;
-        width: 20px;
-        height: 20px;
-        border-radius: 23px;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
         background: $mainyellow;
         align-items: center;
         justify-content: center;
         flex-shrink: 0;
-        flex: 0 0 20px;
+        @media (min-width: $bp-laptop) {
+            width: 45px;
+            height: 45px;
+        }
         .playsvg {
-            width: 7px;
-            height: 7px;
+            margin-left: 2px;
             display: flex;
             align-items: center;
             justify-content: center;
             svg {
-                width: 7px;
-                height: 7px;
+                width: 9px;
+                height: 9px;
+                @media (min-width: $bp-laptop) {
+                    width: 13px;
+                    height: 13px;
+                }
             }
         }
     }
@@ -316,7 +358,7 @@ main.main-content {
     }
     &:hover {
         .inner {
-            box-shadow: 0px 0px 50px 3px $mainyellow;
+            box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.4), 0px 0px 75px 10px $mainyellow;
         }
     }
     @keyframes btn-play-pulse {
@@ -572,6 +614,54 @@ main.main-content {
     }
 }
 
+.text-and-video {
+    @media (min-width: $bp-laptop) {
+        display: flex;
+        justify-content: space-between;
+        // > * {
+        //     flex: 1;
+        // }
+    }
+    .text {
+        font-size: 14px;
+        color: #fefefe;
+        line-height: 1.85;
+        text-align: justify;
+        max-width: $desc-text-max-width;
+        @media (min-width: $bp-laptop) {
+            font-size: 16px;
+        }
+    }
+    .video {
+        margin-top: 40px;
+        @media (min-width: $bp-laptop) {
+            margin-top: 0px;
+        }
+        .content {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 555px;
+            height: 180px;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            box-shadow: 0 0 50px 0px rgba($shadow-blue, 0.15);
+            @media (min-width: $bp-laptop) {
+                height: 310px;
+                width: 555px;
+            }
+            .bundle-play {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+    }
+}
+
 @media (min-width: $bp-tablet) {
     .container-title {
         &.secondary-title {
@@ -613,39 +703,6 @@ main.main-content {
             margin-bottom: 12px;
             letter-spacing: 4px;
             text-indent: 4px;
-        }
-    }
-    .bundle-play {
-        width: 65px;
-        height: 65px;
-        .inner {
-            box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.4), 0px 0px 75px $mainyellow;
-            width: 36px;
-            height: 36px;
-            flex-shrink: 0;
-            flex: 0 0 36px;
-            .playsvg {
-                width: 13px;
-                height: 13px;
-                svg {
-                    width: 13px;
-                    height: 13px;
-                }
-            }
-        }
-        &:before {
-            width: 125px;
-            height: 125px;
-        }
-        &:after {
-            content: "";
-            width: 180px;
-            height: 180px;
-        }
-        &:hover {
-            .inner {
-                box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.4), 0px 0px 75px 10px $mainyellow;
-            }
         }
     }
 }
