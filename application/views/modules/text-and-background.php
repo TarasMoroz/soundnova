@@ -13,7 +13,7 @@ if($mainVariant['cont3_img_bg']) $cont3_img_bg = '/assets/media/product_variant-
     <?= $text ?>
     <div class="link">
       <? if(isset($prodVariants['design']) && isset($prodVariants['construct'])): ?>
-        <a class="info-link">
+        <a class="prod-edition-info-link info-link">
           <span class="quest-symb">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="10" height="10" viewBox="0 0 438.533 438.533" style="enable-background:new 0 0 438.533 438.533;" xml:space="preserve">
               <g fill="#1dd1e5">

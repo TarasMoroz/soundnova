@@ -805,3 +805,73 @@ main.main-content {
         }
     }
 }
+#popup-tooltip-wrapper {
+    top: 0px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(0 17 48 / 74%);
+    z-index: 12345;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    &.act {
+        display: flex;
+    }
+    #popup-tooltip {
+        width: calc(100% - 10px);
+        margin: 0 auto;
+        position: relative;
+        box-shadow: 0 0 100px 10px rgb(0 0 0 / 85%);
+        max-width: 900px;
+        border-radius: 10px;
+        background-color: $maindarkgray;
+        padding: 30px;
+        overflow-y: auto;
+        height: calc(100% - 50px);
+        border: 5px solid #000;
+        @media (min-width: $bp-laptop) {
+            height: fit-content;
+            min-height: 600px;
+        }
+        #popup-tooltip-close {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            background-color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            i {
+                display: flex;
+                svg {
+                    width: 18px;
+                    height: 18px;
+                    fill: none;
+                    stroke: $maindarkgray;
+                    stroke-width: 4;
+                }
+            }
+        }
+        #popup-tooltip-head-text {
+            background-image: $titlesgradient;
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-align: left;
+            display: block;
+            font-weight: 900;
+            font-size: 28px;
+            margin-bottom: 30px;
+        }
+        #popup-tooltip-content {
+            display: grid;
+            grid-gap: 24px;
+        }
+    }
+}

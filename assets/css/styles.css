@@ -972,4 +972,93 @@ main.main-content > div:last-child {
     text-indent: 4px;
   }
 }
+#popup-tooltip-wrapper {
+  top: 0px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 17, 48, 0.74);
+  z-index: 12345;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: none;
+}
+#popup-tooltip-wrapper.act {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#popup-tooltip-wrapper #popup-tooltip {
+  width: calc(100% - 10px);
+  margin: 0 auto;
+  position: relative;
+  -webkit-box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.85);
+          box-shadow: 0 0 100px 10px rgba(0, 0, 0, 0.85);
+  max-width: 900px;
+  border-radius: 10px;
+  background-color: #13161d;
+  padding: 30px;
+  overflow-y: auto;
+  height: calc(100% - 50px);
+  border: 5px solid #000;
+}
+@media (min-width: 992px) {
+  #popup-tooltip-wrapper #popup-tooltip {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    min-height: 600px;
+  }
+}
+#popup-tooltip-wrapper #popup-tooltip #popup-tooltip-close {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background-color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+#popup-tooltip-wrapper #popup-tooltip #popup-tooltip-close i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#popup-tooltip-wrapper #popup-tooltip #popup-tooltip-close i svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke: #13161d;
+  stroke-width: 4;
+}
+#popup-tooltip-wrapper #popup-tooltip #popup-tooltip-head-text {
+  background-image: linear-gradient(120deg, #ef4bc5 30%, #0fa9bf 70%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-align: left;
+  display: block;
+  font-weight: 900;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+#popup-tooltip-wrapper #popup-tooltip #popup-tooltip-content {
+  display: grid;
+  grid-gap: 24px;
+}
 /*# sourceMappingURL=styles.css.map */
