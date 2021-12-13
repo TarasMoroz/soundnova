@@ -8,15 +8,9 @@
   // $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . $deviceType); // Load view by device type "desktop" or "mobile"
         
 ?>
-<div class="full-width-container">
-  <div class="inner-content-container w-md">
-
-    <div class="view-mobile">
-      <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'mobile', ['pathToCurrentSection' => $pathToCurrentSection]); ?>
-    </div>
-    <div class="view-desktop">
-      <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'desktop', ['pathToCurrentSection' => $pathToCurrentSection]); ?>
-    </div>
-
-  </div>
+<div class="view-mobile">
+  <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'mobile', ['pathToCurrentSection' => $pathToCurrentSection]); ?>
+</div>
+<div class="view-desktop">
+  <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'desktop', ['pathToCurrentSection' => $pathToCurrentSection]); ?>
 </div>

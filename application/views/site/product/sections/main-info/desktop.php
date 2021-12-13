@@ -23,7 +23,10 @@
         </h1>
         <div class="d-flex jc-between ai-center">
           <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'price'); ?>
-          <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'review-stars'); ?>
+          <? $this->load->view('modules/review-stars', [
+            'starsCount' => 4,
+            'reviewsCount' => $product['cnt_reviews']
+          ]); ?>
         </div>
         <div class="mt-1">
           <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'edition-select'); ?>

@@ -21,7 +21,10 @@
         <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'edition-select'); ?>
       </div>
       <div class="mt-2">
-        <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'review-stars'); ?>
+        <? $this->load->view('modules/review-stars', [
+          'starsCount' => 4,
+          'reviewsCount' => $product['cnt_reviews']
+        ]); ?>
       </div>
     </div>
 
