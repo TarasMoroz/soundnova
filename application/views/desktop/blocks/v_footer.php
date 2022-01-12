@@ -152,6 +152,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script> -->
 <script src="<?php echo base_url($js_dir.'custom.js'.$env_param);?>"></script>
 <script src="<?php echo base_url($js_dir.'main.js'.$env_param);?>"></script>
+<script src="<?php echo base_url($js_dir.'player/howler.core.js'.$env_param);?>"></script>
 
 <?php if($controller == 'pages' && $action == 'show_page_design_studio'): ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Shuffle/5.4.1/shuffle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

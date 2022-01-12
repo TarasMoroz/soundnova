@@ -53,6 +53,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 
+			<!-- INCLUDED SOUNDS -->
+			<div class="full-width-container">
+				<div class="inner-content-container">
+					<? $this->load->view('modules/list-of-sounds', [
+						'title' => 'INCLUDED SOUNDS',
+						'text' => 'you can purchase each sound of this pack individually for $3',
+					]); ?>
+				</div>
+			</div>
+
   </main>
 
 	<div id="popup-tooltip-wrapper">

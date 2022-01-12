@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
-<h2 class="gradient-title txt-uppercase txt-center"><?= $title ?></h2>
+<h2 class="txt-uppercase txt-center"><span class="gradient-title"><?= $title ?></span></h2>
 
 <div class="text-and-video">
   <div class="text"><?= $text ?></div>

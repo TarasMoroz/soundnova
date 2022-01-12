@@ -437,38 +437,61 @@ section {
 }
 
 .main-pack-slider-texts {
-    box-shadow: 0px 0px 50px rgba(36, 230, 250, 0.1);
+    border: 2px solid #36393f;
+    border-radius: 5px;
+    padding: 13px 20px;
     display: flex;
-    flex-flow: column;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    position: absolute;
-    z-index: 2;
-    background: $secondarygray;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
-    margin: 0;
-    left: 0;
-    top: 0;
-    margin-left: -90px;
-    grid-gap: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 30px 20px;
+    color: $lightwhite;
+    font-size: 10px;
+    align-items: flex-start;
+    @media (min-width: $bp-laptop) {
+        border: none;
+        box-shadow: 0px 0px 50px rgba(36, 230, 250, 0.1);
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        z-index: 2;
+        background: $secondarygray;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        margin: 0;
+        left: 0;
+        top: 0;
+        margin-left: -50px;
+        margin-top: -50px;
+        grid-gap: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 30px 20px;
+    }
     .main-pack-slider-texts-col {
-        text-align: center;
-        color: $lightwhite;
-        font-size: 12px;
-        margin: 0 auto;
-        span {
-            line-height: 1.5;
-        }
+        flex: 1;
+        display: flex;
+        gap: 2px;
+        align-items: flex-start;
         svg {
-            flex: 0 0 16px;
+            flex: 0 0 13px;
             stroke: $lightbluecolor;
-            margin-bottom: -4px;
+            margin-top: -2px;
+            @media (min-width: $bp-laptop) {
+                flex: 0 0 16px;
+                margin-bottom: -4px;
+            }
+        }
+        @media (min-width: $bp-laptop) {
+            text-align: center;
+            color: $lightwhite;
+            font-size: 12px;
+            margin: 0 auto;
+            span {
+                line-height: 1.5;
+            }
         }
     }
 }
@@ -609,6 +632,7 @@ section {
             max-width: 270px;
             max-height: 55px;
             line-height: 55px;
+            font-size: 14px;
         }
     }
     .whats-inside {

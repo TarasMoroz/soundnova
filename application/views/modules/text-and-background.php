@@ -6,7 +6,7 @@ $cont3_img_bg = '/assets/img/cont3_img_bg.jpg';
 if($mainVariant['cont3_img_bg']) $cont3_img_bg = '/assets/media/product_variant-cont3_img_bg/'.$mainVariant['cont3_img_bg'];
 ?>
 
-<h2 class="gradient-title txt-uppercase txt-left"><?= $title ?></h2>
+<h2 class="txt-uppercase txt-center dv-txt-left"><span class="gradient-title"><?= $title ?></span></h2>
 
 <div class="text-and-background">
   <div class="text">
