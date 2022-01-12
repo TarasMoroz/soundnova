@@ -10,9 +10,16 @@
       'items' => [
         [
           'id' => 0, // sound id
-          'preview' => 'http://codeskulptor-demos.commondatastorage.googleapis.com/descent/background%20music.mp3', // link to preview audio file
+          'preview' => 'http://soundnova.loc/assets/media/music/rick-astley-never-gonna-give-you-up.mp3', // link to preview audio file
           'artist' => 'Sound Nova',
           'title' => 'Some Sound Effect',
+          'time' => 243 // sound length in seconds
+        ],
+        [
+          'id' => 1, // sound id
+          'preview' => '/assets/media/music/background music.mp3', // link to preview audio file
+          'artist' => 'Sound Nova 2',
+          'title' => 'Some Sound Effect 2',
           'time' => 243 // sound length in seconds
         ]
       ]
@@ -23,7 +30,7 @@
       'items' => [
         [
           'id' => 0, // sound id
-          'preview' => 'http://codeskulptor-demos.commondatastorage.googleapis.com/descent/background%20music.mp3', // link to preview audio file
+          'preview' => 'http://soundnova.loc/assets/media/music/rick-astley-never-gonna-give-you-up.mp3', // link to preview audio file
           'artist' => 'Sound Nova',
           'title' => 'Some Sound Effect',
           'time' => 253 // sound length in seconds
@@ -36,7 +43,7 @@
       'items' => [
         [
           'id' => 0, // sound id
-          'preview' => 'http://codeskulptor-demos.commondatastorage.googleapis.com/descent/background%20music.mp3', // link to preview audio file
+          'preview' => '/assets/media/music/background music.mp3', // link to preview audio file
           'artist' => 'Sound Nova',
           'title' => 'Some Sound Effect',
           'time' => 273 // sound length in seconds
@@ -70,21 +77,9 @@
     <div class="categories">
       <div class="btn back"><?= $arrow ?></div>
       <ul class="body">
-        <li class="active" id="all">All</li>
+        <li class="show-category active" data-id="all">All</li>
         <?php foreach ($list as $key => $category) { ?>
-          <li id="<?= $category['id'] ?>"><?= $category['name'] ?></li>
-        <?php } ?>
-        <?php foreach ($list as $key => $category) { ?>
-          <li id="<?= $category['id'] ?>"><?= $category['name'] ?></li>
-        <?php } ?>
-        <?php foreach ($list as $key => $category) { ?>
-          <li id="<?= $category['id'] ?>"><?= $category['name'] ?></li>
-        <?php } ?>
-        <?php foreach ($list as $key => $category) { ?>
-          <li id="<?= $category['id'] ?>"><?= $category['name'] ?></li>
-        <?php } ?>
-        <?php foreach ($list as $key => $category) { ?>
-          <li id="<?= $category['id'] ?>"><?= $category['name'] ?></li>
+          <li class="show-category" data-id="<?= $category['id'] ?>"><?= $category['name'] ?></li>
         <?php } ?>
       </ul>
       <div class="btn next"><?= $arrow ?></div>
@@ -93,7 +88,7 @@
   <!-- SCROLLED LIST -->
   <div class="list mt-1">
     <?php foreach ($list as $key => $category) { ?>
-      <div id="<?= $category['id'] ?>" class="category">
+      <div id="category_<?= $category['id'] ?>" class="category">
         <?php foreach ($category['items'] as $key2 => $sound) { ?>
           <div class="mb-1">
             <? $this->load->view('modules/player', [
@@ -107,45 +102,6 @@
         <?php } ?>
       </div>
     <?php } ?>
-    <div class="mb-1">
-      <? $this->load->view('modules/player', [
-        'key' => 123,
-        'buy_button' => false,
-        'artist_name' => true,
-        'track_title' => true,
-        'sound' => $sound
-      ]); ?>
-    </div>
-
-    <div class="mb-1">
-      <? $this->load->view('modules/player', [
-        'key' => 234,
-        'buy_button' => false,
-        'artist_name' => false,
-        'track_title' => true,
-        'sound' => $sound
-      ]); ?>
-    </div>
-
-    <div class="mb-1">
-      <? $this->load->view('modules/player', [
-        'key' => 345,
-        'buy_button' => false,
-        'artist_name' => false,
-        'track_title' => false,
-        'sound' => $sound
-      ]); ?>
-    </div>
-
-    <div class="mb-1">
-      <? $this->load->view('modules/player', [
-        'key' => 456,
-        'buy_button' => false,
-        'artist_name' => false,
-        'track_title' => false,
-        'sound' => null
-      ]); ?>
-    </div>
   </div>
 </div>
 
@@ -162,7 +118,7 @@
     } else {
       document.querySelector('.btn.back').classList.remove("disabled");
     }
-    if (scrollBody.scrollLeft > 0 && scrollBody.scrollLeft == lastScrollPosition) {
+    if (maxScrollLeft == 0 || scrollBody.scrollLeft > 0 && scrollBody.scrollLeft == lastScrollPosition) {
       document.querySelector('.btn.next').classList.add("disabled");
     } else {
       document.querySelector('.btn.next').classList.remove("disabled");
@@ -194,4 +150,28 @@
       }, speed);
     }
   })
+
+
+  btnCategorues = document.querySelectorAll('.show-category');
+
+  btnCategorues.forEach(function(item) {
+    item.addEventListener('click', event => {
+
+      btnCategorues.forEach(function(item2) {
+        item2.classList.remove('active');
+      });
+      item.classList.add('active');
+
+      document.querySelectorAll('.category').forEach(function(category) {
+        if (category.id != 'category_' + item.dataset.id) {
+          category.classList.add('hidden');
+        } else {
+          category.classList.remove('hidden');
+        }
+
+        if (item.dataset.id == 'all')
+          category.classList.remove('hidden');
+      });
+    })
+  });
 </script>

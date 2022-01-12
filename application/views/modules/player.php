@@ -6,7 +6,7 @@
 ?>
   <div id="sound_<?= $key ?>" class="player">
     <div class="btn-play">
-      <button class="played">
+      <button class="paused">
         <div class="inner">
           <i class="playsvg"><svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 16 16"><path d="M15 8L3 14V2l12 6zm0 0" fill-rule="evenodd"></path></svg></i>
           <i class="pausesvg"><svg height="512px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M224,435.8V76.1c0-6.7-5.4-12.1-12.2-12.1h-71.6c-6.8,0-12.2,5.4-12.2,12.1v359.7c0,6.7,5.4,12.2,12.2,12.2h71.6   C218.6,448,224,442.6,224,435.8z"/><path d="M371.8,64h-71.6c-6.7,0-12.2,5.4-12.2,12.1v359.7c0,6.7,5.4,12.2,12.2,12.2h71.6c6.7,0,12.2-5.4,12.2-12.2V76.1   C384,69.4,378.6,64,371.8,64z"/></g></svg></i>
@@ -39,8 +39,21 @@
   </div>
 
   <script>
-    soundTitle = document.getElementById("sound_<?= $key ?>").querySelector('.name .title');
-    if (soundTitle.clientWidth < soundTitle.scrollWidth) soundTitle.classList.add("runline"); 
+    (function () {
+      let playerSoundId = null;
+      let soundPreviewLink = '<?= $sound['preview'] ?>';
+      let player = document.getElementById("sound_<?= $key ?>");
+      let soundTitle = player.querySelector('.name .title');
+      let playButton = player.querySelector(".btn-play button");
+
+      if (soundTitle.clientWidth < soundTitle.scrollWidth) soundTitle.classList.add("runline"); 
+
+      playButton.addEventListener('click', event => {
+        playerSoundId = SoundnovaPlayer.playAudio(soundPreviewLink, player);
+        // console.log("player_" + playerSoundId);
+        // player.classList.add("player_" + playerSoundId);
+      });
+    })();
   </script>
 <?php } else { ?>
   <div class="player error">SOUND NOT FOUND</div>

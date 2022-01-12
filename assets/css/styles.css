@@ -950,6 +950,9 @@ main.main-content > div:last-child {
   max-height: 365px;
   overflow-y: scroll;
 }
+.list-of-sounds .list .category.hidden {
+  display: none;
+}
 @media (min-width: 992px) {
   .list-of-sounds .player {
     gap: 50px;
@@ -1020,23 +1023,23 @@ main.main-content > div:last-child {
 }
 @media (min-width: 992px) {
   .player .btn-play button .inner i.pausesvg svg {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
   }
 }
 .player .btn-play button:hover .inner {
   box-shadow: 0px 0px 0px 7px rgba(255, 255, 255, 0.4), 0px 0px 45px 6px rgba(249, 237, 29, 0.5);
 }
-.player .btn-play button.played i.playsvg {
+.player .btn-play button.paused i.playsvg {
   display: flex;
 }
-.player .btn-play button.played i.pausesvg {
-  display: none;
-}
-.player .btn-play button.paused i.playsvg {
-  display: none;
-}
 .player .btn-play button.paused i.pausesvg {
+  display: none;
+}
+.player .btn-play button.played i.playsvg {
+  display: none;
+}
+.player .btn-play button.played i.pausesvg {
   display: flex;
 }
 .player .equalizer {

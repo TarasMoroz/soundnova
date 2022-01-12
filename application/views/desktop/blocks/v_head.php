@@ -158,4 +158,7 @@
 
 	<!-- jQuery -->
 	<script src="/assets/lte/plugins/jquery/jquery.min.js"></script>
+
+	<script src="/assets/js/player/howler.core.js"></script>
+	<script src="/assets/js/player/player.js"></script>
 </head>
