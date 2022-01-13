@@ -38,6 +38,7 @@ class SoundnovaPlayerController {
                 autoplay: false,
                 loop: false,
                 volume: 1,
+                html5: true,
             });
             this._enableListeners();
         } else {

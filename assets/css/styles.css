@@ -842,7 +842,12 @@ main.main-content > div:last-child {
   /* Handle on hover */
 }
 .list-of-sounds ::-webkit-scrollbar {
-  width: 10px;
+  width: 6px;
+}
+@media (min-width: 600px) {
+  .list-of-sounds ::-webkit-scrollbar {
+    width: 10px;
+  }
 }
 .list-of-sounds ::-webkit-scrollbar-track {
   background: #272d3b;
@@ -851,7 +856,12 @@ main.main-content > div:last-child {
 .list-of-sounds ::-webkit-scrollbar-thumb {
   background: #15a9bf;
   border-radius: 100px;
-  box-shadow: inset 0 0 0px 2px #272d3b;
+  box-shadow: inset 0 0 0px 1px #272d3b;
+}
+@media (min-width: 600px) {
+  .list-of-sounds ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 0px 2px #272d3b;
+  }
 }
 .list-of-sounds ::-webkit-scrollbar-thumb:hover {
   background: #027f92;
@@ -946,7 +956,7 @@ main.main-content > div:last-child {
 }
 .list-of-sounds .list {
   background: #101218;
-  padding: 8px;
+  padding: 10px 8px 0px 8px;
   max-height: 365px;
   overflow-y: scroll;
 }

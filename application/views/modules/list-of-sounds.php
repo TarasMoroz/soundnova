@@ -61,7 +61,8 @@
   <div class="view-mobile">
     <div class="categories">
       <div class="select-custom">
-        <select name="sounds-category" id="sounds-category">
+        <select name="sounds-category" id="category-selector">
+          <option value="all">All</option>
           <?php foreach ($list as $key => $category) { ?>
             <option value="<?= $category['id'] ?>"><?= $category['name'] ?></option>
           <?php } ?>
@@ -152,26 +153,34 @@
   })
 
 
-  btnCategorues = document.querySelectorAll('.show-category');
+  const btnCategorues = document.querySelectorAll('.show-category');
 
   btnCategorues.forEach(function(item) {
     item.addEventListener('click', event => {
-
       btnCategorues.forEach(function(item2) {
         item2.classList.remove('active');
       });
       item.classList.add('active');
-
-      document.querySelectorAll('.category').forEach(function(category) {
-        if (category.id != 'category_' + item.dataset.id) {
-          category.classList.add('hidden');
-        } else {
-          category.classList.remove('hidden');
-        }
-
-        if (item.dataset.id == 'all')
-          category.classList.remove('hidden');
-      });
+      activateCategory(item.dataset.id);
     })
   });
+
+  const selectElement = document.getElementById('category-selector');
+
+  selectElement.addEventListener('change', (event) => {
+    const catId = event.target.value;
+    activateCategory(catId);
+  });
+
+  function activateCategory(ID) {
+    document.querySelectorAll('.category').forEach(function(category) {
+      if (category.id != 'category_' + ID) 
+        category.classList.add('hidden');
+      else 
+        category.classList.remove('hidden');
+
+      if (ID == 'all')
+        category.classList.remove('hidden');
+    });
+  }
 </script>
