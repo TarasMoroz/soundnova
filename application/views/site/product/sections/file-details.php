@@ -86,8 +86,17 @@
 				</div>
 
 				<? if($mainVariant['cont2_soundcloud']): ?>
-					<div class="player mt-1">
-						<iframe class="lazy-frame" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<?=$mainVariant['cont2_soundcloud']?>&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+					<div class="mt-1">
+						<? $this->load->view('modules/player', [
+              'key' => 'file_details',
+              'buy_button' => false,
+              'artist_name' => false,
+              'track_title' => false,
+              'sound' => [
+								'id' => 0
+							]
+            ]); ?>
+						<!-- <iframe class="lazy-frame" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<?=$mainVariant['cont2_soundcloud']?>&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe> -->
 					</div>
 				<? endif; ?>
 
@@ -111,7 +120,7 @@
 
 		<div class="view-desktop">
 			
-			<div class="d-flex">
+			<div class="d-flex <?= $direction == 'left' ? 'direction-left' : 'direction-right' ?>">
 				<div class="flex-1 d-flex ai-center">
 					<div class="image-wrapper">
 						<img class="product-img" src="<?=$im?>" alt="<?= $mainVariant['cont2_title'] ?>">
@@ -183,7 +192,16 @@
 
 						<? if($mainVariant['cont2_soundcloud']): ?>
 							<div class="product-right-soundcloud mt-1">
-								<iframe class="lazy-frame" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<?=$mainVariant['cont2_soundcloud']?>&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+								<? $this->load->view('modules/player', [
+									'key' => 'file_details',
+									'buy_button' => false,
+									'artist_name' => false,
+									'track_title' => false,
+									'sound' => [
+										'id' => 0
+									]
+								]); ?>
+								<!-- <iframe class="lazy-frame" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<?=$mainVariant['cont2_soundcloud']?>&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe> -->
 							</div>
 						<? endif; ?>
 

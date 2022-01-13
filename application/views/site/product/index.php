@@ -37,7 +37,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<!-- WHAT INSIDE A PRODUCT -->
 			<div class="full-width-container">
 				<div class="inner-content-container w-md">
-					<? $this->load->view($basePath . 'sections/file-details'); ?>
+					<? $this->load->view($basePath . 'sections/file-details', [
+						'direction' => 'left'
+					]); ?>
 				</div>
 			</div>
 
@@ -54,12 +56,28 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 
 			<!-- INCLUDED SOUNDS -->
-			<div class="full-width-container">
+			<div class="full-width-container bg-blue-wave">
 				<div class="inner-content-container">
 					<? $this->load->view('modules/list-of-sounds', [
 						'title' => 'INCLUDED SOUNDS',
 						'text' => 'you can purchase each sound of this pack individually for $3',
 					]); ?>
+				</div>
+			</div>
+
+			<!-- WHAT INSIDE A PRODUCT -->
+			<div class="full-width-container">
+				<div class="inner-content-container w-md">
+					<? $this->load->view($basePath . 'sections/file-details', [
+						'direction' => 'right'
+					]); ?>
+				</div>
+			</div>
+
+			<!-- COMPATIBLE SOFTWARE -->
+			<div class="full-width-container compatible-software-container">
+				<div class="inner-content-container">
+					<? $this->load->view($basePath . 'sections/compatible-software'); ?>
 				</div>
 			</div>
 

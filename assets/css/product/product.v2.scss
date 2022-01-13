@@ -511,7 +511,7 @@ section {
         max-width: 155px;
         @media (min-width: $bp-laptop) {
             max-width: fit-content;
-            margin-right: 100px;
+            margin-right: 50px;
         }
         img.product-img {
             position: relative;
@@ -708,6 +708,19 @@ section {
             }
         }
     }
+
+    .direction-left {
+        flex-direction: row-reverse;
+        .main-pack-slider-texts {
+            right: 0;
+            left: auto;
+            margin-right: -100px;
+        }
+        .image-wrapper {
+            margin-right: 0;
+            margin-left: 50px;
+        }
+    }
 }
 
 .title-descr-block {
@@ -722,6 +735,87 @@ section {
         font-size: 16px;
         @media (min-width: $bp-laptop) {
             font-size: 18px;
+        }
+    }
+}
+
+.compatible-software-container {
+    padding: 60px 16px;
+    @media (min-width: $bp-tablet) {
+        background-image: url(/assets/img/product6-bg.jpg);
+        background-size: cover;
+        background-position: right top;
+        background-repeat: no-repeat;
+    }
+    @media (min-width: $bp-laptop) {
+        padding: 120px 16px 70px 16px;
+    }
+    .container-title {
+        &.secondary-title {
+            @media (min-width: $bp-laptop) {
+                text-align: left;
+                font-size: 48px;
+                text-indent: 0;
+                margin-bottom: 65px;
+            }
+        }
+    }
+    .software-container-descr {
+        color: white;
+        font-size: 14px;
+        line-height: 24px;
+        margin-bottom: 20px;
+        text-align: justify;
+        letter-spacing: 0.85px;
+        @media (min-width: $bp-laptop) {
+            font-size: 16px;
+            line-height: 30px;
+            margin-bottom: 65px;
+        }
+    }
+    .product-software-block {
+        margin-bottom: 30px;
+        @media (min-width: $bp-laptop) {
+            margin-bottom: 70px;
+        }
+        .product-software-block-title {
+            font-size: 18px;
+            font-weight: 500;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            @media (min-width: $bp-laptop) {
+                font-size: 24px;
+                margin-bottom: 25px;
+                text-align: left;
+            }
+        }
+        .product-software-inner {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            grid-gap: 18px 25px;
+            @media (min-width: $bp-laptop) {
+                grid-gap: 30px;
+            }
+            .product-software-item {
+                display: flex;
+                align-items: center;
+                img {
+                    width: 42px;
+                    height: 42px;
+                    border-radius: 50%;
+                    padding: 5px;
+                    background-color: white;
+                    border: 3px solid $lightbluecolor;
+                    box-shadow: 0px 0 14px 1px rgba(36, 230, 250, 0.5);
+                    margin-right: 14px;
+                }
+                span {
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 300;
+                }
+            }
         }
     }
 }

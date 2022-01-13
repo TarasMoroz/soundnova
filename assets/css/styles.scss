@@ -703,6 +703,7 @@ main.main-content {
         color: #fefefe;
         line-height: 1.85;
         text-align: justify;
+        letter-spacing: 0.85px;
         max-width: $desc-text-max-width;
         @media (min-width: $bp-laptop) {
             font-size: 16px;
@@ -1123,6 +1124,12 @@ main.main-content {
             }
         }
     }
+}
+
+.bg-blue-wave {
+    background: url(/assets/img/bg-blue-wave.png);
+    background-position: center;
+    background-size: cover;
 }
 
 @media (min-width: $bp-tablet) {
