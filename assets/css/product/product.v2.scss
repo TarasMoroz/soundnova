@@ -992,3 +992,162 @@ section {
         }
     }
 }
+
+.how-use-container {
+    background-color: #13161d;
+
+    @media (min-width: $bp-tablet) {
+        background-image: url(/assets/img/product8-bg.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
+    }
+    .container-title {
+        &.secondary-title {
+            margin-bottom: 40px;
+            @media (min-width: $bp-laptop) {
+                margin-bottom: 130px;
+            }
+        }
+    }
+    .how-use-columns {
+        display: none;
+        @media (min-width: $bp-laptop) {
+            display: grid;
+            grid-gap: 80px;
+        }
+        .how-use-row {
+            display: flex;
+            align-items: center;
+            .container-title {
+                &.secondary-title {
+                    text-align: left;
+                    text-indent: 0;
+                    font-size: 48px;
+                    margin-bottom: 10px;
+                    z-index: 1;
+                    position: relative;
+                }
+            }
+            .left-col,
+            .right-col {
+                position: relative;
+                flex: 1;
+                .prod-vid {
+                    position: relative;
+                    overflow: hidden;
+                    width: 100%;
+                    height: 300px;
+                    border-radius: 10px;
+                    background-size: cover;
+                    background-position: center top;
+                    background-repeat: no-repeat;
+                    margin-bottom: 25px;
+                    box-shadow: 0px 0 20px -5px rgba(36, 230, 250, 0.2);
+                    .bundle-play {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translateX(-50%) translateY(-50%);
+                    }
+                }
+                .text {
+                    font-size: 16px;
+                    line-height: 30px;
+                    color: white;
+                    max-width: 480px;
+                    z-index: 1;
+                    position: relative;
+                }
+                .subtext {
+                    font-size: 24px;
+                    text-align: left;
+                    color: white;
+                    font-weight: 500;
+                    margin-bottom: 45px;
+                    max-width: 480px;
+                }
+            }
+            .left-col {
+                padding-right: 120px;
+            }
+        }
+    }
+    .how-use-mobile-block {
+        @media (min-width: $bp-laptop) {
+            display: none;
+        }
+        .how-use-pack-slider {
+            .swiper-container {
+                padding: 0 30px 40px 30px;
+            }
+            .swiper-container-horizontal > .swiper-pagination-bullets,
+            .swiper-pagination-custom,
+            .swiper-pagination-fraction {
+                bottom: 0;
+            }
+            .swiper-button-next,
+            .swiper-container-rtl .swiper-button-prev {
+                background-image: url(/assets/img/icons/yellow-arrow-right.svg);
+                background-size: 16px;
+                right: 0;
+                outline: none;
+            }
+            .swiper-button-prev {
+                background-image: url(/assets/img/icons/yellow-arrow-left.svg);
+                background-size: 16px;
+                left: 0;
+                outline: none;
+            }
+            .swiper-pagination-bullet {
+                background: #51545a;
+            }
+            .swiper-pagination-bullet-active {
+                background-color: $mainyellow;
+            }
+            .product-video {
+                margin: 0 auto;
+                max-width: 550px;
+            }
+            .prod-vid {
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                height: 180px;
+                border-radius: 10px;
+                background-size: cover;
+                background-position: center top;
+                background-repeat: no-repeat;
+                margin-bottom: 25px;
+                box-shadow: 0px 0 20px -5px rgba(36, 230, 250, 0.2);
+                .bundle-play {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                }
+            }
+            .container-title {
+                &.secondary-title {
+                    font-size: 18px;
+                    margin-bottom: 9px;
+                }
+            }
+            .subtext {
+                font-size: 14px;
+                line-height: 24px;
+                color: white;
+                font-weight: 500;
+                margin-bottom: 18px;
+                text-align: center;
+            }
+            .text {
+                font-size: 14px;
+                line-height: 24px;
+                color: white;
+                margin: 0 auto;
+                max-width: 550px;
+            }
+        }
+    }
+}

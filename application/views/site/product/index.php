@@ -88,6 +88,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 
+			<!-- HOW USE PACK -->
+			<div class="full-width-container how-use-container">
+				<div class="inner-content-container">
+					<? $this->load->view($basePath . 'sections/how-use-pack'); ?>
+				</div>
+			</div>
+
   </main>
 
 	<div id="popup-tooltip-wrapper">
