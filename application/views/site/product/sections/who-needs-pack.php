@@ -1,5 +1,5 @@
 
-<h2 class="container-title secondary-title">
+<h2 class="txt-uppercase txt-center">
   <span class="gradient-title shadowed">Who needs this pack?</span>
 </h2>
 <div class="who-need-mobile-block">
@@ -17,7 +17,7 @@
                 </button>
               </div>
             </div>
-              <h3 class="container-title secondary-title">
+              <h3 class="container-title txt-uppercase txt-center">
                 <span class="gradient-title">Cinema maker</span>
               </h3>
               <div class="slide-digit">1</div>
@@ -35,7 +35,7 @@
                 </button>
               </div>
             </div>
-              <h3 class="container-title secondary-title">
+              <h3 class="container-title txt-uppercase txt-center">
                 <span class="gradient-title">Motion Designer</span>
               </h3>
               <div class="slide-digit">2</div>
@@ -53,7 +53,7 @@
                 </button>
               </div>
             </div>
-              <h3 class="container-title secondary-title">
+              <h3 class="container-title txt-uppercase txt-center">
                 <span class="gradient-title">Game creator</span>
               </h3>
               <div class="slide-digit">3</div>
@@ -73,7 +73,7 @@
 <div class="who-need-columns-block">
     <div class="who-need-row text-left">
         <div class="left-col">
-          <h3 class="container-title secondary-title">
+          <h3 class="container-title txt-uppercase txt-left">
             <span class="gradient-title">Cinema maker</span>
           </h3>
           <div class="slide-digit">1</div>
@@ -106,7 +106,7 @@
           </div>
         </div>
         <div class="right-col">
-          <h3 class="container-title secondary-title">
+          <h3 class="container-title txt-uppercase txt-left">
             <span class="gradient-title">Motion Designer</span>
           </h3>
           <div class="slide-digit">2</div>
@@ -117,7 +117,7 @@
     </div>
     <div class="who-need-row text-left">
         <div class="left-col">
-          <h3 class="container-title secondary-title">
+          <h3 class="container-title txt-uppercase txt-left">
             <span class="gradient-title">Game creator</span>
           </h3>
           <div class="slide-digit">3</div>

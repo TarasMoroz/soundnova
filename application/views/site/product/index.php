@@ -95,6 +95,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				</div>
 			</div>
 
+			<!-- PROMO SLIDER -->
+			<? if(!isset($prodVariants['bundle'])): ?>
+				<div class="full-width-container bundle-sale-container">
+					<div class="inner-content-container">
+						<? $this->load->view($basePath . 'sections/promo-slider'); ?>
+					</div>
+				</div>
+			<? endif;?>
+
+			<!-- OVERVIEWS -->
+			<div class="full-width-container overviews-container">
+				<div class="inner-content-container">
+					<? $this->load->view($basePath . 'sections/overviews'); ?>
+				</div>
+			</div>
+
   </main>
 
 	<div id="popup-tooltip-wrapper">

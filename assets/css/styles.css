@@ -108,6 +108,32 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  h3 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+h4 {
+  font-size: 12px;
+  font-weight: bold;
+  margin: auto;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  h4 {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+}
+
 p {
   -webkit-margin-before: 0;
           margin-block-start: 0;
@@ -351,6 +377,7 @@ main.main-content > div:last-child {
 }
 
 .gradient-title {
+  display: inline-block;
   background-image: linear-gradient(120deg, #ef4bc5 30%, #0fa9bf 70%);
   -webkit-background-clip: text;
           background-clip: text;
