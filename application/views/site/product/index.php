@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- header -->
 	<? $this->load->view('desktop/blocks/v_header'); ?>
 
-	<main class="main-content <?= $mainVariant['variant'] ?>">
+	<main class="main-content product-page <?= $mainVariant['variant'] ?>">
   
 			<div class="bg-castle backround-transition">
 

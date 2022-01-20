@@ -91,7 +91,7 @@
   color: #13161d;
   font-size: 14px;
   border-radius: 30px;
-  width: calc(100% - 60px);
+  width: 100%;
   outline: none;
   box-shadow: 0 0 30px 5px rgba(239, 76, 198, 0.2);
 }
@@ -322,7 +322,7 @@
   color: #13161d;
   font-size: 14px;
   border-radius: 30px;
-  width: calc(100% - 60px);
+  width: 100%;
   outline: none;
   box-shadow: 0 0 30px 5px rgba(239, 76, 198, 0.2);
 }
@@ -644,7 +644,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 50px 0 30px 0;
-  background-image: linear-gradient(130deg, #ef4bc5 40%, #0fa9bf 60%);
+  background-image: linear-gradient(120deg, #ef4bc5 30%, #0fa9bf 70%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -677,6 +677,12 @@
   color: #fff;
   font-family: "UniSans", sans-serif;
 }
+.full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row input::-moz-placeholder {
+  color: #434e67;
+}
+.full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row input:-ms-input-placeholder {
+  color: #434e67;
+}
 .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row input::placeholder {
   color: #434e67;
 }
@@ -692,6 +698,12 @@
   box-shadow: 0px 0px 10px rgba(36, 230, 250, 0.1);
   border: 0;
   font-family: "UniSans", sans-serif;
+}
+.full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row textarea::-moz-placeholder {
+  color: #434e67;
+}
+.full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row textarea:-ms-input-placeholder {
+  color: #434e67;
 }
 .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row textarea::placeholder {
   color: #434e67;
@@ -839,7 +851,7 @@
     max-width: 510px;
   }
   .full-width-container.sound-design-top-container .subscription-form input {
-    width: 200px;
+    width: 100%;
     padding: 0 230px 0 40px;
     line-height: 60px;
     top: 0;
@@ -882,7 +894,7 @@
     max-width: 510px;
   }
   .full-width-container.advantages-container .subscription-form input {
-    width: 200px;
+    width: 100%;
     padding: 0 230px 0 40px;
     line-height: 60px;
     top: 0;
@@ -985,6 +997,12 @@
   }
   .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row .add-review-label sup {
     color: #ef4cc6;
+  }
+  .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row input::-moz-placeholder, .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row textarea::-moz-placeholder {
+    color: transparent;
+  }
+  .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row input:-ms-input-placeholder, .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row textarea:-ms-input-placeholder {
+    color: transparent;
   }
   .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row input::placeholder,
 .full-width-container.contact-us-container.contact-us-sound .contact-us-columns .contact-us-form .add-review-row textarea::placeholder {
@@ -1195,5 +1213,4 @@
     display: none;
   }
 }
-
 /*# sourceMappingURL=sound-design-studio.css.map */

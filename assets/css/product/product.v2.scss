@@ -14,6 +14,21 @@ section {
     }
 }
 
+.view {
+    &-mobile {
+        display: block !important;
+        @media (min-width: $bp-tablet) {
+            display: none !important;
+        }
+    }
+    &-desktop {
+        display: none !important;
+        @media (min-width: $bp-tablet) {
+            display: block !important;
+        }
+    }
+}
+
 .main-info {
     // &.desktop &.mobile
     .product-preview {
@@ -29,12 +44,16 @@ section {
             "photo details"
             "buy buy";
         column-gap: 30px;
-        grid-template-columns: 1fr 0.8fr;
+        grid-template-columns: 1fr auto;
 
-        @media (min-width: $bp-laptop) {
+        @media (min-width: $bp-tablet) {
             grid-template-areas:
                 "photo buy"
                 "details buy";
+            column-gap: 30px;
+            grid-template-columns: 1fr auto;
+        }
+        @media (min-width: $bp-laptop) {
             column-gap: 110px;
             grid-template-columns: 1fr 410px;
         }
@@ -317,7 +336,7 @@ section {
 
     .content-info {
         width: 100%;
-        max-width: 450px;
+        // max-width: 450px;
         @media (min-width: $bp-laptop) {
             background-color: #0f1218;
             box-shadow: 0 0 30px -1px rgba(16, 169, 191, 0.07);
@@ -440,13 +459,15 @@ section {
     border: 2px solid #36393f;
     border-radius: 5px;
     padding: 13px 20px;
-    display: flex;
+    // display: flex;
+    display: none;
     justify-content: space-between;
     align-items: center;
     color: $lightwhite;
     font-size: 10px;
     align-items: flex-start;
     @media (min-width: $bp-laptop) {
+        display: flex;
         border: none;
         box-shadow: 0px 0px 50px rgba(36, 230, 250, 0.1);
         display: flex;
@@ -508,7 +529,11 @@ section {
 
     .image-wrapper {
         position: relative;
-        max-width: 155px;
+        margin-right: 20px;
+        @media (min-width: $bp-tablet) {
+            max-width: fit-content;
+            margin-right: 50px;
+        }
         @media (min-width: $bp-laptop) {
             max-width: fit-content;
             margin-right: 50px;
@@ -531,7 +556,7 @@ section {
             transform: translateX(-50%) translateY(-60%);
             border-radius: 50%;
             background: rgba(36, 230, 250, 0.24);
-            @media (min-width: $bp-laptop) {
+            @media (min-width: $bp-tablet) {
                 box-shadow: 0 0 150px 150px rgba(36, 230, 250, 0.25);
             }
         }
@@ -542,11 +567,12 @@ section {
         display: grid;
         grid-template-columns: 42px 1fr;
         padding: 18px 20px 18px 20px;
-        grid-gap: 25px 40px;
+        grid-gap: 25px 20px;
 
         @media (min-width: $bp-laptop) {
             grid-template-columns: 1fr 1fr 1fr 1fr;
             padding: 13px 20px 13px 20px;
+            grid-gap: 25px 40px;
         }
         .info-item {
             text-align: center;
@@ -1352,5 +1378,104 @@ section {
                 }
             }
         }
+    }
+}
+.overviews-container {
+    // padding: 60px 16px;
+    background-color: $maindarkgray;
+    @media (min-width: $bp-tablet) {
+        // padding: 120px 16px 60px 16px;
+    }
+    .container-title {
+        &.secondary-title {
+            margin-bottom: 35px;
+            @media (min-width: $bp-tablet) {
+                margin-bottom: 75px;
+            }
+            @media (min-width: $bp-laptop) {
+                br {
+                    display: none;
+                }
+            }
+        }
+    }
+    .overviews-slider {
+        .swiper-container {
+            padding: 0 40px 40px 40px;
+        }
+        .swiper-container-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+            bottom: 0;
+        }
+        .swiper-button-next,
+        .swiper-container-rtl .swiper-button-prev {
+            background-image: url(/assets/img/icons/yellow-arrow-right.svg);
+            background-size: 16px;
+            right: 0;
+            outline: none;
+            top: 80%;
+            @media (min-width: $bp-tablet) {
+                background-size: 20px;
+                top: 35%;
+            }
+        }
+        .swiper-button-prev {
+            background-image: url(/assets/img/icons/yellow-arrow-left.svg);
+            background-size: 16px;
+            left: 0;
+            outline: none;
+            top: 80%;
+            @media (min-width: $bp-tablet) {
+                background-size: 20px;
+                top: 35%;
+            }
+        }
+        .swiper-pagination-bullet {
+            background: #51545a;
+        }
+        .swiper-pagination-bullet-active {
+            background-color: $mainyellow;
+        }
+        .product-video {
+            max-width: 460px;
+            margin: 0 auto;
+        }
+        .prod-vid {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center top;
+            background-repeat: no-repeat;
+            margin-bottom: 25px;
+            box-shadow: 0px 0 20px -10px rgba(36, 230, 250, 0.2);
+            .bundle-play {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translateX(-50%) translateY(-50%);
+            }
+        }
+
+        .subtext {
+            font-size: 16px;
+            line-height: 24px;
+            color: white;
+            font-weight: 500;
+            text-align: center;
+            a {
+                color: $lightbluecolor;
+                font-weight: 500;
+            }
+        }
+    }
+    &.tutorials-container {
+        background-image: url(/assets/img/product11-bg.jpg);
+        background-size: cover;
+        background-position: center top;
+        background-repeat: no-repeat;
     }
 }

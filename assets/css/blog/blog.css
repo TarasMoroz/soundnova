@@ -106,6 +106,12 @@
   color: white;
   outline: none;
 }
+.full-width-container.blog-main-container .top-tabs-block .search-block input::-moz-placeholder {
+  color: #7f8081;
+}
+.full-width-container.blog-main-container .top-tabs-block .search-block input:-ms-input-placeholder {
+  color: #7f8081;
+}
 .full-width-container.blog-main-container .top-tabs-block .search-block input::placeholder {
   color: #7f8081;
 }
@@ -404,7 +410,7 @@
   color: #13161d;
   font-size: 14px;
   border-radius: 30px;
-  width: calc(100% - 60px);
+  width: 100%;
   outline: none;
   box-shadow: 0 0 30px 5px rgba(239, 76, 198, 0.2);
 }
@@ -696,7 +702,7 @@
   color: #13161d;
   font-size: 14px;
   border-radius: 30px;
-  width: calc(100% - 60px);
+  width: 100%;
   outline: none;
   box-shadow: 0 0 30px 5px rgba(239, 76, 198, 0.2);
 }
@@ -895,6 +901,12 @@
   color: #fff;
   font-family: "UniSans", sans-serif;
 }
+.full-width-container.blog-post-bottom .reviews-list #add-comment .add-review-row input::-moz-placeholder {
+  color: #434e67;
+}
+.full-width-container.blog-post-bottom .reviews-list #add-comment .add-review-row input:-ms-input-placeholder {
+  color: #434e67;
+}
 .full-width-container.blog-post-bottom .reviews-list #add-comment .add-review-row input::placeholder {
   color: #434e67;
 }
@@ -910,6 +922,12 @@
   box-shadow: 0px 0px 10px rgba(36, 230, 250, 0.1);
   border: 0;
   font-family: "UniSans", sans-serif;
+}
+.full-width-container.blog-post-bottom .reviews-list #add-comment .add-review-row textarea::-moz-placeholder {
+  color: #434e67;
+}
+.full-width-container.blog-post-bottom .reviews-list #add-comment .add-review-row textarea:-ms-input-placeholder {
+  color: #434e67;
 }
 .full-width-container.blog-post-bottom .reviews-list #add-comment .add-review-row textarea::placeholder {
   color: #434e67;
@@ -1324,7 +1342,7 @@
     margin-top: 40px;
   }
   .full-width-container.blog-main-container .blog-content-container .blog-offer-container .subscription-form input {
-    width: 200px;
+    width: 100%;
     padding: 0 230px 0 40px;
     line-height: 60px;
     top: 0;
@@ -1418,7 +1436,7 @@
     margin-top: 40px;
   }
   .full-width-container.blog-post-bottom .blog-offer-container .subscription-form input {
-    width: 200px;
+    width: 100%;
     padding: 0 230px 0 40px;
     line-height: 60px;
     top: 0;
@@ -1529,7 +1547,19 @@
   .full-width-container.blog-post-bottom .reviews-list #add-comment .add-review-row input {
     max-width: 370px;
   }
+  .full-width-container.blog-post-bottom .reviews-list #add-comment .add-review-row input::-moz-placeholder {
+    color: transparent;
+  }
+  .full-width-container.blog-post-bottom .reviews-list #add-comment .add-review-row input:-ms-input-placeholder {
+    color: transparent;
+  }
   .full-width-container.blog-post-bottom .reviews-list #add-comment .add-review-row input::placeholder {
+    color: transparent;
+  }
+  .full-width-container.blog-post-bottom .reviews-list #add-comment .add-review-row textarea::-moz-placeholder {
+    color: transparent;
+  }
+  .full-width-container.blog-post-bottom .reviews-list #add-comment .add-review-row textarea:-ms-input-placeholder {
     color: transparent;
   }
   .full-width-container.blog-post-bottom .reviews-list #add-comment .add-review-row textarea::placeholder {
@@ -1768,5 +1798,4 @@
     background-image: none !important;
   }
 }
-
 /*# sourceMappingURL=blog.css.map */
