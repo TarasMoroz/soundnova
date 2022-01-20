@@ -51,7 +51,7 @@ section {
                 "photo buy"
                 "details buy";
             column-gap: 30px;
-            grid-template-columns: 1fr auto;
+            grid-template-columns: 1fr 0.8fr;
         }
         @media (min-width: $bp-laptop) {
             column-gap: 110px;
@@ -234,6 +234,10 @@ section {
             font-size: 9px;
             display: block;
             letter-spacing: 0.85px;
+            max-width: 150px;
+            @media (min-width: $bp-tablet) {
+                max-width: none;
+            }
             @media (min-width: $bp-laptop) {
                 text-align: center;
                 letter-spacing: 0.6px;
@@ -422,6 +426,8 @@ section {
             color: $mainyellow;
             text-transform: uppercase;
             font-weight: 500;
+            white-space: nowrap;
+            margin-right: 10px;
             // margin-right: 25px;
             .name {
                 font-size: 17px;

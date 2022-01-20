@@ -57,7 +57,7 @@ section:first-child {
     grid-template-areas: "photo buy" "details buy";
     -moz-column-gap: 30px;
          column-gap: 30px;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 0.8fr;
   }
 }
 @media (min-width: 992px) {
@@ -241,6 +241,12 @@ section:first-child {
   font-size: 9px;
   display: block;
   letter-spacing: 0.85px;
+  max-width: 150px;
+}
+@media (min-width: 600px) {
+  .main-info .edition-select .info-link {
+    max-width: none;
+  }
 }
 @media (min-width: 992px) {
   .main-info .edition-select .info-link {
@@ -423,6 +429,8 @@ section:first-child {
   color: #f9ed1d;
   text-transform: uppercase;
   font-weight: 500;
+  white-space: nowrap;
+  margin-right: 10px;
 }
 .main-info .sale-timer .title .name {
   font-size: 17px;
