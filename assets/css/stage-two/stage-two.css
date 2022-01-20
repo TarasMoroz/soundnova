@@ -1,6 +1,10 @@
 /*Colors*/
 /*Fonts*/
-/*breakpoints*/
+/*breakpoints OLD*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .full-width-container.stage-two-top-container {
   padding: 225px 16px 30px 16px;
   background-image: url(/assets/img/rocket-back.jpg);
@@ -72,14 +76,14 @@
   font-weight: 500;
 }
 .full-width-container.stage-two-signup .login-container .login-buttons button.facebook-btn {
-  background-color: #4568B3;
+  background-color: #4568b3;
   background-image: url("/assets/img/icons/facebook-icon.svg");
   background-repeat: no-repeat;
   background-position: 10px 10px;
   background-size: 12px;
 }
 .full-width-container.stage-two-signup .login-container .login-buttons button.google-btn {
-  background-color: #DC4E43;
+  background-color: #dc4e43;
   background-image: url("/assets/img/icons/google-icon.svg");
   background-repeat: no-repeat;
   background-position: 10px 10px;
@@ -100,7 +104,7 @@
   content: "";
   flex: 1;
   height: 1px;
-  background-color: #42454D;
+  background-color: #42454d;
   margin-right: 7px;
   box-shadow: 0 0 15px 1px black;
 }
@@ -108,7 +112,7 @@
   content: "";
   flex: 1;
   height: 1px;
-  background-color: #42454D;
+  background-color: #42454d;
   margin-left: 7px;
   box-shadow: 0 0 15px 1px black;
 }
@@ -134,12 +138,6 @@
   box-sizing: border-box;
   font-weight: 500;
 }
-.full-width-container.stage-two-signup .login-container form .form-field input::-moz-placeholder {
-  color: #464c5e;
-}
-.full-width-container.stage-two-signup .login-container form .form-field input:-ms-input-placeholder {
-  color: #464c5e;
-}
 .full-width-container.stage-two-signup .login-container form .form-field input::placeholder {
   color: #464c5e;
 }
@@ -162,7 +160,7 @@
 }
 .full-width-container.stage-two-signup .login-container form .show-and-remember .remember-me-checkbox .checkbox {
   width: 30px;
-  background-color: #282D3B;
+  background-color: #282d3b;
   border-radius: 10px;
   height: 16px;
   border: none;
@@ -178,19 +176,19 @@
   height: 13px;
   display: block;
   border-radius: 50%;
-  background-color: #15141C;
+  background-color: #15141c;
   right: unset;
   left: 3px;
   position: absolute;
   transition: all 0.5s;
 }
 .full-width-container.stage-two-signup .login-container form .show-and-remember .remember-me-checkbox.active .checkbox:after {
-  background-color: #1dd1e5;
+  background-color: #23e7fb;
   right: 3px;
   left: unset;
 }
 .full-width-container.stage-two-signup .login-container form .show-and-remember .show-password-block {
-  color: #1dd1e5;
+  color: #23e7fb;
   cursor: pointer;
   font-size: 12px;
 }
@@ -208,7 +206,7 @@
   font-size: 12px;
 }
 .full-width-container.stage-two-signup .login-container .forgot-password a {
-  color: #1dd1e5;
+  color: #23e7fb;
   text-decoration: none;
 }
 .full-width-container.stage-two-signup .login-container .forgot-password.terms {
@@ -229,12 +227,12 @@
   font-size: 12px;
 }
 .full-width-container.stage-two-signup .login-container .sign-up a {
-  color: #1dd1e5;
+  color: #23e7fb;
   font-weight: 500;
   text-decoration: none;
 }
 
-@media (min-width: 675px) {
+@media (min-width: 600px) {
   .full-width-container.stage-two-signup {
     padding-bottom: 120px;
   }
@@ -292,7 +290,7 @@
     margin-right: 20px;
   }
 }
-@media (min-width: 1023px) {
+@media (min-width: 992px) {
   .full-width-container.stage-two-top-container {
     padding-top: 312px;
   }
@@ -303,11 +301,13 @@
     font-size: 100px;
   }
 }
-@media (min-width: 1310px) {
+@media (min-width: 1200px) {
   .full-width-container.stage-two-top-container .inner-content-container {
     max-width: 1400px;
   }
   .full-width-container.stage-two-top-container .container-title.main-title br {
     display: none;
   }
-}/*# sourceMappingURL=stage-two.css.map */
+}
+
+/*# sourceMappingURL=stage-two.css.map */

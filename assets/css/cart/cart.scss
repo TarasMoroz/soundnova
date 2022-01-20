@@ -20,9 +20,9 @@
                 display: grid;
                 grid-gap: 6px;
                 .cart-item {
-                    background-color: rgba(16,18,24,.2);
+                    background-color: rgba(16, 18, 24, 0.2);
                     border-radius: 8px;
-                    box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                    box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
                     padding: 12px;
                     display: flex;
                     align-items: center;
@@ -74,9 +74,9 @@
                 }
             }
             .promo-code-block {
-                background-color: rgba(16,18,24,.2);
+                background-color: rgba(16, 18, 24, 0.2);
                 border-radius: 8px;
-                box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
                 padding: 20px 20px 24px 20px;
                 display: grid;
                 justify-items: center;
@@ -112,9 +112,9 @@
                 }
             }
             .cart-totals-block {
-                background-color: rgba(16,18,24,.2);
+                background-color: rgba(16, 18, 24, 0.2);
                 border-radius: 8px;
-                box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
                 padding: 22px 20px 28px 20px;
                 display: grid;
                 justify-items: center;
@@ -234,7 +234,8 @@
                         }
                     }
                 }
-                .promo-code-block , .cart-totals-block {
+                .promo-code-block,
+                .cart-totals-block {
                     padding: 36px;
                     .container-title {
                         &.secondary-title {
@@ -323,7 +324,7 @@
                 }
                 .benefits-container {
                     flex: 1;
-                    order:2;
+                    order: 2;
                     padding: 36px 56px;
                 }
             }

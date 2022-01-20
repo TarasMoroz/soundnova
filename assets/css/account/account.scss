@@ -15,9 +15,9 @@
         }
         .dashboard-container {
             .top-tabs-block {
-                background-color: rgba(16,18,24,.8);
+                background-color: rgba(16, 18, 24, 0.8);
                 border-radius: 8px;
-                box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .1);
+                box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.1);
                 padding: 10px;
                 .desktop {
                     display: none;
@@ -49,14 +49,15 @@
                                 margin-right: 6px;
                             }
                         }
-                         ul {
+                        ul {
                             list-style: none;
                             margin: 0;
                             padding: 10px 0;
-                            display: none;position: absolute;
-                            background-color: rgba(16,18,24,.95);
+                            display: none;
+                            position: absolute;
+                            background-color: rgba(16, 18, 24, 0.95);
                             border-radius: 0 0 8px 8px;
-                            box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .1);
+                            box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.1);
                             left: 0;
                             right: 0;
                             z-index: 1;
@@ -83,7 +84,7 @@
                         line-height: 40px;
                         display: flex;
                         align-items: center;
-                        background-color: #1B1F29;
+                        background-color: #1b1f29;
                         color: white;
                         font-weight: 500;
                         font-size: 14px;
@@ -99,9 +100,9 @@
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 12px;
                 .dashboard-item {
-                    background-color: rgba(16,18,24,.8);
+                    background-color: rgba(16, 18, 24, 0.8);
                     border-radius: 8px;
-                    box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .1);
+                    box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.1);
                     display: flex;
                     align-items: center;
                     text-align: center;
@@ -122,11 +123,11 @@
             grid-gap: 24px;
             margin-top: 10px;
             .checkout-total-container {
-                background-color: rgba(16,18,24,.8);
+                background-color: rgba(16, 18, 24, 0.8);
                 border-radius: 8px;
-                box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
                 .cart-item {
-                    padding: 12px 18px 0px 12px;;
+                    padding: 12px 18px 0px 12px;
                     display: flex;
                     align-items: center;
                     img {
@@ -182,7 +183,7 @@
                     margin-top: 15px;
                 }
                 .cart-checkout-line {
-                    border-top: 1px solid rgb(79, 78, 86, .3);
+                    border-top: 1px solid rgba(79, 78, 86, 0.3);
                     display: flex;
                     align-items: center;
                     color: white;
@@ -196,7 +197,7 @@
                     align-items: center;
                     padding: 16px 17px 20px 17px;
                     justify-content: space-between;
-                    border-top: 1px solid rgb(79, 78, 86, .3);
+                    border-top: 1px solid rgba(79, 78, 86, 0.3);
                     .total-text {
                         font-size: 18px;
                         font-weight: 900;
@@ -232,9 +233,9 @@
             }
         }
         .no-subscriptions-container {
-            background-color: rgba(16,18,24,.3);
+            background-color: rgba(16, 18, 24, 0.3);
             border-radius: 8px;
-            box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+            box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
             padding: 38px 25px 50px 25px;
             margin-top: 12px;
             .no-subscriptions-text {
@@ -289,7 +290,7 @@
                         position: absolute;
                         top: 0;
                         bottom: 0;
-                    }  
+                    }
                     .date-label {
                         background-color: white;
                         font-size: 12px;
@@ -312,7 +313,7 @@
                             color: white;
                             background: $bluebuttongrad;
                         }
-                    }          
+                    }
                 }
             }
             .sbscr-plans-columns {
@@ -327,7 +328,7 @@
                     position: relative;
                     max-width: 360px;
                     padding: 35px 25px;
-                    box-shadow: 0 15px 20px -2px rgb(29, 209, 229, .1);
+                    box-shadow: 0 15px 20px -2px rgba(29, 209, 229, 0.1);
                     width: 100%;
                     box-sizing: border-box;
                     .best-img {
@@ -341,7 +342,7 @@
                         font-weight: bold;
                         font-size: 36px;
                         letter-spacing: 2px;
-                        text-shadow: 0 0 30px rgb(255 255 255 / 60%);
+                        text-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
                         margin-bottom: 16px;
                     }
                     .free-trial-text {
@@ -396,7 +397,8 @@
                     .under-or-title {
                         display: none;
                     }
-                    .btn-purp-grad , .btn-blue-grad {
+                    .btn-purp-grad,
+                    .btn-blue-grad {
                         width: 100%;
                         box-sizing: border-box;
                     }
@@ -411,9 +413,9 @@
             grid-gap: 27px;
             margin-top: 20px;
             .has-subscr-item {
-                background-color: rgba(16,18,24,.3);
+                background-color: rgba(16, 18, 24, 0.3);
                 border-radius: 8px;
-                box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
                 padding: 30px 0;
                 .container-title {
                     &.secondary-title {
@@ -464,7 +466,7 @@
                             margin-right: 3px;
                         }
                         &.btn-gray {
-                            background-color: #1B1F29;
+                            background-color: #1b1f29;
                             color: white;
                             text-decoration: none;
                             font-weight: 500;
@@ -476,9 +478,9 @@
                     }
                 }
                 .change-plan-container {
-                    background-color: rgba(16,18,24,.3);
+                    background-color: rgba(16, 18, 24, 0.3);
                     border-radius: 8px;
-                    box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .1);
+                    box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.1);
                     .title {
                         font-size: 14px;
                         text-transform: uppercase;
@@ -489,7 +491,7 @@
                     }
                     .item {
                         padding: 20px;
-                        border-top: 2px solid #1D1F25;
+                        border-top: 2px solid #1d1f25;
                         position: relative;
                         .plan-name {
                             font-size: 18px;
@@ -562,7 +564,7 @@
                         background-repeat: no-repeat;
                         background-size: cover;
                         border-radius: 10px;
-                        box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                        box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
                     }
                     .sounds-pack-slider {
                         margin-top: 20px;
@@ -586,7 +588,7 @@
                         }
                     }
                 }
-                
+
                 &.has-padding {
                     padding: 30px 12px 18px 12px;
                 }
@@ -837,7 +839,7 @@
                         margin: 10px 0;
                     }
                     &:not(:last-child) {
-                        border-bottom: 2px solid #1E2026;
+                        border-bottom: 2px solid #1e2026;
                     }
                 }
             }
@@ -848,12 +850,12 @@
                 display: grid;
                 grid-gap: 16px;
                 .cart-item {
-                    background-color: rgba(16,18,24,.3);
+                    background-color: rgba(16, 18, 24, 0.3);
                     border-radius: 8px;
-                    box-shadow: 0px 0px 20px -5px rgb(36 230 250 / 20%);
+                    box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
                     .left-block {
                         padding: 12px;
-                        border-bottom: 2px solid #2A3239;
+                        border-bottom: 2px solid #2a3239;
                         display: flex;
                         align-items: center;
                         img {
@@ -902,9 +904,9 @@
                 display: grid;
                 grid-gap: 17px;
                 .card-item {
-                    background-color: rgba(16,18,24,.8);
+                    background-color: rgba(16, 18, 24, 0.8);
                     border-radius: 8px;
-                    box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                    box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
                     .card-info-line {
                         display: flex;
                         align-items: center;
@@ -914,7 +916,7 @@
                         font-weight: 500;
                         font-size: 14px;
                         border-bottom: 1px solid #2a3239;
-                        .value{
+                        .value {
                             &.method {
                                 display: flex;
                                 align-items: center;
@@ -959,7 +961,7 @@
                                         display: block;
                                         border-radius: 50%;
                                         position: absolute;
-                                        transition: all .5s;
+                                        transition: all 0.5s;
                                         background-color: #15141c;
                                         left: 3px;
                                     }
@@ -974,7 +976,8 @@
                             }
                         }
                         &.discount {
-                            .text, .value {
+                            .text,
+                            .value {
                                 font-size: 16px;
                                 font-weight: 900;
                             }
@@ -982,9 +985,9 @@
                         &.actions {
                             justify-content: center;
                             padding-bottom: 30px;
-                            padding-top:20px;
+                            padding-top: 20px;
                             border: none;
-                            .text{
+                            .text {
                                 display: none;
                             }
                             .product-actions {
@@ -1017,9 +1020,9 @@
                 }
             }
             .payment-options-container {
-                background-color: rgba(16,18,24,.8);
+                background-color: rgba(16, 18, 24, 0.8);
                 border-radius: 8px;
-                box-shadow: 0px 0px 20px -5px rgb(36, 230, 250, .2);
+                box-shadow: 0px 0px 20px -5px rgba(36, 230, 250, 0.2);
                 padding: 24px;
                 .payment-tabs {
                     display: flex;
@@ -1051,7 +1054,7 @@
                         .checkbox {
                             width: 8px;
                             height: 8px;
-                            border: 2px solid #282D3B;
+                            border: 2px solid #282d3b;
                             border-radius: 50%;
                             margin-right: 6px;
                             background-color: $lightbluecolor;
@@ -1068,7 +1071,7 @@
                         position: relative;
                         height: 52px;
                         margin-bottom: 12px;
-                        box-shadow: 0 0 30px 5px rgb(239, 76, 198, .2);
+                        box-shadow: 0 0 30px 5px rgba(239, 76, 198, 0.2);
                         input {
                             border: none;
                             appearance: none;
@@ -1079,7 +1082,8 @@
                             padding: 0;
                             margin: 0;
                             position: absolute;
-                            &::-webkit-outer-spin-button, &::-webkit-inner-spin-button {
+                            &::-webkit-outer-spin-button,
+                            &::-webkit-inner-spin-button {
                                 -webkit-appearance: none;
                                 margin: 0;
                             }
@@ -1115,7 +1119,7 @@
                             position: relative;
                             height: 52px;
                             margin-bottom: 12px;
-                            box-shadow: 0 0 30px 5px rgb(239, 76, 198, .2);
+                            box-shadow: 0 0 30px 5px rgba(239, 76, 198, 0.2);
                             width: 100%;
                             box-sizing: border-box;
                             font-size: 12px;
@@ -1155,7 +1159,7 @@
                         line-height: 42px;
                         background: #101218;
                         outline: 0;
-                        box-shadow: 0px 0px 10px rgb(36, 230, 250, .05);
+                        box-shadow: 0px 0px 10px rgba(36, 230, 250, 0.05);
                         border: 0;
                         border-radius: 5px;
                         padding: 0 10px;
@@ -1178,9 +1182,9 @@
                 }
                 .password-change-block {
                     padding: 20px 15px 18px 15px;
-                    background-color: rgba(16,18,24,.4);
+                    background-color: rgba(16, 18, 24, 0.4);
                     border-radius: 8px;
-                    box-shadow: 0px 0px 20px rgb(36, 230, 250, .05);
+                    box-shadow: 0px 0px 20px rgba(36, 230, 250, 0.05);
                     margin: 13px 0;
                     .title {
                         font-size: 14px;
@@ -1257,7 +1261,7 @@
                     }
                     .cart-total-line {
                         padding: 17px 65px 15px 65px;
-                        border-top: 1px solid rgb(79, 78, 86, .3);
+                        border-top: 1px solid rgba(79, 78, 86, 0.3);
                         .total-text {
                             font-size: 24px;
                         }
@@ -1271,7 +1275,7 @@
                             padding: 17px 65px;
                             font-size: 18px;
                             &:nth-child(1) {
-                                border-top: 2px solid #35373E;
+                                border-top: 2px solid #35373e;
                                 padding-top: 35px;
                             }
                         }
@@ -1279,7 +1283,7 @@
                     .actions-line {
                         justify-content: space-between;
                         color: white;
-                        border-top: 1px solid rgb(79, 78, 86, .3);
+                        border-top: 1px solid rgba(79, 78, 86, 0.3);
                         padding: 17px 65px 35px 65px;
                         font-weight: 900;
                         font-size: 24px;
@@ -1336,14 +1340,14 @@
                             width: 40%;
                             height: 20px;
                             line-height: 20px;
-                        }  
+                        }
                         .date-label {
                             font-size: 16px;
                             line-height: 36px;
                             height: 36px;
                             margin-top: -7px;
                             min-width: 70px;
-                        }          
+                        }
                     }
                 }
                 .sbscr-plans-columns {
@@ -1371,12 +1375,12 @@
                             }
                         }
                         .features-list {
-                           min-height: 142px;
-                           display: flex;
-                           flex-flow: column;
+                            min-height: 142px;
+                            display: flex;
+                            flex-flow: column;
                             grid-gap: 0;
                             margin-bottom: 0;
-                            
+
                             .feature-line {
                                 margin-bottom: 20px;
                             }
@@ -1421,7 +1425,8 @@
                             margin-bottom: 15px;
                             display: block;
                         }
-                        .btn-purp-grad , .btn-blue-grad {
+                        .btn-purp-grad,
+                        .btn-blue-grad {
                             line-height: 60px;
                             font-size: 16px;
                         }
@@ -1494,7 +1499,8 @@
                                 font-size: 16px;
                                 line-height: 60px;
                             }
-                            .swiper-button-next, .swiper-button-prev {
+                            .swiper-button-next,
+                            .swiper-button-prev {
                                 display: none;
                             }
                             .swiper-container {
@@ -1570,7 +1576,7 @@
                                         display: block;
                                     }
                                     &.current {
-                                        background: #1B1F29;
+                                        background: #1b1f29;
                                         img {
                                             display: none;
                                         }
@@ -1581,7 +1587,7 @@
                         .recommendations-container {
                             display: block;
                             padding: 20px 20px 20px 20px;
-                            border: 2px solid #4C4F57;
+                            border: 2px solid #4c4f57;
                             max-width: 450px;
                             margin: 0 auto;
                             border-radius: 5px;
@@ -1589,7 +1595,7 @@
                                 display: flex;
                                 align-items: center;
                                 justify-content: center;
-                                color: #4C4F57;
+                                color: #4c4f57;
                                 margin-bottom: 15px;
                                 font-size: 12px;
                                 text-transform: uppercase;
@@ -1655,12 +1661,12 @@
                             }
                         }
                         .product-actions {
-                            margin:0;
-                                a {
-                                    font-size: 16px;
-                                    line-height: 60px;
-                                }
+                            margin: 0;
+                            a {
+                                font-size: 16px;
+                                line-height: 60px;
                             }
+                        }
                     }
                 }
             }
@@ -1678,7 +1684,8 @@
                                 }
                             }
                             &.discount {
-                                .text, .value {
+                                .text,
+                                .value {
                                     font-size: 24px;
                                 }
                             }
@@ -1686,8 +1693,8 @@
                                 justify-content: space-between;
                                 border-top: 2px solid #2a3239;
                                 padding: 15px 32px 30px 32px;
-                                .text{
-                                    display:block;
+                                .text {
+                                    display: block;
                                     font-size: 24px;
                                     text-transform: uppercase;
                                     font-weight: 900;
@@ -1722,7 +1729,7 @@
                             margin: 0 25px;
                             .checkbox {
                                 width: 30px;
-                                background-color: #282D3B;
+                                background-color: #282d3b;
                                 border-radius: 10px;
                                 height: 16px;
                                 border: none;
@@ -1731,7 +1738,7 @@
                                 align-items: center;
                                 position: relative;
                                 &:after {
-                                    content: '';
+                                    content: "";
                                     width: 13px;
                                     height: 13px;
                                     display: block;
@@ -1739,14 +1746,14 @@
                                     border-radius: 50%;
                                     right: 3px;
                                     position: absolute;
-                                    transition: all .5s;
+                                    transition: all 0.5s;
                                 }
                             }
                             &.inactive {
                                 .checkbox {
-                                    background-color: #282D3B;
+                                    background-color: #282d3b;
                                     &:after {
-                                        background-color: #15141C;
+                                        background-color: #15141c;
                                         right: unset;
                                         left: 3px;
                                     }
@@ -1773,7 +1780,7 @@
                                 box-sizing: border-box;
                                 font-size: 14px;
                                 line-height: 60px;
-                                box-shadow: 0 0 30px 5px rgb(239, 76, 198, .2);
+                                box-shadow: 0 0 30px 5px rgba(239, 76, 198, 0.2);
                                 &.card-number {
                                     width: unset;
                                     flex: 0 0 100%;
@@ -1806,7 +1813,7 @@
                                 font-size: 14px;
                                 line-height: 60px;
                                 height: 60px;
-                                box-shadow: 0 0 30px 5px rgb(239, 76, 198, .2);
+                                box-shadow: 0 0 30px 5px rgba(239, 76, 198, 0.2);
                                 margin-bottom: 30px;
                             }
                         }
@@ -1814,9 +1821,9 @@
                 }
             }
             .account-details-container {
-                background-color: rgba(16,18,24,.2);
+                background-color: rgba(16, 18, 24, 0.2);
                 border-radius: 8px;
-                box-shadow: 0px 0px 20px rgb(36, 230, 250, .1);
+                box-shadow: 0px 0px 20px rgba(36, 230, 250, 0.1);
                 padding: 35px 16px 40px 16px;
                 margin: 30px auto 0 auto;
                 max-width: 940px;

@@ -1,6 +1,10 @@
 /*Colors*/
 /*Fonts*/
-/*breakpoints*/
+/*breakpoints OLD*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .full-width-container.stage-one-top-container {
   padding: 225px 16px 35px 16px;
   background-image: url(/assets/img/rocket-back.jpg);
@@ -57,7 +61,7 @@
   display: flex;
   justify-content: space-between;
   background-color: white;
-  box-shadow: 0 0px 8px -1px #1dd1e5;
+  box-shadow: 0 0px 8px -1px #23e7fb;
 }
 .full-width-container.stage-one-top-container.join .subscription-plan-timeline .line .inner-line {
   background: linear-gradient(to right, #1ed6e9, #15b8cd);
@@ -83,12 +87,12 @@
   text-align: center;
 }
 .full-width-container.stage-one-top-container.join .subscription-plan-timeline .line .date-label.date1 {
-  box-shadow: 0 0px 8px -1px #1dd1e5;
+  box-shadow: 0 0px 8px -1px #23e7fb;
   color: white;
   background: linear-gradient(to right, #1ed6e9, #15b8cd);
 }
 .full-width-container.stage-one-top-container.join .subscription-plan-timeline .line .date-label.date2 {
-  box-shadow: 0 0px 8px -1px #1dd1e5;
+  box-shadow: 0 0px 8px -1px #23e7fb;
   color: white;
   background: linear-gradient(to right, #1ed6e9, #15b8cd);
 }
@@ -100,7 +104,7 @@
   padding: 85px 16px 35px 16px;
 }
 .full-width-container.stage-one-top-container.trial .try-free-title {
-  color: #1dd1e5;
+  color: #23e7fb;
   text-align: center;
   margin-bottom: 28px;
   font-size: 20px;
@@ -136,7 +140,7 @@
   display: flex;
   justify-content: space-between;
   background-color: white;
-  box-shadow: 0 0px 8px -1px #1dd1e5;
+  box-shadow: 0 0px 8px -1px #23e7fb;
 }
 .full-width-container.choose-plan-container-s-one .subscription-plan-timeline .line .inner-line {
   background: linear-gradient(to right, #1ed6e9, #15b8cd);
@@ -162,12 +166,12 @@
   text-align: center;
 }
 .full-width-container.choose-plan-container-s-one .subscription-plan-timeline .line .date-label.date1 {
-  box-shadow: 0 0px 8px -1px #1dd1e5;
+  box-shadow: 0 0px 8px -1px #23e7fb;
   color: white;
   background: linear-gradient(to right, #1ed6e9, #15b8cd);
 }
 .full-width-container.choose-plan-container-s-one .subscription-plan-timeline .line .date-label.date2 {
-  box-shadow: 0 0px 8px -1px #1dd1e5;
+  box-shadow: 0 0px 8px -1px #23e7fb;
   color: white;
   background: linear-gradient(to right, #1ed6e9, #15b8cd);
 }
@@ -204,7 +208,7 @@
 }
 .full-width-container.choose-plan-container-s-one .sbscr-plans-columns .sbscr-plan-col .free-trial-text {
   text-align: center;
-  color: #1dd1e5;
+  color: #23e7fb;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
@@ -254,7 +258,8 @@
 .full-width-container.choose-plan-container-s-one .sbscr-plans-columns .sbscr-plan-col .under-or-title {
   display: none;
 }
-.full-width-container.choose-plan-container-s-one .sbscr-plans-columns .sbscr-plan-col .btn-purp-grad, .full-width-container.choose-plan-container-s-one .sbscr-plans-columns .sbscr-plan-col .btn-blue-grad {
+.full-width-container.choose-plan-container-s-one .sbscr-plans-columns .sbscr-plan-col .btn-purp-grad,
+.full-width-container.choose-plan-container-s-one .sbscr-plans-columns .sbscr-plan-col .btn-blue-grad {
   width: 100%;
   box-sizing: border-box;
 }
@@ -284,7 +289,7 @@
 }
 .full-width-container.choose-plan-container-s-one.trial .sbscr-plans-columns .sbscr-plan-col .trial-block .title {
   text-align: center;
-  color: #1dd1e5;
+  color: #23e7fb;
   font-weight: bold;
   font-size: 36px;
   letter-spacing: 2px;
@@ -327,7 +332,7 @@
   display: none;
 }
 
-@media (min-width: 675px) {
+@media (min-width: 600px) {
   .full-width-container.stage-one-top-container {
     padding-bottom: 80px;
   }
@@ -495,12 +500,13 @@
   .full-width-container.choose-plan-container-s-one .sbscr-plans-columns .sbscr-plan-col .under-or-title {
     font-size: 24px;
     text-transform: uppercase;
-    color: #1dd1e5;
+    color: #23e7fb;
     text-align: center;
     font-weight: bold;
     margin-bottom: 15px;
   }
-  .full-width-container.choose-plan-container-s-one .sbscr-plans-columns .sbscr-plan-col .btn-purp-grad, .full-width-container.choose-plan-container-s-one .sbscr-plans-columns .sbscr-plan-col .btn-blue-grad {
+  .full-width-container.choose-plan-container-s-one .sbscr-plans-columns .sbscr-plan-col .btn-purp-grad,
+.full-width-container.choose-plan-container-s-one .sbscr-plans-columns .sbscr-plan-col .btn-blue-grad {
     line-height: 60px;
     font-size: 16px;
   }
@@ -511,7 +517,7 @@
     font-size: 45px;
   }
 }
-@media (min-width: 1023px) {
+@media (min-width: 992px) {
   .full-width-container.stage-one-top-container {
     padding-top: 312px;
   }
@@ -535,7 +541,7 @@
     top: -35px;
   }
 }
-@media (min-width: 1310px) {
+@media (min-width: 1200px) {
   .full-width-container.stage-one-top-container .inner-content-container {
     max-width: 1400px;
   }
@@ -545,4 +551,6 @@
   .full-width-container.choose-plan-container-s-one .container-title.secondary-title br {
     display: none;
   }
-}/*# sourceMappingURL=stage-one.css.map */
+}
+
+/*# sourceMappingURL=stage-one.css.map */

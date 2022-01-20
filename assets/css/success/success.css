@@ -1,6 +1,10 @@
 /*Colors*/
 /*Fonts*/
-/*breakpoints*/
+/*breakpoints OLD*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .full-width-container.thank-you-container {
   padding: 225px 16px 48px 16px;
   background-image: url(/assets/img/rocket-back.jpg);
@@ -35,7 +39,7 @@
   margin-bottom: 15px;
 }
 .full-width-container.thank-you-container .thank-you-top-descr .purchase-available a {
-  color: #1dd1e5;
+  color: #23e7fb;
 }
 .full-width-container.thank-you-container .thank-you-top-descr .purchase-available-descr {
   color: white;
@@ -51,17 +55,17 @@
   cursor: pointer;
   text-decoration: none;
   transition: all 0.3s;
-  box-shadow: 0 0px 8px -2px #1dd1e5;
+  box-shadow: 0 0px 8px -2px #23e7fb;
   line-height: 50px;
   text-align: center;
   display: inline-block;
   padding: 0 30px;
   font-size: 12px;
   border-radius: 30px;
-  color: #1dd1e5;
+  color: #23e7fb;
   text-transform: uppercase;
   font-weight: 500;
-  border: 2px solid #1dd1e5;
+  border: 2px solid #23e7fb;
   background: transparent;
 }
 .full-width-container.thank-you-container .thank-you-top-descr .watch-instruction:hover {
@@ -71,7 +75,7 @@
 }
 .full-width-container.thank-you-order {
   padding: 0 16px 52px 16px;
-  background-color: #13161D;
+  background-color: #13161d;
 }
 .full-width-container.thank-you-order .container-title.secondary-title {
   margin-bottom: 24px;
@@ -101,7 +105,7 @@
 .full-width-container.thank-you-order .checkout-total-container .cart-items .cart-item .product-name a {
   font-size: 10px;
   font-weight: 500;
-  color: #1dd1e5;
+  color: #23e7fb;
 }
 .full-width-container.thank-you-order .checkout-total-container .cart-items .cart-item .product-actions-price {
   flex: 1;
@@ -137,7 +141,7 @@
   padding-bottom: 12px;
 }
 .full-width-container.thank-you-order .checkout-total-container .cart-subtotal-container {
-  border-top: 2px solid #2D363E;
+  border-top: 2px solid #2d363e;
 }
 .full-width-container.thank-you-order .checkout-total-container .cart-subtotal-container .cart-subtotal-line {
   padding: 18px 18px 14px 18px;
@@ -195,7 +199,7 @@
   font-weight: 500;
 }
 .full-width-container.thank-you-discount .discount-bottom-text a {
-  color: #1dd1e5;
+  color: #23e7fb;
 }
 .full-width-container.thank-you-discount .subscription-form {
   display: grid;
@@ -304,7 +308,7 @@
 .full-width-container.thank-you-special-offer .prd .prd-label.label-discount {
   left: 0;
   right: unset;
-  color: #1dd1e5;
+  color: #23e7fb;
   border-radius: 10px 0 10px 0;
 }
 .full-width-container.thank-you-special-offer .prd a.prd-hd {
@@ -358,7 +362,7 @@
   z-index: 1;
 }
 .full-width-container.thank-you-special-offer .prd a.prd-hd .prd-tit-blue {
-  color: #1dd1e5;
+  color: #23e7fb;
   z-index: 1;
   display: block;
   margin: 15px 0 17px 0;
@@ -493,12 +497,12 @@
   border: none;
   font-size: 26px;
   line-height: 26px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   color: black;
   font-weight: 500;
 }
 .full-width-container.thank-you-rate .rating-blocks-form .rating-line .rating-line-buttons button.active {
-  background-color: #1dd1e5;
+  background-color: #23e7fb;
   color: white;
 }
 .full-width-container.thank-you-rate .rating-blocks-form .btn-blue-grad {
@@ -507,7 +511,7 @@
   width: 100%;
 }
 
-@media (min-width: 675px) {
+@media (min-width: 600px) {
   .full-width-container.thank-you-container {
     padding-bottom: 92px;
   }
@@ -662,7 +666,7 @@
     margin-top: 20px;
   }
 }
-@media (min-width: 1023px) {
+@media (min-width: 992px) {
   .full-width-container.thank-you-container {
     padding-top: 312px;
   }
@@ -672,4 +676,6 @@
   .full-width-container.thank-you-container .container-title.main-title .gradient-title.first-title {
     font-size: 100px;
   }
-}/*# sourceMappingURL=success.css.map */
+}
+
+/*# sourceMappingURL=success.css.map */

@@ -1,6 +1,10 @@
 /*Colors*/
 /*Fonts*/
-/*breakpoints*/
+/*breakpoints OLD*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .full-width-container .main-subtitle {
   margin: 0 0 20px 0;
   font-size: 12px;
@@ -33,7 +37,7 @@
   margin-bottom: 30px;
 }
 .full-width-container.contact-us-container .main-subtitle a {
-  color: #1dd1e5;
+  color: #23e7fb;
 }
 .full-width-container.contact-us-container .main-subtitle span {
   font-size: 12px;
@@ -92,7 +96,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 50px 0 30px 0;
-  background-image: linear-gradient(90deg, #ef4cc6 30%, #10a9bf 60%);
+  background-image: linear-gradient(130deg, #ef4bc5 40%, #0fa9bf 60%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -125,12 +129,6 @@
   color: #fff;
   font-family: "UniSans", sans-serif;
 }
-.full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row input::-moz-placeholder {
-  color: #434e67;
-}
-.full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row input:-ms-input-placeholder {
-  color: #434e67;
-}
 .full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row input::placeholder {
   color: #434e67;
 }
@@ -147,12 +145,6 @@
   border: 0;
   font-family: "UniSans", sans-serif;
 }
-.full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row textarea::-moz-placeholder {
-  color: #434e67;
-}
-.full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row textarea:-ms-input-placeholder {
-  color: #434e67;
-}
 .full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row textarea::placeholder {
   color: #434e67;
 }
@@ -164,7 +156,7 @@
   line-height: 60px;
 }
 
-@media (min-width: 675px) {
+@media (min-width: 600px) {
   .full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row {
     align-items: flex-start;
   }
@@ -178,17 +170,12 @@
   .full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row .add-review-label sup {
     color: #ef4cc6;
   }
-  .full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row input::-moz-placeholder, .full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row textarea::-moz-placeholder {
-    color: transparent;
-  }
-  .full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row input:-ms-input-placeholder, .full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row textarea:-ms-input-placeholder {
-    color: transparent;
-  }
-  .full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row input::placeholder, .full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row textarea::placeholder {
+  .full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row input::placeholder,
+.full-width-container.contact-us-container .contact-us-columns .contact-us-form .add-review-row textarea::placeholder {
     color: transparent;
   }
 }
-@media (min-width: 800px) {
+@media (min-width: 768px) {
   .full-width-container.contact-us-container {
     padding: 160px 16px 203px 16px;
   }
@@ -236,7 +223,7 @@
     margin: 10px auto 0 95px;
   }
 }
-@media (min-width: 1023px) {
+@media (min-width: 992px) {
   .full-width-container.contact-us-container {
     background-image: url("/assets/img/contact-back.jpg");
     background-repeat: no-repeat;
@@ -271,4 +258,6 @@
   .full-width-container.contact-us-container .contact-us-columns .contact-us-form form .add-review-row input {
     box-shadow: 0px 0px 10px -4px rgba(36, 230, 250, 0.1);
   }
-}/*# sourceMappingURL=contact-us.css.map */
+}
+
+/*# sourceMappingURL=contact-us.css.map */

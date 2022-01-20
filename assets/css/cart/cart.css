@@ -1,6 +1,10 @@
 /*Colors*/
 /*Fonts*/
-/*breakpoints*/
+/*breakpoints OLD*/
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Medium devices (landscape tablets, 768px and up) */
+/* Large devices (laptops/desktops, 992px and up) */
+/* Extra large devices (large laptops and desktops, 1200px and up) */
 .full-width-container.cart-container {
   padding-top: 69px;
   padding-bottom: 104px;
@@ -41,7 +45,7 @@
 .full-width-container.cart-container .cart-content-block .cart-items-block .cart-item .product-name a {
   font-size: 10px;
   font-weight: 500;
-  color: #1dd1e5;
+  color: #23e7fb;
 }
 .full-width-container.cart-container .cart-content-block .cart-items-block .cart-item .product-actions-price {
   flex: 1;
@@ -194,7 +198,7 @@
   font-weight: 400;
 }
 
-@media (min-width: 675px) {
+@media (min-width: 600px) {
   .full-width-container.cart-container .cart-content-block .cart-items-block {
     grid-gap: 16px;
   }
@@ -225,14 +229,17 @@
     height: 17px;
     margin-top: 4px;
   }
-  .full-width-container.cart-container .cart-content-block .promo-code-block, .full-width-container.cart-container .cart-content-block .cart-totals-block {
+  .full-width-container.cart-container .cart-content-block .promo-code-block,
+.full-width-container.cart-container .cart-content-block .cart-totals-block {
     padding: 36px;
   }
-  .full-width-container.cart-container .cart-content-block .promo-code-block .container-title.secondary-title, .full-width-container.cart-container .cart-content-block .cart-totals-block .container-title.secondary-title {
+  .full-width-container.cart-container .cart-content-block .promo-code-block .container-title.secondary-title,
+.full-width-container.cart-container .cart-content-block .cart-totals-block .container-title.secondary-title {
     font-size: 38px;
     margin-bottom: 26px;
   }
-  .full-width-container.cart-container .cart-content-block .promo-code-block button, .full-width-container.cart-container .cart-content-block .cart-totals-block button {
+  .full-width-container.cart-container .cart-content-block .promo-code-block button,
+.full-width-container.cart-container .cart-content-block .cart-totals-block button {
     line-height: 60px;
     font-size: 16px;
   }
@@ -260,7 +267,7 @@
     font-size: 16px;
   }
 }
-@media (min-width: 1023px) {
+@media (min-width: 992px) {
   .full-width-container.cart-container {
     padding: 204px 16px;
     background-image: url(/assets/img/cart-back.jpg);
@@ -297,4 +304,6 @@
     order: 2;
     padding: 36px 56px;
   }
-}/*# sourceMappingURL=cart.css.map */
+}
+
+/*# sourceMappingURL=cart.css.map */
