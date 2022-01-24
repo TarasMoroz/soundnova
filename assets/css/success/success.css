@@ -217,7 +217,7 @@
   color: #13161d;
   font-size: 12px;
   border-radius: 30px;
-  width: calc(100% - 60px);
+  width: 100%;
   outline: none;
   box-shadow: 0 0 30px 5px rgba(239, 76, 198, 0.2);
   text-transform: uppercase;
@@ -677,5 +677,4 @@
     font-size: 100px;
   }
 }
-
 /*# sourceMappingURL=success.css.map */

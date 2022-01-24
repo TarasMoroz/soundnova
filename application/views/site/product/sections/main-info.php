@@ -11,6 +11,6 @@
 <div class="view-mobile">
   <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'mobile', ['pathToCurrentSection' => $pathToCurrentSection]); ?>
 </div>
-<div class="view-desktop">
+<div class="view-tablet view-desktop">
   <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'desktop', ['pathToCurrentSection' => $pathToCurrentSection]); ?>
 </div>

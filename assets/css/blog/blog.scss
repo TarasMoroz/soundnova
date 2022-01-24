@@ -406,7 +406,8 @@
                         color: $maindarkgray;
                         font-size: 14px;
                         border-radius: 30px;
-                        width: calc(100% - 60px);
+                        // width: calc(100% - 60px);
+                        width: 100%;
                         outline: none;
                         box-shadow: 0 0 30px 5px rgba(239, 76, 198, 0.2);
                     }
@@ -705,7 +706,8 @@
                     color: $maindarkgray;
                     font-size: 14px;
                     border-radius: 30px;
-                    width: calc(100% - 60px);
+                    // width: calc(100% - 60px);
+                    width: 100%;
                     outline: none;
                     box-shadow: 0 0 30px 5px rgba(239, 76, 198, 0.2);
                 }
@@ -1389,7 +1391,8 @@
                         max-width: 470px;
                         margin-top: 40px;
                         input {
-                            width: 200px;
+                            // width: 200px;
+                            width: 100%;
                             padding: 0 230px 0 40px;
                             line-height: 60px;
                             top: 0;
@@ -1492,7 +1495,8 @@
                     max-width: 470px;
                     margin-top: 40px;
                     input {
-                        width: 200px;
+                        // width: 200px;
+                        width: 100%;
                         padding: 0 230px 0 40px;
                         line-height: 60px;
                         top: 0;
