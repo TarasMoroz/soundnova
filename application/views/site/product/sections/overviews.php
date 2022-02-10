@@ -1,6 +1,6 @@
 
-<h2 class="container-title secondary-title">
-  <div class="gradient-title shadowed">Watch overviews<br> about magic</div>
+<h2 class="txt-uppercase txt-center mb-4">
+  <div class="gradient-title shadowed">Watch overviews about magic</div>
 </h2>
 <div class="overviews-slider">
   <!-- Swiper -->
