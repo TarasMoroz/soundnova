@@ -431,47 +431,6 @@ section {
         }
     }
 
-    .sale-timer {
-        display: flex;
-        padding: 13px;
-        justify-content: center;
-        align-items: center;
-        background: #13151d;
-        border-radius: 4px;
-        box-shadow: 0 0 20px 5px rgb(0 0 0 / 40%);
-        border: 1px solid #11131a;
-        justify-content: space-between;
-        @media (min-width: $bp-laptop) {
-            padding: 16px;
-        }
-        .title {
-            position: relative;
-            color: $mainyellow;
-            text-transform: uppercase;
-            font-weight: 500;
-            white-space: nowrap;
-            margin-right: 10px;
-            // margin-right: 25px;
-            .name {
-                font-size: 17px;
-            }
-            .sub {
-                font-size: 13px;
-            }
-            &:before {
-                content: "";
-                position: absolute;
-                box-shadow: 0 0 30px 16px rgba($mainyellow, 0.15);
-                width: 80%;
-                height: 0;
-                display: block;
-                margin-left: 10%;
-                top: 40%;
-                left: 0;
-            }
-        }
-    }
-
     .buy-buttons {
         display: flex;
         > * {

@@ -506,42 +506,57 @@
             padding-top: 153px;
             .catalog-top-sales-block {
                 .catalog-top-sales-inner {
+                    max-height: 85px;
                     &.mobile {
                         display: none;
                     }
                     &.desktop {
                         display: flex;
                         align-items: center;
-                        justify-content: space-between;
+                        justify-content: space-around;
                         padding: 30px;
-                        max-width: 1170px;
+                        // max-width: 1170px;
                         margin: 0 auto;
                         .catalog-sales-left {
-                            max-width: 265px;
-                            width: 100%;
+                            // max-width: 265px;
                             .summer-sale-title {
                                 display: flex;
-                                flex-flow: column;
+                                flex-flow: row;
                                 justify-content: center;
                                 align-items: center;
                                 max-width: unset;
                                 margin: 0;
+                                gap: 15px;
                                 img {
                                     width: 100%;
+                                }
+                                .bundle-title {
+                                    font-size: 14px;
+                                    color: $lightwhite;
+                                    letter-spacing: 0.75px;
+                                    font-weight: 500;
+                                    text-align: left;
+                                    margin: 2px 0;
+                                    white-space: nowrap;
                                 }
                                 .bundle-title-blue {
                                     text-align: center;
                                     font-weight: 500;
-                                    font-size: 16px;
-                                    margin: 10px 0;
+                                    font-size: 14px;
+                                    margin: 2px 0;
                                     color: $lightbluecolor;
+                                    letter-spacing: 0.75px;
+                                    text-align: left;
+                                    white-space: nowrap;
                                 }
                                 .btn-purp-grad {
                                     height: 60px;
                                     line-height: 60px;
-                                    max-width: 240px;
-                                    width: calc(100% - 30px);
+                                    // max-width: 240px;
+                                    // width: calc(100% - 30px);
                                     font-size: 16px;
+                                    padding: 0 25px;
+                                    white-space: nowrap;
                                     s {
                                         font-size: 12px;
                                         margin-left: 6px;
@@ -554,25 +569,30 @@
                         }
                         .catalog-sales-middle {
                             position: relative;
-                            min-height: 130px;
-                            width: 100%;
+                            z-index: 0;
+                            // min-height: 130px;
+                            // width: 100%;
                             .shadow {
-                                width: 200px;
-                                height: 20px;
-                                box-shadow: 0px 10px 130px 80px rgba(16, 170, 190, 0.1);
+                                width: 30px;
+                                height: 1px;
+                                box-shadow: 0px 0 55px 60px rgb(16 170 190 / 25%);
                                 position: absolute;
-                                top: 65px;
+                                top: 50%;
                                 left: 50%;
-                                transform: translateX(-50%);
+                                z-index: -1;
                             }
                             img {
-                                position: absolute;
-                                top: -70px;
-                                left: 50%;
-                                transform: translateX(-50%);
+                                max-height: 110px;
+                                margin: auto;
+                                display: block;
+                                // position: absolute;
+                                // top: -70px;
+                                // left: 50%;
+                                // transform: translateX(-50%);
                             }
                         }
                         .catalog-sales-right {
+                            max-width: 360px;
                             .get-everything-title {
                                 color: white;
                                 text-align: center;

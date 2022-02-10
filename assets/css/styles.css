@@ -372,6 +372,9 @@ main.main-content > div:last-child {
   max-width: 1140px;
   margin: 0 auto;
 }
+.full-width-container .inner-content-container.w-lg-xl {
+  max-width: 1170px;
+}
 .full-width-container .inner-content-container.w-lg {
   max-width: 1140px;
 }
@@ -1399,5 +1402,47 @@ main.main-content > div:last-child {
 #popup-tooltip-wrapper #popup-tooltip #popup-tooltip-content {
   display: grid;
   grid-gap: 24px;
+}
+
+.sale-timer {
+  display: flex;
+  padding: 13px;
+  justify-content: center;
+  align-items: center;
+  background: #13151d;
+  border-radius: 4px;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
+  border: 1px solid #11131a;
+  justify-content: space-between;
+}
+@media (min-width: 992px) {
+  .sale-timer {
+    padding: 16px;
+  }
+}
+.sale-timer .title {
+  position: relative;
+  color: #f9ed1d;
+  text-transform: uppercase;
+  font-weight: 500;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+.sale-timer .title .name {
+  font-size: 17px;
+}
+.sale-timer .title .sub {
+  font-size: 13px;
+}
+.sale-timer .title:before {
+  content: "";
+  position: absolute;
+  box-shadow: 0 0 30px 16px rgba(249, 237, 29, 0.15);
+  width: 80%;
+  height: 0;
+  display: block;
+  margin-left: 10%;
+  top: 40%;
+  left: 0;
 }
 /*# sourceMappingURL=styles.css.map */

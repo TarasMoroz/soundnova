@@ -5,6 +5,8 @@
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+/* For Projectors or Higher Resolution Screens (Full HD) */
+/* NEW BREAKPOINTS */
 .full-width-container.catalog-first {
   padding: 50px 16px 30px 16px;
 }
@@ -477,45 +479,56 @@
   .full-width-container.catalog-first {
     padding-top: 153px;
   }
+  .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner {
+    max-height: 85px;
+  }
   .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner.mobile {
     display: none;
   }
   .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner.desktop {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 30px;
-    max-width: 1170px;
     margin: 0 auto;
-  }
-  .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner.desktop .catalog-sales-left {
-    max-width: 265px;
-    width: 100%;
   }
   .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner.desktop .catalog-sales-left .summer-sale-title {
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     justify-content: center;
     align-items: center;
     max-width: unset;
     margin: 0;
+    gap: 15px;
   }
   .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner.desktop .catalog-sales-left .summer-sale-title img {
     width: 100%;
   }
+  .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner.desktop .catalog-sales-left .summer-sale-title .bundle-title {
+    font-size: 14px;
+    color: #f7f7f7;
+    letter-spacing: 0.75px;
+    font-weight: 500;
+    text-align: left;
+    margin: 2px 0;
+    white-space: nowrap;
+  }
   .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner.desktop .catalog-sales-left .summer-sale-title .bundle-title-blue {
     text-align: center;
     font-weight: 500;
-    font-size: 16px;
-    margin: 10px 0;
+    font-size: 14px;
+    margin: 2px 0;
     color: #23e7fb;
+    letter-spacing: 0.75px;
+    text-align: left;
+    white-space: nowrap;
   }
   .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner.desktop .catalog-sales-left .summer-sale-title .btn-purp-grad {
     height: 60px;
     line-height: 60px;
-    max-width: 240px;
-    width: calc(100% - 30px);
     font-size: 16px;
+    padding: 0 25px;
+    white-space: nowrap;
   }
   .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner.desktop .catalog-sales-left .summer-sale-title .btn-purp-grad s {
     font-size: 12px;
@@ -526,23 +539,24 @@
   }
   .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner.desktop .catalog-sales-middle {
     position: relative;
-    min-height: 130px;
-    width: 100%;
+    z-index: 0;
   }
   .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner.desktop .catalog-sales-middle .shadow {
-    width: 200px;
-    height: 20px;
-    box-shadow: 0px 10px 130px 80px rgba(16, 170, 190, 0.1);
+    width: 30px;
+    height: 1px;
+    box-shadow: 0px 0 55px 60px rgba(16, 170, 190, 0.25);
     position: absolute;
-    top: 65px;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    z-index: -1;
   }
   .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner.desktop .catalog-sales-middle img {
-    position: absolute;
-    top: -70px;
-    left: 50%;
-    transform: translateX(-50%);
+    max-height: 110px;
+    margin: auto;
+    display: block;
+  }
+  .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner.desktop .catalog-sales-right {
+    max-width: 360px;
   }
   .full-width-container.catalog-first .catalog-top-sales-block .catalog-top-sales-inner.desktop .catalog-sales-right .get-everything-title {
     color: white;
@@ -577,6 +591,7 @@
   .full-width-container.catalog-second #catalog-wrapper #ftrs {
     display: grid;
     grid-template-columns: 1fr;
+    position: -webkit-sticky;
     position: sticky;
     top: 90px;
     margin-bottom: 0;
@@ -689,5 +704,4 @@
     display: none;
   }
 }
-
 /*# sourceMappingURL=catalog.css.map */

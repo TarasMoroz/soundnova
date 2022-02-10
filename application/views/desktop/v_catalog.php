@@ -18,74 +18,61 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 
 			<div class="full-width-container catalog-first">
+				<div class="inner-content-container w-lg-xl">
+					<div class="catalog-top-sales-block">
+						<div class="catalog-top-sales-inner mobile">
+							<div class="catalog-sales-left">
+								<div class="summer-sale-title">
+									<img class="lzy_img" data-src="/assets/img/summer_sale.svg">
+								</div>
+							</div>
+							<div class="catalog-sales-middle">
+								<div class="shadow"></div>
+								<img class="lzy_img" data-src="/assets/img/catalog-sales-bundle-min.svg">
+							</div>
+							<div class="catalog-sales-right">
+							<p class="bundle-title-blue">Ultimate bundle offer</p>
+							<a href="#" class="btn-purp-grad btn-main-sale"><s>BUY</s> $299 <s>$1000</s></a>
+							<div class="timer-counter">
+											<div class="timer-counter-item">
+												<span class="count-number days">0</span>
+												<span class="count-text">days</span>
+											</div>
+											<div class="timer-counter-item">
+												<span class="count-number hours">0</span>
+												<span class="count-text">hours</span>
+											</div>
+											<div class="timer-counter-item">
+												<span class="count-number minutes">0</span>
+												<span class="count-text">mins</span>
+											</div>
+											<div class="timer-counter-item">
+												<span class="count-number seconds">0</span>
+												<span class="count-text">sec</span>
+											</div>
+								</div>
+							</div>
+						</div>
 
-				<div class="catalog-top-sales-block">
-					<div class="catalog-top-sales-inner mobile">
-						<div class="catalog-sales-left">
-							<div class="summer-sale-title">
-								<img class="lzy_img" data-src="/assets/img/summer_sale.svg">
+						<div class="catalog-top-sales-inner desktop">
+							<div class="catalog-sales-left">
+								<div class="summer-sale-title">
+									<!-- <img class="lzy_img" data-src="/assets/img/summer_sale.svg"> -->
+									<div>
+										<div class="bundle-title">BLACK FRIADAY SALE</div>
+										<div class="bundle-title-blue">Ultimate bundle offer</div>
+									</div>
+									<div>
+										<a href="#" class="btn-purp-grad btn-main-sale">BUY $299 <s>$1000</s><span>SAVE -71%</span></a>
+									</div>
+								</div>
 							</div>
-						</div>
-						<div class="catalog-sales-middle">
-							<div class="shadow"></div>
-							<img class="lzy_img" data-src="/assets/img/catalog-sales-bundle-min.svg">
-						</div>
-						<div class="catalog-sales-right">
-						<p class="bundle-title-blue">Ultimate bundle offer</p>
-						<a href="#" class="btn-purp-grad btn-main-sale">BUY $299 <s>$1000</s></a>
-						<div class="timer-counter">
-										<div class="timer-counter-item">
-											<span class="count-number days">0</span>
-											<span class="count-text">days</span>
-										</div>
-										<div class="timer-counter-item">
-											<span class="count-number hours">0</span>
-											<span class="count-text">hours</span>
-										</div>
-										<div class="timer-counter-item">
-											<span class="count-number minutes">0</span>
-											<span class="count-text">mins</span>
-										</div>
-										<div class="timer-counter-item">
-											<span class="count-number seconds">0</span>
-											<span class="count-text">sec</span>
-										</div>
+							<div class="catalog-sales-middle">
+								<div class="shadow"></div>
+								<img class="lzy_img" data-src="/assets/img/catalog-sales-bundle-min.svg">
 							</div>
-						</div>
-					</div>
-
-					<div class="catalog-top-sales-inner desktop">
-						<div class="catalog-sales-left">
-							<div class="summer-sale-title">
-								<img class="lzy_img" data-src="/assets/img/summer_sale.svg">
-								<p class="bundle-title-blue">Ultimate bundle offer</p>
-								<a href="#" class="btn-purp-grad btn-main-sale">BUY $299 <s>$1000</s><span>SAVE -71%</span></a>
-							</div>
-						</div>
-						<div class="catalog-sales-middle">
-							<div class="shadow"></div>
-							<img class="lzy_img" data-src="/assets/img/catalog-sales-bundle-min.svg">
-						</div>
-						<div class="catalog-sales-right">
-						<div class="get-everything-title">get everything we’ve ever created</div>
-						<div class="sale-will-end-title">sale will end in</div>
-						<div class="timer-counter">
-										<div class="timer-counter-item">
-											<span class="count-number days">0</span>
-											<span class="count-text">days</span>
-										</div>
-										<div class="timer-counter-item">
-											<span class="count-number hours">0</span>
-											<span class="count-text">hours</span>
-										</div>
-										<div class="timer-counter-item">
-											<span class="count-number minutes">0</span>
-											<span class="count-text">mins</span>
-										</div>
-										<div class="timer-counter-item">
-											<span class="count-number seconds">0</span>
-											<span class="count-text">sec</span>
-										</div>
+							<div class="catalog-sales-right">
+								<? $this->load->view('modules/sale-timer'); ?>
 							</div>
 						</div>
 					</div>

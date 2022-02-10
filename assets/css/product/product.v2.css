@@ -440,47 +440,6 @@ section:first-child {
   color: #10a9bf;
   text-transform: uppercase;
 }
-.main-info .sale-timer {
-  display: flex;
-  padding: 13px;
-  justify-content: center;
-  align-items: center;
-  background: #13151d;
-  border-radius: 4px;
-  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.4);
-  border: 1px solid #11131a;
-  justify-content: space-between;
-}
-@media (min-width: 992px) {
-  .main-info .sale-timer {
-    padding: 16px;
-  }
-}
-.main-info .sale-timer .title {
-  position: relative;
-  color: #f9ed1d;
-  text-transform: uppercase;
-  font-weight: 500;
-  white-space: nowrap;
-  margin-right: 10px;
-}
-.main-info .sale-timer .title .name {
-  font-size: 17px;
-}
-.main-info .sale-timer .title .sub {
-  font-size: 13px;
-}
-.main-info .sale-timer .title:before {
-  content: "";
-  position: absolute;
-  box-shadow: 0 0 30px 16px rgba(249, 237, 29, 0.15);
-  width: 80%;
-  height: 0;
-  display: block;
-  margin-left: 10%;
-  top: 40%;
-  left: 0;
-}
 .main-info .buy-buttons {
   display: flex;
 }

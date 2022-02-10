@@ -32,7 +32,7 @@
     <div class="buy">
         <!-- TODO: Music player here, do it global! -->
         <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'content-info'); ?>
-        <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'sale-timer'); ?>
+        <? $this->load->view('modules/sale-timer'); ?>
         <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'buy-buttons'); ?>
     </div>
   </div>
