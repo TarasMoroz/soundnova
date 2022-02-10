@@ -160,22 +160,14 @@ section:first-child {
 .main-info .buy {
   grid-area: buy;
 }
-.main-info .buy > div {
-  margin-bottom: 20px;
-}
 .main-info .buy > div:last-child {
   margin-bottom: 0;
 }
 .main-info .buy .b-margin {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 .main-info .buy .b-margin:last-child {
   margin-bottom: 0;
-}
-@media (min-width: 1200px) {
-  .main-info .buy .b-margin {
-    margin-bottom: 15px;
-  }
 }
 @media (min-width: 1600px) {
   .main-info .buy .b-margin {

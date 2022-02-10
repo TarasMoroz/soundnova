@@ -218,6 +218,8 @@ p {
 .card {
     padding: 30px 20px;
     border-radius: 10px;
+    position: relative;
+    z-index: 0;
 
     @media (min-width: $bp-desktop) {
         padding: 30px 25px;
@@ -238,6 +240,21 @@ p {
         background-repeat: no-repeat;
         background-size: contain;
         background-position: top, right;
+    }
+    &.sale::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 100%;
+        margin-bottom: 20px;
+        background-image: url("/assets/img/product1-right-bottom-bg.jpg");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: contain;
+        z-index: -1;
     }
 }
 
