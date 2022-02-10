@@ -218,6 +218,17 @@ p {
 .card {
     padding: 30px 20px;
     border-radius: 10px;
+
+    @media (min-width: $bp-desktop) {
+        padding: 30px 25px;
+    }
+    @media (min-width: $bp-desktop-large) {
+        padding: 40px 25px;
+    }
+    @media (min-width: $bp-desktop-xlarge) {
+        padding: 45px 25px;
+    }
+
     &.dark {
         background-color: #0f1218;
         box-shadow: 0 0 30px -1px rgba(16, 169, 191, 0.07);
@@ -327,9 +338,15 @@ main.main-content {
         }
         &.w-md {
             max-width: 1005px;
+            @media (min-width: $bp-desktop-xlarge) {
+                max-width: 1140px;
+            }
         }
         &.w-sm {
             max-width: 975px;
+            @media (min-width: $bp-desktop-xlarge) {
+                max-width: 1005px;
+            }
         }
     }
 }
@@ -356,6 +373,9 @@ main.main-content {
     &.product-title {
         font-size: 22px;
         text-transform: uppercase;
+        @media (min-width: $bp-desktop-large) {
+            font-size: 26px;
+        }
     }
     &.secondary-title {
         font-size: 22px;

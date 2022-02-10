@@ -5,6 +5,8 @@
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+/* For Projectors or Higher Resolution Screens (Full HD) */
+/* NEW BREAKPOINTS */
 section {
   margin-top: 115px;
 }
@@ -69,6 +71,19 @@ section:first-child {
     -moz-column-gap: 110px;
          column-gap: 110px;
     grid-template-columns: 1fr 410px;
+  }
+}
+@media (min-width: 1600px) {
+  .main-info .product-preview {
+    -moz-column-gap: 95px;
+         column-gap: 95px;
+  }
+}
+@media (min-width: 1920px) {
+  .main-info .product-preview {
+    -moz-column-gap: 110px;
+         column-gap: 110px;
+    grid-template-columns: 1fr 460px;
   }
 }
 .main-info .photo {
@@ -150,6 +165,27 @@ section:first-child {
 }
 .main-info .buy > div:last-child {
   margin-bottom: 0;
+}
+.main-info .buy .b-margin {
+  margin-bottom: 10px;
+}
+.main-info .buy .b-margin:last-child {
+  margin-bottom: 0;
+}
+@media (min-width: 1200px) {
+  .main-info .buy .b-margin {
+    margin-bottom: 15px;
+  }
+}
+@media (min-width: 1600px) {
+  .main-info .buy .b-margin {
+    margin-bottom: 20px;
+  }
+}
+@media (min-width: 1920px) {
+  .main-info .buy .b-margin {
+    margin-bottom: 25px;
+  }
 }
 .main-info .price {
   display: flex;

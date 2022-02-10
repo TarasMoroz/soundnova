@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
-<div class="sale-timer">
+<div class="sale-timer b-margin">
   <div class="title">
     <div class="name">black friday</div>
     <div class="sub">sale will end in:</div>

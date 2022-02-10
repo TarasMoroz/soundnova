@@ -18,27 +18,21 @@
     <!-- BUY AREA  -->
     <div class="buy">
       <div class="card dark space-bg">
-        <h1 class="container-title product-title txt-uppercase mb-1 mt-1">
+        <h1 class="container-title product-title txt-uppercase b-margin">
           <span class="gradient-title"><?=$product['name']?></span>
         </h1>
-        <div class="d-flex jc-between ai-center">
+        <div class="d-flex jc-between ai-center b-margin">
           <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'price'); ?>
           <? $this->load->view('modules/review-stars', [
             'starsCount' => 4,
             'reviewsCount' => $product['cnt_reviews']
           ]); ?>
         </div>
-        <div class="mt-1">
-          <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'edition-select'); ?>
-        </div>
+        <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'edition-select'); ?>
         <div style="margin:0 5px;">
           <!-- TODO: Music player here, do it global! -->
-          <div class="mt-1">
-            <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'sale-timer'); ?>
-          </div>
-          <div class="mt-2">
-            <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'buy-buttons'); ?>
-          </div>
+          <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'sale-timer'); ?>
+          <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'buy-buttons'); ?>
         </div>
       </div>
     </div>
