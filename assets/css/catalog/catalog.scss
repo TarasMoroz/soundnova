@@ -1,96 +1,212 @@
 @import "../variables/variables.scss";
 
-.full-width-container {
-    &.catalog-first {
-        padding: 50px 16px 30px 16px;
-        .catalog-top-sales-block {
-            border-radius: 10px;
-            background-color: #13161d;
-            background-image: url(/assets/img/bg_cat_bund1.jpg), url(/assets/img/bg_cat_bund2.jpg);
-            background-position: left top, right top;
-            background-repeat: no-repeat, no-repeat;
-            background-size: 550px 176px, 480px 177px;
-            box-shadow: 0px 10px 30px 10px rgba(16, 170, 190, 0.1);
-            max-width: 1525px;
-            margin: 10px auto 0 auto;
-            .catalog-top-sales-inner {
-                &.mobile {
+.catalog-top-sales-block {
+    border-radius: 10px;
+    background-color: #13161d;
+    background-image: url(/assets/img/bg_cat_bund1.jpg), url(/assets/img/bg_cat_bund2.jpg);
+    background-position: left top, right top;
+    background-repeat: no-repeat, no-repeat;
+    background-size: 550px 176px, 480px 177px;
+    box-shadow: 0px 10px 30px 10px rgba(16, 170, 190, 0.1);
+    max-width: 1525px;
+    margin: 10px auto 10px auto;
+    .catalog-top-sales-inner {
+        @media (min-width: $bp-laptop) {
+            max-height: 85px;
+        }
+        &.mobile {
+            margin: 0 auto;
+            max-width: 1170px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            @media (min-width: $bp-laptop) {
+                display: none;
+            }
+            .catalog-sales-left {
+                flex: 0 0 100%;
+                .summer-sale-title {
+                    max-width: 240px;
                     margin: 0 auto;
-                    max-width: 1170px;
-                    display: flex;
-                    flex-wrap: wrap;
-                    align-items: center;
-                    justify-content: space-between;
-                    padding: 10px;
-                    .catalog-sales-left {
-                        flex: 0 0 100%;
-                        .summer-sale-title {
-                            max-width: 240px;
-                            margin: 0 auto;
-                            img {
-                                width: 100%;
-                            }
-                        }
+                    img {
+                        width: 100%;
                     }
-                    .catalog-sales-middle {
-                        flex: 0 0 45%;
-                        position: relative;
-                        .shadow {
-                            width: 60%;
-                            height: 20px;
-                            box-shadow: 0px 10px 50px 60px rgba(16, 170, 190, 0.1);
-                            position: absolute;
-                            top: 50%;
-                            left: 50%;
-                            transform: translateX(-50%) translateY(-50%);
-                            z-index: 0;
-                        }
-                        img {
-                            width: 100%;
-                            position: relative;
-                            z-index: 0;
-                        }
+                }
+            }
+            .catalog-sales-middle {
+                flex: 0 0 45%;
+                position: relative;
+                .shadow {
+                    width: 60%;
+                    height: 20px;
+                    box-shadow: 0px 10px 50px 60px rgba(16, 170, 190, 0.1);
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translateX(-50%) translateY(-50%);
+                    z-index: 0;
+                }
+                img {
+                    width: 100%;
+                    position: relative;
+                    z-index: 0;
+                }
+            }
+            .catalog-sales-right {
+                flex: 0 0 calc(55% - 10px);
+                display: flex;
+                flex-flow: column;
+                padding-left: 10px;
+                .btn-purp-grad {
+                    max-width: 160px;
+                    font-size: 14px;
+                    height: 36px;
+                    line-height: 36px;
+                    margin: 0 3px;
+                    width: auto;
+                    gap: 6px;
+                    @media (min-width: $bp-tablet) {
+                        height: 60px;
+                        line-height: 60px;
+                        max-width: 240px;
+                        width: calc(100% - 30px);
+                        font-size: 16px;
                     }
-                    .catalog-sales-right {
-                        flex: 0 0 calc(55% - 10px);
-                        display: flex;
-                        flex-flow: column;
-                        padding-left: 10px;
-                        .btn-purp-grad {
-                            max-width: 160px;
-                            font-size: 14px;
-                            height: 36px;
-                            line-height: 36px;
-                            margin: 0 3px;
-                            width: auto;
-                            > s {
-                                margin-left: 6px;
-                            }
-                        }
-                        .bundle-title-blue {
-                            margin: 10px 0;
-                            font-size: 14px;
-                            font-weight: 500;
-                            text-align: center;
-                            color: $lightbluecolor;
-                        }
-                        .timer-counter {
-                            max-width: 160px;
-                            margin-top: 10px;
-                            grid-gap: 4px;
-                            .timer-counter-item {
-                                width: 32px;
-                                height: 32px;
-                            }
+                }
+                .bundle-title-blue {
+                    margin: 10px 0;
+                    font-size: 14px;
+                    font-weight: 500;
+                    text-align: center;
+                    color: $lightbluecolor;
+                    @media (min-width: $bp-tablet) {
+                        font-size: 16px;
+                    }
+                }
+                .timer-counter {
+                    max-width: 160px;
+                    margin-top: 10px;
+                    grid-gap: 4px;
+                    @media (min-width: $bp-tablet) {
+                        max-width: 245px;
+                    }
+                    .timer-counter-item {
+                        width: 32px;
+                        height: 32px;
+                        @media (min-width: $bp-tablet) {
+                            width: 50px;
+                            height: 50px;
                         }
                     }
                 }
-                &.desktop {
-                    display: none;
+            }
+        }
+        &.desktop {
+            display: none;
+            @media (min-width: $bp-laptop) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 0 80px;
+                // max-width: 1170px;
+                margin: 0 auto;
+                .catalog-sales-left {
+                    // max-width: 265px;
+                    .summer-sale-title {
+                        display: flex;
+                        flex-flow: row;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: unset;
+                        margin: 0;
+                        gap: 15px;
+                        img {
+                            width: 100%;
+                        }
+                        .bundle-title {
+                            font-size: 14px;
+                            color: $lightwhite;
+                            font-weight: 500;
+                            text-align: left;
+                            margin: 2px 0;
+                            white-space: nowrap;
+                            text-align: justify;
+                            text-align-last: justify;
+                        }
+                        .bundle-title-blue {
+                            text-align: center;
+                            font-weight: 500;
+                            font-size: 14px;
+                            margin: 2px 0;
+                            color: $lightbluecolor;
+                            letter-spacing: 0.6px;
+                            text-align: left;
+                            white-space: nowrap;
+                        }
+                        .btn-purp-grad {
+                            height: 60px;
+                            line-height: 60px;
+                            // max-width: 240px;
+                            // width: calc(100% - 30px);
+                            font-size: 14px;
+                            padding: 0 25px;
+                            white-space: nowrap;
+                            gap: 6px;
+                        }
+                    }
+                }
+                .catalog-sales-middle {
+                    position: relative;
+                    z-index: 0;
+                    // min-height: 130px;
+                    // width: 100%;
+                    .shadow {
+                        width: 30px;
+                        height: 1px;
+                        box-shadow: 0px 0 55px 60px rgb(16 170 190 / 25%);
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        z-index: -1;
+                    }
+                    img {
+                        max-height: 120px;
+                        margin: auto;
+                        display: block;
+                        margin-top: -5px;
+                        // position: absolute;
+                        // top: -70px;
+                        // left: 50%;
+                        // transform: translateX(-50%);
+                    }
+                }
+                .catalog-sales-right {
+                    max-width: 360px;
+                    .get-everything-title {
+                        color: white;
+                        text-align: center;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        font-size: 12px;
+                        margin-bottom: 15px;
+                    }
+                    .sale-will-end-title {
+                        text-align: center;
+                        color: $mainyellow;
+                        font-weight: 500;
+                        text-transform: uppercase;
+                        margin-bottom: 20px;
+                        font-size: 18px;
+                    }
                 }
             }
         }
     }
+}
+
+.full-width-container {
     &.catalog-second {
         padding-bottom: 40px;
         .container-title {
@@ -453,35 +569,6 @@
 }
 @media (min-width: $bp-tablet) {
     .full-width-container {
-        &.catalog-first {
-            padding-bottom: 85px;
-            box-shadow: none;
-            .catalog-top-sales-block {
-                .catalog-top-sales-inner {
-                    &.mobile {
-                        .catalog-sales-right {
-                            .btn-purp-grad {
-                                height: 60px;
-                                line-height: 60px;
-                                max-width: 240px;
-                                width: calc(100% - 30px);
-                                font-size: 16px;
-                            }
-                            .timer-counter {
-                                max-width: 245px;
-                                .timer-counter-item {
-                                    width: 50px;
-                                    height: 50px;
-                                }
-                            }
-                            .bundle-title-blue {
-                                font-size: 16px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
         &.catalog-second {
             padding-bottom: 110px;
             box-shadow: none;
@@ -495,125 +582,15 @@
     }
 }
 @media (min-width: $bp-laptop) {
-    #main-catalog {
-        background-image: url(/assets/img/main-new.jpg);
-        background-position: center;
+    .bg-catalog {
+        background-image: url(/assets/img/catalog-backs/main-new.jpg);
+        background-position: top center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: 100%;
     }
     .full-width-container {
-        &.catalog-first {
-            padding-top: 153px;
-            .catalog-top-sales-block {
-                .catalog-top-sales-inner {
-                    max-height: 85px;
-                    &.mobile {
-                        display: none;
-                    }
-                    &.desktop {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-around;
-                        padding: 30px;
-                        // max-width: 1170px;
-                        margin: 0 auto;
-                        .catalog-sales-left {
-                            // max-width: 265px;
-                            .summer-sale-title {
-                                display: flex;
-                                flex-flow: row;
-                                justify-content: center;
-                                align-items: center;
-                                max-width: unset;
-                                margin: 0;
-                                gap: 15px;
-                                img {
-                                    width: 100%;
-                                }
-                                .bundle-title {
-                                    font-size: 14px;
-                                    color: $lightwhite;
-                                    letter-spacing: 0.75px;
-                                    font-weight: 500;
-                                    text-align: left;
-                                    margin: 2px 0;
-                                    white-space: nowrap;
-                                }
-                                .bundle-title-blue {
-                                    text-align: center;
-                                    font-weight: 500;
-                                    font-size: 14px;
-                                    margin: 2px 0;
-                                    color: $lightbluecolor;
-                                    letter-spacing: 0.75px;
-                                    text-align: left;
-                                    white-space: nowrap;
-                                }
-                                .btn-purp-grad {
-                                    height: 60px;
-                                    line-height: 60px;
-                                    // max-width: 240px;
-                                    // width: calc(100% - 30px);
-                                    font-size: 16px;
-                                    padding: 0 25px;
-                                    white-space: nowrap;
-                                    s {
-                                        font-size: 12px;
-                                        margin-left: 6px;
-                                    }
-                                    span {
-                                        margin-left: 8px;
-                                    }
-                                }
-                            }
-                        }
-                        .catalog-sales-middle {
-                            position: relative;
-                            z-index: 0;
-                            // min-height: 130px;
-                            // width: 100%;
-                            .shadow {
-                                width: 30px;
-                                height: 1px;
-                                box-shadow: 0px 0 55px 60px rgb(16 170 190 / 25%);
-                                position: absolute;
-                                top: 50%;
-                                left: 50%;
-                                z-index: -1;
-                            }
-                            img {
-                                max-height: 110px;
-                                margin: auto;
-                                display: block;
-                                // position: absolute;
-                                // top: -70px;
-                                // left: 50%;
-                                // transform: translateX(-50%);
-                            }
-                        }
-                        .catalog-sales-right {
-                            max-width: 360px;
-                            .get-everything-title {
-                                color: white;
-                                text-align: center;
-                                font-weight: 500;
-                                text-transform: uppercase;
-                                font-size: 12px;
-                                margin-bottom: 15px;
-                            }
-                            .sale-will-end-title {
-                                text-align: center;
-                                color: $mainyellow;
-                                font-weight: 500;
-                                text-transform: uppercase;
-                                margin-bottom: 20px;
-                                font-size: 18px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        // padding-top: 153px;
+
         &.catalog-second {
             .container-title {
                 &.secondary-title {
