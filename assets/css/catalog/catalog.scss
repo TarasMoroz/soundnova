@@ -160,6 +160,7 @@
                 .catalog-sales-middle {
                     position: relative;
                     z-index: 0;
+                    margin: 0 30px;
                     // min-height: 130px;
                     // width: 100%;
                     .shadow {
@@ -246,6 +247,9 @@
                     width: 100%;
                     margin-bottom: 6px;
                     box-shadow: 0px 0px 9px 2px rgba(36, 230, 250, 0.1);
+                    &:last-child {
+                        margin-bottom: 10px;
+                    }
                     &:nth-child(2),
                     &:nth-child(3) {
                         width: calc(50% - 5px);
@@ -293,12 +297,11 @@
                         }
                         .cat-ftr-cont {
                             position: absolute;
-                            width: calc(100% - 40px);
                             border-radius: 10px;
                             top: 46px;
                             left: 0;
                             height: auto;
-                            padding: 20px 20px 40px 20px;
+                            padding: 10px 15px 40px 15px;
                             background: $maindarkgray;
                             z-index: 4;
                             visibility: hidden;
@@ -310,7 +313,7 @@
                                 justify-content: flex-start;
                                 text-decoration: none;
                                 width: calc(50% - 10px);
-                                height: 30px;
+                                height: 28px;
                                 .switch {
                                     display: block;
                                     position: relative;
@@ -334,7 +337,7 @@
                                 .name {
                                     display: block;
                                     font-size: 12px;
-                                    margin-left: 10px;
+                                    margin: 0 10px;
                                     color: #fff;
                                     transition: 0.4s;
                                 }
@@ -392,21 +395,24 @@
                     background-color: #101218;
                     border-radius: 10px;
                     box-shadow: 0px 0px 15px 2px rgba(36, 230, 250, 0.1);
+                    max-width: 265px;
+                    padding: 0 8px 20px 8px;
                     .prd-label {
                         position: absolute;
                         z-index: 2;
-                        padding: 0 13px;
-                        font-size: 14px;
+                        padding: 0 15px;
+                        font-size: 11px;
                         display: block;
                         top: 0;
                         right: 0;
                         border-radius: 4px;
-                        height: 40px;
-                        line-height: 40px;
+                        height: 30px;
+                        line-height: 35px;
                         text-align: center;
                         text-transform: uppercase;
                         font-weight: 500;
                         background: #101218;
+                        letter-spacing: 0.95px;
                         &.label-best {
                             color: $mainyellow;
                             border-radius: 0 10px 0 10px;
@@ -430,8 +436,8 @@
                         background-position: center top;
                         background-repeat: no-repeat;
                         border-radius: 10px 10px 0 0;
-                        .inner {
-                            height: 180px;
+                        > .inner {
+                            height: 140px;
                             background-size: cover;
                             background-position: center top;
                             background-repeat: no-repeat;
@@ -456,18 +462,20 @@
                             }
                         }
                         img {
-                            margin: 45px auto 20px auto;
                             z-index: 1;
-                            height: 156px;
-                            max-width: 165px;
+                            max-height: 135px;
+                            width: fit-content;
+                            margin: 25px auto 0 auto;
                         }
                         .prd-tit {
                             display: block;
                             text-align: center;
-                            font-size: 16px;
+                            font-size: 13px;
                             color: $lightwhite;
                             font-weight: 500;
                             z-index: 1;
+                            margin-top: 6px;
+                            letter-spacing: 0.2px;
                         }
                         .prd-tit-blue {
                             color: $lightbluecolor;
@@ -481,22 +489,23 @@
                         }
                     }
                     .prd-sndcld {
-                        margin: 0 0 25px 0;
+                        margin: 20px 0 25px 0;
                     }
                     .prd-ft {
                         display: flex;
-                        margin: 0 auto 25px auto;
                         align-items: center;
                         justify-content: space-between;
-                        padding: 0 17px;
+                        // padding: 0 17px;
                         .prd-ft-lt {
                             display: flex;
                             flex-direction: column;
                             align-items: flex-start;
+                            margin-left: 6px;
+                            color: $lightwhite;
                             .prd-price {
                                 font-size: 14px;
                                 color: $lightwhite;
-                                margin-bottom: 15px;
+                                // margin-bottom: 15px;
                                 font-weight: 500;
                                 b {
                                     font-size: 18px;
@@ -522,14 +531,14 @@
                                 color: $lightwhite;
                                 display: flex;
                                 font-weight: 300;
-                                margin-bottom: 13px;
                                 .stars {
                                     display: block;
-                                    width: 60px;
-                                    height: 14px;
+                                    width: 50px;
                                     margin-right: 7px;
                                     background-size: contain;
                                     background-image: url(/assets/img/icons/stars.svg);
+                                    background-repeat: no-repeat;
+                                    background-position: center;
                                 }
                             }
                             .prd-seles {
@@ -547,14 +556,14 @@
                                 text-transform: uppercase;
                                 line-height: 50px;
                                 padding: 0 30px;
-                                margin-bottom: 13px;
-                                width: 100%;
+                                width: 150px;
+                                letter-spacing: 0.85px;
                             }
                             .prd-more {
-                                font-size: 12px;
-                                color: $lightwhite;
-                                font-weight: 500;
-                                letter-spacing: 0.5px;
+                                font-size: 11px;
+                                margin-right: 10px;
+                                color: $darkbluecolor;
+                                letter-spacing: 1px;
                                 text-indent: 0.5px;
                             }
                         }
@@ -574,8 +583,8 @@
             box-shadow: none;
             #catalog-wrapper {
                 .prods {
-                    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-                    grid-gap: 30px;
+                    grid-template-columns: repeat(auto-fill, minmax(338px, 1fr));
+                    grid-gap: 13px;
                 }
             }
         }
@@ -607,8 +616,8 @@
             padding-bottom: 180px;
             #catalog-wrapper {
                 display: grid;
-                grid-template-columns: 360px 1fr;
-                grid-gap: 30px;
+                grid-template-columns: 338px 1fr;
+                grid-gap: 13px;
 
                 #ftrs {
                     display: grid;
@@ -627,7 +636,7 @@
                             .cat-ftr-title {
                                 height: auto;
                                 line-height: normal;
-                                padding: 20px 0 0 0;
+                                margin-top: 10px;
                                 .ftr-sel {
                                     display: none;
                                 }
@@ -640,13 +649,14 @@
                                     text-align: center;
                                     font-weight: 500;
                                     text-transform: uppercase;
-                                    font-size: 16px;
+                                    font-size: 13px;
+                                    letter-spacing: 0.7px;
 
                                     background: #101218;
                                     text-align: left;
                                     display: flex;
                                     justify-content: space-between;
-                                    padding: 10px 15px;
+                                    padding: 13px 5px 13px 18px;
                                     margin: 0 10px;
                                     border-radius: 10px;
                                     align-items: center;
@@ -681,6 +691,7 @@
                             &.cat-ftr-close {
                                 .cat-ftr-cont {
                                     max-height: 0px;
+                                    padding: 0 15px;
                                 }
                                 .cat-ftr-title {
                                     .first-title {
