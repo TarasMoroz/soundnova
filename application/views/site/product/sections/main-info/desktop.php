@@ -31,7 +31,10 @@
         <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'edition-select'); ?>
         <div style="margin:0 5px;">
           <!-- TODO: Music player here, do it global! -->
-          <? $this->load->view('modules/sale-timer'); ?>
+          <? $this->load->view('modules/sale-timer', [
+            'type' => 'normal',
+            'title' => 'BLACK FRIDAY'
+          ]); ?>
           <? $this->load->view($pathToCurrentSection . DIRECTORY_SEPARATOR . 'buy-buttons'); ?>
         </div>
       </div>

@@ -1,10 +1,10 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+  defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
-<div class="sale-timer b-margin">
+<div class="sale-timer b-margin <?= @$type ?>">
   <div class="title">
-    <div class="name">black friday</div>
+    <div class="name"><?= @$title ?></div>
     <div class="sub">sale will end in:</div>
   </div>
   <div class="timer-counter">

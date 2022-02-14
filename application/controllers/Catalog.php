@@ -5,7 +5,7 @@ class Catalog extends CI_Controller {
 
 	private $languages = array('en'=>'ENG');
 	private $device = 'desktop';
-	private $viewfolder = 'desktop';
+	private $viewfolder = 'site/catalog';
 
 	public function __construct()
  	{
@@ -55,7 +55,7 @@ class Catalog extends CI_Controller {
 		$data = $this->productsList(false, $currType, $data);
 
 
- 		$this->load->view($this->viewfolder.'/v_catalog', $data);
+ 		$this->load->view($this->viewfolder.'/index', $data);
  	}
 
 	// REST PAGES
@@ -106,7 +106,7 @@ class Catalog extends CI_Controller {
 		// category, type
 		$data = $this->productsList($currCategory, $currType, $data);
 
-		$this->load->view($this->viewfolder.'/v_catalog', $data);
+		$this->load->view($this->viewfolder.'/index', $data);
 	}
 
 	private function productsList($category, $type, $data) {
@@ -231,7 +231,7 @@ class Catalog extends CI_Controller {
 		$data['products'] = $products;
 		$data['sort'] = $sort;
 		$data['query'] = $query;
-		$data['pagination_html'] = $this->load->view($this->viewfolder.'/v_pagination', $data, TRUE);
+		$data['pagination_html'] = $this->load->view('desktop/v_pagination', $data, TRUE);
 
 		return $data;
 	}
