@@ -239,6 +239,12 @@ section:first-child {
 @media (min-width: 992px) {
   .main-info .edition-select .prod-edition-title {
     text-align: center;
+    font-size: 12px;
+  }
+}
+@media (min-width: 1920px) {
+  .main-info .edition-select .prod-edition-title {
+    font-size: 14px;
   }
 }
 .main-info .edition-select select {
@@ -286,6 +292,11 @@ section:first-child {
     letter-spacing: 0.6px;
   }
 }
+@media (min-width: 1920px) {
+  .main-info .edition-select .info-link {
+    font-size: 11px;
+  }
+}
 .main-info .edition-select .info-link .quest-symb {
   vertical-align: middle;
   margin-left: 4px;
@@ -307,6 +318,11 @@ section:first-child {
   line-height: 1;
   height: 30px;
 }
+@media (min-width: 1920px) {
+  .main-info .edition-select .product-edition-buttons .top-buttons {
+    font-size: 13px;
+  }
+}
 .main-info .edition-select .product-edition-buttons .top-buttons .blue-btn {
   margin-top: 0;
 }
@@ -323,6 +339,11 @@ section:first-child {
   cursor: pointer;
   width: 100%;
   height: 30px;
+}
+@media (min-width: 1920px) {
+  .main-info .edition-select .product-edition-buttons .blue-btn {
+    font-size: 13px;
+  }
 }
 .main-info .edition-select .product-edition-buttons .blue-btn:hover {
   background-color: #23e7fb;

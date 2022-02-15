@@ -731,6 +731,12 @@ main.main-content > div:last-child {
 .btn-purp-grad:hover {
   box-shadow: inset 270px 0px 10px rgba(225, 66, 166, 0.5), 0px 0px 20px rgba(225, 66, 166, 0.5);
 }
+@media (min-width: 1920px) {
+  .btn-purp-grad {
+    line-height: 55px;
+    max-height: 55px;
+  }
+}
 
 .btn-blue-grad {
   outline: none;
@@ -799,6 +805,12 @@ main.main-content > div:last-child {
 .btn-purp-border:hover {
   background-color: #ef4cc6;
   color: #f7f7f7;
+}
+@media (min-width: 1920px) {
+  .btn-purp-border {
+    line-height: 55px;
+    max-height: 55px;
+  }
 }
 
 .timer-counter {

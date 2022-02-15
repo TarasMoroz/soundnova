@@ -660,6 +660,10 @@ main.main-content {
     &:hover {
         box-shadow: $roseshadow;
     }
+    @media (min-width: $bp-desktop-xlarge) {
+        line-height: 55px;
+        max-height: 55px;
+    }
 }
 .btn-blue-grad {
     outline: none;
@@ -725,6 +729,10 @@ main.main-content {
     &:hover {
         background-color: $mainrose;
         color: $lightwhite;
+    }
+    @media (min-width: $bp-desktop-xlarge) {
+        line-height: 55px;
+        max-height: 55px;
     }
 }
 //counter styles
