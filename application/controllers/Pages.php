@@ -48,7 +48,7 @@ class Pages extends CI_Controller {
 
 		//
 
- 		$this->load->view($this->viewfolder.'/v_main', $data);
+ 		$this->load->view('site/home/index', $data);
  	}
 
 

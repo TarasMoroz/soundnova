@@ -1,5 +1,5 @@
 let swiper1 = new Swiper(".main-pack-wrapper", {
-    slidesPerView: 4,
+    slidesPerView: 3,
     spaceBetween: 30,
     navigation: {
         nextEl: ".swiper-button-next",

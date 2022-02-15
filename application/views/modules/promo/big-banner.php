@@ -1,3 +1,7 @@
+<?php
+  defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+
 <div class="catalog-top-sales-block">
   <div class="catalog-top-sales-inner mobile p-1">
     <div class="bundle-title mb-1 mt-1">BLACK FRIADAY SALE</div>
