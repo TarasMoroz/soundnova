@@ -47,18 +47,38 @@
 		<div class="inner" style="background-image: url(<?=($prod['pv_des_img_bg_preview']||$prod['pv_bund_img_bg_preview']?('/assets/media/product_variant-img_bg_preview/'.($prod['pv_des_img_bg_preview']?$prod['pv_des_img_bg_preview']:$prod['pv_bund_img_bg_preview'])):'/assets/img/bestsellerbg.jpg')?>);"></div>
 			<img src="<?=$im?>" alt="default box">
 			<span class="prd-tit"><?=$prod['name']?> | <?=$prod['cnt_elements']?> elements</span>
-			<span class="prd-tit-blue">Impacts Sound Effects</span>
 			<!-- <span class="prd-tit-blue">Impacts Sound Effects</span> -->
 		</a>
 
 		<div class="prd-sndcld">
-			<iframe class="lazy-frame" width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/<?=$prod['soundcloud']?>&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+			<? $this->load->view('modules/player', [
+				'key' => 'file_details',
+				'buy_button' => false,
+				'artist_name' => false,
+				'track_title' => false,
+				'sound' => [
+					'id' => 0
+				]
+			]); ?>
+		</div>
+
+		<div class="prd-ft mb-1">
+			<div class="prd-ft-lt">
+				<small>from</small>
+				<div class="prd-price">$<?=($prod['pv_des_price']?$prod['pv_des_price']:$prod['pv_bund_price'])?> <small class="txt-line-through">$550</small></div>
+				<!-- <div class="prd-seles"><?=$prod['cnt_sales_public']?> Sales</div> -->
+			</div>
+
+			<div class="prd-ft-rt">
+				<button class="btn-purp-grad prd-buy act-buy" 
+					data-p='{"id_product": "<?php echo $prod['id']; ?>", "id_variant": "<?php echo $prod['pv_id']; ?>" }'>
+					ADD TO CART
+				</button>
+			</div>
 		</div>
 
 		<div class="prd-ft">
 			<div class="prd-ft-lt">
-				<div class="prd-price">from <b>$<?=($prod['pv_des_price']?$prod['pv_des_price']:$prod['pv_bund_price'])?></b></div>
-
 				<?php if($prod['cnt_reviews']): ?>
 				<div class="prd-stars">
 					<div class="stars"></div>
@@ -69,15 +89,8 @@
 					<span class="prd-stars-cnt">No reviews</span>
 				</div>
 				<?php endif; ?>
-
-				<div class="prd-seles"><?=$prod['cnt_sales_public']?> Sales</div>
 			</div>
-
 			<div class="prd-ft-rt">
-				<button class="btn-purp-grad prd-buy act-buy" 
-					data-p='{"id_product": "<?php echo $prod['id']; ?>", "id_variant": "<?php echo $prod['pv_id']; ?>" }'>
-					ADD TO CART
-				</button>
 				<a href="/product/<?=$prod['alias']?>" class="prd-more">More details about <?=($prod['pv_des_price']?'pack':'bundle')?></a>
 			</div>
 		</div>

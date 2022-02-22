@@ -5,6 +5,8 @@
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+/* For Projectors or Higher Resolution Screens (Full HD) */
+/* NEW BREAKPOINTS */
 .full-width-container .main-subtitle {
   margin: 0 0 20px 0;
   font-size: 12px;
@@ -1199,9 +1201,6 @@
   }
 }
 @media (min-width: 1200px) {
-  .full-width-container.sound-design-top-container .container-title.main-title br {
-    display: none;
-  }
   .full-width-container.home-partners-container .container-title.secondary-title .desktop-title,
 .full-width-container.home-partners-container .container-title.secondary-title .desktop-title-last {
     display: block;

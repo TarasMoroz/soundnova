@@ -42,8 +42,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     if(!$mainVariant['img_box'] && isset($prodVariants['construct'])){
       $im = '/assets/img/packs/construction-default-min.svg';
     }
-
-    $im = '/assets/img/packs/main-pack-min.svg'; // Это для тестов
   ?>
 
   <img src="<?=$im?>" alt="Product Name" class="product-image">

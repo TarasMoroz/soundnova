@@ -9,72 +9,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<!-- header -->
 	<? $this->load->view('desktop/blocks/v_header'); ?>
 
-	<main class="main-content">
-
-		<!-- <section id="main" class="content"> -->
-		<div class="bg-catalog" style="background-image: url(/assets/img/catalog-backs/<?=(isset($category['id']) ? $category['id'].'-back.jpg' :'main-new.jpg')?>">
+	<main class="main-content catalog-page">
+  
+	<div class="bg-catalog" style="background-image: url(/assets/img/catalog-backs/<?=(isset($category['id']) ? $category['id'].'-back.jpg' :'main-new.jpg')?>">
 			<div class="full-width-container">
 				<div class="inner-content-container w-lg-xl">
-					<div class="catalog-top-sales-block">
-						<div class="catalog-top-sales-inner mobile">
-							<div class="catalog-sales-left">
-								<div class="summer-sale-title">
-									<img class="lzy_img" data-src="/assets/img/summer_sale.svg">
-								</div>
-							</div>
-							<div class="catalog-sales-middle">
-								<div class="shadow"></div>
-								<img class="lzy_img" data-src="/assets/img/catalog-sales-bundle-min.svg">
-							</div>
-							<div class="catalog-sales-right">
-							<p class="bundle-title-blue">Ultimate bundle offer</p>
-							<a href="#" class="btn-purp-grad btn-main-sale"><small>BUY</small><span>$299</span><small class="txt-line-through">$1000</small></a>
-							<div class="timer-counter">
-											<div class="timer-counter-item">
-												<span class="count-number days">0</span>
-												<span class="count-text">days</span>
-											</div>
-											<div class="timer-counter-item">
-												<span class="count-number hours">0</span>
-												<span class="count-text">hours</span>
-											</div>
-											<div class="timer-counter-item">
-												<span class="count-number minutes">0</span>
-												<span class="count-text">mins</span>
-											</div>
-											<div class="timer-counter-item">
-												<span class="count-number seconds">0</span>
-												<span class="count-text">sec</span>
-											</div>
-								</div>
-							</div>
-						</div>
+					
+					<? $this->load->view('modules/promo/big-banner'); ?>
 
-						<div class="catalog-top-sales-inner desktop">
-							<div class="catalog-sales-left">
-								<div class="summer-sale-title">
-									<!-- <img class="lzy_img" data-src="/assets/img/summer_sale.svg"> -->
-									<div>
-										<div class="bundle-title">BLACK FRIADAY SALE</div>
-										<div class="bundle-title-blue">Ultimate bundle offer</div>
-									</div>
-									<div>
-										<a href="#" class="btn-purp-grad btn-main-sale"><small>BUY</small><span>$299</span><small class="txt-line-through">$1000</small><span>SAVE -71%</span></a>
-									</div>
-								</div>
-							</div>
-							<div class="catalog-sales-middle">
-								<div class="shadow"></div>
-								<img class="lzy_img" data-src="/assets/img/catalog-sales-bundle-min.svg">
-							</div>
-							<div class="catalog-sales-right">
-								<? $this->load->view('modules/sale-timer', [
-									'type' => 'normal',
-									'title' => 'BLACK FRIDAY'
-								]); ?>
-							</div>
-						</div>
-					</div>
 				</div>
 			</div>
 
@@ -186,9 +128,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<?=$pagination_html?>
 		<? endif; ?>
 
-		<!-- </section> -->
-
-	</main>
+  </main>
 
 	<!-- footer -->
 	<? $this->load->view('desktop/blocks/v_footer'); ?>

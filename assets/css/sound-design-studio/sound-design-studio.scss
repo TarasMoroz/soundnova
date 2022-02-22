@@ -1276,13 +1276,13 @@
 }
 @media (min-width: $bp-desktop-lg) {
     .full-width-container {
-        &.sound-design-top-container {
-            .container-title.main-title {
-                br {
-                    display: none;
-                }
-            }
-        }
+        // &.sound-design-top-container {
+        //     .container-title.main-title {
+        //         br {
+        //             display: none;
+        //         }
+        //     }
+        // }
         &.home-partners-container {
             .container-title {
                 &.secondary-title {

@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
 <? if(isset($prodVariants['design']) && isset($prodVariants['construct'])): ?>
-  <div class="edition-select">
+  <div class="edition-select b-margin">
     <div class="prod-edition-title">Choose your edition:</div>
 
     <div class="view-mobile">

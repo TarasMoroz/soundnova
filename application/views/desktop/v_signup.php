@@ -50,13 +50,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 										<div class="icon-wrapper">
 											<img class="icon" src="/assets/img/icons/facebook-icon.svg"/>
 										</div>
-										<p class="btn-text">Continue with <b>Facebook</b></p>
+										<span class="btn-text">Continue with <b>Facebook</b></span>
 									</div>
 									<div class="sociallogin-btn google">
 										<div class="icon-wrapper">
 											<img class="icon" src="/assets/img/icons/google-icon-color.svg"/>
 										</div>
-										<p class="btn-text">Sign in with <b>Google</b></p>
+										<span class="btn-text">Sign in with <b>Google</b></span>
 									</div>
 							</div>
 							<div class="or-line">Or</div>

@@ -97,7 +97,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			<!-- PROMO SLIDER -->
 			<? if(!isset($prodVariants['bundle'])): ?>
-				<div class="full-width-container bundle-sale-container">
+				<div class="full-width-container bundle-sale-container setion-inner-shadow">
 					<div class="inner-content-container">
 						<? $this->load->view($basePath . 'sections/promo-slider'); ?>
 					</div>
@@ -108,6 +108,34 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			<div class="full-width-container overviews-container">
 				<div class="inner-content-container">
 					<? $this->load->view($basePath . 'sections/overviews'); ?>
+				</div>
+			</div>
+
+			<!-- TUTORIALS -->
+			<div class="full-width-container mt-0 tutorials-container">
+				<div class="inner-content-container">
+					<? $this->load->view($basePath . 'sections/tutorials'); ?>
+				</div>
+			</div>
+
+			<!-- FAQ -->
+			<div class="full-width-container mt-0 home-faq-container setion-inner-shadow">
+  			<div class="inner-content-container">
+					<? $this->load->view($basePath . 'sections/faq'); ?>
+				</div>
+			</div>
+
+			<!-- REVIEWS -->
+			<div class="full-width-container reviews-container">
+				<div class="inner-content-container">
+					<? $this->load->view($basePath . 'sections/reviews'); ?>
+				</div>
+			</div>
+
+			<!-- RELATED PRODUCTS -->
+			<div class="full-width-container home-best-seller-container">
+				<div class="inner-content-container">
+					<? $this->load->view($basePath . 'sections/related-products'); ?>
 				</div>
 			</div>
 

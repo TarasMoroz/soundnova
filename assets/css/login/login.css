@@ -5,6 +5,8 @@
 /* Medium devices (landscape tablets, 768px and up) */
 /* Large devices (laptops/desktops, 992px and up) */
 /* Extra large devices (large laptops and desktops, 1200px and up) */
+/* For Projectors or Higher Resolution Screens (Full HD) */
+/* NEW BREAKPOINTS */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 .full-width-container.login-container {
   padding-top: 69px;
@@ -115,6 +117,12 @@
   font-family: "UniSans", sans-serif;
   box-sizing: border-box;
   font-weight: 500;
+}
+.full-width-container.login-container .login-container form .form-field input::-moz-placeholder {
+  color: #464c5e;
+}
+.full-width-container.login-container .login-container form .form-field input:-ms-input-placeholder {
+  color: #464c5e;
 }
 .full-width-container.login-container .login-container form .form-field input::placeholder {
   color: #464c5e;
@@ -307,5 +315,4 @@
     padding: 160px 16px 135px 16px;
   }
 }
-
 /*# sourceMappingURL=login.css.map */

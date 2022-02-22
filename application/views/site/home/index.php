@@ -2,17 +2,16 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
-
 <? $this->load->view('desktop/blocks/v_head'); ?>
 
-<body id="home">
+<body id="home-page">
 
 	<!-- header -->
 	<? $this->load->view('desktop/blocks/v_header'); ?>
 
-	<main>
-		
-		<!-- main indexed content -->
+	<main class="main-content home-page">
+  
+				<!-- main indexed content -->
 		<section id="main" class="main-content">
 
 			<!--sound  effects category-->
@@ -61,7 +60,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-1.svg"/>Product name</a></div>
 											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-2.svg"/>Product name</a></div>
 										</div>
-											    <!-- Add Arrows -->
+													<!-- Add Arrows -->
 												<div class="swiper-button-next"></div>
 												<div class="swiper-button-prev"></div>
 								</div>
@@ -82,7 +81,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 								</div>
 							</div>
 
-							<div class="buy-buttons-container">
+							<div class="buy-buttons-container grid-two-one">
 							<a href="#" class="btn-purp-grad btn-main-sale">BUY OUT $299 <s>$1000</s></a>
 							<a href="#" class="btn-blue-grad btn-main-sale">TRY 30 DAYS FREE</a>
 							<a href="#" class="btn-blue-border btn-main-sale">ABOUT BUNDLE</a>
@@ -136,7 +135,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-1.svg"/>Product name</a></div>
 											<div class="swiper-slide"><a href="#"><img class="lzy_img" data-src="../assets/img/packs/packs-bundle-2.svg"/>Product name</a></div>
 											</div>
-											    <!-- Add Arrows -->
+													<!-- Add Arrows -->
 												<div class="swiper-button-next"></div>
 												<div class="swiper-button-prev"></div>
 										</div>
@@ -303,7 +302,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					</div>
 				</div>
 			</div>
-			
+
 			<div class="full-width-container home-new-products-container">
 				<div class="inner-content-container">
 					<h2 class="container-title secondary-title">
@@ -321,7 +320,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 														<img  src="/assets/img/packs/new-product.svg">
 														</div>
 														<div class="new-product-actions">
-														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame" data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=%23000000&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														<? $this->load->view('modules/player', [
+															'key' => 'file_details',
+															'buy_button' => false,
+															'artist_name' => false,
+															'track_title' => false,
+															'sound' => [
+																'id' => 0
+															]
+														]); ?>
 														<div class="buy-buttons-container">
 															<a href="#" class="btn-purp-grad btn-new-product">ADD TO CART <span> $59</span></a>
 															<a href="#" class="btn-blue-border btn-new-product">LEARN MORE</a>
@@ -340,8 +347,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 														</div>
 														<div class="new-product-actions">
 														<div class="new-product-title">Technology Pack</div>
-														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame sn-player-style invert-colors" 
-														data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=0044f1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														<? $this->load->view('modules/player', [
+															'key' => 'file_details',
+															'buy_button' => false,
+															'artist_name' => false,
+															'track_title' => false,
+															'sound' => [
+																'id' => 0
+															]
+														]); ?>
 														<div class="buy-buttons-container">
 															<a href="#" class="btn-purp-grad btn-new-product">ADD TO CART <span> $59</span></a>
 															<a href="#" class="btn-blue-border btn-new-product">LEARN MORE</a>
@@ -357,8 +371,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 														<img src="/assets/img/packs/new-product.svg">
 														</div>
 														<div class="new-product-actions">
-														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame sn-player-style invert-colors" 
-														data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=0044f1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														<? $this->load->view('modules/player', [
+															'key' => 'file_details',
+															'buy_button' => false,
+															'artist_name' => false,
+															'track_title' => false,
+															'sound' => [
+																'id' => 0
+															]
+														]); ?>
 														<div class="buy-buttons-container">
 															<a href="#" class="btn-purp-grad btn-new-product">ADD TO CART <span> $59</span></a>
 															<a href="#" class="btn-blue-border btn-new-product">LEARN MORE</a>
@@ -372,8 +393,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 														</div>
 														<div class="new-product-actions">
 														<div class="new-product-title">Technology Pack</div>
-														<iframe width="100%" height="166" scrolling="no" frameborder="no" allow="autoplay" class="lazy-frame sn-player-style invert-colors" 
-														data-src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/211157423&color=0044f1&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+														<? $this->load->view('modules/player', [
+															'key' => 'file_details',
+															'buy_button' => false,
+															'artist_name' => false,
+															'track_title' => false,
+															'sound' => [
+																'id' => 0
+															]
+														]); ?>
 														<div class="buy-buttons-container">
 															<a href="#" class="btn-purp-grad btn-new-product">ADD TO CART <span> $59</span></a>
 															<a href="#" class="btn-blue-border btn-new-product">LEARN MORE</a>
@@ -383,11 +411,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 													
 												</div>
 										</div>
-											    <!-- Add Arrows -->
+													<!-- Add Arrows -->
 												<div class="swiper-button-next"></div>
 												<div class="swiper-button-prev"></div>
 												<!-- Add Pagination -->
-    											<div class="swiper-pagination"></div>
+													<div class="swiper-pagination"></div>
 								</div>
 							</div>
 				</div>
@@ -458,7 +486,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 							<div class="swiper-button-prev"></div>
 						</div>
 						<?php endif; ?>
-			
+
 						
 
 						<?php if(count($text_reviews) > 0): ?>
@@ -466,6 +494,38 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="swiper-container testimonials-video-wrapper-mobile">
 							<div class="swiper-wrapper">
 								<?php foreach ($text_reviews as $key => $item): ?>
+
+								<div class="swiper-slide">
+									<div class="testimonial-inner">
+
+											<div class="review-item">
+												<div class="review-text">
+													<h3> <?php echo $item['title']; ?> </h3>
+													
+													<p><?php echo $item['description']; ?></p>
+												</div>
+
+												<div class="review-name"> <?php echo $item['person_name']; ?> </div>
+												<div class="review-sub"> <?php echo $item['person_position']; ?> </div>
+											</div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="testimonial-inner">
+
+											<div class="review-item">
+												<div class="review-text">
+													<h3> <?php echo $item['title']; ?> </h3>
+													
+													<p><?php echo $item['description']; ?></p>
+												</div>
+
+												<div class="review-name"> <?php echo $item['person_name']; ?> </div>
+												<div class="review-sub"> <?php echo $item['person_position']; ?> </div>
+											</div>
+									</div>
+								</div>
 
 								<div class="swiper-slide">
 									<div class="testimonial-inner">
@@ -533,9 +593,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 
 		</section>
-		<!-- rest less important content -->
 
-	</main>
+  </main>
 
 	<!-- footer -->
 	<? $this->load->view('desktop/blocks/v_footer'); ?>

@@ -40,6 +40,28 @@ $bp-tablet-lg: 768px;
 $bp-laptop: 992px;
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 $bp-desktop: 1200px;
+$bp-desktop-large: 1600px;
+/* For Projectors or Higher Resolution Screens (Full HD) */
+$bp-desktop-xlarge: 1920px;
 
 // No need larger size than 1200px
 $bp-desktop-lg: $bp-desktop;
+
+/* NEW BREAKPOINTS */
+// // Breakpoints
+// $bp-small: 48em; // 768px
+// $bp-medium: 64em; // 1024px
+// $bp-large: 85.375em; // 1366px
+// $bp-xlarge: 120em; // 1920px
+// $bp-xxlarge: 160em; // 2560px
+
+// // Media Queries
+// $mq-small: "(min-width: #{$bp-small})";
+// $mq-medium: "(min-width: #{$bp-medium})";
+// $mq-large: "(min-width: #{$bp-large})";
+// $mq-xlarge: "(min-width: #{$bp-xlarge})";
+// $mq-xxlarge: "(min-width: #{$bp-xxlarge})";
+// $mq-retina: "(-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi)";
+
+// Example:
+// @media #{$mq-medium} {}
