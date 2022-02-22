@@ -259,9 +259,7 @@
 .full-width-container.catalog-second #catalog-wrapper .prods .prd a.prd-hd img {
   z-index: 1;
   max-height: 135px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  max-width: 100%;
   margin: 25px auto 0 auto;
 }
 .full-width-container.catalog-second #catalog-wrapper .prods .prd a.prd-hd .prd-tit {

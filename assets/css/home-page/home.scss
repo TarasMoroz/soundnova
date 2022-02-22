@@ -7,6 +7,9 @@ body {
 }
 .main-content {
     margin-top: 50px;
+    @media (min-width: $bp-laptop) {
+        margin-top: 0;
+    }
 }
 .full-width-container {
     &.home-categories-container {
